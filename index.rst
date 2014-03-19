@@ -8,7 +8,7 @@ Welcome to UDOO Docs's documentation!
 
 Contents:
 
-Prova
+Prova prova
 
 .. toctree::
    :maxdepth: 2
