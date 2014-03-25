@@ -21,9 +21,7 @@ Getting Started
     operatingsystems
     remoteusage
     arduinoquickstart
-    
-    
-    
+    commandbasics
     ...
 
 
