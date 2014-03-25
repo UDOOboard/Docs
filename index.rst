@@ -19,6 +19,8 @@ Getting Started
     gettingstarted
     createsdcard
     operatingsystems
+    remoteusage
+    
     
     
     ...
