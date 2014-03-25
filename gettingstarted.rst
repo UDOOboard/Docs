@@ -11,7 +11,9 @@ Insert the micro SD card
 UDOO has no internal storage or built-in boot code, OS and storage are on microSD so you need to plug a pre-loaded microSD
 to boot. If you didn’t get a pre-loaded microSD card, you should follow our step by step guide about creating a bootable 
 Micro SD card from precompiled image.
-- Connect the HDMI cable
+=====================================
+Connect the HDMI cable
+=====================================
 UDOO features full HD video output on standard HDMI connector. Plug your full-size ‘male’ HDMI cable to UDOO, then plug it
 to your monitor or digital TV.
 3 - Connect network (optional)
