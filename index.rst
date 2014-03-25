@@ -16,10 +16,11 @@ Getting Started
 .. toctree::
     :maxdepth: 3
 
-    specifications
-    operatingsystems
     gettingstarted
     createsdcard
+    operatingsystems
+    
+    
     ...
 
 
