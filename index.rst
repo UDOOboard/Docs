@@ -20,6 +20,7 @@ Getting Started
     createsdcard
     operatingsystems
     remoteusage
+    arduinoquickstart
     
     
     
