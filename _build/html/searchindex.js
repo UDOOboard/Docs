@@ -1,1 +1,1 @@
-Search.setIndex({objects:{},terms:{index:0,search:0,prova:0,welcom:0,doc:0,modul:0,indic:0,content:0,udoo:0,tabl:0,document:0,page:0},objtypes:{},titles:["Welcome to UDOO Docs&#8217;s documentation!"],objnames:{},filenames:["index"]})
+Search.setIndex({objects:{},terms:{index:0,search:0,prova:0,welcom:0,get:1,doc:0,modul:0,indic:0,qualcosa:1,content:0,start:1,udoo:[0,1],tabl:0,document:0,page:0},objtypes:{},titles:["Welcome to UDOO Docs&#8217;s documentation!","Getting Started with UDOO"],objnames:{},filenames:["index","gettingstarted"]})
