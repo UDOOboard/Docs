@@ -50,7 +50,7 @@ The microSD card is now ready to be used. Simply insert it in UDOO’s microSD C
 
 ======
 LINUX
-=====
+======
 
 From the terminal run:
 
