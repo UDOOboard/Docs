@@ -1,5 +1,5 @@
 ##################################
-Getting Started with Arduino Programming
+Arduino Programming QuickStart
 ##################################
 
 In this tutorial you’re going to learn how to write, upload and execute your first Arduino-compatible sketch on UDOO. In nerd’s jargon this is usually referred as “Hello World”, aka the first basic command you give to a device. Our “Hello World” will be a blinking led, simple as it sounds. So, let’s get our hands dirt.
