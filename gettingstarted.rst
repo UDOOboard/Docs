@@ -6,7 +6,7 @@ Getting Started with UDOO
 This easy step by step guide will lead you through the procedure to boot your UDOO for the very first time.
 
 =====================================
-nsert the micro SD card
+Insert the micro SD card
 =====================================
 UDOO has no internal storage or built-in boot code, OS and storage are on microSD so you need to plug a pre-loaded microSD
 to boot. If you didn’t get a pre-loaded microSD card, you should follow our step by step guide about creating a bootable 
