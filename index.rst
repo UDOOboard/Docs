@@ -10,13 +10,27 @@ Contents:
 
 Prova prova ASD ads
 
+Getting Started
+=====
+
 .. toctree::
-   :maxdepth: 2
+    :maxdepth: 2
+
+    gettingstarted
+    
 
 
 
-Indices and tables
-==================
+
+GPIO
+==========
+
+.. toctree::
+    :maxdepth: 2
+
+    MAPPING
+    
+
 
 * :ref:`genindex`
 * :ref:`modindex`
