@@ -37,5 +37,26 @@ GPIO
     linuxgpio
     ...
 
+ACCESSORIES SETUP
+==========
 
+.. toctree::
+    :maxdepth: 7
+    
+    lvds
+    camera
+    shields
+    ...
+    
+    
+ANDROID DEVELOPMENT
+==========
+
+.. toctree::
+    :maxdepth: 7
+    
+    helloandroid
+    adk
+    
+    ...
 
