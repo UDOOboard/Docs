@@ -25,6 +25,13 @@ Give a boost to the DIY world
 Offer a low cost embedded platform for interactive arts with powerful tools: Processing, OpenCV, PureData, openFramework
 Provide companies with a great tool for fast prototyping
 
+Specifications
+
+UDOO retail line up consists of three models, sharing most of the features and different only for connectivity and i.MX6 processor used. All three models feature an embedded Arduino compatible section based on Arduino Due schematic. UDOO’s dimensions are: 4.33 inch x 3.35 inch (11 cm x 8.5 cm).
+Warning: The UDOO I/O pins are 3.3V compliant. Higher voltages (like 5V) would damage the board.
+Learn more about wrong uses that invalidate the warranty.
+
+
 Contents:
 
 Prova prova ASD ads
