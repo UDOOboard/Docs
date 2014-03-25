@@ -17,6 +17,7 @@ Getting Started
     :maxdepth: 2
 
     gettingstarted
+    createsdcard
     ...
 
 
@@ -32,8 +33,4 @@ GPIO
     
 
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-* :ref:`gettingstarted`
 
