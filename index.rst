@@ -17,7 +17,7 @@ Getting Started
     :maxdepth: 2
 
     gettingstarted
-    
+    ...
 
 
 
@@ -35,4 +35,5 @@ GPIO
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+* :ref:`gettingstarted`
 
