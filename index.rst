@@ -14,7 +14,7 @@ Getting Started
 =====
 
 .. toctree::
-    :maxdepth: 3
+    :maxdepth: 8
 
     gettingstarted
     createsdcard
@@ -31,9 +31,9 @@ GPIO
 ==========
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 7
     
-    asd
+    serial
     ...
 
 
