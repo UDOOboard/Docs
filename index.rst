@@ -34,6 +34,7 @@ GPIO
     :maxdepth: 7
     
     serial
+    linuxgpio
     ...
 
 
