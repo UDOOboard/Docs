@@ -3,21 +3,6 @@ Create a bootable MicroSD Card
 ################################
 
 
-
-..* **Download the appropriate SDCard Image**
-   Go to `UDOOs Download Section <http://www.udoo.org/downloads/>`_
-
-   * **Extract the .img file from the .zip file you downloaded**
-   You can use the Archive tool you wish. Some examples are Winzip, Xarchive and Zipeg.
-
-   * Prepare your SD Card, according to your Operating system**
-
-   .. raw:: html
-   :file: _build/html/_static/raw/quick.html
-
-   
-
-
 ===============
 Windows
 ===============
@@ -25,6 +10,7 @@ Windows
 
 ..  youtube:: vMAZZzTQsS4
         :width: 100%
+        
 
 * Download `Win32DiskImager <_utils/Win32DiskImager-0.9.5-install.exe>`_ Utility, Install and launch it
 * Insert a MicroSD Card (at least 8gb) into SD Card Slot or external reader
@@ -41,15 +27,18 @@ Windows
 LINUX
 ======
 
-From the terminal run:
+..  youtube:: 044ijVTUaqs
+        :width: 100%
+        
+
+* From the terminal run:
 
    df -h
 
 If the computer used has a slot for SD cards (SD to micro SD adapter needed), insert the card. If not, insert the card 
-into any SD card reader and then connect it to the computer. Note: the microSD card must be formatted using FAT32 File 
-System!
+into any SD card reader and then connect it to the computer
 
-Run again:
+* Run again:
 
    df -h
 
@@ -63,29 +52,32 @@ correct name found previously, followed by the letters and numbers identifying t
 
    sudo umount /dev/sdd1
    
-Now, write the image on the micro SD card with the command:
+* Now, write the image on the micro SD card with the command:
 
   sudo dd bs=1M if=<img_file_path> of=/dev/<sd_name>
   
-Please be sure that you replaced the argument of input file (if=<img_file_path>) with the pathof the .img file, and that
-the device name specified in output file’s argument (of=/dev/<sd_name>) is correct. This is very important, since you 
-could lose all data on the hard drive of the Host PC if it is usedthe wrong device name. Please also be sure that the 
-device name is that of the whole micro SD card, as described above, not just a partition. (e.g. sdd, not sdds1 or sddp1,
-or mmcblk0 not mmcblk0p1)
+**WARNING!Please be sure that you replaced the argument of input file (if=<img_file_path>) with the pathof the .img file, and that
+the device name specified in output file’s argument (of=/dev/<sd_name>) is correct. An incorrect device name could lead to
+data loss!**
 
    sudo dd bs=1M if=/home/<user_name>/Download/2013-5-28-udoo-ubuntu.img of=/dev/sdd
    
-Once dd completes, run the sync command as root or run sudo sync as a normal user (this will ensure that the write cache 
+* Once dd completes, run the sync command as root or run sudo sync as a normal user (this will ensure that the write cache 
 is flushed and that it is safe to unmount the micro SD card). Then run:
    
    sudo umount /media/<sd_label>
    
-The micro SD card is now ready to be used. Simply, insert it in UDOO’s microSD Card slot and boot the system.
+* The micro SD card is now ready to be used. Simply, insert it in UDOO’s microSD Card slot and boot the system.
 
 
 ========
 MAC OS X
 ========
+
+..  youtube:: A4iRKyJHtT4
+        :width: 100%
+        
+        
 
 Note: May not work with OSX 10.9 Mavericks
 
