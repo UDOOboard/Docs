@@ -3,27 +3,14 @@ Create a bootable MicroSD Card
 ################################
 
 
-* **Download any SD images from `UDOOs Download Section <http://www.udoo.org/downloads/>`_**
-* **Extract the .img file from the .zip file you downloaded**
-* **Prepare your SD Card, according to following instructions**
-* **Done, remove SD Card, insert it in UDOO and enjoy it!**
 
+1. **Download the appropriate SDCard Image**
+Go to `UDOOs Download Section <http://www.udoo.org/downloads/>`_ 
 
-1. **Download any SD images from the image section of the website **
-2. **Extract the .img file from the .zip file you downloaded into any folder**
-3. **asd**
+2. **Extract the .img file from the .zip file you downloaded**
+You can use the Archive tool you wish. Some examples are Winzip, Xarchive and Zipeg.
 
-
-Download any SD images from the image section of the website http://www.udoo.org/downloads/
-Extract the .img file from the .zip file you downloaded into any folder (this path will be referred to as 
-<img_file_path> in the guide).
-
-
-
-
-
-Follow the instructions below for your Operating System:
-
+3. Prepare your SD Card, according to your Operating system**
 
 
 ===============
@@ -37,7 +24,8 @@ If the PC used has a slot for SD cards (SD to microSD adapter needed), simply in
 into any SD card reader and then connect it to the PC. Note: the microSD card must be formatted using FAT32 File System!
 Run the file named Win32DiskImager.exe (with Windows Vista, 7 and 8 right-click the file and select 
 “Run as administrator”).
-If the micro SD card (Device) used is not detected automatically, click on the drop down box on the right and select the
+If the micro SD card (Device) used is not detected automatically, 
+click on the drop down box on the right and select the
 identifier of the micro SD card that has been plugged in (e.g. [H:\]). Note: the microSD card must be formatted using 
 FAT32 File System!
 Please be careful to select the correct drive identifier; if you use the wrong identifier, you can lose all data on the
@@ -46,7 +34,7 @@ In the Image File box, choose the downloaded .img file and click “Write”. No
 message.
 The microSD card is now ready to be used. Simply insert it in UDOO’s microSD Card slot and boot the system.
 
-
+.. image:: _static/images/msdwin.png
 
 ======
 LINUX
