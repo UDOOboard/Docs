@@ -1,0 +1,316 @@
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Linux Command Line Basics &mdash; UDOO Docs b documentation</title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="top" title="UDOO Docs b documentation" href="index.html"/>
+        <link rel="next" title="Imx6 and Sam3x Communication" href="serial.html"/>
+        <link rel="prev" title="Arduino Programming QuickStart" href="arduinoquickstart.html"/> 
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="index.html" class="fa fa-home"> UDOO Docs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">Getting Started with UDOO</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gettingstarted.html#insert-the-micro-sd-card">Insert the micro SD card</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="createsdcard.html">Create a bootable MicroSD Card</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="createsdcard.html#windows">Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="createsdcard.html#linux">LINUX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="createsdcard.html#mac-os-x">MAC OS X</a></li>
+<li class="toctree-l2"><a class="reference internal" href="createsdcard.html#create-a-microsd-card-from-binaries">Create a MicroSD Card from Binaries</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="operatingsystems.html">Available Operating Systems for UDOO</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="operatingsystems.html#official-operating-systems">Official Operating Systems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="operatingsystems.html#other-operating-systems">Other Operating Systems</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="remoteusage.html">Operating UDOO Remotely</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="remoteusage.html#connecting-via-ssh">Connecting via SSH</a></li>
+<li class="toctree-l2"><a class="reference internal" href="remoteusage.html#connecting-via-usb-serial-cable">Connecting via USB Serial Cable</a></li>
+<li class="toctree-l2"><a class="reference internal" href="remoteusage.html#connect-via-vnc-remote-desktop">Connect via VNC Remote Desktop</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="arduinoquickstart.html">Arduino Programming QuickStart</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Linux Command Line Basics</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="serial.html">Imx6 and Sam3x Communication</a></li>
+<li class="toctree-l1"><a class="reference internal" href="linuxgpio.html">GPIO manipulation from Linux</a></li>
+</ul>
+<ul class="simple">
+</ul>
+<ul class="simple">
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">UDOO Docs</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Linux Command Line Basics</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          <a href="_sources/commandbasics.txt" rel="nofollow"> View page source</a>
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            
+  <div class="section" id="linux-command-line-basics">
+<h1>Linux Command Line Basics<a class="headerlink" href="#linux-command-line-basics" title="Permalink to this headline">¶</a></h1>
+<p>Linux Command Line Interface, (CLI from now on) could be at first glance discouraging for the average Joe, since nowadays
+we are only used to Graphic Interfaces. But don’t let you down, using a command line shell could be, not only very useful,
+but also kind of funny.
+This Tutorial will help you move your first steps in the command shell environment.</p>
+<p>First, when a Command Line Interface could be useful for you?
+Remote Connection via SSH: SSH remote connection allows to interact with Udoo without physical access to it. SSH is
+available only with command line interface.
+Using a minimal Linux Distribution without a graphical interface. Some Linux Distribution come without a Graphical User
+Interface, in order to maximize available resources. Command line interface is your only bet in this scenario
+Some power-users consider CLI the most convenient way to perform code execution and file-system operations. Even if you
+are not in this category, you may found out that CLI can be very fast when you get used to it.
+Showing up with your mates, the longest your CLI strings, the more rep you’ll get.
+So, let’s start this adventure with the very basic Linux commands:</p>
+<p>sudo</p>
+<p>Your first ally, allows users to run programs with the security privileges of root, or superuser.Its name is a
+concatenation of “su” (substitute user) and “do”, or take action . So, if you get an error message saying that “only root
+can do that”, just use the same command with preceeded by sudo.</p>
+<p>sudo</p>
+<p>sudo su</p>
+<p>This just enables root privileges once for all, without forcing you to type sudo everytime. It works until you close
+the shell you are working into.
+1
+sudo su
+touch</p>
+<p>create an empty file
+1
+touch
+nano</p>
+<p>open an handy text editor, to save and exit, press “ctrl” and “x”, and tell yes or no by pressing “y” or “n”
+1
+nano
+cat</p>
+<p>cat shows the content of a file, it speeds up file inspection for smaller files.
+1
+cat /etc/hostname
+ls</p>
+<p>Shows you the content of a folder
+1
+ls
+cd</p>
+<p>opens a specific folder
+1
+2
+cd /home
+cd ubuntu
+cd ..</p>
+<p>Brings you to a higher folder level
+1
+2
+cd /home/ubuntu
+cd .. (/home)
+cd /</p>
+<p>brings you to root (top filesystem level)
+1
+cd /
+rm</p>
+<p>deletes a file
+1
+rm myfile.my
+rm -rf</p>
+<p>deletes a folder
+1
+2
+rm -rf /home/ubuntu/myfolder
+rm -rf myfolder
+mv</p>
+<p>moves a file or a folder. Useful for renaming also
+1
+2
+mv myfile /myfolder/myfile
+mv myfile mysecondfile
+cp</p>
+<p>copies a file
+1
+cp myfile /home/ubuntu/
+cp -R</p>
+<p>copies a folder
+1
+cp -R myfolder /home/ubuntu/myfolder
+mkdir</p>
+<p>creates a folder
+1
+mkdir myfolder
+top</p>
+<p>Top is a very useful utility, it basically gives you a complete overview of the system’s status. It produces an ordered
+list of running processes selected by user-specified criteria. Top shows how much processing power and memory are being
+used, as well as other information about the running processes.
+1
+top
+df -h</p>
+<p>Shows used and available disk space, in megabytes.
+1
+df -h
+ifconfig -a</p>
+<p>Shows networking useful data, like current ip, netmasks and other statistics.
+1
+ifconfig -a
+chmod</p>
+<p>chmod let you set files permissions. This utility is very important for people concerned about security, but it is
+useful also for coders, since you can set a script as executable with it .
+For a more comprehensive guide on how to use chmod see here
+dmesg</p>
+<p>Shows the messages resulting from the most recent system boot. It is useful for troubleshooting, since you can see
+which modules are loaded, which binaries are started and so on.
+1
+dmesg
+sync</p>
+<p>Thanks to this command your SD card lifespan will drastically improve, remember to launch it every time you turn Udoo
+off, or remove the power. Completes all pending input/output operations. It must be launched as root, or with sudo.
+1
+sync
+reboot</p>
+<p>reboots the system
+1
+reboot
+shutdown</p>
+<p>shuts it down
+1
+shutdown now</p>
+</div>
+
+
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="serial.html" class="btn btn-neutral float-right" title="Imx6 and Sam3x Communication"/>Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="arduinoquickstart.html" class="btn btn-neutral" title="Arduino Programming QuickStart"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2014, UDOO Team.
+    </p>
+  </div>
+
+  <a href="https://github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'',
+            VERSION:'b',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

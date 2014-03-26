@@ -1,0 +1,337 @@
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Operating UDOO Remotely &mdash; UDOO Docs b documentation</title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="top" title="UDOO Docs b documentation" href="index.html"/>
+        <link rel="next" title="Arduino Programming QuickStart" href="arduinoquickstart.html"/>
+        <link rel="prev" title="Available Operating Systems for UDOO" href="operatingsystems.html"/> 
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="index.html" class="fa fa-home"> UDOO Docs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">Getting Started with UDOO</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gettingstarted.html#insert-the-micro-sd-card">Insert the micro SD card</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="createsdcard.html">Create a bootable MicroSD Card</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="createsdcard.html#windows">Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="createsdcard.html#linux">LINUX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="createsdcard.html#mac-os-x">MAC OS X</a></li>
+<li class="toctree-l2"><a class="reference internal" href="createsdcard.html#create-a-microsd-card-from-binaries">Create a MicroSD Card from Binaries</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="operatingsystems.html">Available Operating Systems for UDOO</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="operatingsystems.html#official-operating-systems">Official Operating Systems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="operatingsystems.html#other-operating-systems">Other Operating Systems</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Operating UDOO Remotely</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#connecting-via-ssh">Connecting via SSH</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#connecting-via-usb-serial-cable">Connecting via USB Serial Cable</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#connect-via-vnc-remote-desktop">Connect via VNC Remote Desktop</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="arduinoquickstart.html">Arduino Programming QuickStart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commandbasics.html">Linux Command Line Basics</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="serial.html">Imx6 and Sam3x Communication</a></li>
+<li class="toctree-l1"><a class="reference internal" href="linuxgpio.html">GPIO manipulation from Linux</a></li>
+</ul>
+<ul class="simple">
+</ul>
+<ul class="simple">
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">UDOO Docs</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Operating UDOO Remotely</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          <a href="_sources/remoteusage.txt" rel="nofollow"> View page source</a>
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            
+  <div class="section" id="operating-udoo-remotely">
+<h1>Operating UDOO Remotely<a class="headerlink" href="#operating-udoo-remotely" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="connecting-via-ssh">
+<h2>Connecting via SSH<a class="headerlink" href="#connecting-via-ssh" title="Permalink to this headline">¶</a></h2>
+<p>SSH is a network communication protocol which can be used for a uber cool functionality: remote shell control. This
+basically enables you to remotely operate a device, connected to a network, without direct physical access. If you thought
+this would be only ultranerd stuff, you might be interested in reading this.</p>
+<p>What you need to access your Udoo via a remote shell? First, check that these requirements are satisfied:</p>
+<blockquote>
+<div><ul class="simple">
+<li>You are connected to the same network that Udoo is. This can be your home router, with Udoo connected via Ethernet cable</li>
+</ul>
+</div></blockquote>
+<dl class="docutils">
+<dt>and your Laptop trough wireless connection</dt>
+<dd><ul class="first last simple">
+<li>You don’t have firewalls enabled that could block the communication between the two devices</li>
+<li>Check that the two devices are on the same subnet, if you don’t know what that means, you can just ignore this.</li>
+</ul>
+</dd>
+</dl>
+<p>WINDOWS</p>
+<p>Let’s start. On windows, you need a third party software, called putty.</p>
+<p>Download it from here</p>
+<p>Open it and insert Udoo’s IP. If you don’t know which IP your UDOO has, refer to this previous tutorial.
+Call it UDOO, save it for your future convenience and hit load
+Now, you’ll be prompted with a login box. Just enter user and password and you’re in
+On Udoo’s Ubuntu, user and password are both ubuntu</p>
+<p>Mac Os X and Linux</p>
+<p>On both these operating system, the procedure is quite the same.
+You just need to open a terminal and use the following synthax:</p>
+<p>ssh <a class="reference external" href="mailto:username&#37;&#52;&#48;Udoo_Ip">username<span>&#64;</span>Udoo_Ip</a></p>
+<p>Then hit enter, bear in mind that the very first time you are doing this, you’ll be prompted with a securty pop-up.
+To confirm, type “yes”.</p>
+<p>Then type the password and you’re in.</p>
+<p>Please note: The username and password you are requested to enter while logging via SSH are not pertaining to your Pc, Mac or Linux, they refer to the account you are trying to access on Udoo.
+So, if you never changed it, the credentials you need are:
+User: ubuntu
+Password: ubuntu
+For root access:
+User: root
+Password: ubuntu</p>
+</div>
+<div class="section" id="connecting-via-usb-serial-cable">
+<h2>Connecting via USB Serial Cable<a class="headerlink" href="#connecting-via-usb-serial-cable" title="Permalink to this headline">¶</a></h2>
+<p>Udoo features a built in USB to serial interface which is very useful for various reasons: You can use it to connect Udoo via SSH without a network connection, programming the Sam3x (arduino) and access the debug console for troubleshooting purposes.</p>
+<p>Connecting via serial will practically result in a shell console, the same as the one you’ll obtain through SSH connection (<a class="reference external" href="http://en.wikipedia.org/wiki/Secure_Shell">http://en.wikipedia.org/wiki/Secure_Shell</a>).</p>
+<p>Connecting via Serial from Windows</p>
+<p>Download the serial adapter Driver here:
+<a class="reference external" href="http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx">http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx</a>
+Install the proper version for your Operating system:
+CP210xVCPInstaller_x86.exe for 32-bit systems
+CP210xVCPInstaller_x64.exe for 64-bit system
+How to define your Windows version:
+<a class="reference external" href="http://windows.microsoft.com/en-us/windows7/32-bit-and-64-bit-windows-frequently-asked-questions">http://windows.microsoft.com/en-us/windows7/32-bit-and-64-bit-windows-frequently-asked-questions</a>
+Download and install a software called putty
+<a class="reference external" href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html">http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html</a>
+Open putty and configure it as follow:
+Connection type “serial”
+Port: “COM3” (please note that this value may be different, try to use COM4 if COM3 is not working)
+Speed: “115200”
+Save it as “Udoo-serial” for future uses.</p>
+<p>Connect the serial port of UDOO (CN6) to your PC using the micro USB cable.
+Power up UDOO
+Click Open
+You’re in! You’ll be able to see the startup process and access to the remote shell console on UDOO.</p>
+<p>Connecting via Serial from Linux</p>
+<p>Connect the serial port of UDOO (CN6) to your PC using the micro USB cable.
+Type
+1
+dmesg
+You should see this line at the end
+1
+usb 2-2.1: cp21x converter now attached to tty</p>
+<p>nstall minicom:
+1
+2
+sudo apt-get update
+sudo apt-get install minicom
+Open Minicom and configure it (only the first time) using the following command:
+1
+sudo minicom -sw
+Go to “Serial port setup” and edit as follow:
+Serial Device: /dev/ttyUSB0 (type a key)
+Hardware Flow Control: No (type f key)
+Software Flow Control: No (type g key)</p>
+<p>Press exit and “Save setup as dfl”
+Exit from Minicom
+Let’s give proper access permissions to serial port with:
+1
+sudo chmod 666 /dev/ttyUSB0
+Now we can start listening with:
+1
+sudo minicom -w
+Power cycle UDOO to see the boot process and connect it to serial console shell
+Connecting via Serial from Mac</p>
+<p>Download the serial adapter Driver here:
+<a class="reference external" href="http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx">http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx</a>
+Connect the serial port of UDOO (CN6) to your PC using the micro USB cable.
+Download and install Serial Tools <a class="reference external" href="https://itunes.apple.com/it/app/serialtools/id611021963">https://itunes.apple.com/it/app/serialtools/id611021963</a> or directly from the Apple
+Store
+Open Serial Tools, and change the following parameters:
+Serial Port: “SLEB_USBtoUART”
+Baud rate “115200”</p>
+<p>Hit connect, and here you go!</p>
+</div>
+<div class="section" id="connect-via-vnc-remote-desktop">
+<h2>Connect via VNC Remote Desktop<a class="headerlink" href="#connect-via-vnc-remote-desktop" title="Permalink to this headline">¶</a></h2>
+<p>Welcome to this Remote Desktop Tutorial. As you may imagine, what we are going to achieve is all about convenience.
+Some of you could be pretty familiar with Remote Desktop Utilities, for the ones who aren’t, just think that you can use
+a device (in this case, UDOO) like you were sitting in front of that, using it’s keyboard and mouse and looking at its
+screen, except you can do that also from the other part of the world. You don’t need to be a globetrotter then to enjoy
+this capability, Remote Desktop is also very useful in home situations, when simply you just want to use UDOO without
+connecting a mouse, a monitor and a keyboard to it.</p>
+<p>Open source software gives us a chance to achieve this result without getting too much in troubles, here is what you
+need to do to have it running.</p>
+<p>Now you just need to download a client app and use UDOO’s IP to connect to it, followed by the VNC port ( default 5901) Let’s see how:</p>
+<p>On Windows:</p>
+<p>Download and install RealVNC Viewer
+Once opened, insert UDOO’s IP followed by :5901 (e.g. 192.168.0.105:5901)
+Insert the password you previously set on the Server and hit Connect
+Done! Browse UDOO remotely with your Windows machine
+On Mac OSX:</p>
+<p>Download and install RealVNC Viewer
+Once opened, insert UDOO’s IP followed by :5901 (e.g. 192.168.0.105:5901)
+Insert the password you previously set on the Server and hit Connect
+Done! Browse UDOO remotely with your Mac
+On Linux Ubuntu:</p>
+<p>Install via terminal xvnc4viewer
+1
+sudo apt-get update</p>
+<p>1
+sudo apt-get install xvnc4viewer
+Launch xvncviewer with
+1
+sudo xvncviewer
+Insert UDOO’s IP followed by :5901
+1
+192.168.1.0.105:5901
+Insert Server’s Password
+Done! Browse Udoo remotely with your Linux machine!</p>
+</div>
+</div>
+
+
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="arduinoquickstart.html" class="btn btn-neutral float-right" title="Arduino Programming QuickStart"/>Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="operatingsystems.html" class="btn btn-neutral" title="Available Operating Systems for UDOO"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2014, UDOO Team.
+    </p>
+  </div>
+
+  <a href="https://github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'',
+            VERSION:'b',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

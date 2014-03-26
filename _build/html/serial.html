@@ -1,0 +1,304 @@
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Imx6 and Sam3x Communication &mdash; UDOO Docs b documentation</title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="top" title="UDOO Docs b documentation" href="index.html"/>
+        <link rel="next" title="GPIO manipulation from Linux" href="linuxgpio.html"/>
+        <link rel="prev" title="Linux Command Line Basics" href="commandbasics.html"/> 
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="index.html" class="fa fa-home"> UDOO Docs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+        
+            <ul>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">Getting Started with UDOO</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gettingstarted.html#insert-the-micro-sd-card">Insert the micro SD card</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="createsdcard.html">Create a bootable MicroSD Card</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="createsdcard.html#windows">Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="createsdcard.html#linux">LINUX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="createsdcard.html#mac-os-x">MAC OS X</a></li>
+<li class="toctree-l2"><a class="reference internal" href="createsdcard.html#create-a-microsd-card-from-binaries">Create a MicroSD Card from Binaries</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="operatingsystems.html">Available Operating Systems for UDOO</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="operatingsystems.html#official-operating-systems">Official Operating Systems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="operatingsystems.html#other-operating-systems">Other Operating Systems</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="remoteusage.html">Operating UDOO Remotely</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="remoteusage.html#connecting-via-ssh">Connecting via SSH</a></li>
+<li class="toctree-l2"><a class="reference internal" href="remoteusage.html#connecting-via-usb-serial-cable">Connecting via USB Serial Cable</a></li>
+<li class="toctree-l2"><a class="reference internal" href="remoteusage.html#connect-via-vnc-remote-desktop">Connect via VNC Remote Desktop</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="arduinoquickstart.html">Arduino Programming QuickStart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commandbasics.html">Linux Command Line Basics</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="">Imx6 and Sam3x Communication</a></li>
+<li class="toctree-l1"><a class="reference internal" href="linuxgpio.html">GPIO manipulation from Linux</a></li>
+</ul>
+<ul class="simple">
+</ul>
+<ul class="simple">
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">UDOO Docs</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Imx6 and Sam3x Communication</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          <a href="_sources/serial.txt" rel="nofollow"> View page source</a>
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            
+  <div class="section" id="imx6-and-sam3x-communication">
+<h1>Imx6 and Sam3x Communication<a class="headerlink" href="#imx6-and-sam3x-communication" title="Permalink to this headline">¶</a></h1>
+<p>What UDOO can do best is enable you to create awesome projects. It features a powerful ARM Cpu and GPU, which can
+execute all the piece of code you want, from simple word-processing to power-hungry 3d modeling tasks. Furthermore, it
+has a built-in Arduino Due compatible range of GPIOs and it’s layout is perfectly compatible with all Arduino Due
+shields.
+In terms of pure flexibility, nothing can beat UDOO. In this tutorial we’ll learn how to take advantage of both these
+platforms at the same time, how to make them interact and talk to each others. In few words, push the foot hard down on
+UDOO’s project developing.</p>
+<p>First, let’s have a look on how UDOO’s architecture has been designed. As you may know, on the board we find 2
+processors:</p>
+<p>iMX6 – ARM CPU Dual/Quad Core:
+This is the powertrain of UDOO’s operating system. This CPU handles the O.S. environments, such as Android, Ubuntu,
+Debian etc. iMX6 handles also AudioVideo operations ( audio io, HDMI video, LVDS), USB ports, SATA connection, Network
+connection and so on.
+SAM3x – Arduino Due compatible processor:
+This is the core of UDOO’s extended input and output support. You can use the Sam3x as a standalone Arduino board,
+connecting every sensor, motor , device etc. you want to it. You can also connect every Arduino Due compatible shield
+you may need for your project.
+However, to fully unleash your project’s potentials, there’s a third way you should learn: serial communication between
+iMX6 and Sam3x. UDOO features a serial channel that interconnects these 2 processors, and this is the way to go for
+advanced projects.
+The logical steps involved are really simple:</p>
+<p>Both processors can listen and send data via the serial line, the only thing you need is check that they communicate at
+the same baudrate. So, you can tie up two different scripts or events manager, on both processors, and make them react
+the way you want.</p>
+<p>Let’s view some scenarios:</p>
+<p>The Arduino part will turn on a LED when a script is launched on the Linux OS running on the iMX6 part</p>
+<p>In this scenario, the first step is to properly set the serial port on Linux:</p>
+<p>1
+stty -F /dev/ttymxc3 cs8 115200 ignbrk -brkint -icrnl -imaxbel -opost -onlcr -isig -icanon -iexten -echo -echoe -echok
+-echoctl -echoke noflsh -ixon -crtscts</p>
+<p>As you may imagine, /dev/ttymxc3 is the serial port and 115200 is the baudrate we selected.</p>
+<p>Then, we just set up our script. This will write the desired data on to the serial port.</p>
+<p>Now, we step up into the Sam3x part and upload our sketch. The sketch will listen the serial port, at the previously set
+baudrate, waiting for the information sent by the iMX6. Of course our sketch will have a trigger command set accordingly
+to the script we set on the iMX6.
+Let’s see a brief example:
+I have a python script, that writes “1” on /dev/ttymxc3 when a keyboard button is pressed.
+I properly set the serial port, at 115200 with the script:
+1
+stty -F /dev/ttymxc3 cs8 115200 ignbrk -brkint -icrnl -imaxbel -opost -onlcr -isig -icanon -iexten -echo -echoe -echok
+-echoctl -echoke noflsh -ixon -crtscts</p>
+<p>I upload a sketch that listen on the serial port, and when it receives “1”, it will turn a LED to HIGH state.
+I launch my python script. Which starts waiting for a key to be pressed.
+Sam3x is listening.
+When I press a key, a series of events will take place, ultimately resulting in my Led turning on:
+KEY -&gt; Pyhton script writes 1 on serial -&gt; SAM3x gets triggered and turns on the LED
+This is of course a very simple scenario, almost the simples you can get. But the logical pathway we examined is pretty
+the same when you climb up on complexity. To see a practical example, take a look at theNAS Project Part 3</p>
+<p>, where upon a torrent completion a LED and a motor are activated.
+Again, this is a pretty simple scenario. But with this principles you can really end up with a hugely sophisticated
+mechanism.</p>
+<p>Now, let’s examine the opposite scenario:</p>
+<p>A Linux application will output some data gathered from sensors connected to the Sam3x via an Arduino sensor shield</p>
+<p>Again, what we need to do is set our serial port accordingly to the baudrate set by the sketch. The SAM3x will collect
+some data from it’s sensors, and send them, appropriately coded, via serial. On the Linux Side, we can set up a local
+server that listens for serial data and stores it on a local database, for example a mysql db. Or that outputs a video
+feedback if a certain data comes from the sensor reading.
+Again, let’s see a brief example:
+I have a sensor that reads environmental data, such as temperature and atmospheric pressure.
+I upload my Arduino sketch, that will send both of these readings via serial every 1 second. I set serial port baud
+rate at 115200
+To match SAM3x serial speed, II properly set the serial port at 115200 on the iMX6 with the script:
+1
+stty -F /dev/ttymxc3 cs8 115200 ignbrk -brkint -icrnl -imaxbel -opost -onlcr -isig -icanon -iexten -echo -echoe -echok
+-echoctl -echoke noflsh -ixon -crtscts
+We set up a server that both listens to the data sent from Serial, and stores them on a mysql database.
+Furthermore, we can set up a script that pops-up a video alert if certain values are read from the sensors.
+Again, this basic principle can be expanded to create more complex situations. This is up to you and your creativity.
+The ultimate scenario is however the bidirectional communication, that occurs when both systems reads and listens
+reciprocally.</p>
+<p>Bidirectional communication</p>
+<p>As a mere example, we can merge the above scenarios into one integrated application:
+I have a sensor that reads environmental data, such as temperature and atmospheric pressure.
+I upload my Arduino sketch, that will send both of these readings via serial every 1 second. I set serial port baud
+rate at 115200
+To match SAM3x serial speed, II properly set the serial port at 115200 on the iMX6 with the script:
+1
+stty -F /dev/ttymxc3 cs8 115200 ignbrk -brkint -icrnl -imaxbel -opost -onlcr -isig -icanon -iexten -echo -echoe -echok
+-echoctl -echoke noflsh -ixon -crtscts</p>
+<p>We set up a server that both listens to the data sent from Serial, and stores them on a mysql database.</p>
+<p>Then, I can choose to output the mean averages of temperature and atmospheric pressure with an LED array connected to
+the Arduino part.
+I configure the server to write the data to be displayed with the LED array on /dev/ttymxc3, with the same baudrate I
+set before
+I integrate the Arduino sketch previously loaded in order to add serial listening and writing on the LED array
+As you can see, this is a step forward from what we’ve previously seen as the system is using the serial connection as
+a bidirectional communication pathway, and the Linux system and Arduino sketch are also both receiving and sending data
+at the same time.
+Again, you can add even more complexity layers, UDOO can handle them.</p>
+<p>Last but not least, UDOO is also capable of driving its GPIO pins as other embedded boards, like Raspberry Pi, the
+direct way. This is the simplest way of controlling them, but bear in mind that this procedure enables you to control
+them only via the Linux or Android iMX6 system.
+This offers another interesting scenario:</p>
+<p>Controlling GPIO via iMX6 while they are also drived by SAM3x Arduino compatible controller</p>
+<p>WARNING: Setting up the same pin on different states in the same time, or controlling it at the same time with both
+iMX6 and SAM3x will result in damaging your board. Please make sure a pin/GPIO can have only one state at the same time,
+and it’s controlled only by one processor at the time</p>
+<p>This allows to conveniently control the GPIOs for iMX6 related tasks, while letting Arduino do its job with a custom
+sketch.
+Let’s see an example:
+I have an audio player running on Linux, and want to output artist and song name on a Oled display drived via i2c
+protocol (iMX6 direct GPIO handling)
+At the same time I can connect a rotary controller to SAM3x to control the output volume via an analog knob.
+I upload a sketch that reads the volume knob position and writes it to serial (Arduino to iMX6 via serial)
+I start a script on iMX6 that reads the volume knob position and tunes the volume mixer accordingly.
+That’s all folks, these are just some inspirational ideas for you, with UDOO’s extended serial communication capability
+there’s really nothing you can’t do.</p>
+</div>
+
+
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="linuxgpio.html" class="btn btn-neutral float-right" title="GPIO manipulation from Linux"/>Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="commandbasics.html" class="btn btn-neutral" title="Linux Command Line Basics"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2014, UDOO Team.
+    </p>
+  </div>
+
+  <a href="https://github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'',
+            VERSION:'b',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

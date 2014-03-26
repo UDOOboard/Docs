@@ -1,0 +1,425 @@
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Create a bootable MicroSD Card &mdash; UDOO Docs b documentation</title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="top" title="UDOO Docs b documentation" href="index.html"/>
+        <link rel="next" title="Available Operating Systems for UDOO" href="operatingsystems.html"/>
+        <link rel="prev" title="Getting Started with UDOO" href="gettingstarted.html"/> 
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="index.html" class="fa fa-home"> UDOO Docs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">Getting Started with UDOO</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gettingstarted.html#insert-the-micro-sd-card">Insert the micro SD card</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Create a bootable MicroSD Card</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#windows">Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#linux">LINUX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#mac-os-x">MAC OS X</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#create-a-microsd-card-from-binaries">Create a MicroSD Card from Binaries</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="operatingsystems.html">Available Operating Systems for UDOO</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="operatingsystems.html#official-operating-systems">Official Operating Systems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="operatingsystems.html#other-operating-systems">Other Operating Systems</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="remoteusage.html">Operating UDOO Remotely</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="remoteusage.html#connecting-via-ssh">Connecting via SSH</a></li>
+<li class="toctree-l2"><a class="reference internal" href="remoteusage.html#connecting-via-usb-serial-cable">Connecting via USB Serial Cable</a></li>
+<li class="toctree-l2"><a class="reference internal" href="remoteusage.html#connect-via-vnc-remote-desktop">Connect via VNC Remote Desktop</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="arduinoquickstart.html">Arduino Programming QuickStart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commandbasics.html">Linux Command Line Basics</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="serial.html">Imx6 and Sam3x Communication</a></li>
+<li class="toctree-l1"><a class="reference internal" href="linuxgpio.html">GPIO manipulation from Linux</a></li>
+</ul>
+<ul class="simple">
+</ul>
+<ul class="simple">
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">UDOO Docs</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Create a bootable MicroSD Card</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          <a href="_sources/createsdcard.txt" rel="nofollow"> View page source</a>
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            
+  <div class="section" id="create-a-bootable-microsd-card">
+<h1>Create a bootable MicroSD Card<a class="headerlink" href="#create-a-bootable-microsd-card" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><strong>Download the appropriate SDCard Image</strong></li>
+</ul>
+<p>Go to <a class="reference external" href="http://www.udoo.org/downloads/">UDOOs Download Section</a></p>
+<ul class="simple">
+<li><strong>Extract the .img file from the .zip file you downloaded</strong></li>
+</ul>
+<p>You can use the Archive tool you wish. Some examples are Winzip, Xarchive and Zipeg.</p>
+<ul class="simple">
+<li>Prepare your SD Card, according to your Operating system**</li>
+</ul>
+				<div id="main" class="" style="overflow:hidden !important;">
+		<div class="avada-row" style="">
+				<div id="content" class="full-width">
+				<div id="post-707" class="post-707 page type-page status-publish hentry">
+						<div class="post-content">
+				<h1>Getting Started</h1> <p><img src="/wp-content/uploads/2013/06/step7.jpg" alt="step0" width="960" height="370" 
+class="alignnone size-full wp-image-2170" /></p> <p>This easy step by step guide will lead you through the procedure to boot your UDOO for the very first 
+time.<br /> <div class="demo-sep sep-none" style="margin-top:60px;"></div> <h2>1. Insert the micro SD card</h2> <p><img 
+src="/wp-content/uploads/2013/06/step1.jpg" alt="step1" width="960" height="370" class="alignnone size-full wp-image-2173" /></p> <p>UDOO has no internal 
+storage or built-in boot code, OS and storage are on microSD so you need to plug a pre-loaded microSD to boot. If you didn’t get a pre-loaded microSD card, 
+you should follow our step by step guide about <a href="/getting-started/creating-a-bootable-micro-sd-card-from-image/" title="Creating image">creating your own 
+loaded microSD card</a>.<br /> <div class="demo-sep sep-none" style="margin-top:60px;"></div> <h2>2. Connect the HDMI cable</h2> <p><img 
+src="/wp-content/uploads/2013/06/step2.jpg" alt="step2" width="960" height="370" class="alignnone size-full wp-image-2175" /></p> <p>UDOO features full HD video 
+output on standard HDMI connector. Plug your full-size &#8216;male&#8217; HDMI cable to UDOO, then plug it to your monitor or digital TV.<br /> <div 
+class="demo-sep sep-none" style="margin-top:60px;"></div> <h2>3. Connect network (optional)</h2> <p><img src="/wp-content/uploads/2013/06/step3.jpg" alt="step3" 
+width="960" height="370" class="alignnone size-full wp-image-2176" /></p> <p>If you want, you can plug your RJ-45 ethernet cable now, but you can do it later 
+when the board is booted or you can just use the WiFi to connect wirelessly to your network.<br /> <div class="demo-sep sep-none" 
+style="margin-top:60px;"></div> <h2>4. Connect input</h2> <p><img src="/wp-content/uploads/2013/06/step4.jpg" alt="step4" width="960" height="370" 
+class="alignnone size-full wp-image-2177" /></p> <p><img src="/wp-content/uploads/2013/06/step5.jpg" alt="step5" width="960" height="370" class="alignnone 
+size-full wp-image-2178" /></p> <p>Every keyboard and mouse should work with UDOO. The board provides 5V 500mAmp so you don’t need an USB hub unless you 
+need to power up high power consumption devices. Wireless keyboard/mouse should work as well.<br /> <div class="demo-sep sep-none" 
+style="margin-top:60px;"></div> <h2>5. Power up</h2> <p><img src="/wp-content/uploads/2013/06/step6a.jpg" alt="step6a" width="960" height="370" class="alignnone 
+size-full wp-image-2187" /></p> <p>UDOO starter kits and pre-orders come with a 12V and 2Amp switching DC supply with a standard 5.5mm/2.1mm barrel jack. This 
+supply is designed to work anywhere in the world, 100V-240V AC wall power but you may need a plug adapter. <a href="/faq-items/what-are-the-power-requirements/" 
+title="Power supply">More info about power supply</a>.</p> <p>UDOO will boot as soon as you connect the power supply. You’re now good to go to start 
+explore, learn and make with your UDOO board!</p> <p>Keep your UDOO up to date.<br /> Upgrade your UDOO to the latest Operating System release available to 
+receive the latest bug fixes and improvement.</p> <style type='text/css'>#reading-box-container-1 .tagline-shadow:before,#reading-box-container-1 
+.tagline-shadow:after{opacity:0.5;}</style><div class="reading-box-container" id="reading-box-container-1"><section class="reading-box tagline-shadow" 
+style="background-color:#f8f8f8 !important;border-width:;border-color:#f6f6f6!important;border-left-width:3px 
+!important;border-left-color:#ec008c!important;border-style:solid;"><a href="/update-procedure/" target="" class="continue button large default">Update 
+Now!</a><h2>Kickstarter’s backers: update your UDOO asap.</h2><p>If you pledged for the starter kit with the pre-loaded microSD cards, we recommend to 
+update UDOO.</p><a href="/update-procedure/" target="" class="continue mobile-button button large default">Update Now!</a></section></div> <h2>What&#8217;s 
+next?</h2> <div class="demo-sep sep-none" style="margin-top:30px;"></div> <p>Now that you have a fully functional board, what are the next steps? You can either 
+watch our tutorials to start learning how to use UDOO or visit our Blog, Wiki and Forum for documentation and support.</p> <div class="demo-sep sep-none" 
+style="margin-top:60px;"></div> <style type='text/css'>
+		#content-boxes-1 article.col{background-color:#f8f8f8 !important;} content-boxes-1 .fontawesome-icon.circle-yes{color:#ffffff 
+		#!important;background-color:#ec008c !important;border:1px solid #ec008c !important;}
+		</style><section class="clearfix columns content-boxes content-boxes-icon-boxed" id="content-boxes-1"> <article class="col"><div class="heading 
+heading-and-icon"><i class="fontawesome-icon medium circle-yes icon-book"></i><h2>Tutorials</h2></div><div class="col-content-container"> All the tutorials you 
+need, from the easy to the more advanced ones, to <strong>start learning how to use UDOO.</strong><span class="more"><a href="/tutorials/" target="">Learn 
+More</a></span></div></article> <article class="col"><div class="heading heading-and-icon"><i class="fontawesome-icon medium circle-yes 
+icon-group"></i><h2>Community</h2></div><div class="col-content-container"> Visit <a href="/blog/" title="blog">our Blog</a> for updates, <a 
+href="http://elinux.org/UDOO" title="wiki">our wiki</a> for documentation and <a href="http://www.udoo.org/forum/" title="forum">our forum</a> for any kind of 
+<strong>support.</strong></p> <span class="more"><a href="http://www.udoo.org/forum/" target="">Join Us</a></span></div></article> <p></section>
+							</div>
+					</div>
+			</div>
+		</div>
+	</div>
+   
+   
+   
+   
+   
+   
+<div class="section" id="windows">
+<h2>Windows<a class="headerlink" href="#windows" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Download <a class="reference external" href="_utils/Win32DiskImager-0.9.5-install.exe">Win32DiskImager</a> Utility, Install and launch it</li>
+<li>Insert a MicroSD Card (at least 8gb) into SD Card Slot or external reader</li>
+<li>If the micro SD card (Device) used is not detected automatically, click on the drop down box on the right and select the identifier of the micro SD card that has been plugged in (e.g. [H:])
+<strong>WARNING: Make sure you&#8217;re using the correct driver identifier! Mistakes here could lead to data loss!</strong></li>
+<li>In the Image File box, choose the downloaded <em>.img</em> file and click <em>Write</em>
+Note: click YES in case it pops up a warning message.</li>
+<li>The microSD card is now ready to be used. Simply insert it in UDOO’s microSD Card slot and boot the system.</li>
+</ul>
+<img alt="_static/images/msdwin.png" src="_static/images/msdwin.png" />
+</div>
+<div class="section" id="linux">
+<h2>LINUX<a class="headerlink" href="#linux" title="Permalink to this headline">¶</a></h2>
+<p>From the terminal run:</p>
+<blockquote>
+<div>df -h</div></blockquote>
+<p>If the computer used has a slot for SD cards (SD to micro SD adapter needed), insert the card. If not, insert the card
+into any SD card reader and then connect it to the computer. Note: the microSD card must be formatted using FAT32 File
+System!</p>
+<p>Run again:</p>
+<blockquote>
+<div>df -h</div></blockquote>
+<p>The device that had not been listed before is the micro SD card just inserted. The left column will show the device name
+assigned to the micro SD card. It will have a name similar to “/dev/mmcblk0p1″ or “/dev/sdd1″. The last part of the name
+(“p1″ or “1″, respectively) is the partition number, but it is necessary to write on the whole micro SD card, not only
+on one partition. Therefore, it is necessary to remove that part from the name (for example “/dev/mmcblk0″ or “/dev/sdd”)
+in order to work with the whole micro SD card.
+If the micro SD card contains more than one partition, it is necessary to unmount all of these partitions (using the
+correct name found previously, followed by the letters and numbers identifying the partitions) using the command:</p>
+<blockquote>
+<div>sudo umount /dev/sdd1</div></blockquote>
+<p>Now, write the image on the micro SD card with the command:</p>
+<blockquote>
+<div>sudo dd bs=1M if=&lt;img_file_path&gt; of=/dev/&lt;sd_name&gt;</div></blockquote>
+<p>Please be sure that you replaced the argument of input file (if=&lt;img_file_path&gt;) with the pathof the .img file, and that
+the device name specified in output file’s argument (of=/dev/&lt;sd_name&gt;) is correct. This is very important, since you
+could lose all data on the hard drive of the Host PC if it is usedthe wrong device name. Please also be sure that the
+device name is that of the whole micro SD card, as described above, not just a partition. (e.g. sdd, not sdds1 or sddp1,
+or mmcblk0 not mmcblk0p1)</p>
+<blockquote>
+<div>sudo dd bs=1M if=/home/&lt;user_name&gt;/Download/2013-5-28-udoo-ubuntu.img of=/dev/sdd</div></blockquote>
+<p>Once dd completes, run the sync command as root or run sudo sync as a normal user (this will ensure that the write cache
+is flushed and that it is safe to unmount the micro SD card). Then run:</p>
+<blockquote>
+<div>sudo umount /media/&lt;sd_label&gt;</div></blockquote>
+<p>The micro SD card is now ready to be used. Simply, insert it in UDOO’s microSD Card slot and boot the system.</p>
+</div>
+<div class="section" id="mac-os-x">
+<h2>MAC OS X<a class="headerlink" href="#mac-os-x" title="Permalink to this headline">¶</a></h2>
+<p>Note: May not work with OSX 10.9 Mavericks</p>
+<p>From the terminal run</p>
+<blockquote>
+<div>df -h</div></blockquote>
+<p>If the Mac has a slot for SD cards (SD to micro SD adapter needed), insert the card. If not, insert the card into any SD
+card reader and then connect it to the Mac.
+Note: the microSD card must be formatted usingFAT32 File System!</p>
+<p>Run again</p>
+<blockquote>
+<div>df -h</div></blockquote>
+<p>The device that had not been listed before is the microSD card just inserted. The name shown will be that of the
+filesystem’s partition, for example, /dev/disk3s1. Now consider the raw device name for using the entire disk, by
+omitting the final “s1″ and replacing “disk” with “rdisk” (considering previous example, use rdisk3, not disk3 nor
+rdisk3s1). This is very important, since it could result in the loss of all data of the disk of the Mac used, when
+referring to the wrong device name. Since there could be other SD with different drive names/numbers, like rdisk2 or
+rdisk4, etc. check again the correct name of the microSD card by using the df -h command both before &amp; after the
+insertion of the microSD card into the Mac used.</p>
+<blockquote>
+<div>e.g. /dev/disk3s1 =&gt; /dev/rdisk3</div></blockquote>
+<p>If the microSD card contains more partitions, unmount all of these partitions (use the correct name found previously,
+followed by letters and numbers that identify the partitions) with the command:</p>
+<blockquote>
+<div>sudo diskutil unmount /dev/disk3s1</div></blockquote>
+<p>Now write the image on the microSD card using the command:</p>
+<blockquote>
+<div>sudo dd bs=1m if=path_del_file_img of=/dev/&lt;sd_name&gt;</div></blockquote>
+<p>Please be sure that you replaced the argument of input file (if=&lt;img_file_path&gt;) with the path to the .img file, and
+that the device name specified in output file’s argument (of=/dev/&lt;sd_name&gt;) is correct. This is very important, since
+it could result in the loss of all data of the disk of the Mac used, when referring to the wrong device name.). Please
+also be sure that the device name is that of the whole micro SD card as described above, not just a partition
+(for example, rdisk3, not disk3s1).</p>
+<blockquote>
+<div>e.g. sudo dd bs=1m if=/home/user_name/Download/2013-5-28-udoo-ubuntu.img of=/dev/rdisk3</div></blockquote>
+<p>Once dd completes, run the sync command as root or run sudo sync as a normal user (this will ensure that the write cache
+is flushed and that it is safe to unmount the micro SD card). Then run:</p>
+<blockquote>
+<div>sudo diskutil eject /dev/rdisk3</div></blockquote>
+<p>The micro SD card is now ready to be used. Simply, insert it in UDOO’s microSD Card slot and boot the system.</p>
+</div>
+<div class="section" id="create-a-microsd-card-from-binaries">
+<h2>Create a MicroSD Card from Binaries<a class="headerlink" href="#create-a-microsd-card-from-binaries" title="Permalink to this headline">¶</a></h2>
+<p>The following paragraphs will guide to in the creation of a bootable micro SD card for UDOO board, starting from
+precompiled binaries. This method offers more flexibility and customization opportunities for the average users.
+If you don’t feel confident about using binaries you should use the image file method to create your Micro SD card.
+Note: The following step by step guide is referred to a Linux System.</p>
+<dl class="docutils">
+<dt>A bootable SD card has 4 different elements:</dt>
+<dd><ul class="first last simple">
+<li>U-Boot (it&#8217;s a .imx file)</li>
+<li>Kernel (it&#8217;s an uImage file)</li>
+<li>Kernel&#8217;s modules (it&#8217;s a compressed file, e.g. .tar.gz)</li>
+<li>File System (it&#8217;s a compressed file, e.g. .tar.gz)</li>
+</ul>
+</dd>
+</dl>
+<p>Create a new folder &#8220;udoo-dev&#8221; under your Home directory, then browse the UDOO&#8217;s web site to the Download page and
+download the binaries you need.</p>
+<p>Partition the MicroSD the Micro SD card</p>
+<p>Insert the Micro SD card in the card reader and launch GParted from command line:</p>
+<blockquote>
+<div>sudo gparted</div></blockquote>
+<p>Select the Micro SD from the drop down menu, e.g. /dev/sdc.</p>
+<p>NOTE: Be sure you’ re using the correct label; using of the wrong device identifier could result in the loss of
+all data on the Hard Drive of the host PC used.</p>
+<p>Create a partition table from the top menu: Device → Create Partition Table... → Apply.</p>
+<p>Create a new partition with the following parameters:
+Free space preceding (MiB): 10
+New size (MiB): based to the SD size
+Free space following (MiB): 10
+Create as: Primary partition
+File system: ext3 (ext4 is not supported yet)
+Label: &lt;UDOO_MICROSD_LABEL&gt;</p>
+<p>Click on Apply and wait for the partition to be done, then exit GParted.</p>
+<p>Copy the files to the Micro SD card</p>
+<p>File System
+Mount the just-created partition and then extract the tar.gz file containing the filesystem inside the microSD card
+with the following command (this operation could take up to 30 minutes):</p>
+<blockquote>
+<div>sudo tar -xzvpf &lt;NAME_OF_TAR_FS&gt; -C /media/&lt;UDOO_MICROSD_LABEL&gt;/</div></blockquote>
+<p>Note: Always remember to replace the strings inside the brackets with the right filenames.</p>
+<p>Kernel Image</p>
+<p>Copy the binary inside the Micro SD card /boot folder by using the following command:</p>
+<blockquote>
+<div>sudo cp uImage /media/&lt;UDOO_MICROSD_LABEL&gt;/boot</div></blockquote>
+<p>Kernel&#8217;s modules</p>
+<p>Remove the existing modules from the file system:</p>
+<blockquote>
+<div>sudo rm -rv /media/&lt;UDOO_MICROSD_LABEL&gt;/lib/modules/*</div></blockquote>
+<p>Copy the new modules:</p>
+<blockquote>
+<div>sudo cp -av lib /media/&lt;UDOO_MICROSD_LABEL&gt;/</div></blockquote>
+<p>Install the U-Boot</p>
+<p>Unmount all the microSD partitions:</p>
+<blockquote>
+<div>sudo umount /dev/&lt;MICROSD_DEVICE_NAME&gt;*</div></blockquote>
+<p>e.g. &lt;MICROSD_DEVICE_NAME&gt;* is /dev/sdc*</p>
+<p>Copy the u-boot binary file inside the Micro SD.</p>
+<dl class="docutils">
+<dt>For UDOO Quad:</dt>
+<dd>sudo dd if=u-boot-q.imx of=/dev/&lt;MICROSD_DEVICE_NAME&gt; bs=512 seek=2</dd>
+<dt>For UDOO Dual:</dt>
+<dd>sudo dd if=u-boot-d.imx of=/dev/&lt;MICROSD_DEVICE_NAME&gt; bs=512 seek=2</dd>
+</dl>
+<p>e.g. &lt;MICROSD_DEVICE_NAME&gt; is /dev/sdc</p>
+<p>NOTE: Be sure you’ re using the correct device filename; use of the wrong device identifier could result in the loss
+of all data on the Hard Drive of the host PC used. Before remove the Micro SD card run the command to write any data
+buffered in memory out to disk:</p>
+<blockquote>
+<div>sync</div></blockquote>
+<p>The microSD card is now ready.</p>
+</div>
+</div>
+
+
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="operatingsystems.html" class="btn btn-neutral float-right" title="Available Operating Systems for UDOO"/>Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="gettingstarted.html" class="btn btn-neutral" title="Getting Started with UDOO"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2014, UDOO Team.
+    </p>
+  </div>
+
+  <a href="https://github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'',
+            VERSION:'b',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
