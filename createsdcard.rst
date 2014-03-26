@@ -25,9 +25,10 @@ Windows
 
 
 
-* Download `Win32DiskImagerUtility <_utils/Win32DiskImager-0.9.5-install.exe>`_
+* Download `Win32DiskImager <_utils/Win32DiskImager-0.9.5-install.exe>`_ Utility and install it
+* 
 
-* Download :download:`Win32DiskImagerUtility <_utils/Win32DiskImager-0.9.5-install.exe>`.
+
 
 
 
