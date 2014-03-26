@@ -4,13 +4,13 @@ Create a bootable MicroSD Card
 
 
 
-1. **Download the appropriate SDCard Image**
-| Go to `UDOOs Download Section <http://www.udoo.org/downloads/>`_
+* **Download the appropriate SDCard Image**
+Go to `UDOOs Download Section <http://www.udoo.org/downloads/>`_
 
-2. **Extract the .img file from the .zip file you downloaded**
-| You can use the Archive tool you wish. Some examples are Winzip, Xarchive and Zipeg.
+* **Extract the .img file from the .zip file you downloaded**
+You can use the Archive tool you wish. Some examples are Winzip, Xarchive and Zipeg.
 
-3. Prepare your SD Card, according to your Operating system**
+* Prepare your SD Card, according to your Operating system**
 
 
 ===============
