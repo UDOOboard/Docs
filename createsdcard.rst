@@ -27,6 +27,8 @@ Windows
 
 * Download `Win32DiskImagerUtility <_utils/Win32DiskImager-0.9.5-install.exe>`_
 
+* Download :download:`Win32DiskImagerUtility <_utils/Win32DiskImager-0.9.5-install.exe>`.
+
 
 
 
