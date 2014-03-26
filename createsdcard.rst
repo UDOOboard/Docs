@@ -25,8 +25,10 @@ Windows
 
 
 
-* Download `Win32DiskImager <_utils/Win32DiskImager-0.9.5-install.exe>`_ Utility and install it
-* 
+* Download `Win32DiskImager <_utils/Win32DiskImager-0.9.5-install.exe>`_ Utility, Install and launch it
+* Insert a MicroSD Card (at least 8gb) into SD Card Slot or external reader
+* If the micro SD card (Device) used is not detected automatically, click on the drop down box on the right and select the
+identifier of the micro SD card that has been plugged in (e.g. [H:\])
 
 
 
