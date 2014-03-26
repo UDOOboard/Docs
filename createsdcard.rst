@@ -12,6 +12,9 @@ You can use the Archive tool you wish. Some examples are Winzip, Xarchive and Zi
 
 * Prepare your SD Card, according to your Operating system**
 
+.. raw:: html
+
+   <big>text</big>
 
 ===============
 Windows
