@@ -27,29 +27,12 @@ Windows
 
 * Download `Win32DiskImager <_utils/Win32DiskImager-0.9.5-install.exe>`_ Utility, Install and launch it
 * Insert a MicroSD Card (at least 8gb) into SD Card Slot or external reader
-* If the micro SD card (Device) used is not detected automatically, click on the drop down box on the right and select the
-identifier of the micro SD card that has been plugged in (e.g. [H:\])
+* If the micro SD card (Device) used is not detected automatically, click on the drop down box on the right and select the identifier of the micro SD card that has been plugged in (e.g. [H:\])
+**WARNING: Make sure you're using the correct driver identifier! Mistakes here could lead to data loss!**
+* In the Image File box, choose the downloaded *.img* file and click *Write*
+Note: click YES in case it pops up a warning message.
+* The microSD card is now ready to be used. Simply insert it in UDOO’s microSD Card slot and boot the system.
 
-
-
-
-
-
-
-
-If the PC used has a slot for SD cards (SD to microSD adapter needed), simply insert the card. If not, insert the card 
-into any SD card reader and then connect it to the PC. Note: the microSD card must be formatted using FAT32 File System!
-Run the file named Win32DiskImager.exe (with Windows Vista, 7 and 8 right-click the file and select 
-“Run as administrator”).
-If the micro SD card (Device) used is not detected automatically, 
-click on the drop down box on the right and select the
-identifier of the micro SD card that has been plugged in (e.g. [H:\]). Note: the microSD card must be formatted using 
-FAT32 File System!
-Please be careful to select the correct drive identifier; if you use the wrong identifier, you can lose all data on the
-PC's hard disk!
-In the Image File box, choose the downloaded .img file and click “Write”. Note: click YES in case it pops up a warning
-message.
-The microSD card is now ready to be used. Simply insert it in UDOO’s microSD Card slot and boot the system.
 
 .. image:: _static/images/msdwin.png
 
