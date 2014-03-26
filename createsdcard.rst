@@ -16,9 +16,6 @@ You can use the Archive tool you wish. Some examples are Winzip, Xarchive and Zi
    :file: _build/html/_static/raw/quick.html
 
    
-.. youtube:: 8vwtgMkqE9o
-        :width: 640
-        :height: 480
 
 
 ===============
@@ -26,6 +23,8 @@ Windows
 ===============
 
 
+..  youtube:: vMAZZzTQsS4
+        :width: 100%
 
 * Download `Win32DiskImager <_utils/Win32DiskImager-0.9.5-install.exe>`_ Utility, Install and launch it
 * Insert a MicroSD Card (at least 8gb) into SD Card Slot or external reader
