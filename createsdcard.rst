@@ -26,6 +26,12 @@ Windows
 
 
 * Download `Win32DiskImagerUtility <_utils/Win32DiskImager-0.9.5-install.exe>`_
+
+
+
+
+
+
 If the PC used has a slot for SD cards (SD to microSD adapter needed), simply insert the card. If not, insert the card 
 into any SD card reader and then connect it to the PC. Note: the microSD card must be formatted using FAT32 File System!
 Run the file named Win32DiskImager.exe (with Windows Vista, 7 and 8 right-click the file and select 
