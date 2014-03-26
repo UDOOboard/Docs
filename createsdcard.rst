@@ -18,67 +18,6 @@ You can use the Archive tool you wish. Some examples are Winzip, Xarchive and Zi
 
 
 
-
-				<div id="main" class="" style="overflow:hidden !important;">
-		<div class="avada-row" style="">
-				<div id="content" class="full-width">
-				<div id="post-707" class="post-707 page type-page status-publish hentry">
-						<div class="post-content">
-				<h1>Getting Started</h1>
-<p><img src="/wp-content/uploads/2013/06/step7.jpg" alt="step0" width="960" height="370" class="alignnone size-full wp-image-2170" /></p>
-<p>This easy step by step guide will lead you through the procedure to boot your UDOO for the very first time.<br />
-<div class="demo-sep sep-none" style="margin-top:60px;"></div>
-<h2>1. Insert the micro SD card</h2>
-<p><img src="/wp-content/uploads/2013/06/step1.jpg" alt="step1" width="960" height="370" class="alignnone size-full wp-image-2173" /></p>
-<p>UDOO has no internal storage or built-in boot code, OS and storage are on microSD so you need to plug a pre-loaded microSD to boot. If you didn’t get a pre-loaded microSD card, you should follow our step by step guide about <a href="/getting-started/creating-a-bootable-micro-sd-card-from-image/" title="Creating image">creating your own loaded microSD card</a>.<br />
-<div class="demo-sep sep-none" style="margin-top:60px;"></div>
-<h2>2. Connect the HDMI cable</h2>
-<p><img src="/wp-content/uploads/2013/06/step2.jpg" alt="step2" width="960" height="370" class="alignnone size-full wp-image-2175" /></p>
-<p>UDOO features full HD video output on standard HDMI connector. Plug your full-size &#8216;male&#8217; HDMI cable to UDOO, then plug it to your monitor or digital TV.<br />
-<div class="demo-sep sep-none" style="margin-top:60px;"></div>
-<h2>3. Connect network (optional)</h2>
-<p><img src="/wp-content/uploads/2013/06/step3.jpg" alt="step3" width="960" height="370" class="alignnone size-full wp-image-2176" /></p>
-<p>If you want, you can plug your RJ-45 ethernet cable now, but you can do it later when the board is booted or you can just use the WiFi to connect wirelessly to your network.<br />
-<div class="demo-sep sep-none" style="margin-top:60px;"></div>
-<h2>4. Connect input</h2>
-<p><img src="/wp-content/uploads/2013/06/step4.jpg" alt="step4" width="960" height="370" class="alignnone size-full wp-image-2177" /></p>
-<p><img src="/wp-content/uploads/2013/06/step5.jpg" alt="step5" width="960" height="370" class="alignnone size-full wp-image-2178" /></p>
-<p>Every keyboard and mouse should work with UDOO. The board provides 5V 500mAmp so you don’t need an USB hub unless you need to power up high power consumption devices. Wireless keyboard/mouse should work as well.<br />
-<div class="demo-sep sep-none" style="margin-top:60px;"></div>
-<h2>5. Power up</h2>
-<p><img src="/wp-content/uploads/2013/06/step6a.jpg" alt="step6a" width="960" height="370" class="alignnone size-full wp-image-2187" /></p>
-<p>UDOO starter kits and pre-orders come with a 12V and 2Amp switching DC supply with a standard 5.5mm/2.1mm barrel jack. This supply is designed to work anywhere in the world, 100V-240V AC wall power but you may need a plug adapter. <a href="/faq-items/what-are-the-power-requirements/" title="Power supply">More info about power supply</a>.</p>
-<p>UDOO will boot as soon as you connect the power supply. You’re now good to go to start explore, learn and make with your UDOO board!</p>
-<p>Keep your UDOO up to date.<br />
-Upgrade your UDOO to the latest Operating System release available to receive the latest bug fixes and improvement.</p>
-<style type='text/css'>#reading-box-container-1 .tagline-shadow:before,#reading-box-container-1 .tagline-shadow:after{opacity:0.5;}</style><div class="reading-box-container" id="reading-box-container-1"><section class="reading-box tagline-shadow" style="background-color:#f8f8f8 !important;border-width:;border-color:#f6f6f6!important;border-left-width:3px !important;border-left-color:#ec008c!important;border-style:solid;"><a href="/update-procedure/" target="" class="continue button large default">Update Now!</a><h2>Kickstarter’s backers: update your UDOO asap.</h2><p>If you pledged for the starter kit with the pre-loaded microSD cards, we recommend to update UDOO.</p><a href="/update-procedure/" target="" class="continue mobile-button button large default">Update Now!</a></section></div>
-<h2>What&#8217;s next?</h2>
-<div class="demo-sep sep-none" style="margin-top:30px;"></div>
-<p>Now that you have a fully functional board, what are the next steps? You can either watch our tutorials to start learning how to use UDOO or visit our Blog, Wiki and Forum for documentation and support.</p>
-<div class="demo-sep sep-none" style="margin-top:60px;"></div>
-<style type='text/css'>
-		#content-boxes-1 article.col{background-color:#f8f8f8 !important;}
-		#content-boxes-1 .fontawesome-icon.circle-yes{color:#ffffff !important;background-color:#ec008c !important;border:1px solid #ec008c !important;}
-		</style><section class="clearfix columns content-boxes content-boxes-icon-boxed" id="content-boxes-1">
-<article class="col"><div class="heading heading-and-icon"><i class="fontawesome-icon medium circle-yes icon-book"></i><h2>Tutorials</h2></div><div class="col-content-container"> All the tutorials you need, from the easy to the more advanced ones, to <strong>start learning how to use UDOO.</strong><span class="more"><a href="/tutorials/" target="">Learn More</a></span></div></article>
-<article class="col"><div class="heading heading-and-icon"><i class="fontawesome-icon medium circle-yes icon-group"></i><h2>Community</h2></div><div class="col-content-container">
-Visit <a href="/blog/" title="blog">our Blog</a> for updates, <a href="http://elinux.org/UDOO" title="wiki">our wiki</a> for documentation and <a href="http://www.udoo.org/forum/" title="forum">our forum</a> for any kind of <strong>support.</strong></p>
-<span class="more"><a href="http://www.udoo.org/forum/" target="">Join Us</a></span></div></article>
-<p></section>
-							</div>
-					</div>
-			</div>
-		</div>
-	</div>
-
-   
-   
-   
-   
-   
-   
-
-
 ===============
 Windows
 ===============
