@@ -7,9 +7,11 @@ Create a bootable MicroSD Card
 * Extract the .img file from the .zip file you downloaded into any folder
 * asd
 
-# Download any SD images from the image section of the website http://www.udoo.org/downloads/
-# Extract the .img file from the .zip file you downloaded into any folder
-# asd
+1. Download any SD images from the image section of the website http://www.udoo.org/downloads/
+2. Extract the .img file from the .zip file you downloaded into any folder
+3. asd
+
+
 Download any SD images from the image section of the website http://www.udoo.org/downloads/
 Extract the .img file from the .zip file you downloaded into any folder (this path will be referred to as 
 <img_file_path> in the guide).
