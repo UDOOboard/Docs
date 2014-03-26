@@ -16,7 +16,9 @@ You can use the Archive tool you wish. Some examples are Winzip, Xarchive and Zi
    :file: _build/html/_static/raw/quick.html
 
    
-
+.. youtube:: 8vwtgMkqE9o
+        :width: 640
+        :height: 480
 
 
 ===============
