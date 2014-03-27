@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
    
-raw:: html
+.. raw:: html
    :file: _build/html/_static/raw/ip.html
 
 Welcome to UDOO Docs's documentation!
