@@ -6,8 +6,6 @@
 .. raw:: html
    :file: _build/html/_static/raw/ip.html
 
-Welcome to UDOO Docs's documentation!
-=====================================
 
 Contents:
 
