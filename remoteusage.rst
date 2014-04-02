@@ -54,7 +54,7 @@ Then type the password and you’re in.
 .. image:: _static/images/sshmacelinux2.jpg
 
 Please note: The username and password you are requested to enter while logging via SSH are not pertaining to your Pc, Mac or Linux, they refer to the account you are trying to access on Udoo.
-So, if you never changed it, the credentials you need are:
+So, if you never changed it, the credentials you need are::
   User: ubuntu
   Password: ubuntu
   **For root access:**
