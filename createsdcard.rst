@@ -164,13 +164,13 @@ all data on the Hard Drive of the host PC used.
 
 Create a partition table from the top menu: Device → Create Partition Table... → Apply.
 
-Create a new partition with the following parameters::
-        Free space preceding (MiB): 10
-        New size (MiB): based to the SD size
-        Free space following (MiB): 10
-        Create as: Primary partition
-        File system: ext3 (ext4 is not supported yet)
-        Label: <UDOO_MICROSD_LABEL>
+Create a new partition with the following parameters
+ - Free space preceding (MiB): 10
+ - New size (MiB): based to the SD size
+ - Free space following (MiB): 10
+ - Create as: Primary partition
+ - File system: ext3 (ext4 is not supported yet)
+ - Label: <UDOO_MICROSD_LABEL>
 
 Click on Apply and wait for the partition to be done, then exit GParted.
 
