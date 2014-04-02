@@ -115,11 +115,12 @@ Open Minicom and configure it (only the first time) using the following commands
 
   sudo minicom -sw
 
-Go to “Serial port setup” and edit as follows::
-  Serial Device: /dev/ttyUSB0 (type a key)
-  Hardware Flow Control: No (type f key)
-  Software Flow Control: No (type g key)
+Go to “Serial port setup” and edit as follows:
+ - Serial Device: /dev/ttyUSB0 (type a key)
+ - Hardware Flow Control: No (type f key)
+ - Software Flow Control: No (type g key)
 
+.. image:: _static/images/Linux2.png
 
 Press exit and “Save setup as dfl” and exit from Minicom
 
@@ -136,17 +137,19 @@ Power cycle UDOO to see the boot process and connect it to serial console shell
 
 **Connecting via Serial from Mac**
 
-Download the serial adapter Driver here:
-http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx
-Connect the serial port of UDOO (CN6) to your PC using the micro USB cable.
-Download and install Serial Tools https://itunes.apple.com/it/app/serialtools/id611021963 or directly from the Apple 
-Store
-Open Serial Tools, and change the following parameters:
-Serial Port: “SLEB_USBtoUART”
-Baud rate “115200”
+ - Install the  `Serial Adapter Driver <_utils/CP210x_VCP_Windows.zip>`_
+ - Connect the serial port of UDOO (CN6) to your PC using the micro USB cable.
+ - Download and install `Serial Tools <ttps://itunes.apple.com/it/app/serialtools/id611021963>`_https://itunes.apple.com/it/app/serialtools/id611021963 
+ - Open Serial Tools, and change the following parameters:
 
+ - Serial Port: “SLEB_USBtoUART”
+ - Baud rate “115200”
+ 
+.. image:: _static/images/Mac1.png
 
-Hit connect, and here you go!
+**Hit connect, and here you go!**
+
+.. image:: _static/images/Mac2.png
 
 ===================================
 Connect via VNC Remote Desktop
