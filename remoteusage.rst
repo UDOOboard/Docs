@@ -140,7 +140,7 @@ Power cycle UDOO to see the boot process and connect it to serial console shell
 
  - Install the  `Serial Adapter Driver <_utils/CP210x_VCP_Windows.zip>`_
  - Connect the serial port of UDOO (CN6) to your PC using the micro USB cable.
- - Download and install `Serial Tools <ttps://itunes.apple.com/it/app/serialtools/id611021963>`_https://itunes.apple.com/it/app/serialtools/id611021963 
+ - Download and install `Serial Tools <https://itunes.apple.com/it/app/serialtools/id611021963>`_
  - Open Serial Tools, and change the following parameters:
 
  - Serial Port: “SLEB_USBtoUART”
