@@ -61,10 +61,7 @@
         
         
             <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">Getting Started with UDOO</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="gettingstarted.html#insert-the-micro-sd-card">Insert the micro SD card</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">Getting Started with UDOO</a></li>
 <li class="toctree-l1"><a class="reference internal" href="createsdcard.html">Create a bootable MicroSD Card</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="createsdcard.html#windows">Windows</a></li>
 <li class="toctree-l2"><a class="reference internal" href="createsdcard.html#linux">LINUX</a></li>
@@ -131,107 +128,114 @@
 <h1>Operating UDOO Remotely<a class="headerlink" href="#operating-udoo-remotely" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="connecting-via-ssh">
 <h2>Connecting via SSH<a class="headerlink" href="#connecting-via-ssh" title="Permalink to this headline">¶</a></h2>
-<p>SSH is a network communication protocol which can be used for a uber cool functionality: remote shell control. This
-basically enables you to remotely operate a device, connected to a network, without direct physical access. If you thought
-this would be only ultranerd stuff, you might be interested in reading this.</p>
-<p>What you need to access your Udoo via a remote shell? First, check that these requirements are satisfied:</p>
+<p>SSH basically enables you to remotely operate a device, connected to a network, without direct physical access.</p>
+<p>To access your Udoo via a remote shell check that these requirements are satisfied:</p>
 <blockquote>
 <div><ul class="simple">
-<li>You are connected to the same network that Udoo is. This can be your home router, with Udoo connected via Ethernet cable</li>
-</ul>
-</div></blockquote>
-<dl class="docutils">
-<dt>and your Laptop trough wireless connection</dt>
-<dd><ul class="first last simple">
+<li>You are connected to the same network that Udoo is. This can be your home router, with Udoo connected via Ethernet cable and your Laptop trough wireless connection</li>
 <li>You don’t have firewalls enabled that could block the communication between the two devices</li>
 <li>Check that the two devices are on the same subnet, if you don’t know what that means, you can just ignore this.</li>
 </ul>
-</dd>
-</dl>
-<p>WINDOWS</p>
+</div></blockquote>
+<p><strong>WINDOWS</strong></p>
 <p>Let’s start. On windows, you need a third party software, called putty.</p>
-<p>Download it from here</p>
-<p>Open it and insert Udoo’s IP. If you don’t know which IP your UDOO has, refer to this previous tutorial.
-Call it UDOO, save it for your future convenience and hit load
-Now, you’ll be prompted with a login box. Just enter user and password and you’re in
-On Udoo’s Ubuntu, user and password are both ubuntu</p>
-<p>Mac Os X and Linux</p>
-<p>On both these operating system, the procedure is quite the same.
-You just need to open a terminal and use the following synthax:</p>
-<p>ssh <a class="reference external" href="mailto:username&#37;&#52;&#48;Udoo_Ip">username<span>&#64;</span>Udoo_Ip</a></p>
+<p><a class="reference external" href="_utils/putty.exe">Download it from here</a></p>
+<p>Open it and insert Udoo’s IP. Call it UDOO, save it for your future convenience and hit load.</p>
+<img alt="_static/images/putty2.png" src="_static/images/putty2.png" />
+<p>Now, you’ll be prompted with a login box. Just enter user and password of your O.S. and you’re in.</p>
+<img alt="_static/images/putty4.jpg" src="_static/images/putty4.jpg" />
+<p><strong>On Udoo’s Ubuntu, user and password are both ubuntu</strong></p>
+<p><strong>Mac Os X and Linux</strong></p>
+<p>On both these operating system, the procedure is quite the same.</p>
+<p>You just need to open a terminal and use the following synthax:</p>
+<div class="highlight-python"><pre>ssh username@Udoo_Ip</pre>
+</div>
+<img alt="_static/images/sshmacelinux2.jpg" src="_static/images/sshmacelinux2.jpg" />
 <p>Then hit enter, bear in mind that the very first time you are doing this, you’ll be prompted with a securty pop-up.
 To confirm, type “yes”.</p>
 <p>Then type the password and you’re in.</p>
-<p>Please note: The username and password you are requested to enter while logging via SSH are not pertaining to your Pc, Mac or Linux, they refer to the account you are trying to access on Udoo.
-So, if you never changed it, the credentials you need are:
-User: ubuntu
+<img alt="_static/images/sshmacelinux2.jpg" src="_static/images/sshmacelinux2.jpg" />
+<p><strong>Please note:</strong> The username and password you are requested to enter while logging via SSH are not pertaining to your Pc, Mac or Linux, they refer to the account you are trying to access on Udoo.
+So, if you never changed it, the credentials you need are:</p>
+<div class="highlight-python"><pre>User: ubuntu
 Password: ubuntu
-For root access:
+**For root access:**
 User: root
-Password: ubuntu</p>
+Password: ubuntu</pre>
+</div>
 </div>
 <div class="section" id="connecting-via-usb-serial-cable">
 <h2>Connecting via USB Serial Cable<a class="headerlink" href="#connecting-via-usb-serial-cable" title="Permalink to this headline">¶</a></h2>
-<p>Udoo features a built in USB to serial interface which is very useful for various reasons: You can use it to connect Udoo via SSH without a network connection, programming the Sam3x (arduino) and access the debug console for troubleshooting purposes.</p>
-<p>Connecting via serial will practically result in a shell console, the same as the one you’ll obtain through SSH connection (<a class="reference external" href="http://en.wikipedia.org/wiki/Secure_Shell">http://en.wikipedia.org/wiki/Secure_Shell</a>).</p>
-<p>Connecting via Serial from Windows</p>
-<p>Download the serial adapter Driver here:
-<a class="reference external" href="http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx">http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx</a>
-Install the proper version for your Operating system:
-CP210xVCPInstaller_x86.exe for 32-bit systems
-CP210xVCPInstaller_x64.exe for 64-bit system
-How to define your Windows version:
-<a class="reference external" href="http://windows.microsoft.com/en-us/windows7/32-bit-and-64-bit-windows-frequently-asked-questions">http://windows.microsoft.com/en-us/windows7/32-bit-and-64-bit-windows-frequently-asked-questions</a>
-Download and install a software called putty
-<a class="reference external" href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html">http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html</a>
-Open putty and configure it as follow:
-Connection type “serial”
-Port: “COM3” (please note that this value may be different, try to use COM4 if COM3 is not working)
-Speed: “115200”
-Save it as “Udoo-serial” for future uses.</p>
-<p>Connect the serial port of UDOO (CN6) to your PC using the micro USB cable.
-Power up UDOO
-Click Open
-You’re in! You’ll be able to see the startup process and access to the remote shell console on UDOO.</p>
-<p>Connecting via Serial from Linux</p>
-<p>Connect the serial port of UDOO (CN6) to your PC using the micro USB cable.
-Type
-1
-dmesg
-You should see this line at the end
-1
-usb 2-2.1: cp21x converter now attached to tty</p>
-<p>nstall minicom:
-1
-2
-sudo apt-get update
-sudo apt-get install minicom
-Open Minicom and configure it (only the first time) using the following command:
-1
-sudo minicom -sw
-Go to “Serial port setup” and edit as follow:
-Serial Device: /dev/ttyUSB0 (type a key)
-Hardware Flow Control: No (type f key)
-Software Flow Control: No (type g key)</p>
-<p>Press exit and “Save setup as dfl”
-Exit from Minicom
-Let’s give proper access permissions to serial port with:
-1
-sudo chmod 666 /dev/ttyUSB0
-Now we can start listening with:
-1
-sudo minicom -w
-Power cycle UDOO to see the boot process and connect it to serial console shell
-Connecting via Serial from Mac</p>
-<p>Download the serial adapter Driver here:
-<a class="reference external" href="http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx">http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx</a>
-Connect the serial port of UDOO (CN6) to your PC using the micro USB cable.
-Download and install Serial Tools <a class="reference external" href="https://itunes.apple.com/it/app/serialtools/id611021963">https://itunes.apple.com/it/app/serialtools/id611021963</a> or directly from the Apple
-Store
-Open Serial Tools, and change the following parameters:
-Serial Port: “SLEB_USBtoUART”
-Baud rate “115200”</p>
-<p>Hit connect, and here you go!</p>
+<dl class="docutils">
+<dt>Udoo features a built in USB to serial interface which is very useful for various reasons:</dt>
+<dd><ul class="first last simple">
+<li>You can use it to connect Udoo via SSH without a network connection,</li>
+<li>Program the Sam3x (Arduino) from your PC</li>
+<li>Access the debug console for troubleshooting purposes</li>
+</ul>
+</dd>
+</dl>
+<p>Connecting via serial will practically result in a shell console, the same as the one you’ll obtain through SSH connection</p>
+<p><strong>Connecting via Serial from Windows</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>Install the <a class="reference external" href="_utils/CP210x_VCP_Windows.zip">Serial Adapter Driver</a></li>
+<li>Open <a class="reference external" href="_utils/putty.exe">Putty</a> and configure it as follows:</li>
+<li>Connection type “serial”</li>
+<li>Port: “COM3” (please note that this value may be different, try to use COM4 if COM3 is not working)</li>
+<li>Speed: “115200”</li>
+<li>Save it as “Udoo-serial” for future uses.</li>
+</ul>
+</div></blockquote>
+<p><strong>You’re in! You’ll be able to see the startup process and access to the remote shell console on UDOO.</strong></p>
+<img alt="_static/images/udoowin2.png" src="_static/images/udoowin2.png" />
+<p><strong>Connecting via Serial from Linux</strong></p>
+<p>Connect the serial port of UDOO (CN6) to your PC using the micro USB cable. And type:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">dmesg</span>
+</pre></div>
+</div>
+<p>You should see this line at the end:</p>
+<div class="highlight-python"><pre>usb 2-2.1: cp21x converter now attached to tty</pre>
+</div>
+<p>Install minicom:</p>
+<div class="highlight-python"><pre>sudo apt-get update
+sudo apt-get install minicom</pre>
+</div>
+<p>Open Minicom and configure it (only the first time) using the following commands:</p>
+<div class="highlight-python"><pre>sudo minicom -sw</pre>
+</div>
+<dl class="docutils">
+<dt>Go to “Serial port setup” and edit as follows:</dt>
+<dd><ul class="first last simple">
+<li>Serial Device: /dev/ttyUSB0 (type a key)</li>
+<li>Hardware Flow Control: No (type f key)</li>
+<li>Software Flow Control: No (type g key)</li>
+</ul>
+</dd>
+</dl>
+<img alt="_static/images/Linux2.png" src="_static/images/Linux2.png" />
+<p>Press exit and “Save setup as dfl” and exit from Minicom</p>
+<p>Let’s give proper access permissions to serial port with:</p>
+<div class="highlight-python"><pre>sudo chmod 666 /dev/ttyUSB0</pre>
+</div>
+<p>Now we can start listening with:</p>
+<div class="highlight-python"><pre>sudo minicom -w</pre>
+</div>
+<p>Power cycle UDOO to see the boot process and connect it to serial console shell</p>
+<p><strong>Connecting via Serial from Mac</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>Install the  <a class="reference external" href="_utils/CP210x_VCP_Windows.zip">Serial Adapter Driver</a></li>
+<li>Connect the serial port of UDOO (CN6) to your PC using the micro USB cable.</li>
+<li>Download and install <a class="reference external" href="https://itunes.apple.com/it/app/serialtools/id611021963">Serial Tools</a></li>
+<li>Open Serial Tools, and change the following parameters:</li>
+<li>Serial Port: “SLEB_USBtoUART”</li>
+<li>Baud rate “115200”</li>
+</ul>
+</div></blockquote>
+<img alt="_static/images/Mac1.png" src="_static/images/Mac1.png" />
+<p><strong>Hit connect, and here you go!</strong></p>
+<img alt="_static/images/Mac2.png" src="_static/images/Mac2.png" />
 </div>
 <div class="section" id="connect-via-vnc-remote-desktop">
 <h2>Connect via VNC Remote Desktop<a class="headerlink" href="#connect-via-vnc-remote-desktop" title="Permalink to this headline">¶</a></h2>
