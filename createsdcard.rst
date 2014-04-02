@@ -63,7 +63,7 @@ data loss!**::
    sudo dd bs=1M if=/home/<user_name>/Download/2013-5-28-udoo-ubuntu.img of=/dev/sdd
    
 * Once dd completes, run the sync command as root or run sudo sync as a normal user (this will ensure that the write cache 
-is flushed and that it is safe to unmount the micro SD card). Then run:
+is flushed and that it is safe to unmount the micro SD card). Then run::
    
    sudo umount /media/<sd_label>
    
@@ -81,7 +81,7 @@ MAC OS X
 
 Note: May not work with OSX 10.9 Mavericks
 
-From the terminal run
+From the terminal run::
    
    df -h
    
@@ -89,7 +89,7 @@ If the Mac has a slot for SD cards (SD to micro SD adapter needed), insert the c
 card reader and then connect it to the Mac.
 Note: the microSD card must be formatted usingFAT32 File System!
 
-Run again
+Run again::
   
    df -h
    
@@ -99,16 +99,16 @@ omitting the final “s1″ and replacing “disk” with “rdisk” (consideri
 rdisk3s1). This is very important, since it could result in the loss of all data of the disk of the Mac used, when 
 referring to the wrong device name. Since there could be other SD with different drive names/numbers, like rdisk2 or 
 rdisk4, etc. check again the correct name of the microSD card by using the df -h command both before & after the
-insertion of the microSD card into the Mac used.
+insertion of the microSD card into the Mac used.::
 
-   e.g. /dev/disk3s1 => /dev/rdisk3
+   /dev/disk3s1 => /dev/rdisk3
    
 If the microSD card contains more partitions, unmount all of these partitions (use the correct name found previously, 
-followed by letters and numbers that identify the partitions) with the command:
+followed by letters and numbers that identify the partitions) with the command::
    
    sudo diskutil unmount /dev/disk3s1
    
-Now write the image on the microSD card using the command:
+Now write the image on the microSD card using the command::
 
    sudo dd bs=1m if=path_del_file_img of=/dev/<sd_name>
    
@@ -116,12 +116,12 @@ Please be sure that you replaced the argument of input file (if=<img_file_path>)
 that the device name specified in output file’s argument (of=/dev/<sd_name>) is correct. This is very important, since
 it could result in the loss of all data of the disk of the Mac used, when referring to the wrong device name.). Please
 also be sure that the device name is that of the whole micro SD card as described above, not just a partition 
-(for example, rdisk3, not disk3s1).
+(for example, rdisk3, not disk3s1).::
 
-   e.g. sudo dd bs=1m if=/home/user_name/Download/2013-5-28-udoo-ubuntu.img of=/dev/rdisk3
+   sudo dd bs=1m if=/home/user_name/Download/2013-5-28-udoo-ubuntu.img of=/dev/rdisk3
    
 Once dd completes, run the sync command as root or run sudo sync as a normal user (this will ensure that the write cache 
-is flushed and that it is safe to unmount the micro SD card). Then run:
+is flushed and that it is safe to unmount the micro SD card). Then run::
 
    sudo diskutil eject /dev/rdisk3
    
@@ -151,9 +151,9 @@ Create a new folder "udoo-dev" under your Home directory, then browse the UDOO's
 download the binaries you need.
 
 
-Partition the MicroSD the Micro SD card
+**Partition the MicroSD the Micro SD card**
 
-Insert the Micro SD card in the card reader and launch GParted from command line:
+Insert the Micro SD card in the card reader and launch GParted from command line::
 
    sudo gparted 
    
@@ -164,81 +164,78 @@ all data on the Hard Drive of the host PC used.
 
 Create a partition table from the top menu: Device → Create Partition Table... → Apply.
 
-Create a new partition with the following parameters:
-Free space preceding (MiB): 10
-New size (MiB): based to the SD size
-Free space following (MiB): 10
-Create as: Primary partition
-File system: ext3 (ext4 is not supported yet)
-Label: <UDOO_MICROSD_LABEL>
+Create a new partition with the following parameters::
+        Free space preceding (MiB): 10
+        New size (MiB): based to the SD size
+        Free space following (MiB): 10
+        Create as: Primary partition
+        File system: ext3 (ext4 is not supported yet)
+        Label: <UDOO_MICROSD_LABEL>
 
 Click on Apply and wait for the partition to be done, then exit GParted.
 
 
 
-Copy the files to the Micro SD card
+**Copy the files to the Micro SD card**
 
 File System
 Mount the just-created partition and then extract the tar.gz file containing the filesystem inside the microSD card 
-with the following command (this operation could take up to 30 minutes):
+with the following command (this operation could take up to 30 minutes)::
 
    sudo tar -xzvpf <NAME_OF_TAR_FS> -C /media/<UDOO_MICROSD_LABEL>/
    
    
-Note: Always remember to replace the strings inside the brackets with the right filenames.
+*Note: Always remember to replace the strings inside the brackets with the right filenames.*
 
 
-Kernel Image
+**Kernel Image**
 
-Copy the binary inside the Micro SD card /boot folder by using the following command:
+Copy the binary inside the Micro SD card /boot folder by using the following command::
 
    sudo cp uImage /media/<UDOO_MICROSD_LABEL>/boot 
    
    
-Kernel's modules
+**Kernel's modules**
 
 
-Remove the existing modules from the file system:
+Remove the existing modules from the file system::
 
    sudo rm -rv /media/<UDOO_MICROSD_LABEL>/lib/modules/* 
    
-Copy the new modules:
+Copy the new modules::
 
    sudo cp -av lib /media/<UDOO_MICROSD_LABEL>/ 
    
-Install the U-Boot
+**Install the U-Boot**
 
 
-Unmount all the microSD partitions:
+Unmount all the microSD partitions::
 
 
    sudo umount /dev/<MICROSD_DEVICE_NAME>*
    
-   
-e.g. <MICROSD_DEVICE_NAME>* is /dev/sdc* 
+
 
 Copy the u-boot binary file inside the Micro SD. 
 
 
-For UDOO Quad:
+For UDOO Quad::
    sudo dd if=u-boot-q.imx of=/dev/<MICROSD_DEVICE_NAME> bs=512 seek=2
    
    
-For UDOO Dual:
+For UDOO Dual::
    sudo dd if=u-boot-d.imx of=/dev/<MICROSD_DEVICE_NAME> bs=512 seek=2
    
    
-e.g. <MICROSD_DEVICE_NAME> is /dev/sdc 
 
-
-NOTE: Be sure you’ re using the correct device filename; use of the wrong device identifier could result in the loss
+*NOTE: Be sure you’ re using the correct device filename; use of the wrong device identifier could result in the loss
 of all data on the Hard Drive of the host PC used. Before remove the Micro SD card run the command to write any data
-buffered in memory out to disk:
+buffered in memory out to disk*::
 
 
    sync 
    
    
-The microSD card is now ready.
+**The microSD card is now ready.**
 
 
