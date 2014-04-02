@@ -22,10 +22,17 @@ To access your Udoo via a remote shell check that these requirements are satisfi
 
 Let’s start. On windows, you need a third party software, called putty.
 
-Download it from here
+`Download it from here <_utils/putty.exe>`_
 
 Open it and insert Udoo’s IP. Call it UDOO, save it for your future convenience and hit load.
+
+.. image:: _static/images/putty2.png
+
+
 Now, you’ll be prompted with a login box. Just enter user and password of your O.S. and you’re in.
+
+.. image:: _static/images/putty4.jpg
+
 **On Udoo’s Ubuntu, user and password are both ubuntu**
 
 **Mac Os X and Linux**
@@ -35,19 +42,24 @@ On both these operating system, the procedure is quite the same.
 You just need to open a terminal and use the following synthax::
 
   ssh username@Udoo_Ip
+  
+  
+.. image:: _static/images/sshmacelinux2.jpg
 
 Then hit enter, bear in mind that the very first time you are doing this, you’ll be prompted with a securty pop-up. 
 To confirm, type “yes”.
 
 Then type the password and you’re in.
 
+.. image:: _static/images/sshmacelinux2.jpg
+
 Please note: The username and password you are requested to enter while logging via SSH are not pertaining to your Pc, Mac or Linux, they refer to the account you are trying to access on Udoo.
 So, if you never changed it, the credentials you need are:
-User: ubuntu
-Password: ubuntu
-For root access:
-User: root
-Password: ubuntu
+  User: ubuntu
+  Password: ubuntu
+  **For root access:**
+  User: root
+  Password: ubuntu
 
 
 ==============================
