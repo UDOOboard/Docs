@@ -97,42 +97,46 @@ Connecting via serial will practically result in a shell console, the same as th
 .. image:: _static/images/udoowin2.png
 
 
-Connecting via Serial from Linux
+**Connecting via Serial from Linux**
 
- - Connect the serial port of UDOO (CN6) to your PC using the micro USB cable.
- - Type::
-   dmesg
- - 
+ - Connect the serial port of UDOO (CN6) to your PC using the micro USB cable. And type::
+  dmesg
 
-dmesg
-You should see this line at the end
-1
-usb 2-2.1: cp21x converter now attached to tty
+You should see this line at the end::
 
-nstall minicom:
-1
-2
-sudo apt-get update
-sudo apt-get install minicom
-Open Minicom and configure it (only the first time) using the following command:
-1
-sudo minicom -sw
-Go to “Serial port setup” and edit as follow:
-Serial Device: /dev/ttyUSB0 (type a key)
-Hardware Flow Control: No (type f key)
-Software Flow Control: No (type g key)
+  usb 2-2.1: cp21x converter now attached to tty
+
+ - Install minicom:
+
+::
+  sudo apt-get update
+  sudo apt-get install minicom
+
+ - Open Minicom and configure it (only the first time) using the following commands::
+
+  sudo minicom -sw
+
+ - Go to “Serial port setup” and edit as follows::
+  Serial Device: /dev/ttyUSB0 (type a key)
+  Hardware Flow Control: No (type f key)
+  Software Flow Control: No (type g key)
 
 
-Press exit and “Save setup as dfl”
-Exit from Minicom
-Let’s give proper access permissions to serial port with:
-1
-sudo chmod 666 /dev/ttyUSB0
-Now we can start listening with:
-1
-sudo minicom -w
-Power cycle UDOO to see the boot process and connect it to serial console shell
-Connecting via Serial from Mac
+ - Press exit and “Save setup as dfl”
+ - Exit from Minicom
+
+Let’s give proper access permissions to serial port with::
+
+  sudo chmod 666 /dev/ttyUSB0
+
+Now we can start listening with::
+
+  sudo minicom -w
+
+ - Power cycle UDOO to see the boot process and connect it to serial console shell
+
+
+**Connecting via Serial from Mac**
 
 Download the serial adapter Driver here:
 http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx
