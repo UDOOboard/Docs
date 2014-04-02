@@ -54,7 +54,7 @@ correct name found previously, followed by the letters and numbers identifying t
    
 * Now, write the image on the micro SD card with the command::
 
-  sudo dd bs=1M if=<img_file_path> of=/dev/<sd_name>
+  sudo dd bs=1M if=img_file_path of=/dev/sd_name
   
 **WARNING!Please be sure that you replaced the argument of input file (if=<img_file_path>) with the pathof the .img file, and that
 the device name specified in output file’s argument (of=/dev/<sd_name>) is correct. An incorrect device name could lead to
