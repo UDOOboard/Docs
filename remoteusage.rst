@@ -106,9 +106,8 @@ You should see this line at the end::
 
   usb 2-2.1: cp21x converter now attached to tty
 
- - Install minicom:
+ - Install minicom::
 
-::
   sudo apt-get update
   sudo apt-get install minicom
 
