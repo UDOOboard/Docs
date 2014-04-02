@@ -156,19 +156,7 @@ Power cycle UDOO to see the boot process and connect it to serial console shell
 Connect via VNC Remote Desktop
 ===================================
 
-Welcome to this Remote Desktop Tutorial. As you may imagine, what we are going to achieve is all about convenience. 
-Some of you could be pretty familiar with Remote Desktop Utilities, for the ones who aren’t, just think that you can use
-a device (in this case, UDOO) like you were sitting in front of that, using it’s keyboard and mouse and looking at its 
-screen, except you can do that also from the other part of the world. You don’t need to be a globetrotter then to enjoy 
-this capability, Remote Desktop is also very useful in home situations, when simply you just want to use UDOO without 
-connecting a mouse, a monitor and a keyboard to it.
-
-Open source software gives us a chance to achieve this result without getting too much in troubles, here is what you 
-need to do to have it running.
-
-
-Now you just need to download a client app and use UDOO’s IP to connect to it, followed by the VNC port ( default 5901) Let’s see how:
-
+DA FARE SU VNC DI UDOO FATTO
 On Windows:
 
 Download and install RealVNC Viewer
