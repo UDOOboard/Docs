@@ -31,14 +31,14 @@ LINUX
         :width: 100%
         
 
-* From the terminal run:
+* From the terminal run::
 
    df -h
 
 If the computer used has a slot for SD cards (SD to micro SD adapter needed), insert the card. If not, insert the card 
 into any SD card reader and then connect it to the computer
 
-* Run again:
+* Run again::
 
    df -h
 
@@ -48,17 +48,17 @@ assigned to the micro SD card. It will have a name similar to “/dev/mmcblk0p1�
 on one partition. Therefore, it is necessary to remove that part from the name (for example “/dev/mmcblk0″ or “/dev/sdd”)
 in order to work with the whole micro SD card.
 If the micro SD card contains more than one partition, it is necessary to unmount all of these partitions (using the 
-correct name found previously, followed by the letters and numbers identifying the partitions) using the command:
+correct name found previously, followed by the letters and numbers identifying the partitions) using the command::
 
    sudo umount /dev/sdd1
    
-* Now, write the image on the micro SD card with the command:
+* Now, write the image on the micro SD card with the command::
 
   sudo dd bs=1M if=<img_file_path> of=/dev/<sd_name>
   
 **WARNING!Please be sure that you replaced the argument of input file (if=<img_file_path>) with the pathof the .img file, and that
 the device name specified in output file’s argument (of=/dev/<sd_name>) is correct. An incorrect device name could lead to
-data loss!**
+data loss!**::
 
    sudo dd bs=1M if=/home/<user_name>/Download/2013-5-28-udoo-ubuntu.img of=/dev/sdd
    
