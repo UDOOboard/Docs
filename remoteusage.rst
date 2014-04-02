@@ -100,6 +100,7 @@ Connecting via serial will practically result in a shell console, the same as th
 **Connecting via Serial from Linux**
 
 Connect the serial port of UDOO (CN6) to your PC using the micro USB cable. And type::
+
   dmesg
 
 You should see this line at the end::
