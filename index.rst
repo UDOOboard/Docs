@@ -11,9 +11,7 @@
    
 
 
-Contents:
-
-Prova prova ASD ads
+Full Docs index:
 
 Getting Started
 =====
