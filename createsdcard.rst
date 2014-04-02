@@ -151,7 +151,7 @@ Create a new folder "udoo-dev" under your Home directory, then browse the UDOO's
 download the binaries you need.
 
 
-**Partition the MicroSD the Micro SD card**
+**Partition the MicroSD card**
 
 Insert the Micro SD card in the card reader and launch GParted from command line::
 
