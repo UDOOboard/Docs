@@ -66,39 +66,44 @@ So, if you never changed it, the credentials you need are::
 Connecting via USB Serial Cable
 ==============================
 
-Udoo features a built in USB to serial interface which is very useful for various reasons: You can use it to connect Udoo via SSH without a network connection, programming the Sam3x (arduino) and access the debug console for troubleshooting purposes.
+Udoo features a built in USB to serial interface which is very useful for various reasons: 
+ - You can use it to connect Udoo via SSH without a network connection, 
+ - Program the Sam3x (Arduino) from your PC
+ - Access the debug console for troubleshooting purposes
 
-Connecting via serial will practically result in a shell console, the same as the one you’ll obtain through SSH connection (http://en.wikipedia.org/wiki/Secure_Shell).
-
-Connecting via Serial from Windows
-
-Download the serial adapter Driver here:
-http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx
-Install the proper version for your Operating system:
-CP210xVCPInstaller_x86.exe for 32-bit systems
-CP210xVCPInstaller_x64.exe for 64-bit system
-How to define your Windows version:
-http://windows.microsoft.com/en-us/windows7/32-bit-and-64-bit-windows-frequently-asked-questions
-Download and install a software called putty
-http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html
-Open putty and configure it as follow:
-Connection type “serial”
-Port: “COM3” (please note that this value may be different, try to use COM4 if COM3 is not working)
-Speed: “115200”
-Save it as “Udoo-serial” for future uses.
+Connecting via serial will practically result in a shell console, the same as the one you’ll obtain through SSH connection
 
 
-Connect the serial port of UDOO (CN6) to your PC using the micro USB cable.
-Power up UDOO
-Click Open
-You’re in! You’ll be able to see the startup process and access to the remote shell console on UDOO.
+**Connecting via Serial from Windows**
+
+ - Install the `Serial Adapter Driver <_utils/CP210x_VCP_Windows.zip>`_
+ - Open `Putty <_utils/putty.exe>`_ and configure it as follows:
+
+
+ - Connection type “serial”
+ - Port: “COM3” (please note that this value may be different, try to use COM4 if COM3 is not working)
+ - Speed: “115200”
+ - Save it as “Udoo-serial” for future uses.
+ 
+ 
+.. image:: _static/images/udooserial1win.png
+
+ - Connect the serial port of UDOO (CN6) to your PC using the micro USB cable.
+ - Power up UDOO
+ - Click Open
+
+**You’re in! You’ll be able to see the startup process and access to the remote shell console on UDOO.**
+
+.. image:: _static/images/udoowin2.png
 
 
 Connecting via Serial from Linux
 
-Connect the serial port of UDOO (CN6) to your PC using the micro USB cable.
-Type
-1
+ - Connect the serial port of UDOO (CN6) to your PC using the micro USB cable.
+ - Type::
+   dmesg
+ - 
+
 dmesg
 You should see this line at the end
 1
