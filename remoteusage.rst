@@ -8,18 +8,15 @@ Connecting via SSH
 ====================
 
 
-SSH is a network communication protocol which can be used for a uber cool functionality: remote shell control. This 
-basically enables you to remotely operate a device, connected to a network, without direct physical access. If you thought
-this would be only ultranerd stuff, you might be interested in reading this.
+SSH basically enables you to remotely operate a device, connected to a network, without direct physical access. 
 
-What you need to access your Udoo via a remote shell? First, check that these requirements are satisfied:
+To access your Udoo via a remote shell check that these requirements are satisfied:
 
- - You are connected to the same network that Udoo is. This can be your home router, with Udoo connected via Ethernet cable
-and your Laptop trough wireless connection
+ - You are connected to the same network that Udoo is. This can be your home router, with Udoo connected via Ethernet cable and your Laptop trough wireless connection
  - You don’t have firewalls enabled that could block the communication between the two devices
  - Check that the two devices are on the same subnet, if you don’t know what that means, you can just ignore this.
  
-WINDOWS
+**WINDOWS**
 
 
 
@@ -27,17 +24,17 @@ Let’s start. On windows, you need a third party software, called putty.
 
 Download it from here
 
-Open it and insert Udoo’s IP. If you don’t know which IP your UDOO has, refer to this previous tutorial. 
-Call it UDOO, save it for your future convenience and hit load
-Now, you’ll be prompted with a login box. Just enter user and password and you’re in
-On Udoo’s Ubuntu, user and password are both ubuntu
+Open it and insert Udoo’s IP. Call it UDOO, save it for your future convenience and hit load.
+Now, you’ll be prompted with a login box. Just enter user and password of your O.S. and you’re in.
+**On Udoo’s Ubuntu, user and password are both ubuntu**
 
-Mac Os X and Linux
+**Mac Os X and Linux**
 
 On both these operating system, the procedure is quite the same.
-You just need to open a terminal and use the following synthax:
 
-ssh username@Udoo_Ip
+You just need to open a terminal and use the following synthax::
+
+  ssh username@Udoo_Ip
 
 Then hit enter, bear in mind that the very first time you are doing this, you’ll be prompted with a securty pop-up. 
 To confirm, type “yes”.
