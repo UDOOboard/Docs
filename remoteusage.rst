@@ -99,30 +99,29 @@ Connecting via serial will practically result in a shell console, the same as th
 
 **Connecting via Serial from Linux**
 
- - Connect the serial port of UDOO (CN6) to your PC using the micro USB cable. And type::
+Connect the serial port of UDOO (CN6) to your PC using the micro USB cable. And type::
   dmesg
 
 You should see this line at the end::
 
   usb 2-2.1: cp21x converter now attached to tty
 
- - Install minicom::
+Install minicom::
 
   sudo apt-get update
   sudo apt-get install minicom
 
- - Open Minicom and configure it (only the first time) using the following commands::
+Open Minicom and configure it (only the first time) using the following commands::
 
   sudo minicom -sw
 
- - Go to “Serial port setup” and edit as follows::
+Go to “Serial port setup” and edit as follows::
   Serial Device: /dev/ttyUSB0 (type a key)
   Hardware Flow Control: No (type f key)
   Software Flow Control: No (type g key)
 
 
- - Press exit and “Save setup as dfl”
- - Exit from Minicom
+Press exit and “Save setup as dfl” and exit from Minicom
 
 Let’s give proper access permissions to serial port with::
 
@@ -132,7 +131,7 @@ Now we can start listening with::
 
   sudo minicom -w
 
- - Power cycle UDOO to see the boot process and connect it to serial console shell
+Power cycle UDOO to see the boot process and connect it to serial console shell
 
 
 **Connecting via Serial from Mac**
