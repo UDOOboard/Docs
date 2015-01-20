@@ -65,9 +65,11 @@ You must use underscores instead of spaces. Here are some example file names and
 
 To sort your files and folders in a specific way, you can prefix them with a number and underscore, e.g. `/docs/01_Hello_World.md` and `/docs/05_Features.md` This will list *Hello World* before *Features*, overriding the default alpha-numeric sorting. The numbers will be stripped out of the navigation and urls. For the file `6 Ways to Get Rich`, you can use `/docs/_6_Ways_to_Get_Rich.md`
 
+You might also wish to stick certain links to the bottom of a page. You can do so by appending a '-' to the start of the filename, e.g. a new file `/docs/-Contact_Us.md` will always appear at the bottom of the current list. Weights can also be added to further sort the bottom entries. e.g. `/docs/-01_Coming.md` will appear before `/docs/-02_Soon.md` but both will only appear after all positive or non-weighted files. 
+
 ## Landing page
 
-If you want to create a beautiful landing page for your project, simply create a `index.md` file in the root of the `/docs` folder. This file will then be used to create a landing page. You can also add a tagline and image to this page using the config file like this:
+If you want to create a beautiful landing page for your project, simply create a `_index.md` file in the root of the `/docs` folder. This file will then be used to create a landing page. You can also add a tagline and image to this page using the config file like this:
 
 ```json
 {
@@ -77,11 +79,21 @@ If you want to create a beautiful landing page for your project, simply create a
 }
 ```
 
-Note: The image can be a local or remote image. Use the convention `<base_url>` to refer to the root directory of the Daux instance.
+Note: The image can be a local or remote image. Use the convention `<base_url>` to refer to the root directory of the Daux instance. 
 
 ## Section landing page
 
-If you are interested in having a landing page for a subsection of your docs, all you need to do is add an `index.md` file to the folder. For example, `/docs/01_Examples` has a landing page for that section since there exists a `/docs/01_Examples/index.md` file. If you wish to have an index page for a section without a landing page format, use the name `_index.md`
+If you are interested in having a landing page for a subsection of your docs, all you need to do is add an `index.md` file to the folder. For example, `/docs/01_Examples` has a landing page for that section since there exists a `/docs/01_Examples/index.md` file. If you wish to have an landing page for a section sans the document format, use the name `_index.md`
+
+## Clean URLs
+
+Daux provides native support for Clean URLs provided the webserver has its URL Rewrite module enabled. To enable the same, simply set the toggle in the `config.json` file in the `/docs` folder.
+
+```json
+{
+	"clean_urls": true
+}
+```
 
 ## Configuration
 
@@ -258,7 +270,7 @@ Enables multi-language support which needs seperate directories for each languag
 Directory structure:
 ```
 ├── docs/
-│   ├── index.md
+│   ├── _index.md
 │   ├── en
 │   │   ├── 00_Getting_Started.md
 │   │   ├── 01_Examples
