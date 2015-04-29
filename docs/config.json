@@ -7,7 +7,7 @@
     "template": "default",
     "clean_urls": true,
     "toggle_code": true,
-    "breadcrumbs": true,
+    "breadcrumbs": false,
     "breadcrumb_separator": "Chevrons",
     "date_modified": false,
     "float": true,
