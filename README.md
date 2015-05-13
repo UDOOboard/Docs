@@ -9,23 +9,27 @@ We strongly encourage members of community to review, edit and integrate such do
 To do so simply clone this repo, edit and send a pull request following these steps:
 
 * Clone the Repo with 
+```bash
 
 	git clone https://github.com/UDOOboard/Docs.git
- 
+``` 
 * Edit the docs accordingly
 
 * Commit your local changes, indicating what you integrated\edited in the commit message 
+```bash
 
 	git commit -a
- 
+``` 
 * Push changes to your repo
- 
+ ```bash
+
 	git push https://yourgitrepo  master
- 
+``` 
 * Send us a pull request
+```bash
 
 	git request-pull v1.0 hhttps://github.com/UDOOboard/Docs master
- 
+``` 
  
 This Docs are generated with  **Daux.io**
 
