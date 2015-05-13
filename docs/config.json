@@ -1,8 +1,8 @@
 {
-    "title": "UDOO Docs",
+    "title": "Docs",
     "tagline": "UDOO Board Documentation",
     "author": "UDOO Team",   
-    "image": "/wp-content/uploads/2014/12/logoogo.png",
+    "image": "/udoo/images/logoogo.png",
     "theme": "udoo",
     "template": "default",
     "clean_urls": true,
