@@ -318,7 +318,7 @@
     <!-- hightlight.js -->
     <script src="<?php echo $base_url; ?>js/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-
+    <script>toggleCodeBlocks();</script>
     <!-- JS -->
     <?php foreach ($page['theme']['js'] as $js) echo '<script src="' . $js . '"></script>'; ?>
 
