@@ -64,7 +64,7 @@ e.g.
 
 ```bash
 
-sudo dd bs=1M if=/home/<user_name>/Download/2013-5-28-udoo-ubuntu.img of=/dev/sdd
+sudo dd bs=1M if=/home/<user_name>/Downloads/2013-5-28-udoo-ubuntu.img of=/dev/sdd
 
 ```
 
