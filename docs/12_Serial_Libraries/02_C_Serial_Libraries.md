@@ -1,4 +1,4 @@
-C Serial Libraries for UDOO
+C Serial Libraries for UDOO DUAL/QUAD
 ---------
 
 This file describes how to compile and run the C examples contained in this folder.

@@ -1,4 +1,4 @@
-If your UDOO doesn't boot, you first need to:
+If your UDOO DUAL/QUAD doesn't boot, you first need to:
 
 
 * Wait at least 2 minutes: right now there is no feedback during the boot process, only a black screen;
@@ -10,7 +10,7 @@ If your UDOO doesn't boot, you first need to:
 
 If the board still doesn't boot you need to verify if your OS actually starts using a serial debug connection. This allows a more complete analysis of your situation. To establish a USB Debug connection follow these <a href="/docs/Advanced_Setup/UDOO_Usb_Debug">easy steps on our Docs</a>.
 
-Once you're ready, power up your UDOO and look at the serial output:
+Once you're ready, power up your UDOO DUAL/QUAD and look at the serial output:
 
 
 
@@ -18,7 +18,7 @@ Once you're ready, power up your UDOO and look at the serial output:
 
 <img class="alignnone size-full wp-image-2438" alt="screenshot ok login" src="http://www.udoo.org/wp-content/uploads/2013/10/screenshot-ok-login.jpg" width="550" height="290" />
 
-the OS was correctly loaded by UDOO. Everything works just fine, the problem could be in the HDMI cable, in your display or your UDOO probably needs a patch that will solve a HDMI problem we encountered in some UDOOs. The patch will be available soon.
+the OS was correctly loaded by UDOO DUAL/QUAD. Everything works just fine, the problem could be in the HDMI cable, in your display or your UDOO DUAL/QUAD probably needs a patch that will solve a HDMI problem we encountered in some UDOO DUAL/QUAD. The patch will be available soon.
 
 
 

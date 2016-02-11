@@ -1,9 +1,9 @@
 ##Install the Oracle Java JDK
 
 
-UDOO board ships with a custom build of vanilla Android operating system, the original **Android Open Source Project (AOSP)**. Like you may have noticed when you run Android for the first time, there is no trace of any [Google Mobile Services](http://www.google.com/mobile/) or applications such as Google Play Store, Gmail or others, usually known as **Google Apps**. 
+UDOO DUAL/QUAD board ships with a custom build of vanilla Android operating system, the original **Android Open Source Project (AOSP)**. Like you may have noticed when you run Android for the first time, there is no trace of any [Google Mobile Services](http://www.google.com/mobile/) or applications such as Google Play Store, Gmail or others, usually known as **Google Apps**. 
 
-To install these services in your UDOO board, you must first download a set of tools that will grant you the access to the Android filesystem, and then copy downloaded Google Apps inside your board. This guide requires that you know [how to connect UDOO board](/docs/Tutorials/UDOO_Switch_Between_Adb_Debug_And_ADK_Connection) with Android operating system to your computer.
+To install these services in your UDOO DUAL/QUAD board, you must first download a set of tools that will grant you the access to the Android filesystem, and then copy downloaded Google Apps inside your board. This guide requires that you know [how to connect UDOO board](/docs/Tutorials/UDOO_Switch_Between_Adb_Debug_And_ADK_Connection) with Android operating system to your computer.
 
 Required tools are available in the **Android SDK** used by Android developers to create their mobile applications. Anyhow, we will use these tools only to install Google Apps in your board and no competence in application development is required to follow this guide. The SDK could be downloaded in your system in two different ways:
 
@@ -22,10 +22,10 @@ After the installation, follow the suggestions you will find in the Adding SDK P
 * Android SDK Build-tools (highest version)
 
 
-Now that all tools are ready, we should proceed downloading the Google Apps from the [http://goo.im/gapps/](http://goo.im/gapps/) website, which store almost all released versions of Google Apps.
-According to the latest UDOO image, based on Android KitKat 4.4.2, you should download and extract in your computer, the following image: <i>gapps-kk-20140105-signed.zip</i>.
+Now that all tools are ready, we should proceed downloading the Google Apps from the [https://www.androidfilehost.com/?fid=23311191640114013](https://www.androidfilehost.com/?fid=23311191640114013) website, which store almost all released versions of Google Apps.
+According to the latest UDOO DUAL/QUAD image, based on Android KitKat 4.4.2, you should download and extract in your computer, the following image: <i>gapps-kk-20140105-signed.zip</i>.
 
-The next step, is to copy extracted content into Android <i>/system</i> folder which is, unfortunately, read-only when Android is up and running. However, we can connect the UDOO board to our computer using the **Android Debug Bridge (ADB)** command line tool, we’ve installed before.
+The next step, is to copy extracted content into Android <i>/system</i> folder which is, unfortunately, read-only when Android is up and running. However, we can connect the UDOO DUAL/QUAD board to our computer using the **Android Debug Bridge (ADB)** command line tool, we’ve installed before.
 Through it, we can remount the partition with write permissions and use a command to copy extracted content.
 
 We have to locate the <i>adb</i> executable and use it through the command line available for our operating system.

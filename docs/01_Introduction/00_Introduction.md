@@ -1,12 +1,11 @@
-
-<h1>UDOO</h1>
+<h1>UDOO DUAL/QUAD</h1>
 <hr/>
 <p>
-	<strong>UDOO</strong> is a single board computer that can be used both with Android and Linux, paired with an Arduino-compatible processor. It is a powerful prototyping board for software development and design; it’s easy to use and allows developing projects with minimum knowledge of hardware design. UDOO merges different computing worlds together: each one has its proper strengths and weak points, but all of them are useful in todays life for educational purposes as well as Do-It-Yourself (DIY) and quick prototyping. UDOO is an open hardware, low-cost platform equipped with an ARM i.MX6 Freescale processor, and an Arduino Due compatible section based on ATMEL SAM3X8E ARM processor, all this available on the same board!
+	<strong>UDOO DUAL/QUAD</strong> is a single board computer that can be used both with Android and Linux, paired with an Arduino-compatible processor. It is a powerful prototyping board for software development and design; it’s easy to use and allows developing projects with minimum knowledge of hardware design. UDOO DUAL/QUAD merges different computing worlds together: each one has its proper strengths and weak points, but all of them are useful in todays life for educational purposes as well as Do-It-Yourself (DIY) and quick prototyping. UDOO DUAL/QUAD is an open hardware, low-cost platform equipped with an ARM i.MX6 Freescale processor, and an Arduino Due compatible section based on ATMEL SAM3X8E ARM processor, all this available on the same board!
 </p>
 <hr/>
 
-<h3>UDOO Goals:</h3>
+<h3>UDOO DUAL/QUAD Goals:</h3>
 <hr/>
 
 * Develop an innovative product for a growing market
@@ -23,7 +22,7 @@
 <img src="/docs/img/udoo_fritzing.png" alt="alt text" class="img-responsive pull-right" height="441px" width="350px"  style="margin-bottom:20px; margin-left:30px;">
 
 
-UDOO retail line up consists of three models, sharing most of the features and different only for connectivity and i.MX6 processor used. All three models feature an embedded Arduino compatible section based on Arduino Due schematic. UDOO’s dimensions are: 4.33 inch x 3.35 inch (11 cm x 8.5 cm).
+UDOO DUAL/QUAD retail line up consists of three models, sharing most of the features and different only for connectivity and i.MX6 processor used. All three models feature an embedded Arduino compatible section based on Arduino Due schematic. UDOO DUAL/QUAD’s dimensions are: 4.33 inch x 3.35 inch (11 cm x 8.5 cm).
 
 <br />
 * Freescale i.MX6Quad, 2\4 x ARM® Cortex™-A9 core @ 1GHz with ARMv7A instruction set
@@ -42,7 +41,8 @@ UDOO retail line up consists of three models, sharing most of the features and d
 * WiFi Module
 * SATA connector with power header
 
-<strong>Warning: The UDOO I/O pins are 3.3V compliant. Higher voltages (like 5V) would damage the board.</strong>
+<strong>Warning: The UDOO DUAL/QUAD I/O pins are 3.3V compliant. Higher voltages (like 5V) would damage the board.</strong>
+
 
 <br />
 
@@ -62,7 +62,7 @@ UDOO retail line up consists of three models, sharing most of the features and d
 * Compatible with All Arduino Due Shields and most Arduino Shields
 * GPIO's can be accessed as Arduino pins, GPIO's or as additional S\PDIF, FlexCAN,I2S, SPI
 
-<a href="/docs/Resources/UDOO_GPIO_Pinout" target="_blank">More informations about UDOO_GPIO_Pinout</a> 
+<a href="/docs/Resources/UDOO_GPIO_Pinout" target="_blank">More informations about UDOO DUAL/QUAD_GPIO_Pinout</a> 
 
 <br />
 <hr/>
@@ -104,7 +104,7 @@ VGA (320x480) @120fps VGA (640x480) @90fps 720p @60fps 1280x960 @45fps 1080p @30
 * UDOO_VK-7T video cable for UDOO
 * LCD BOARD ADAPTER
 
-<a href="/docs/Resources/UDOO_Setup_lvds_panels" target="_blank">How to setup lvds panels</a>
+<a href="http://www.udoo.org/docs/Troubleshooting/How_Do_I_Set_Up_My_LVDS_Panel" target="_blank">How to setup lvds panels</a>
 
 <a href="http://udoo.org/download/files/datasheets/datasheet7.pdf" target="_blank">UDOO 7" Touch Panel Display Kit Datasheet</a>
 
@@ -120,7 +120,7 @@ VGA (320x480) @120fps VGA (640x480) @90fps 720p @60fps 1280x960 @45fps 1080p @30
 * USB CABLE for Third UDOO'USB
 * Touch Controller Board
 
-<a href="/docs/Resources/UDOO_Setup_lvds_panels" target="_blank">How to setup lvds panels</a>
+<a href="http://www.udoo.org/docs/Troubleshooting/How_Do_I_Set_Up_My_LVDS_Panel" target="_blank">How to setup lvds panels</a>
 
 <a href="http://udoo.org/download/files/datasheets/datasheet15.pdf">UDOO 15" Touch Panel Display Kit Datasheet</a>
 
@@ -173,6 +173,6 @@ var google_remarketing_only = true;
 </script>
 <noscript>
 <div style="display:inline;">
-<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/983836026/?value=0&amp;guid=ON&amp;script=0"/>
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/983836026/?value=0&guid=ON&script=0"/>
 </div>
 </noscript>

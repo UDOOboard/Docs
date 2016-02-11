@@ -1,12 +1,12 @@
 
 ## What is a single board computer?
 
-A single-board computer (SBC) like UDOO or Raspberry Pi is a complete computer built on a single circuit board, with microprocessor(s), memory, input/output (I/O) and other features of a functional computer. 
+A single-board computer (SBC) like UDOO DUAL/QUAD or Raspberry Pi is a complete computer built on a single circuit board, with microprocessor(s), memory, input/output (I/O) and other features of a functional computer. 
 
 
-## Which people use single board computers like UDOO?
+## Which people use single board computers like UDOO QUAD/DUAL?
 
-Students and teachers, designers, startups, industries, research groups: all of them are average users of single board computers like UDOO. 
+Students and teachers, designers, startups, industries, research groups: all of them are average users of single board computers like UDOO DUAL/QUAD. 
 
 They are called <a href="https://en.wikipedia.org/wiki/Maker_culture" target="_blank">Makers</a>.
 
@@ -14,9 +14,9 @@ You can be a Maker too.
 Everybody can be a Maker.
 
 
-## Why people use single board computers like UDOO?
+## Why people use single board computers like UDOO QUAD/DUAL?
 
-People use UDOO for three purposes:
+People use UDOO QUAD/DUAL for three purposes:
 a) like a pocket low-cost low-power consumption computer;
 b) like an Arduino;
 c) like a computer designed to be embedded on things, ideal for <a href="http://udoo.hackster.io" target="_blank">creative projects</a>. 
@@ -40,15 +40,15 @@ The most famous microcontroller is <a href="http://www.arduino.cc" target="_blan
 <a href="http://www.arduino.cc" target="_blank">Arduino</a> is an open-source microcontroller.
 
 Arduino is so great because with Arduino you can tinker and realize cool stuff without being an engineers.
-Arduino is a powerful tool, and that's why we designed UDOO to be Arduino-compatible.
+Arduino is a powerful tool, and that's why we designed UDOO QUAD/DUAL to be Arduino-compatible.
 
 
 ## What is a jumper?
-A jumper is a short length of conductor used to close a break in or open, or bypass part of, an electrical circuit. On UDOO jumpers are signed.  
+A jumper is a short length of conductor used to close a break in or open, or bypass part of, an electrical circuit. On UDOO QUAD/DUAL jumpers are signed.  
 
 
-## Which are the jumpers of UDOO and what should I use them for?
-Jumpers of UDOO are: J2, J16, J18, J22.
+## Which are the jumpers of UDOO QUAD/DUAL and what should I use them for?
+Jumpers of UDOO QUAD/DUAL are: J2, J16, J18, J22.
 Every jumper has a different purpose. 
 If you keep J18 plugged, you are talking with the i.MX 6 processor and, for example, you can see the console during the boot and talk with the u-boot, stopping it, for example. If you unplug J18, you instead talk with SAM3X8E.
 By plugging and unplugging J22 you can erase the Arduino sketch you have written: it means you have to reflash your MicroSD.

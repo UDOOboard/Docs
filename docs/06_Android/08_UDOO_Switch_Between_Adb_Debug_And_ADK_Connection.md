@@ -10,7 +10,7 @@ With this configuration the i.Mx6 communicates with the SAM3X using the ADK prot
 
 ##USB Debug mode
 
-UDOO can use the Android Debug Bridge (adb) to to install debug and test applications like a normal Android device. To do so you need to switch the OTG bus to the microUSB port, then connect your personal computer to the CN3 microUSB port and use the standard adb tools on UDOO.
+UDOO DUAL/QUAD can use the Android Debug Bridge (adb) to to install debug and test applications like a normal Android device. To do so you need to switch the OTG bus to the microUSB port, then connect your personal computer to the CN3 microUSB port and use the standard adb tools on UDOO DUAL/QUAD.
 
 By default the OTG bus is connected to SAM3X. To switch the OTG bus channel and use the adb protocol follow the steps listed in the appropriate section.
 
@@ -27,7 +27,7 @@ The computer's RSA key fingerprint is:
 
 Android asks you to accept the fingerprint of your pc. Select the option “Always allow from this computer” and press ok button.
 
-If you launch a console on your host computer and you have installed the Android SDK, you can access to UDOO with adb protocol.
+If you launch a console on your host computer and you have installed the Android SDK, you can access to UDOO DUAL/QUAD with adb protocol.
 
 You can download the Android SDK and get the full documentation here: http://developer.android.com/sdk/index.html
 

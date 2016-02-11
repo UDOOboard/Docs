@@ -1,11 +1,11 @@
 
 
-If you don’t have a monitor, keyboard and mouse you can still use UDOO easily at its full potential. 
-You can connect to UDOOs Remote Desktop via VNC.
+If you don’t have a monitor, keyboard and mouse you can still use UDOO DUAL/QUAD easily at its full potential. 
+You can connect to UDOO DUAL/QUAD Remote Desktop via VNC.
 
 To do that, just follow these steps:
 
-### Assign a static address to your UDOO 
+### Assign a static address to your UDOO DUAL/QUAD 
 
 Edit the /etc/network/interfaces file
 
@@ -24,7 +24,7 @@ gateway 192.168.137.1
 ```
 
 
-### Connect UDOO to your PC via a Lan Cable
+### Connect UDOO DUAL/QUAD to your PC via a Lan Cable
 
 ### Prepare your PC Networking as follows:
 
@@ -34,7 +34,7 @@ Go to Network Settings, Select your wireless adapter and choose “Advanced Prop
 Share this connection with your Ethernet Adapter, and hit apply.
 At this point, your pc will have 192.168.137.1 as IP
 
-This means that UDOO will share internet connection trough your PC
+This means that UDOO DUAL/QUAD will share internet connection trough your PC
 
 <strong>On Mac OS X:</strong>
 
@@ -62,24 +62,24 @@ And bridge your Wireless connection with Ethernet
 
 ### Establish a remote VNC connection
 
-Now you’re ready to power on your UDOO, make sure the SD Card with UDOOBuntu is inserted. The last step is installing and configuring a VNC Client.
+Now you’re ready to power on your UDOO DUAL/QUAD, make sure the SD Card with UDOOBuntu is inserted. The last step is installing and configuring a VNC Client.
 
 <strong>On Windows:</strong>
 
 
 Download and install RealVNC Viewer for Windows
-Once opened, insert UDOO’s IP followed by :5901 (192.168.137.2:5901)
+Once opened, insert UDOO DUAL/QUAD’s IP followed by :5901 (192.168.137.2:5901)
 Insert the password: ubuntu
-Done! Browse UDOO remotely with your Windows machine
+Done! Browse UDOO DUAL/QUAD remotely with your Windows machine
  
 
 <strong>On Mac OSX:</strong>
 
 
 Download and install RealVNC Viewer for Mac
-Once opened, insert UDOO’s IP followed by :5901 (192.168.137.2:5901)
+Once opened, insert UDOO DUAL/QUAD’s IP followed by :5901 (192.168.137.2:5901)
 Insert the password: ubuntu
-Done! Browse UDOO remotely with your Mac
+Done! Browse UDOO DUAL/QUAD remotely with your Mac
  
 
 <strong>On Linux Ubuntu:</strong>
@@ -96,7 +96,7 @@ Launch xvncviewer with
 sudo xvncviewer
 ```
 
-Insert UDOO’s IP followed by :5901 (192.168.137.2:5901)
+Insert UDOO DUAL/QUAD’s IP followed by :5901 (192.168.137.2:5901)
 Insert Server’s Password: ubuntu
-Done! Browse Udoo remotely with your Linux machine!
+Done! Browse UDOO DUAL/QUAD remotely with your Linux machine!
 More informations can be found at the [UDOO VNC Tutorial Page](http://udoo.org/tutorial/vnc-server-with-udoo/)

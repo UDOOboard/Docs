@@ -2,10 +2,27 @@
 
 ###UDOOBuntu
 
-Official UDOO Distribution lubuntu 12.04 LTS armHF based Username: ubuntu Password: ubuntu
+Official UDOO Distribution based on Ubuntu 12.04 LTS armHF with LXDE desktop environment. 
+Kernel 3.0.35 - U-Boot 2013 
+
+Username: ubuntu 
+
+Password: ubuntu
 
 Available at [UDOO Downloads Page](http://www.udoo.org/downloads/)
 
+###UDOOBuntu 2
+
+Official UDOO Distribution based on Ubuntu 14.04 LTS armHF with LXDE desktop environment.
+Kernel 3.14.56 - U-Boot 2015.10.
+This is the newer e faster distro for UDOO QUAD/DUAL. This is still in rc1 version but will be soon the official release that will replace the first UDOObuntu as stable.
+
+Username: udooer 
+
+Password: udooer
+
+Available at [UDOO Downloads Page](http://www.udoo.org/downloads/)
+ 
 ###Android 4.4.2 KitKat
 
 Android is a Linux-based operating system designed primarily for touchscreen mobile devices such as smartphones and tablet computers.
@@ -60,7 +77,7 @@ XBMC is a free and open source media player developed by the XBMC Foundation, a 
 
 OpenELEC (short for Open Embedded Linux Entertainment Center) is a Linux distribution designed for home theater PCs and based on the XBMC media player.
 
-OpenElec for UDOO has been announced but not yet released
+OpenElec for UDOO DUAL/QUAD has been announced but not yet released
 
 ####Volumio
 
@@ -80,7 +97,7 @@ Ubuntu Studio is an officially recognized derivative of the Ubuntu Linux distrib
 ####Kali Linux
 
 Kali Linux is a Debian-derived Linux distribution designed for digital forensics and penetration testing. It is maintained and funded by Offensive Security Ltd. It was developed by Mati Aharoni and Devon Kearns of Offensive Security through the rewrite of BackTrack, their previous forensics Linux distribution.
-Kali for UDOO has been announced but not yet published.
+Kali for UDOO DUAL/QUAD has been announced but not yet published.
 
 ###Robotics
 
@@ -94,9 +111,9 @@ ROS (Robot Operating System) provides libraries and tools to help software devel
 
 ####Open Media Vault
 
-OpenMediaVault is the next generation network attached storage (NAS) solution based on Debian Linux. It contains services like SSH, (S)FTP, SMB/CIFS, DAAP media server, RSync, BitTorrent client and many more. With OpenMediaVault your can create your very own UDOO powered Home Server and NAS.
+OpenMediaVault is the next generation network attached storage (NAS) solution based on Debian Linux. It contains services like SSH, (S)FTP, SMB/CIFS, DAAP media server, RSync, BitTorrent client and many more. With OpenMediaVault your can create your very own UDOO DUAL/QUAD powered Home Server and NAS.
 
-[Download link](http://sourceforge.net/projects/minimaldeb/files/Open%20Media%20Vault%20Udoo/Quad/OMV_Udoo_Quad.zip/download) for UDOO Quad only [Forum Thread](http://www.udoo.org/forum/open-media-vault-nas-operating-system-t337.html)
+[Download link](http://sourceforge.net/projects/minimaldeb/files/Open%20Media%20Vault%20Udoo/Quad/OMV_Udoo_Quad.zip/download) for UDOO QUAD only [Forum Thread](http://www.udoo.org/forum/open-media-vault-nas-operating-system-t337.html)
 
 ###Domotics
 

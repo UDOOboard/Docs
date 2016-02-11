@@ -16,55 +16,103 @@ VGA (320x480) @120fps VGA (640x480) @90fps 720p @60fps 1280x960 @45fps 1080p @30
 ###Connection 
 
 UDOO Camera module is designed to be connected via CSI interface to UDOO Camera Connector. Connection is made via a FLAT-213-16PIN cable.
+Make sure the blue part of the ribbon cable looks backwords respect to the camera side. 
+Lift the brown strip of the UDOO's camera connector and insert the ribbon cable into the connector making sure it goes as deep as it can, then pull down the brown strip of the connector to hold the cable. Make sure again that the blue part of the ribbon cable is looking on the outer side of UDOO. 
+To a clearer explanation of how to connect the UDOO Camera Module you can check  the initial part of this video. 
 
-[Video Explanation of UDOO Camera Module Connection](http://www.youtube.com/watch?v=ydpXTs7bHhY)
+[Video Explanation of UDOO Camera Module Connection](https://www.youtube.com/watch?v=ydpXTs7bHhY)
 
-Important: Never Connect UDOO Camera Module when UDOO is on! This could potentially damage the board and the camera.
+Important: Never Connect UDOO Camera Module when UDOO DUAL/QUAD is on! This could potentially damage the board and the camera.
 
 ###Camera With Android
 
-No additional operations needed. Just connect the Camera Module and boot Android. The camera will be automatically recognized by the system.
+No additional operations needed. Just connect the Camera Module and boot Android. The camera will be automatically recognized by the system. Use the Camera App to use the Camera or develop your own APP using the standard Android Camera API.
 
 ###Using with Gstreamer on Linux
 
-UDOO Camera can be accessed in Hardware mode using [Gstreamer](http://gstreamer.freedesktop.org/) Pipelines Specifically with Freescale-provided element mfw_v4lsrc:
+UDOO Camera can be accessed in Hardware mode using [Gstreamer](http://gstreamer.freedesktop.org/) Pipelines Specifically with Freescale-provided elements and pugins.
+Starting from UDOObuntu 2 (Ubuntu 14.04 - Kernel 3.14.x) you can use gstreamer 1.0 and gstreamer-imx plugin to use the camera.
 
-To get camera’s stream in Fullscreen’s transparency mode, you can use
 
-```bash
-
-gst-launch-0.10 mfw_v4lsrc ! mfw_v4lsink
-
-```
-
-To retrive camera’s stream in windowed mode, use
+To get camera's stream in Fullscreen mode, you can use:
 
 ```bash
 
-gst-launch-0.10 mfw_v4lsrc ! ffmpegcolorspace ! ximagesink
+gst-launch-1.0 imxv4l2videosrc ! imxipuvideosink 
 
 ```
 
-If you wish to retrieve more information on mfw_v4lsrc, you can use
+To retrive camera's stream in windowed mode, use
 
 ```bash
 
-gst-inspect mfw_v4lsrc
+gst-launch-1.0 imxv4l2videosrc ! imxeglvivsink 
 
 ```
 
-More Informations on Freescale's gstreamer pipelines can be found at
+To save a picture from camera's stream use
 
-https://community.freescale.com/docs/DOC-93387/version/4
-https://community.freescale.com/docs/DOC-93387/version/1
+```bash
+
+
+gst-launch-1.0 imxv4l2videosrc num-buffers=1 ! jpegenc ! filesink location=capture1.jpeg
+
+```
+
+
+If you wish to retrieve more information on imxv4l2videosrc or other plugin, you can use
+
+```bash
+
+gst-inspect-1.0 imxv4l2videosrc
+
+```
+There are lot of useful option you can use from the imx plugins. 
+For example, you can find information of how to change the resolution of the camera stream using the 'imx-capture-mode' option of the imxv4l2videosrc plugin. 
+
+```bash
+
+  imx-capture-mode    : Capture mode of camera, varies with each v4l2 driver,
+				for example ov5460:
+   				ov5640_mode_VGA_640_480 = 0,
+				ov5640_mode_QVGA_320_240 = 1,
+				ov5640_mode_NTSC_720_480 = 2,
+				ov5640_mode_PAL_720_576 = 3,
+				ov5640_mode_720P_1280_720 = 4,
+				ov5640_mode_1080P_1920_1080 = 5
+                        flags: readable, writable
+
+```
+
+Another example is the useful option 'use-vsync' of the imxipuvideosink plugin. You can use this option to avoid video tearing.
+
+E.g. To get camera's stream in Fullscreen mode in 1080p resolution avoiding video tearing, you can use:
+
+```bash
+
+gst-launch-1.0 imxv4l2videosrc imx-capture-mode=5 ! imxipuvideosink  use-vsync=true
+
+```
+
+More thorough information on gstreamer pipelines can be found at:
+
+[Gstreamer-imx](https://github.com/Freescale/gstreamer-imx)
+
+[Gateworks video](http://trac.gateworks.com/wiki/Yocto/gstreamer/video)
+
+[Gateworks video](http://trac.gateworks.com/wiki/Yocto/gstreamer/streaming) (RTSP streaming)
+
+
 
 ###Using with Loopback Device
+
+N.B. This section is valid only for the UDOObuntu 1 version (12.04)
 
 To use UDOO Camera Module as an ordinary webcam a loopback device is necessary. We can create such device routing the video stream from the camera to a virtual /dev/video device via [v4l2loopback](https://github.com/umlaeute/v4l2loopback)
 
 In order to achieve what above we need to have
 
-* v4l2loopback kernel module enabled (default on UDOO Kernel)
+* v4l2loopback kernel module enabled (default on UDOO DUAL/QUAD Kernel)
 * gstreamer binaries installed (gst-launch)
 
 To create a loopback device on /dev/video7 called UDOO Camera Module we can then execute

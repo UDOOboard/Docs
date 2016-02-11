@@ -1,6 +1,6 @@
 ## Overview
 
-The following paragraphs will guide to in the creation of a bootable micro SD card for UDOO board, starting from a precompiled image file containing the UDOO Operating system, which runs using the i.MX6 processor. Without the O.S., it is possible only to use UDOO like a normal Arduino Due (only SAM3X8E processor). The procedure is quite easy: simply unzip the image and write it on the SD card using the dd tool for UNIX/MAC users or Win32DiskImager for Windows users. It is not possible to create a bootable SD card with drag and drop. Please consider that the micro SD card size must be at least 8GB; higher capacity SD memory cards (tested up to 64GB) may be used but only 8GB will be available at the end of the procedure.
+The following paragraphs will guide to in the creation of a bootable micro SD card for UDOO DUAL/QUAD board, starting from a precompiled image file containing the UDOO DUAL/QUAD Operating system, which runs using the i.MX6 processor. Without the O.S., it is possible only to use UDOO DUAL/QUAD like a normal Arduino Due (only SAM3X8E processor). The procedure is quite easy: simply unzip the image and write it on the SD card using the dd tool for UNIX/MAC users or Win32DiskImager for Windows users. It is not possible to create a bootable SD card with drag and drop. Please consider that the micro SD card size must be at least 8GB; higher capacity SD memory cards (tested up to 64GB) may be used but only 8GB will be available at the end of the procedure.
 
 
 
@@ -64,7 +64,7 @@ e.g.
 
 ```bash
 
-sudo dd bs=1M if=/home/<user_name>/Downloads/2013-5-28-udoo-ubuntu.img of=/dev/sdd
+sudo dd bs=1M if=/home/<user_name>/Download/2013-5-28-udoo-ubuntu.img of=/dev/sdd
 
 ```
 
@@ -78,7 +78,7 @@ Then run:
 
 ```
 
-The micro SD card is now ready to be used. Simply, insert it in UDOO’s microSD Card slot and boot the system.
+The micro SD card is now ready to be used. Simply, insert it in UDOO DUAL/QUAD’s microSD Card slot and boot the system.
 
 Here you can find the video tutorial of [Creating a bootable MicroSD card with Linux Ubuntu from image](/tutorial/creating-bootable-micro-sd-card-linux-ubuntu-image/).
 
@@ -137,7 +137,7 @@ Now write the image on the microSD card using the command:
 
 ```bash
 
-sudo dd bs=1m if=path_del_file_img of=/dev/<sd_name>
+sudo dd bs=1m if=*path_del_file_img* of=/dev/<sd_name>
 
 
 ```
@@ -164,14 +164,15 @@ sudo diskutil eject /dev/rdisk3
 
 ```
 
-The micro SD card is now ready to be used. Simply, insert it in UDOO’s microSD Card slot and boot the system.
+The micro SD card is now ready to be used. Simply, insert it in UDOO DUAL/QUAD’s microSD Card slot and boot the system.
 
-Here you can find the video tutorial of [Creating a bootable MicroSD card using Windows from image](/tutorial/creating-bootable-micro-sd-card-using-windows-image/).
-
+Here you can find the video tutorial of [Creating a bootable MicroSD card with Mac OSX from image](/tutorial/creating-bootable-micro-sd-card-mac-os-x-image/).
 
 ###Write the image on micro SD card Using Windows
 
 <img style="width:400px; height:218px" src="/docs/img/Box3_Tutorials_UdooSite.png">
+
+Extract the downloaded zip file and you'll have a .img image file (do not use the preinstalled archive extractor, use <a href="http://www.7-zip.org/" target="_blank">7-zip</a> or similar).
 
 Download the Win32DiskImager software [here](http://sourceforge.net/projects/win32diskimager/) and unzip it.
 
@@ -185,8 +186,8 @@ Please be careful to select the correct drive identifier; if you use the wrong i
 
 In the Image File box, choose the downloaded .img file and click “Write”. Note: click YES in case it pops up a warning message.
 
-The microSD card is now ready to be used. Simply insert it in UDOO’s microSD Card slot and boot the system.
+The microSD card is now ready to be used. Simply insert it in UDOO DUAL/QUAD’s microSD Card slot and boot the system.
 
-Here you can find the video tutorial of [Creating a bootable MicroSD card with Mac OSX Ubuntu from image](/tutorial/creating-bootable-micro-sd-card-mac-os-x-image/).
+Here you can find the video tutorial of [Creating a bootable MicroSD card using Windows from image](/tutorial/creating-bootable-micro-sd-card-using-windows-image/).
 
 

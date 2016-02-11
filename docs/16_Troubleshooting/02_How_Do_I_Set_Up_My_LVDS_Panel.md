@@ -1,13 +1,13 @@
 With the official <a href="http://www.udoo.org/downloads/" title="Download section"><strong>UDOObuntu</strong></a> distro using your LVDS is very easy!! Follow these simple steps:
 
-Open the <strong>"UDOO configuration tool"</strong> you can find in desktop or in the applications top bar.
+Open the <strong>"UDOO DUAL/QUAD configuration tool"</strong> you can find in desktop or in the applications top bar.
 Select <em>"Set Default Video Output (LVDS\HDMI)"</em>.
 Select the output video you need.
 Reboot the system.
 
 That's it!!!
 </br>
-To use your LVDS with other UDOO distros you need to follow these instructions:
+To use your LVDS with other UDOO DUAL/QUAD distros you need to follow these instructions:
 
 Make sure you have the lastest U-Boot and kernel. If not you can use the simple <a href="/docs/Advanced_Setup/UDOO_Kernel_Update_Procedure" title="udooupdate" target="_blank">update procedure</a>.
 
@@ -19,7 +19,7 @@ With the last U-Boot version (release 2.1 - v.119) you need to change the "video
 
 hdmi --&gt; video=mxcfb0:dev=hdmi,1920x1080M@60,if=RGB24,bpp=32 (default environment variable)
 
-To do this you need to connect an external pc to the debug serial of UDOO and stop the boot procedure at U-Boot. For more info see the Tutorial <a href="/docs/Connecting%20UDOO/Connecting_Via_Serial_Cable" title="Connecting via serial cable">connecting via serial cable</a> or the <a title="UDOO Manual" href="http://udoo.org/download/files/Documents/UDOO_Starting_Manual_beta0.4_11_28_2013.pdf" target="_blank">UDOO starting manual</a> at the “Establish serial debug connection with UDOO” section.
+To do this you need to connect an external pc to the debug serial of UDOO DUAL/QUAD and stop the boot procedure at U-Boot. For more info see the Tutorial <a href="/docs/Connecting%20UDOO/Connecting_Via_Serial_Cable" title="Connecting via serial cable">connecting via serial cable</a> or the <a title="UDOO Manual" href="http://udoo.org/download/files/Documents/UDOO_Starting_Manual_beta0.4_11_28_2013.pdf" target="_blank">UDOO DUAL/QUAD starting manual</a> at the “Establish serial debug connection with UDOO DUAL/QUAD” section.
 
 These are the commands you need to insert in the U-Boot console:
 &nbsp;
@@ -88,7 +88,7 @@ saveenv
 
 ```
 
-In Android you can also boot UDOO from both HDMI and LVDS panel at the same time inserting these variables in a different frame buffer:
+In Android you can also boot UDOO DUAL/QUAD from both HDMI and LVDS panel at the same time inserting these variables in a different frame buffer:
 
 e.g. boot on lvds 7" and hdmi.
 
@@ -123,7 +123,7 @@ EndSection
 
 ```
 
-If the calibration is not good enough you can connect a mouse to UDOO and launch the "Calibrate Touchscreen" application from the top bar:
+If the calibration is not good enough you can connect a mouse to UDOO DUAL/QUAD and launch the "Calibrate Touchscreen" application from the top bar:
 
 Application -> System Tools -> Administration -> Calibrate Touchscreen
 

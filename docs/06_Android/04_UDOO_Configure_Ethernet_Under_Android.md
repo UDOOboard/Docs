@@ -1,4 +1,4 @@
-To configure Ethernet connection on UDOO under Android 4.3 you need to connect the board to a host computer. You need to plug a microUSB cable to i.MX6 debug serial UART on CN6 microUSB port. With a serial monitor it's possible to communicate with Android shell over serial uart.
+To configure Ethernet connection on UDOO DUAL/QUAD under Android 4.3 you need to connect the board to a host computer. You need to plug a microUSB cable to i.MX6 debug serial UART on CN6 microUSB port. With a serial monitor it's possible to communicate with Android shell over serial uart.
 
 ##DHCP
 

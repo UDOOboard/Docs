@@ -1,4 +1,4 @@
-Python serial libraries for UDOO
+Python serial libraries for UDOO DUAL/QUAD
 ------------
 
 This file describes how to run the python examples contained in this folder.

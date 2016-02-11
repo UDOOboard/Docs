@@ -1,6 +1,6 @@
-If you prefer, you can choose to program UDOO’s Arduino from your PC, these are the required steps.
+If you prefer, you can choose to program UDOO DUAL/QUAD’s Arduino from your PC, these are the required steps.
 
-<strong>Please note that  a working SD Card should be present on UDOO</strong>
+<strong>Please note that  a working SD Card should be present on UDOO DUAL/QUAD</strong>
 
 ###Unplug J18 jumper  
 This will allow the communication between your computer and the programming port of the SAM3X
@@ -17,7 +17,7 @@ This will allow the communication between your computer and the programming port
 
 ### Install the serial drivers
 
-Install the driver for the cn6 MicroUSB port that allows the correct communication between your external computer and UDOO (choose the correct Operating System of your Computer).
+Install the driver for the cn6 MicroUSB port that allows the correct communication between your external computer and UDOO DUAL/QUAD (choose the correct Operating System of your Computer).
 
 * [Windows](/docs/driversandtools/CP210x_VCP_Windows.zip)
 * [MacOsX](/docs/driversandtools/Mac_OSX_VCP_Driver.zip)
@@ -26,10 +26,10 @@ Install the driver for the cn6 MicroUSB port that allows the correct communicati
 
 ### Patch the Arduino IDE
 
-Now, let’s  configure the standard Arduino-IDE in order to make it communicate to the Sam3x of UDOO. 
+Now, let’s  configure the standard Arduino-IDE in order to make it communicate to the Sam3x of UDOO DUAL/QUAD. 
 To do it we need to patch the official Arduino IDE:
 
-Download and install the Arduino IDE version 1.5 for your specific operating system from [Arduino Website](http://arduino.cc) (other versions will not work, since UDOO needs Arduino 2 compabile programming software)
+Download and install the Arduino IDE version 1.5 for your specific operating system from [Arduino Website](http://arduino.cc) (other versions will not work, since UDOO DUAL/QUAD needs Arduino 2 compabile programming software)
 
 Download the patch for your Operating system:
 

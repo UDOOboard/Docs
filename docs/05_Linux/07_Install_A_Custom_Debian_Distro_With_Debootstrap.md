@@ -1,7 +1,7 @@
 **Prerequisites**
 
 * A SD card for the resulting system (1GB or larger)
-* Official UDOO Kernel and Modules for your model http://www.udoo.org/downloads/
+* Official UDOO DUAL/QUAD Kernel and Modules for your model http://www.udoo.org/downloads/
 * U-boot for your model http://www.udoo.org/downloads/
 * Debian or Linux OS for creating the install
 
@@ -15,7 +15,7 @@
 
 I'm going to use /dev/sdb to represent the SD card and ~/deb as the directory I'm building Debian in.
 
-You can also use a SATA disk instead of an SD card, if using a SATA disk, it is even possible to build the system entirely on the UDOO.
+You can also use a SATA disk instead of an SD card, if using a SATA disk, it is even possible to build the system entirely on the UDOO DUAL/QUAD.
 
 Also, with SATA be sure to [setup U-Boot](/docs/Advanced_Setup/UDOO_Boot_From_SATA#prepareuboot)
 

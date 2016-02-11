@@ -2,9 +2,9 @@
 
 ##Using LVDS Panels with UDOOBuntu official OS
 
-The simplest way to use LVDS panels with UDOO is using the UDOO Configuration Tool+
+The simplest way to use LVDS panels with UDOO DUAL/QUAD is using the UDOO DUAL/QUAD Configuration Tool+
 
-* Open UDOO Configuration Tool
+* Open UDOO DUAL/QUAD Configuration Tool
 * Select Set Default Video Output (LVDS\HDMI) and hit OK
 * Select your LVDS Model ( 7 or 15") and hit OK
 * A dialog should inform you that video boot arguments have been changed correctly
@@ -13,9 +13,9 @@ The simplest way to use LVDS panels with UDOO is using the UDOO Configuration To
 
 ##Manual Video Output Configuration
 
-To use your LVDS with UDOO you have to follow these simple instructions.
+To use your LVDS with UDOO DUAL/QUAD you have to follow these simple instructions.
 
-First connect an external pc to the debug serial of UDOO. Once done connect the serial USB Cable to Udoo and turn it on by plugging the Power Supply.
+First connect an external pc to the debug serial of UDOO DUAL/QUAD. Once done connect the serial USB Cable to UDOO DUAL/QUAD and turn it on by plugging the Power Supply.
 
 From your computer, hit a key before normal boot starts up and type the right parameters for your Operating system and LVDS panel.
 
@@ -33,7 +33,7 @@ video=mxcfb0:dev=hdmi,1920x1080M@60,if=RGB24,bpp=32
 
 ```bash
 
-setenv mmcargs setenv bootargs console=${console},${baudrate} root=${mmcroot} ${hdmi_patch} fbmem=24M video=mxcfb0:dev=ldb,DB-WXGA,if=RGB24,bpp=32
+setenv mmcargs setenv bootargs console=${console},${baudrate} root=${mmcroot} ${hdmi_patch} fbmem=24M video=mxcfb0:dev=ldb,LDB-WXGA,if=RGB24,bpp=32
 
 ```
 
@@ -86,7 +86,7 @@ saveenv
 
 ```
 
-In Android you can also boot UDOO from both HDMI and LVDS panel at the same time inserting these variables in a different frame buffer:
+In Android you can also boot UDOO DUAL/QUAD from both HDMI and LVDS panel at the same time inserting these variables in a different frame buffer:
 
 e.g. boot on lvds 15? and hdmi.
 
@@ -161,7 +161,7 @@ EndSection
 
 ```
 
-If the calibration is not good enough you can connect a mouse to UDOO and launch the "Calibrate Touchscreen" application from the top bar:
+If the calibration is not good enough you can connect a mouse to UDOO DUAL/QUAD and launch the "Calibrate Touchscreen" application from the top bar:
 
 ```bash
 

@@ -1,11 +1,11 @@
-UDOO Configuration Tool is a utility created to assist UDOO basic and advanced Configuration. It comes preinstalled on UDOOBuntu Official UDOO Operating system.
+UDOO DUAL/QUAD Configuration Tool is a utility created to assist UDOO DUAL/QUAD basic and advanced Configuration. It comes preinstalled on UDOOBuntu Official UDOO DUAL/QUAD Operating system.
 
 
 <img src="/docs/img/configuration_tool.png">
 
 ## Tool Overview
 
-UDOO configuration Tool has several subsections:
+UDOO DUAL/QUAD configuration Tool has several subsections:
 
 * **Change User Password**
 Selecting this you'll be able to change default password for user ubuntu.
@@ -44,7 +44,7 @@ This edits Uboot Environment allowing to select default Boot Device from MicroSD
 
 * **Set Default Video Output (LVDS/HDMI)**
 
-This allows to enable UDOO LVDS Panel, 7 or 15 inches. A reboot is required to enable them.
+This allows to enable UDOO DUAL/QUAD LVDS Panel, 7 or 15 inches. A reboot is required to enable them.
 
 
 * **Enable UDOO Camera Module**

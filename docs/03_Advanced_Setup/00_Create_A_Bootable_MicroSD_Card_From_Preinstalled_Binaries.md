@@ -1,6 +1,6 @@
 ## Overview
 
-The following paragraphs will guide to in the creation of a bootable micro SD card for UDOO board, starting from precompiled binaries. This method offers more flexibility and customization opportunities for the average users.
+The following paragraphs will guide to in the creation of a bootable micro SD card for UDOO DUAL/QUAD board, starting from precompiled binaries. This method offers more flexibility and customization opportunities for the average users.
 
 If you don’t feel confident about using binaries you should use the image file method to create your Micro SD card.
 
@@ -107,7 +107,7 @@ e.g. <MICROSD_DEVICE_NAME>* is /dev/sdc*
 
 Copy the u-boot binary file inside the Micro SD. 
 
-For UDOO Quad:
+For UDOO QUAD:
 
 ```bash
 
@@ -115,7 +115,7 @@ sudo dd if=u-boot-q.imx of=/dev/<MICROSD_DEVICE_NAME> bs=512 seek=2
    
 ```
 
-For UDOO Dual:
+For UDOO DUAL:
 
 ```bash
 

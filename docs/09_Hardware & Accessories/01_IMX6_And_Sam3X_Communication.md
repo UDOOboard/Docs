@@ -1,14 +1,14 @@
-UDOO features a powerful IMX6 ARM Cpu , which can execute all the piece of code you want, from simple word-processing to power-hungry 3d modeling tasks. Furthermore, it has a built-in Arduino Due compatible range of GPIOs and it's layout is perfectly compatible with all Arduino Due shields. In this tutorial we'll learn how to take advantage of both these platforms at the same time, how to make them interact and talk to each others.
+UDOO DUAL/QUAD features a powerful IMX6 ARM Cpu , which can execute all the piece of code you want, from simple word-processing to power-hungry 3d modeling tasks. Furthermore, it has a built-in Arduino Due compatible range of GPIOs and it's layout is perfectly compatible with all Arduino Due shields. In this tutorial we'll learn how to take advantage of both these platforms at the same time, how to make them interact and talk to each others.
 
-First, let's have a look on how UDOO's architecture has been designed. As you may know, on the board we find 2 processors:
+First, let's have a look on how UDOO DUAL/QUAD's architecture has been designed. As you may know, on the board we find 2 processors:
 
 <br />
 
 <img src="/docs/img/Udoo_imx6_sam3x.jpg" class="img-responsive pull-right" alt="udoo"  height="189px" width="600px" style="margin-bottom:20px; margin-left:30px;">
 
-* iMX6 - ARM CPU Dual/Quad Core: This is the powertrain of UDOO's operating system. This CPU handles the O.S. environments, such as Android, Ubuntu, Debian etc. iMX6 handles also AudioVideo operations ( audio io, HDMI video, LVDS), USB ports, SATA connection, Network connection and so on.
-* SAM3x - Arduino Due compatible processor: This is the core of UDOO's extended input and output support. You can use the Sam3x as a standalone Arduino board, connecting every sensor, motor , device etc. you want to it. You can also connect every Arduino Due compatible shield you may need for your project.
-UDOO features a serial channel that interconnects these 2 processors, and this is the way to go for advanced projects. The logical steps involved are really simple:
+* iMX6 - ARM CPU Dual/Quad Core: This is the powertrain of UDOO DUAL/QUAD's operating system. This CPU handles the O.S. environments, such as Android, Ubuntu, Debian etc. iMX6 handles also AudioVideo operations ( audio io, HDMI video, LVDS), USB ports, SATA connection, Network connection and so on.
+* SAM3x - Arduino Due compatible processor: This is the core of UDOO DUAL/QUAD's extended input and output support. You can use the Sam3x as a standalone Arduino board, connecting every sensor, motor , device etc. you want to it. You can also connect every Arduino Due compatible shield you may need for your project.
+UDOO DUAL/QUAD features a serial channel that interconnects these 2 processors, and this is the way to go for advanced projects. The logical steps involved are really simple:
 
 Both processors can listen and send data via the serial line, the only thing you need is check that they communicate at the same baudrate. So, you can tie up two different scripts or events manager, on both processors, and make them react the way you want.
 
@@ -73,9 +73,9 @@ stty -F /dev/ttymxc3 cs8 115200 ignbrk -brkint -icrnl -imaxbel -opost -onlcr -is
 
 We set up a server that both listens to the data sent from Serial, and stores them on a mysql database.
 
-Then, I can choose to output the mean averages of temperature and atmospheric pressure with an LED array connected to the Arduino part. I configure the server to write the data to be displayed with the LED array on /dev/ttymxc3, with the same baudrate I set before I integrate the Arduino sketch previously loaded in order to add serial listening and writing on the LED array As you can see, this is a step forward from what we've previously seen as the system is using the serial connection as a bidirectional communication pathway, and the Linux system and Arduino sketch are also both receiving and sending data at the same time. Again, you can add even more complexity layers, UDOO can handle them.
+Then, I can choose to output the mean averages of temperature and atmospheric pressure with an LED array connected to the Arduino part. I configure the server to write the data to be displayed with the LED array on /dev/ttymxc3, with the same baudrate I set before I integrate the Arduino sketch previously loaded in order to add serial listening and writing on the LED array As you can see, this is a step forward from what we've previously seen as the system is using the serial connection as a bidirectional communication pathway, and the Linux system and Arduino sketch are also both receiving and sending data at the same time. Again, you can add even more complexity layers, UDOO DUAL/QUAD can handle them.
 
-Last but not least, UDOO is also capable of driving its GPIO pins as other embedded boards, like Raspberry Pi, the direct way. This is the simplest way of controlling them, but bear in mind that this procedure enables you to control them only via the Linux or Android iMX6 system. This offers another interesting scenario:
+Last but not least, UDOO DUAL/QUAD is also capable of driving its GPIO pins as other embedded boards, like Raspberry Pi, the direct way. This is the simplest way of controlling them, but bear in mind that this procedure enables you to control them only via the Linux or Android iMX6 system. This offers another interesting scenario:
 
 Controlling GPIO via iMX6 while they are also drived by SAM3x Arduino compatible controller
 

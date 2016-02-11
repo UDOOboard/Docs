@@ -1,4 +1,4 @@
-UDOO Serial Libraries Examples
+UDOO DUAL/QUAD Serial Libraries Examples
 ==========
 
 

@@ -1,14 +1,14 @@
 
 ##Introduction
 
-In this chapter it will be described how UDOO manages the signals available on external pin header, and the way to control all the GPIOs. On UDOO, Freescale i.MX and Atmel SAM3X8E share most of the GPIOs available on external pin headers. Each pin of both processors can be set in INPUT or OUTPUT mode. In INPUT mode, each processor read the electrical level of the signal. In OUTPUT mode they can drive low or high the voltage level on each pin. So both processors can control all digital external pins. Usually, with Arduino Due, applications that manage external pins are developed to run on the SAM3x8E microcontroller. On UDOO it is possible to control external pins also using i.MX6 processor.
+In this chapter it will be described how UDOO DUAL/QUAD manages the signals available on external pin header, and the way to control all the GPIOs. On UDOO DUAL/QUAD, Freescale i.MX and Atmel SAM3X8E share most of the GPIOs available on external pin headers. Each pin of both processors can be set in INPUT or OUTPUT mode. In INPUT mode, each processor read the electrical level of the signal. In OUTPUT mode they can drive low or high the voltage level on each pin. So both processors can control all digital external pins. Usually, with Arduino Due, applications that manage external pins are developed to run on the SAM3x8E microcontroller. On UDOO DUAL/QUAD it is possible to control external pins also using i.MX6 processor.
 
 <br />
 
 <img src="/docs/img/Udoo_imx6_sam3x.jpg" class="img-responsive pull-right" alt="udoo"  height="189px" width="600px" style="margin-bottom:20px; margin-left:30px;">
 
 
-##UDOO GPIO Pinout Diagram
+##UDOO DUAL/QUAD GPIO Pinout Diagram
 
 <br />
 
@@ -107,13 +107,13 @@ and it could result in damaging the processor driving the signal LOW. The same s
 
 **WARNING!** There isn’ t any automatic tool that can avoid dangerous situations. The programmer must develop Hardware and Software able to avoid the occurrence of dangerous situations.
 
-**WARNING 2!** UDOO I/O pins are 3.3V only compliant. Providing shields with higher voltage, like 5V, could damage the board. Use only shields Arduino DUE compatible (3.3V).
+**WARNING 2!** UDOO DUAL/QUAD I/O pins are 3.3V only compliant. Providing shields with higher voltage, like 5V, could damage the board. Use only shields Arduino DUE compatible (3.3V).
 
 ##i.MX6 Pinmuxing
 
 i.MX6 processor provides a dedicated controller for pin-muxing options, named IOMUX Controller(IOMUXC). The IOMUX Controller allows to the IC to share one pad between several functional blocks. The sharing is done by multiplexing the pad input/output signals. Every module requires a specific pad setting (such as pull up, keeper, and so on), and for each signal, there are up to 8 muxing options (called ALT modes). The pad settings parameters are controlled by the IOMUXC. In the Linux kernel, it is necessary to define a specific file for each platform.
 
-For UDOO, it can be found in:
+For UDOO DUAL/QUAD, it can be found in:
 
 ```bash
 
@@ -138,7 +138,7 @@ printk ( "\n>UDOO dual " ) ;
 
 ```
 
-It recognizes the UDOO version used, and load the necessary macros needed for it. mx6qd_seco_UDOO_pads and mx6sdl_seco_UDOO_pads are two array of macros defined in two header files, one for each processor type. Both .h files are included in the .c file.
+It recognizes the UDOO DUAL/QUAD version used, and load the necessary macros needed for it. mx6qd_seco_UDOO_pads and mx6sdl_seco_UDOO_pads are two array of macros defined in two header files, one for each processor type. Both .h files are included in the .c file.
 
 ```bash
 
@@ -175,9 +175,9 @@ External pins are set in input mode, in order to prevent problems with SAM3x8Esi
 respectively.
 
 
-##Extra functions available on UDOO pin headers
+##Extra functions available on UDOO DUAL/QUAD pin headers
 
-UDOO can provide for extra features on external pin headers. To enable them it is necessary to declare the correct alternative pin function in the platform file.These functions are:
+UDOO DUAL/QUAD can provide for extra features on external pin headers. To enable them it is necessary to declare the correct alternative pin function in the platform file.These functions are:
 
 * UARTs: uart1, uart3, uart4, uart5
 * sd1
