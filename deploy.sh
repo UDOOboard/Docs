@@ -1,7 +1,8 @@
 #!/bin/bash
 set -e # exit with nonzero exit code if anything fails
 
-# Compile 
+# Compile
+echo "Running daux..."
 ./daux.phar
 
 # go to the out directory and create a *new* Git repo
@@ -24,7 +25,7 @@ git commit -m "Deploy to GitHub Pages"
 # repo's gh-pages branch. (All previous history on the gh-pages branch
 # will be lost, since we are overwriting it.) We redirect any output to
 # /dev/null to hide any sensitive credential data that might otherwise be exposed.
-echo "Deploying"
+echo "Deploying to gh-pages"
 git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:gh-pages > /dev/null 2>&1
 #git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:gh-pages 
 

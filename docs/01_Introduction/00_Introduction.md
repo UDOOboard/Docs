@@ -24,7 +24,6 @@
 
 UDOO DUAL/QUAD retail line up consists of three models, sharing most of the features and different only for connectivity and i.MX6 processor used. All three models feature an embedded Arduino compatible section based on Arduino Due schematic. UDOO DUAL/QUAD’s dimensions are: 4.33 inch x 3.35 inch (11 cm x 8.5 cm).
 
-<br />
 * Freescale i.MX6Quad, 2\4 x ARM® Cortex™-A9 core @ 1GHz with ARMv7A instruction set
 * GPU Vivante GC 2000 for 3D + Vivante GC 355 for 2D (vector graphics) + Vivante GC 320 for 2D
 * Atmel SAM3X8E ARM Cortex-M3 CPU (same as Arduino Due)
@@ -125,54 +124,31 @@ VGA (320x480) @120fps VGA (640x480) @90fps 720p @60fps 1280x960 @45fps 1080p @30
 <a href="http://udoo.org/download/files/datasheets/datasheet15.pdf">UDOO 15" Touch Panel Display Kit Datasheet</a>
 
 
-<br />
-<hr/>
-<h2>Community</h2>
+## Community
+
+* Official web site [www.udoo.org](http://www.udoo.org)
+* Official forum [www.udoo.org/forum](http://www.udoo.org/forum/index.php)
+
+### Forums
+
 <hr/>
 
-Forums The official UDOO forums can be found at http://www.udoo.org/forum
+The official UDOO forums can be found at [www.udoo.org/forum](http://www.udoo.org/forum)
 
 The forum search facility has been tweaked to allow more general searching. <b>Please</b> do a search before making a post as the issue may already have been raised and answered.
 
-
-IRC There is an (unofficial) UDOO discussion channel on IRC. Using the IRC client of your choice, use server information: irc.freenode.net. Room name is #udoo.
-
-<hr/>
-<h3>Home Site & Community</h3>
-<hr/>
-
-Official web site http://www.udoo.org
-
-Official forum http://www.udoo.org/forum/index.php
+### IRC channel
 
 <hr/>
-<h3>Home Site & Community</h3>
+
+There is an (unofficial) UDOO discussion channel on IRC. Using the IRC client of your choice, use server information: `irc.freenode.net`. Room name is `#udoo`.
+
+
+### Social networks
+
 <hr/>
 
-Facebook fan page http://www.facebook.com/udooboard
-
-Twitter http://twitter.com/UDOO_Board
-
-Google+ https://plus.google.com/u/0/110742692974455430878/posts
-
-YouTube http://www.youtube.com/channel/UCXv5UyGn5jArK8xOAmuSeHg
-
-
-
-<div class="clear"></div>
-<hr/>
-
-<!-- Google Code -->
-<script type="text/javascript">
-var google_conversion_id = 983836026;
-var google_custom_params = window.google_tag_params;
-var google_remarketing_only = true;
-</script>
-
-<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
-</script>
-<noscript>
-<div style="display:inline;">
-<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/983836026/?value=0&guid=ON&script=0"/>
-</div>
-</noscript>
+ * [Facebook fan page](http://www.facebook.com/udooboard)
+ * [Twitter](http://twitter.com/UDOO_Board)
+ * [Google+](https://plus.google.com/u/0/110742692974455430878/posts)
+ * [YouTube](http://www.youtube.com/channel/UCXv5UyGn5jArK8xOAmuSeHg)
