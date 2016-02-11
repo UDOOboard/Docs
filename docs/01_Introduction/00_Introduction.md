@@ -61,7 +61,7 @@ UDOO DUAL/QUAD retail line up consists of three models, sharing most of the feat
 * Compatible with All Arduino Due Shields and most Arduino Shields
 * GPIO's can be accessed as Arduino pins, GPIO's or as additional S\PDIF, FlexCAN,I2S, SPI
 
-<a href="/docs/Resources/UDOO_GPIO_Pinout" target="_blank">More informations about UDOO DUAL/QUAD_GPIO_Pinout</a> 
+<a href="http://elinux.org/UDOO_GPIO_Pinout" target="_blank">More information about UDOO DUAL/QUAD_GPIO_Pinout</a> 
 
 <br />
 <hr/>
