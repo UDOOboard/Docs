@@ -1,40 +1,30 @@
 ## Compile the Linux Kernel and the modules
 
-It’s possible to download the Kernel sources from the GitHub repository [https://github.com/UDOOboard/Kernel_Unico](https://github.com/UDOOboard/Kernel_Unico).
-
-Note: For compiling the sources from an x86/64 PC, it is also necessary to download the cross-compiler from the sources section of the webpage [http://www.udoo.org/other-resources/#sources](http://www.udoo.org/other-resources/#sources).
-
-Download and extract the cross-compiler:
-
-```bash
-
-curl http://download.udoo.org/files/crosscompiler/arm-fsl-linux-gnueabi.tar.gz | tar -xzv
-
-```
+It’s possible to download the Kernel sources from the GitHub repository [https://github.com/UDOOboard/linux_kernel](https://github.com/UDOOboard/linux_kernel).
 
 It could be prompted to install some packages in order to successfully compile the kernel on Linux.
 
-E.g. in Ubuntu 10.04 it is necessary  to install the following packages:
+E.g. in Ubuntu 14.04 it is necessary to install the following packages:
 
 ```bash
 
-sudo apt-get install build-essential ncurses-dev u-boot-tools git 
+sudo apt-get install build-essential ncurses-dev u-boot-tools git gcc-arm-linux-gnueabihf
 
 ```
 
-Download the latest revision from GitHub:
+Download the latest kernel revision from GitHub:
 
 ```bash
 
-git clone http://github.com/UDOOboard/Kernel_Unico kernel
+git clone https://github.com/UDOOboard/linux_kernel
 
 ```
 
-Move inside the folder kernel:
+Move inside the folder linux_kernel:
 
 ```bash
 
-cd kernel
+cd linux_kernel
 
 ```
 
@@ -42,7 +32,7 @@ Set the default kernel configuration for UDOO DUAL/QUAD by running the command:
 
 ```bash
 
-make ARCH=arm UDOO_defconfig
+make ARCH=arm udoo_quad_dual_defconfig
 
 ```
 
@@ -54,31 +44,30 @@ make ARCH=arm menuconfig
 
 ```
 
-Start compiling:
+Start compiling the Kernel, modules and dtb files:
 
 ```bash
 
-make -j4 CROSS_COMPILE=../arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi- ARCH=arm uImage modules
+make -j4 CROSS_COMPILE=arm-linux-gnueabihf- ARCH=arm zImage modules dtbs
 
 
 ```
 
-(This operation could take up to 20 minutes, depending on the PC used) The compiled Binary (uImage) will now be available in the arch/arm/boot/ folder.
+(This operation could take up to 20 minutes, depending on the PC used) The compiled Binary (zImage) will now be available in the arch/arm/boot/ folder.
 
-Copy it in the previous folder:
+You can copy the kernel binary (zImage) and device tree binaries (.dtb) in the /boot/ partitions of your distro :
 
 ```bash
-
-cp arch/arm/boot/uImage ..
+e.g.
+cp arch/arm/boot/zImage /media/<user_name>/boot/
+cp arch/arm/boot/dts/imx6sx-udoo-neo*.dtb /media/<user_name>/boot/dts/
 
 ```
 
-Now install the modules:
+Now install the modules and firmware in the NEO rootfs:
 
 ```bash
-
-make modules_install INSTALL_MOD_PATH=.. CROSS_COMPILE=../arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi- ARCH=arm
-
-cd ..
+e.g.
+make modules_install firmware_install INSTALL_MOD_PATH=/media/<user_name>/udoobuntu/ CROSS_COMPILE=arm-linux-gnueabihf- ARCH=arm
 
 ```
