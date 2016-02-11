@@ -29,3 +29,7 @@ echo "Deploying to gh-pages"
 git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:gh-pages > /dev/null 2>&1
 #git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:gh-pages 
 
+sleep 10
+
+echo "Updating UDOO.org"
+curl -A "Mozilla/5.0 (Windows; U; Windows NT 5.1; de; rv:1.9.2.3) Gecko/20100401 Firefox/3.6.3" "http://www.udoo.org/wp-content/plugins/neo-docs/update.php?repo=docs&t=$TKX"
