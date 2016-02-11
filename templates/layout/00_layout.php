@@ -8,7 +8,7 @@
     <meta name="description" content="<?= $params['tagline']; ?>" />
     <meta name="author" content="<?= $params['author']; ?>">
     <meta charset="UTF-8">
-    <link rel="icon" href="<?= $params['theme']['favicon']; ?>" type="image/x-icon">
+    <link rel="icon" href="http://www.udoo.org/wp-content/uploads/2014/12/logo_udoo_32.ico" type="image/x-icon">
     <!-- Mobile -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
