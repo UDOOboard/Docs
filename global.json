@@ -1,4 +1,46 @@
 {
-    "docs_directory": "/docs/",
-    "valid_markdown_extensions": ["md", "markdown"]
+    "docs_directory": "docs",
+    "themes_directory": "themes",
+
+    "title": "UDOO",
+    "tagline": "UDOO",
+    "author": "UDOO",
+    "image": "",
+    "languages": {},
+
+    "format": "html",
+    "processor": "",
+
+    "ignore": {
+        "files": [],
+        "folders": []
+    },
+
+    "live": {
+        "inherit_index": false,
+        "clean_urls": false
+    },
+
+    "html": {
+        "theme": "daux-blue",
+        "breadcrumbs": false,
+        "toggle_code": false,
+        "date_modified": false,
+        "float": false,
+        "auto_landing": true,
+
+        "repo": "",
+        "twitter": [],
+        "links": {
+        },
+
+        "google_analytics": false,
+        "piwik_analytics": false,
+        "piwik_analytics_id": "0"
+    },
+
+    "confluence": {
+        "prefix": "",
+        "delete": false
+    }
 }

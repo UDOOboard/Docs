@@ -1,28 +1,24 @@
 {
-    "title": "Docs",
+    "title": "UDOO Quad/Dual Docs",
     "tagline": "UDOO Board Documentation",
     "author": "UDOO Team",   
     "image": "/udoo/images/logoogo.png",
-    "theme": "udoo",
-    "template": "default",
-    "clean_urls": true,
-    "toggle_code": true,
-    "breadcrumbs": false,
-    "breadcrumb_separator": "Chevrons",
-    "date_modified": false,
-    "float": true,
-    "file_editor": false,   
-    "repo": "UDOOboard/Docs",
     "ignore": {
-            "files": ["Work_In_Progress.md"],
-            "folders": ["99_Not_Ready"]
+        "files": [
+        ]
     },
-    "twitter": ["UDOO_Board"],
-    "google_analytics": "UA-40057783-1",
-    "links": {
-        "Home": "http://udoo.org",
-        "Downloads": "http://udoo.org/downloads",
-		"Tutorials": "http://udoo.org/tutorial",
-        "Forum": "http://udoo.org/forum"
+    "html": {
+	    "theme": "daux-navy",
+	    "toggle_code": false,
+	    "breadcrumbs": false,
+	    "date_modified": false,
+	    "float": false,
+	    "repo": "UDOOboard/Docs",
+	    "links": {
+	        "Home": "http://www.udoo.org",
+	        "Downloads": "http://www.udoo.org/downloads",
+	        "Tutorials": "http://www.udoo.org/tutorial",
+	        "Forum": "http://www.udoo.org/forum"
+	    }
     }
 }

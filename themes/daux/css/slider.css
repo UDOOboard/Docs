@@ -1,0 +1,65 @@
+/* Webkit */
+.safari input[type=range],
+.chrome input[type=range], 
+.opera input[type=range] {
+	-webkit-appearance: none;
+	width: 100%;
+	border-radius: 8px;
+	height: 7px;
+	border: 1px solid #bdc3c7;
+	background-color: #fff; 
+}
+.safari input[type='range']::-webkit-slider-thumb,
+.chrome input[type='range']::-webkit-slider-thumb,
+.opera input[type='range']::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	background-color: #ecf0f1;
+	border: 1px solid #bdc3c7;
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+/* Mozilla */
+.firefox input[type=range] {
+	width: 100%;
+}
+.firefox input[type=range]::-moz-range-track {
+	border-radius: 8px;
+	height: 7px;
+	border: 1px solid #bdc3c7;
+	background-color: #fff;
+}
+.firefox input[type=range]::-moz-range-thumb {
+	background: #ecf0f1;
+	border: 1px solid #bdc3c7;
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+/* Internet Explorer */
+.ie input[type="range"]::-ms-fill-lower,
+.ie input[type="range"]::-ms-fill-upper {
+	background: transparent;
+}
+.ie input[type="range"]::-ms-track {
+    border-radius: 8px;
+	height: 7px;
+	border: 1px solid #bdc3c7;
+	background-color: #fff;
+}
+.ie input[type="range"]::-ms-thumb {
+	background-color: #ecf0f1;
+	border: 1px solid #bdc3c7;
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+input[type="range"] {
+	width: 500px !important;
+}
