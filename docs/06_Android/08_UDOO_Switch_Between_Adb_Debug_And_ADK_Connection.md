@@ -2,13 +2,13 @@ Android don’t use the uart serial to communicate with the Atmel SAM3X microcon
 
 To power on the OTG USB bus you need to plug the J2 jumper on which enables the voltage supply to the bus.
 
-##Android Accessory Mode
+## Android Accessory Mode
 
 By default the Android OTG BUS is switched to SAM3X, the starting connection is between the two processors which means that if you plug an USB cable to the CN3 connector it doesn’t work.
 
 With this configuration the i.Mx6 communicates with the SAM3X using the ADK protocol. The SAM3X needs to be programmed by a sketch which includes some specific libraries then install an app on Android configured to use the ADK protocol.
 
-##USB Debug mode
+## USB Debug mode
 
 UDOO DUAL/QUAD can use the Android Debug Bridge (adb) to to install debug and test applications like a normal Android device. To do so you need to switch the OTG bus to the microUSB port, then connect your personal computer to the CN3 microUSB port and use the standard adb tools on UDOO DUAL/QUAD.
 
@@ -33,9 +33,9 @@ You can download the Android SDK and get the full documentation here: http://dev
 
 The ADB protocol guide is available here: http://developer.android.com/tools/help/adb.html
 
-##Switching between modes
+## Switching between modes
 
-###GUI Switch
+### GUI Switch
 
 You can automatically switch between modes using the options menu checkbox.
 
@@ -58,7 +58,7 @@ If External OTG port enabled is selected you can access the Android adb from an 
 
 If not the OTG is shared between i.Mx6 and SAM3X (so they can communicate with ADK protocol and use them together.)
 
-###Console Switch
+### Console Switch
 
 Connect a microUSB cable to CN6 and plugging the J18 jumper then access to the UART serial with a terminal application (e.g Teraterm, Minicom, Serial Tools).
 

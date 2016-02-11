@@ -9,7 +9,7 @@ Note: The following step by step guide is referred to a Linux System.
 
 ## Step by Step Guide
 
-###Download the binaries
+### Download the binaries
 
 A bootable SD card has 4 different elements:
 
@@ -20,7 +20,7 @@ A bootable SD card has 4 different elements:
 
 Create a new folder "udoo-dev" under your Home directory, then browse the UDOO's web site to the Download page and download the binaries you need.
 
-###GParted the Micro SD card
+### GParted the Micro SD card
 
 Insert the Micro SD card in the card reader and launch GParted from command line:
 
@@ -49,7 +49,7 @@ Create a new partition with the following parameters:
 Click on Apply and wait for the partition to be done, then exit GParted.
 
 
-###Copy the files to the Micro SD card
+### Copy the files to the Micro SD card
 
 **File System**
 

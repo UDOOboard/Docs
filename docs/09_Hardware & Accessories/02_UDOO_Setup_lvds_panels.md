@@ -1,6 +1,6 @@
 **Attention:** Before starting make sure you have the lastest u-boot and kernel. If not you can use the simple update procedure
 
-##Using LVDS Panels with UDOOBuntu official OS
+## Using LVDS Panels with UDOOBuntu official OS
 
 The simplest way to use LVDS panels with UDOO DUAL/QUAD is using the UDOO DUAL/QUAD Configuration Tool+
 
@@ -11,7 +11,7 @@ The simplest way to use LVDS panels with UDOO DUAL/QUAD is using the UDOO DUAL/Q
 * In some cases you could be required to choose a resolution. Choose it accordingly to your device.
 * Reboot for changes to take effect
 
-##Manual Video Output Configuration
+## Manual Video Output Configuration
 
 To use your LVDS with UDOO DUAL/QUAD you have to follow these simple instructions.
 
@@ -27,7 +27,7 @@ video=mxcfb0:dev=hdmi,1920x1080M@60,if=RGB24,bpp=32
 
 ```
 
-##Exact UBOOT Parameters
+## Exact UBOOT Parameters
 
 ###15" Linux
 
@@ -62,7 +62,7 @@ setenv bootargs console=ttymxc1,115200 init=/init video=mxcfb0:dev=ldb,LDB-WVGA,
 
 ```
 
-###HDMI Linux
+### HDMI Linux
 
 ```bash
 
@@ -70,7 +70,7 @@ setenv mmcargs setenv bootargs console=${console},${baudrate} root=${mmcroot} ${
 
 ```
 
-###HDMI Android
+### HDMI Android
 
 ```bash
 
@@ -124,7 +124,7 @@ video=mxcfb0:dev=hdmi,1920x1080M@60,if=RGB24,bpp=32 (default environment variabl
 
 <iframe width="460" height="315" src="https://www.youtube.com/embed/7CYsKJ1kqsk" frameborder="0" allowfullscreen></iframe>
 
-##Touch Calibration
+## Touch Calibration
 
 if you have any problem with touch calibration try to modify the text file:
 

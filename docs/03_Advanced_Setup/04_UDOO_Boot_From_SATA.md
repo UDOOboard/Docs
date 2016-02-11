@@ -1,6 +1,6 @@
 This guide will show you how to boot your UDOO DUAL/QUAD from an attached SATA drive with the help of a small SD card. NOTE: It is currently not possible to boot without an SD card, it is hoped that this feature will be added in the future.
 
-##Prerequisites
+## Prerequisites
 
 * A SATA drive
 * A SD card
@@ -9,7 +9,7 @@ This guide will show you how to boot your UDOO DUAL/QUAD from an attached SATA d
 
 This guide also assumes you have a working linux install for UDOO DUAL/QUAD.
 
-##Preparing the drive
+## Preparing the drive
 
 You may partition and format the drive however you want, the current builds of uboot support up to ext3 I believe, newer builds may support ext4. I will be using a drive of a single ext3 partition as an example. There are several methods of preparing the SATA drive, some are listed below. NOTE: you only need to do ONE of the following methods.
 
@@ -18,7 +18,7 @@ You may partition and format the drive however you want, the current builds of u
 * Using dd to flash an image
 * Using win32diskimager from windows
 
-###Using an existing Linux system
+### Using an existing Linux system
 
 Connect your SD and SATA drive to a linux system. I'm using a USB SATA adapter and mounted it and the sd at /sd and /usb just for clarity, but this is upto you.
 
@@ -34,7 +34,7 @@ This will copy your SD filesystem to the SATA disk.
 
 Unmount both. Once that is complete, connect the SATA disk to the UDOO DUAL/QUAD and reinsert the SD card.
 
-###Extracting a FS tarball
+### Extracting a FS tarball
 
 You may use the filesystem tarball from the binaries tab on [udoo.org](http://www.udoo.org/downloads/) or use your own. Place this tarball on the SATA disk. You can transfer this over the network or wget the file straight onto it.
 
@@ -47,7 +47,7 @@ Run the following commands (Assuming /dev/sda1 is mounted at /mnt)
  
  ```
  
- ###Using dd to flash an image
+ ### Using dd to flash an image
  
  You can also flash the filesystem using DD. You will need a filessytem img such as the ones provided by UDOO DUAL/QUAD. Make sure your SATA disk is NOT mounted.
  
@@ -59,7 +59,7 @@ Run the following commands (Assuming /dev/sda1 is mounted at /mnt)
  
  ```
  
-###Using win32diskimager from windows
+### Using win32diskimager from windows
  
  You can flash any image from windows with win32diskimager. You can get it from its SourceForge page [http://sourceforge.net/projects/win32diskimager/](http://sourceforge.net/projects/win32diskimager/)
  
@@ -156,11 +156,11 @@ Now run the following to continue booting:
  
    ```
    
-##Done!
+## Done!
 
 You should now be booting into the system on the SATA drive. If all goes well you can safely remove almost everything on the SD card.
 
-##NOTE!
+## NOTE!
 
 If you used the udooupdate script to update the uboot version and kernel, you'll probably need to do this on both the SD card that triggers the boot as well as the SATA drive. Use the instructions here to change which filesystem is the root, download and run the update from each.
 

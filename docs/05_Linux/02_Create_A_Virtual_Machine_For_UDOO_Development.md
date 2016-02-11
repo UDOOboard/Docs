@@ -4,7 +4,7 @@ We suggest to use a Virtual Machine environment to create a close and dedicated 
 
 This wiki matches the Android requirements, but also works for Linux u-boot and kernel development.
 
-##Install and configure a Virtual Machine with Ubuntu 10.04 64bit
+## Install and configure a Virtual Machine with Ubuntu 10.04 64bit
 
 We suggest to use VMware ® Player™ for this operation. We provide a step by step installation procedure.
 
@@ -50,7 +50,7 @@ startx
 
 ```
 
-##Configure Ubuntu 10.04
+## Configure Ubuntu 10.04
 
 Android website reports the following list of packages that must be installed in the host PC (and all their dependencies):
 
@@ -63,7 +63,7 @@ HOST$ sudo apt-get install git-core gnupg flex bison gperf build-essential zip c
 
 **Note:** sun-java6-jdk package isn’t still available on official repositories. Given the Android compilation process needs the Oracle Java version 6 we suggest two methods to install it.
 
-###Instal Java Oracle 6 from aptitude
+### Instal Java Oracle 6 from aptitude
 
 ```bash
 
@@ -74,7 +74,7 @@ HOST$ sudo apt-get install oracle-java6-installer
 
 ```
 
-###Instal Java Oracle 6 from official site
+### Instal Java Oracle 6 from official site
 
 Download binary installation package from oracle download page (remember JDK 6 update 35 for 64 bit linux version) http://download.oracle.com/
 

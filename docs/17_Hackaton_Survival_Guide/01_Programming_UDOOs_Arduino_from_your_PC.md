@@ -2,7 +2,7 @@ If you prefer, you can choose to program UDOO DUAL/QUAD’s Arduino from your PC
 
 <strong>Please note that  a working SD Card should be present on UDOO DUAL/QUAD</strong>
 
-###Unplug J18 jumper  
+### Unplug J18 jumper  
 This will allow the communication between your computer and the programming port of the SAM3X
 
 

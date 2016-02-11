@@ -11,7 +11,7 @@ The following paragraphs will guide to in the creation of a bootable micro SD ca
 * Follow the instructions below for the OS you use:
 
 
-###Write the image on micro SD card Using Linux
+### Write the image on micro SD card Using Linux
 
 <img style="width:400px; height:218px" src="/docs/img/Box2_Tutorials_UdooSite.png">
 
@@ -82,7 +82,7 @@ The micro SD card is now ready to be used. Simply, insert it in UDOO DUAL/QUADâ€
 
 Here you can find the video tutorial of [Creating a bootable MicroSD card with Linux Ubuntu from image](/tutorial/creating-bootable-micro-sd-card-linux-ubuntu-image/).
 
-###Write the image on micro SD card using Mac OSX
+### Write the image on micro SD card using Mac OSX
 
 <img style="width:400px; height:218px" src="/docs/img/Box4_Tutorials_UdooSite.png">
 
@@ -168,7 +168,7 @@ The micro SD card is now ready to be used. Simply, insert it in UDOO DUAL/QUADâ€
 
 Here you can find the video tutorial of [Creating a bootable MicroSD card with Mac OSX from image](/tutorial/creating-bootable-micro-sd-card-mac-os-x-image/).
 
-###Write the image on micro SD card Using Windows
+### Write the image on micro SD card Using Windows
 
 <img style="width:400px; height:218px" src="/docs/img/Box3_Tutorials_UdooSite.png">
 

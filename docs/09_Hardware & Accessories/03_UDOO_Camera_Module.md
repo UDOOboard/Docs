@@ -1,4 +1,4 @@
-##Specifications
+## Specifications
 
 * Auto focus control (AFC) with embedded AF VCM driver
 * Sensitivity: 600mV/lux-sec
@@ -11,9 +11,9 @@ VGA (320x480) @120fps VGA (640x480) @90fps 720p @60fps 1280x960 @45fps 1080p @30
 
 [UDOO Camera Module Datasheet](http://udoo.org/download/files/datasheets/datasheet_camera.pdf)
 
-##Usage
+## Usage
 
-###Connection 
+### Connection 
 
 UDOO Camera module is designed to be connected via CSI interface to UDOO Camera Connector. Connection is made via a FLAT-213-16PIN cable.
 Make sure the blue part of the ribbon cable looks backwords respect to the camera side. 
@@ -24,11 +24,11 @@ To a clearer explanation of how to connect the UDOO Camera Module you can check 
 
 Important: Never Connect UDOO Camera Module when UDOO DUAL/QUAD is on! This could potentially damage the board and the camera.
 
-###Camera With Android
+### Camera With Android
 
 No additional operations needed. Just connect the Camera Module and boot Android. The camera will be automatically recognized by the system. Use the Camera App to use the Camera or develop your own APP using the standard Android Camera API.
 
-###Using with Gstreamer on Linux
+### Using with Gstreamer on Linux
 
 UDOO Camera can be accessed in Hardware mode using [Gstreamer](http://gstreamer.freedesktop.org/) Pipelines Specifically with Freescale-provided elements and pugins.
 Starting from UDOObuntu 2 (Ubuntu 14.04 - Kernel 3.14.x) you can use gstreamer 1.0 and gstreamer-imx plugin to use the camera.
@@ -104,7 +104,7 @@ More thorough information on gstreamer pipelines can be found at:
 
 
 
-###Using with Loopback Device
+### Using with Loopback Device
 
 N.B. This section is valid only for the UDOObuntu 1 version (12.04)
 

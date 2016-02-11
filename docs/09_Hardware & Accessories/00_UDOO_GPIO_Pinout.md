@@ -1,5 +1,5 @@
 
-##Introduction
+## Introduction
 
 In this chapter it will be described how UDOO DUAL/QUAD manages the signals available on external pin header, and the way to control all the GPIOs. On UDOO DUAL/QUAD, Freescale i.MX and Atmel SAM3X8E share most of the GPIOs available on external pin headers. Each pin of both processors can be set in INPUT or OUTPUT mode. In INPUT mode, each processor read the electrical level of the signal. In OUTPUT mode they can drive low or high the voltage level on each pin. So both processors can control all digital external pins. Usually, with Arduino Due, applications that manage external pins are developed to run on the SAM3x8E microcontroller. On UDOO DUAL/QUAD it is possible to control external pins also using i.MX6 processor.
 
@@ -8,14 +8,14 @@ In this chapter it will be described how UDOO DUAL/QUAD manages the signals avai
 <img src="/docs/img/Udoo_imx6_sam3x.jpg" class="img-responsive pull-right" alt="udoo"  height="189px" width="600px" style="margin-bottom:20px; margin-left:30px;">
 
 
-##UDOO DUAL/QUAD GPIO Pinout Diagram
+## UDOO DUAL/QUAD GPIO Pinout Diagram
 
 <br />
 
 <img src="/docs/img/Udoo_pinoutext.jpg" class="img-responsive pull-right" alt="udoo"  style="margin-bottom:20px; margin-left:30px;">
 
 
-##SAM3x8E GPI/Os management
+## SAM3x8E GPI/Os management
 
 SAM3x8E microcontroller can manage GPIOs using classic Arduino programming language. To manage a GPIO in Arduino Environment it is necessary to set its direction (input or output) by calling the pinMode(pin, mode) function.
 
@@ -92,7 +92,7 @@ echo 1 > /sys/class/gpio/gpioXX/value
 
 ```
 
-##GPIOs Warnings
+## GPIOs Warnings
 
 When changing i.MX6 GPIOs directions, it is necessary to pay special attention. New direction must be compatible with SAM3x8E pinout configuration and/or with the load of the physical pin.
 
@@ -175,7 +175,7 @@ External pins are set in input mode, in order to prevent problems with SAM3x8Esi
 respectively.
 
 
-##Extra functions available on UDOO DUAL/QUAD pin headers
+## Extra functions available on UDOO DUAL/QUAD pin headers
 
 UDOO DUAL/QUAD can provide for extra features on external pin headers. To enable them it is necessary to declare the correct alternative pin function in the platform file.These functions are:
 
@@ -195,7 +195,7 @@ UDOO DUAL/QUAD can provide for extra features on external pin headers. To enable
 
 On the vertical axis there are iMx6s functionalities. On the horizontal axis are shown the pins used to implements each functionality. Be careful that some pins are used for different functionalities and only one at a time can be active for each of them.
 
-##Example
+## Example
 
 As an example, consider the possibility of enabling another serial port (UART3) connected to imx6 through external Pins. For this, it is necessary to edit the file board-mx6qd_seco_UDOO.h.Looking at the previous graph, it is possible to see that needed pins areEIM_D24 and EIM_D25. Now it is possible to select the correct macros to enable this functionality. It is also necessary to remove the related GPIOs macro from the mx6q_set_in_inputmode[] array, which contains the list of the pins configured as input GPIOs.
 

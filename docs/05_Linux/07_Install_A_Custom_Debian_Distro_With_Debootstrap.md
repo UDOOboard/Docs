@@ -57,9 +57,9 @@ NOTE: We are using /dev/sdb here, NOT sdb1, Also, be sure sdb is the sd card
 
 ```
 
-##Bootstrapping Debian
+## Bootstrapping Debian
 
-###First Stage
+### First Stage
 
 First, lets create our working directory
 
@@ -87,7 +87,7 @@ Once that completes we are almost ready for the second stage, but before we do t
 
 ```
 
-###Second Stage
+### Second Stage
 
 Now, we install the second stage
 
@@ -111,7 +111,7 @@ Now its time to install the kernel
 
 Note: replace path/to with the path where you placed the kernel and modules. If using SATA, be sure to place uImage on the SD card also. Otherwise you will not be able to boot.
 
-##Post install changes
+## Post install changes
 
 We now have a working Debian system that will boot, however, we will not have networking.
 
@@ -166,7 +166,7 @@ bluetooth for bluetooth support
 
 Once done, exit the chroot.
 
-##Transfer to SD card
+## Transfer to SD card
 
 If you chose to build the system directly on SD or SATA you can skip this step. Now we can copy the new system to your sd card or SATA disk.
 
@@ -179,14 +179,14 @@ If you chose to build the system directly on SD or SATA you can skip this step. 
 
 Once complete its now time to boot!
 
-##Boot!
+## Boot!
 
 Now the system is ready for booting! You should already have all the drivers you need for the hardware, some like bluetooth, may require additional software.
 
 
 This guide has been adapted from the guide over at the [Freescale community](https://community.freescale.com/docs/DOC-95044).
 
-##Binary Tarball
+## Binary Tarball
 
 Binary tarballs are available below:
 

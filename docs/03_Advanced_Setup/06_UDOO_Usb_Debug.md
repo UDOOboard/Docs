@@ -1,4 +1,4 @@
-##Introduction
+## Introduction
 
 UDOO DUAL/QUAD features a built in USB to serial interface which is very useful for various reasons: You can use it to connect UDOO DUAL/QUAD via SSH without a network connection, programming the Sam3x (arduino) and access the debug console for troubleshooting purposes.
 
@@ -6,7 +6,7 @@ Connecting via serial will practically result in a shell console, the same as th
 
 Note: Be sure the jumper J18(the one near the UDOO DUAL/QUAD reset button) is plugged to access to the debug console.
 
-##Windows
+## Windows
 
 Download the serial adapter Driver [here](http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx)
 Install the proper version for your Operating system:
@@ -36,7 +36,7 @@ Done!
 
 You’re in! You’ll be able to see the startup process and access to the remote shell console on UDOO DUAL/QUAD.
 
-##Linux
+## Linux
 
 Connect the serial port of UDOO DUAL/QUAD (CN6) to your PC using the micro USB cable.
 Type
@@ -104,7 +104,7 @@ sudo minicom -w
 Power cycle UDOO DUAL/QUAD to see the boot process and connect it to serial console shell
 
 
-##Mac OS X
+## Mac OS X
 
 Download the serial adapter Driver [here](http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx)
 

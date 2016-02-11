@@ -1,4 +1,4 @@
-##Programming the Arduino embedded from UDOO DUAL/QUAD itself
+## Programming the Arduino embedded from UDOO DUAL/QUAD itself
 
 With the Arduino IDE for UDOO DUAL/QUAD is it possible to write code and upload it to the Arduino DUE embedded on UDOO DUAL/QUAD, from UDOO DUAL/QUAD itself.
 
@@ -9,13 +9,13 @@ The Arduino IDE for UDOO DUAL/QUAD comes already configured to see the Arduino D
 
 Note: the Arduino IDE for UDOO DUAL/QUAD is a custom version of the official Arduino IDE 1.5.4 and is shared alike. The UDOO team work has been focused mainly on the compiler.
 
-##Programming the Arduino embedded microcontroller from an external computer
+## Programming the Arduino embedded microcontroller from an external computer
 
 To program the Atmel SAM3X from an external computer, you can use the standard Arduino IDE on your computer, connected to UDOO DUAL/QUAD through USB to microUSB cable, plugged to CN6 connector. Download the Arduino IDE version 1.5 for your specific operating system from the [official website](http://arduino.cc/en/Main/Software), then install it on your computer. Only version 1.5 or higher will work with the Arduino DUE embedded on UDOO DUAL/QUAD.
 
 Note: remember to unplug J18 jumper. This will allow the communication between your computer and the programming port of the SAM3X.
 
-###Using Arduino IDE with UDOO DUAL/QUAD patch
+### Using Arduino IDE with UDOO DUAL/QUAD patch
 
 The easiest way to program the Arduino DUE embedded from an external computer is by patching the Arduino IDE. The Atmel Sam3X microcontroller needs to receive ERASE and RESET signals when programming it with a new sketch. On Arduino boards this operation is performed by the microcontroller ATmega16U2 while on UDOO DUAL/QUAD this component is not present. The patch resolves this issue.
 
@@ -39,7 +39,7 @@ In OSX, right click on the Arduino IDE Application and select “Show package co
 
 With this patch you are now able to upload your sketch selecting the Arduino Due(Programming Port) from Tools -> Board and the right port from Tools -> Port in the Arduino IDE.
 
-###Using Arduino IDE without UDOO DUAL/QUAD patch
+### Using Arduino IDE without UDOO DUAL/QUAD patch
 
 A different way for programming the Arduino side without applying patches consists in stopping the board at U-boot stage before the Kernel is loaded
 

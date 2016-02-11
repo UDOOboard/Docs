@@ -2,7 +2,7 @@ Follow this guide if you don't have the Arduino IDE for UDOO DUAL/QUAD preinstal
 
 Note: if you don't have any JVM installed on your system you need to install the Oracle Java JDK following the "Install the Oracle Java JDK" section below.
 
-##Install the Oracle Java JDK
+## Install the Oracle Java JDK
 
 Download [Oracle JDK (Java SE Development Kit 7u60 for ARM – Linux ARM v6/v7 Hard Float ABI)](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-arm-downloads-2187468.html) accepting the license agreement
 
@@ -34,7 +34,7 @@ update-alternatives --config javac
 
 ```
 
-##Install from terminal
+## Install from terminal
 
 Open a new terminal and download the Arduino IDE for UDOO DUAL/QUAD with the following command:
 

@@ -14,7 +14,7 @@ Both processors can listen and send data via the serial line, the only thing you
 
 Let's view some scenarios:
 
-##Unidirectional Communication from Linux to Arduino
+## Unidirectional Communication from Linux to Arduino
 
 The Arduino part will turn on a LED when a script is launched on the Linux OS running on the iMX6 part
 
@@ -43,7 +43,7 @@ stty -F /dev/ttymxc3 cs8 115200 ignbrk -brkint -icrnl -imaxbel -opost -onlcr -is
 
 I upload a sketch that listen on the serial port, and when it receives "1", it will turn a LED to HIGH state. I launch my python script. Which starts waiting for a key to be pressed. Sam3x is listening. When I press a key, a series of events will take place, ultimately resulting in my Led turning on: KEY -> Pyhton script writes 1 on serial -> SAM3x gets triggered and turns on the LED This is of course a very simple scenario, almost the simples you can get. But the logical pathway we examined is pretty the same when you climb up on complexity.
 
-##Unidirectional Communication from Arduino to Linux
+## Unidirectional Communication from Arduino to Linux
 
 Now, let's examine the opposite scenario:
 
@@ -61,7 +61,7 @@ stty -F /dev/ttymxc3 cs8 115200 ignbrk -brkint -icrnl -imaxbel -opost -onlcr -is
 
 We set up a server that both listens to the data sent from Serial, and stores them on a mysql database. Furthermore, we can set up a script that pops-up a video alert if certain values are read from the sensors. Again, this basic principle can be expanded to create more complex situations. This is up to you and your creativity. The ultimate scenario is however the bidirectional communication, that occurs when both systems reads and listens reciprocally.
 
-##Bidirectional communication
+## Bidirectional communication
 
 As a mere example, we can merge the above scenarios into one integrated application: I have a sensor that reads environmental data, such as temperature and atmospheric pressure. I upload my Arduino sketch, that will send both of these readings via serial every 1 second. I set serial port baud rate at 115200 To match SAM3x serial speed, we properly set the serial port at 115200 on the iMX6 with the script:
 

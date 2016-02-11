@@ -1,4 +1,4 @@
-##Install the Oracle Java JDK
+## Install the Oracle Java JDK
 
 
 UDOO DUAL/QUAD board ships with a custom build of vanilla Android operating system, the original **Android Open Source Project (AOSP)**. Like you may have noticed when you run Android for the first time, there is no trace of any [Google Mobile Services](http://www.google.com/mobile/) or applications such as Google Play Store, Gmail or others, usually known as **Google Apps**. 
@@ -33,7 +33,7 @@ We have to locate the <i>adb</i> executable and use it through the command line 
 Note: the SDK_location_on_your_system is the location where you save the SDK on your system, during the first step
 
 
-###Windows 8
+### Windows 8
 
 To open the command line, point the mouse to the upper-right corner of the screen, move the mouse pointer down, and then click Search. From the search box, write cmd and click Command Prompt.
 
@@ -51,7 +51,7 @@ We're in the correct folder if, in the above list, we can find the <i>adb.exe</i
 
 
 
-###Mac OS X
+### Mac OS X
 
 To open the command line, start the **Terminal application** from the **Launchpad** or from the Applications folder through **Finder**.
 
@@ -67,7 +67,7 @@ ls
 We're in the correct folder if, in the above list, we can find the adb executable.
 
 
-###Linux
+### Linux
 
 To open the command line, start the **Terminal** application and execute the following commands using the right path according where you've extracted Android Studio:
 
@@ -80,7 +80,7 @@ ls
 
 We're in the correct folder if, in the above list, we can find the adb executable.
 
-###Running the adb shell
+### Running the adb shell
 
 Now that we can launch <i>adb</i> from the command line, we should mount the <i>/system</i> folder with write permissions and then access to the Android shell.
 
