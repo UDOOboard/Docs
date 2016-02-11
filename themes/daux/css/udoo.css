@@ -89,7 +89,7 @@ article .tomorrow-comment, article pre .hljs-comment, article pre .hljs-title {
   color: #969896 !important;
 }
 
-article .tomorrow-red, article pre .hljs-variable, article pre .hljs-attribute, article pre .hljs-tag, article pre .hljs-regexp, article pre .hljs-ruby .constant, article pre .hljs-xml .tag .title, article pre .hljs-xml .pi, article pre .hljs-xml .doctype, article pre .hljs-html .doctype, article pre .hljs-css .id, article pre .hljs-css .class, article pre .hljs-css .pseudo {
+article .tomorrow-red, article pre .hljs-variable, article pre .hljs-attribute, article pre .hljs-tag, article pre .hljs-regexp, article pre .hljs-ruby .constant, article pre .hljs-xml .tag .title, article pre .hljs-xml .pi, article pre .hljs-xml .doctype, article pre .hljs-html .doctype, article pre .hljs-css .id, article pre .hljs-css .class, article pre .hljs-css .pseudo, article pre .hljs-pseudo {
   color: #d54e53 !important;
 }
 
