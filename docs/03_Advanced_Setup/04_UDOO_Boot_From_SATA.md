@@ -1,13 +1,40 @@
-This guide will show you how to boot your UDOO DUAL/QUAD from an attached SATA drive with the help of a small SD card. NOTE: It is currently not possible to boot without an SD card, it is hoped that this feature will be added in the future.
+This guide will show you how to boot your UDOO DUAL/QUAD from an attached SATA drive with the help of a small SD card.
+
+**NOTE**: It is not possible to boot without an SD card, it is hoped that this feature will be added in the future.
 
 ## Prerequisites
 
 * A SATA drive
 * A SD card
-* A spare PC
-* A Micro USB cable such as one for charging a smart phone
+* A micro USB cable such as one for charging a smart phone
 
-This guide also assumes you have a working linux install for UDOO DUAL/QUAD.
+# UDOObuntu 2
+
+## Flash the boot SD card
+You need an SD card with the bootloader in order to boot from SATA. Download this small (1MB) [boot image](http://www.udoo.org/download/files/qdl-sata.img.zip) and, after unzipping it, flash it to the SD:
+
+    dd if=qdl-sata.img of=/dev/mmcblk0 bs=1M
+
+## Flash the SATA drive
+Download the [latest UDOObuntu](http://www.udoo.org/downloads/) from the official site. Decompress the image and flash it to the SATA drive:
+
+    # in this example, the SATA drive device is /dev/SATA
+    dd if=UDOObuntu_qdl_v2.0.img of=/dev/SATA bs=1M
+
+Remember to patch the `/etc/fstab` inside the SATA disk:
+
+```
+mount /dev/SATA2 /mnt/sata
+
+echo "/dev/sda2  /      ext4  defaults,noatime               0  0
+/dev/sda1  /boot  vfat  defaults,noatime               0  0" > /mnt/sata/etc/fstab
+```
+Please note:
+ * `/dev/SATA2` is the second partition, available after flashing UDOObuntu;
+ * `/dev/sda`1,2 inside `fstab` must not be changed, these are the devices for the SATA partitions as seen by UDOO, not by your computer.
+
+
+# UDOObuntu 1
 
 ## Preparing the drive
 
