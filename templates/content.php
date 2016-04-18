@@ -40,5 +40,10 @@
         </ul>
     </nav>
     <?php } ?>
+    
+    <span style="float: left; font-size: 10px; color: gray;">
+    This page was last updated on <?= date("l, F j, Y", $page['modified_time']); ?> at <?= date("g:i A", $page['modified_time']); ?>.
+    </span>
+    
 </article>
 
