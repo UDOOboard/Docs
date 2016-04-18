@@ -33,6 +33,10 @@
     <![endif]-->
     <meta name="google-site-verification" content="GlKlGkbxuWQ3LNWx0akLYkqoWLrtF5b0ug9UpGadSuc" />
     <meta name="google-site-verification" content="vL1Qo6JWKZBq6fzVJLJhbyqHya1TBhZd78OJDA-Qe1s" />
+    
+    <!-- jQuery -->
+    <script src="<?= $base_url; ?>themes/daux/js/jquery-1.11.3.min.js"></script>
+    <script src="<?= $base_url; ?>themes/daux/js/bootstrap.min.js"></script>
 </head>
 <body class="<?= $params['html']['float'] ? 'with-float' : ''; ?>">
     <?= $this->section('content'); ?>
@@ -45,10 +49,6 @@
         $this->insert('theme::partials/piwik_analytics', ['url' => $params['html']['piwik_analytics'], 'id' => $params['html']['piwik_analytics_id']]);
     }
     ?>
-
-
-    <!-- jQuery -->
-    <script src="<?= $base_url; ?>themes/daux/js/jquery-1.11.3.min.js"></script>
 
     <!-- hightlight.js -->
     <script src="<?= $base_url; ?>themes/daux/js/highlight.pack.js"></script>
