@@ -14,11 +14,12 @@
     "require": {
         "php": ">=5.4",
         "league/plates": "~3.1",
-        "guzzlehttp/guzzle": "~5.3",
+        "guzzlehttp/guzzle": "~6.0",
         "league/commonmark": "^0.13",
-        "symfony/console": "~2.7",
-        "symfony/finder": "~2.7",
-        "webuni/commonmark-table-extension": "0.4.*"
+        "symfony/console": "~3.0",
+        "symfony/finder": "~3.0",
+        "webuni/commonmark-table-extension": "0.4.*",
+        "myclabs/deep-copy": "^1.5"
     },
     "autoload": {
         "psr-4": {

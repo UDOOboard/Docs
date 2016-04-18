@@ -23,6 +23,11 @@
         echo "<link href='$css' rel='stylesheet' type='text/css'>";
     } ?>
 
+    <?php if ($params['html']['search']) { ?>
+        <!-- Tipue Search -->
+        <link href="<?= $base_url; ?>tipuesearch/tipuesearch.css" rel="stylesheet">
+    <?php } ?>
+
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -43,7 +48,7 @@
 
 
     <!-- jQuery -->
-    <?= '<script src="' . $base_url . 'themes/daux/js/jquery-1.11.3.min.js' . '"></script>' ?>
+    <script src="<?= $base_url; ?>themes/daux/js/jquery-1.11.3.min.js"></script>
 
     <!-- hightlight.js -->
     <script src="<?= $base_url; ?>themes/daux/js/highlight.pack.js"></script>
@@ -55,6 +60,23 @@
     } ?>
 
     <script src="<?= $base_url; ?>themes/daux/js/daux.js"></script>
+
+    <?php if ($params['html']['search']) { ?>
+        <!-- Tipue Search -->
+        <script type="text/javascript" src="<?php echo $base_url; ?>tipuesearch/tipuesearch_set.js"></script>
+        <script type="text/javascript" src="<?php echo $base_url; ?>tipuesearch/tipuesearch.min.js"></script>
+
+        <script>
+            window.onunload = function(){}; // force $(document).ready to be called on back/forward navigation in firefox
+            $(document).ready(function() {
+                $('#tipue_search_input').tipuesearch({
+                    'show': 10,
+                    'mode': 'json',
+                    'base_url': '<?php echo $base_url?>'
+                });
+            });
+        </script>
+    <?php } ?>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

@@ -2,7 +2,6 @@
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\BadResponseException;
-use GuzzleHttp\Exception\ParseException;
 
 class Api
 {
@@ -24,13 +23,15 @@ class Api
         $this->space = $space_id;
     }
 
-    protected function getClient()
+    /**
+     * This method is public due to test purposes
+     * @return Client
+     */
+    public function getClient()
     {
         $options = [
-            'base_url' => $this->base_url . 'rest/api/',
-            'defaults' => [
-                'auth' => [$this->user, $this->pass]
-            ]
+            'base_uri' => $this->base_url . 'rest/api/',
+            'auth' => [$this->user, $this->pass]
         ];
 
         return new Client($options);
@@ -59,21 +60,44 @@ class Api
         }
 
         $message = $label .
-            ' [url] ' . $request->getUrl() .
+            ' [url] ' . $request->getUri() .
             ' [status code] ' . $response->getStatusCode() .
             ' [message] ';
 
-        try {
-            $message .= $response->json()['message'];
-        } catch (ParseException $e) {
-            $message .= (string) $response->getBody();
-        }
+        $body = $response->getBody();
+        $json = json_decode($body, true);
+        $message .= ($json != null && array_key_exists('message', $json)) ? $json['message'] : $body;
 
         if ($level == '4' && strpos($message, "page with this title already exists") !== false) {
             return new DuplicateTitleException($message, 0, $e->getPrevious());
         }
 
         return new BadResponseException($message, $request, $response, $e->getPrevious());
+    }
+
+    public function getPage($id)
+    {
+       $url = "content/$id?expand=ancestors,version,body.storage";
+
+        try {
+            $result = json_decode($this->getClient()->get($url)->getBody(), true);
+        } catch (BadResponseException $e) {
+            throw $this->handleError($e);
+        }
+
+        $ancestor_id = null;
+        if (array_key_exists('ancestors', $result) && count($result['ancestors'])) {
+            $ancestor_page = end($result['ancestors']); // We need the direct parent
+            $ancestor_id = $ancestor_page['id'];
+        }
+
+        return [
+            "id" => $result['id'],
+            "ancestor_id" => $ancestor_id,
+            "title" => $result['title'],
+            "version" => $result['version']['number'],
+            "content" => $result['body']['storage']['value'],
+        ];
     }
 
     /**
@@ -97,7 +121,7 @@ class Api
 
         do {
             try {
-                $hierarchy = $this->getClient()->get($url)->json();
+                $hierarchy = json_decode($this->getClient()->get($url)->getBody(), true);
             } catch (BadResponseException $e) {
                 throw $this->handleError($e);
             }
@@ -137,13 +161,16 @@ class Api
         $body = [
             'type' => 'page',
             'space' => ['key' => $this->space],
-            'ancestors' => [['type' => 'page', 'id' => $parent_id]],
             'title' => $title,
             'body' => ['storage' => ['value' => $content, 'representation' => 'storage']]
         ];
 
+        if ($parent_id) {
+            $body['ancestors'] = [['type' => 'page', 'id' => $parent_id]];
+        }
+
         try {
-            $response = $this->getClient()->post('content', ['json' => $body])->json();
+            $response = json_decode($this->getClient()->post('content', ['json' => $body])->getBody(), true);
         } catch (BadResponseException $e) {
             throw $this->handleError($e);
         }
@@ -163,14 +190,17 @@ class Api
         $body = [
             'type' => 'page',
             'space' => ['key' => $this->space],
-            'ancestors' => [['type' => 'page', 'id' => $parent_id]],
             'version' => ['number' => $newVersion, "minorEdit" => true],
             'title' => $title,
             'body' => ['storage' => ['value' => $content, 'representation' => 'storage']]
         ];
 
+        if ($parent_id) {
+            $body['ancestors'] = [['type' => 'page', 'id' => $parent_id]];
+        }
+
         try {
-            $this->getClient()->put("content/$page_id", ['json' => $body])->json();
+            $this->getClient()->put("content/$page_id", ['json' => $body]);
         } catch (BadResponseException $e) {
             throw $this->handleError($e);
         }
@@ -185,7 +215,7 @@ class Api
     public function deletePage($page_id)
     {
         try {
-            return $this->getClient()->delete('content/' . $page_id)->json();
+            return json_decode($this->getClient()->delete('content/' . $page_id)->getBody(), true);
         } catch (BadResponseException $e) {
             throw $this->handleError($e);
         }
@@ -200,7 +230,7 @@ class Api
         // Check if an attachment with
         // this name is uploaded
         try {
-            $result = $this->getClient()->get("content/$id/child/attachment?filename=$attachment[filename]")->json();
+            $result = json_decode($this->getClient()->get("content/$id/child/attachment?filename=$attachment[filename]")->getBody(), true);
         } catch (BadResponseException $e) {
             throw $this->handleError($e);
         }
@@ -217,7 +247,7 @@ class Api
             $this->getClient()->post(
                 $url,
                 [
-                    'body' => ['file' => fopen($attachment['file']->getPath(), 'r')],
+                    'multipart' => [['name' => 'file', 'contents' => fopen($attachment['file']->getPath(), 'r')]],
                     'headers' => ['X-Atlassian-Token' => 'nocheck'],
                 ]
             );
