@@ -1,46 +1,3 @@
-## Official Distributions
-
-### UDOOBuntu
-
-Official UDOO Distribution based on Ubuntu 12.04 LTS armHF with LXDE desktop environment. 
-Kernel 3.0.35 - U-Boot 2013 
-
-Username: ubuntu 
-
-Password: ubuntu
-
-Available at [UDOO Downloads Page](http://www.udoo.org/downloads/)
-
-### UDOOBuntu 2
-
-Official UDOO Distribution based on Ubuntu 14.04 LTS armHF with LXDE desktop environment.
-Kernel 3.14.56 - U-Boot 2015.10.
-This is the newer e faster distro for UDOO QUAD/DUAL. This is still in rc1 version but will be soon the official release that will replace the first UDOObuntu as stable.
-
-Username: udooer 
-
-Password: udooer
-
-Available at [UDOO Downloads Page](http://www.udoo.org/downloads/)
- 
-### Android 4.4.2 KitKat
-
-Android is a Linux-based operating system designed primarily for touchscreen mobile devices such as smartphones and tablet computers.
-
-Available at [UDOO Downloads Page](http://www.udoo.org/downloads/)
-
-### Linaro Ubuntu 12.04 LTS (deprecated)
-
-Linaro is a not-for-profit engineering organization consolidating and optimizing open source Linux software and tools for the ARM architecture. Username: ubuntu Password: ubuntu
-
-Available at [UDOO Downloads Page](http://www.udoo.org/downloads/)
-
-### Linaro Ubuntu 11.10 (deprecated)
-
-Linaro is a not-for-profit engineering organization consolidating and optimizing open source Linux software and tools for the ARM architecture Username: ubuntu Password: ubuntu
-
-Available at [UDOO Downloads Page](http://www.udoo.org/downloads/)
-
 ## Available Distributions
 
 ### General Purpose
@@ -122,13 +79,3 @@ OpenMediaVault is the next generation network attached storage (NAS) solution ba
 Freedomotic is an open source, flexible, scalable and mashups oriented software that can interact with well known standard building automation protocols as well as with “do it yourself” solutions. It treats the web, social networks and frontends just like any other sensor or actuator in your automation system. For example you can tweet your washing machine to start the washing cycle. It allows you to build smart spaces. Freedomotic can manage from small appartments to huge buildings, like museums, schools, corporate offices, malls and university campuses.
 
 [Install FreeDomotics on UDOO](http://freedomotic.com/content/install-freedomotic-udoo)
-
-
-
-
-
-
-
-
-
-

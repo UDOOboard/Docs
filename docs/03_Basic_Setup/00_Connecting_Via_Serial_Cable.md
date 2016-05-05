@@ -19,7 +19,7 @@ CP210xVCPInstaller_x64.exe for 64-bit system
 <a href="http://windows.microsoft.com/en-us/windows7/32-bit-and-64-bit-windows-frequently-asked-questions">http://windows.microsoft.com/en-us/windows7/32-bit-and-64-bit-windows-frequently-asked-questions</a>
 
 * Download and install a software called putty
-<a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html">http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html</a> 
+<a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html">http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html</a>
 
 * Open putty and configure it as follow:
 Connection type <strong>“serial”</strong>
@@ -27,102 +27,101 @@ Port: <strong>“COM3”</strong> (please note that this value may be different,
 Speed: <strong>“115200”</strong>
 Save it as <strong>“Udoo-serial”</strong> for future uses.
 
-<img class="alignnone size-full wp-image-2510" src="/docs/img/udooserial1win.png" alt="udooserial1win" width="466" height="448" /> 
+<img class="alignnone size-full wp-image-2510" src="../img/udooserial1win.png" alt="udooserial1win" width="466" height="448" />
 
-* Connect the serial port of UDOO DUAL/QUAD (CN6) to your PC using the micro USB cable. 
+* Connect the serial port of UDOO DUAL/QUAD (CN6) to your PC using the micro USB cable.
 
-* Power up UDOO DUAL/QUAD 
+* Power up UDOO DUAL/QUAD
 
-* Click Open 
+* Click Open
 
 * You’re in! You’ll be able to see the startup process and access to the remote shell console on UDOO DUAL/QUAD.
 
-<img class="alignnone size-full wp-image-2511" src="/docs/img/udoowin2.png" alt="udoowin2" width="500" height="314" /> 
- 
+<img class="alignnone size-full wp-image-2511" src="../img/udoowin2.png" alt="udoowin2" width="500" height="314" />
+
 ## Connecting via Serial from Linux
- 
-* Connect the serial port of UDOO DUAL/QUAD (CN6) to your PC using the micro USB cable. 
+
+* Connect the serial port of UDOO DUAL/QUAD (CN6) to your PC using the micro USB cable.
 
 * Type
 
 ```bash
- 
- dmesg 
- 
+
+ dmesg
+
  ```
- 
+
 * You should see this line at the end
 
 ```bash
- 
+
  usb 2-2.1: cp21x converter now attached to tty
- 
+
  ```
 
-<img class="alignnone size-full wp-image-2512" src="/docs/img/Linux1.png" alt="Linux1" width="500" height="355" /> 
+<img class="alignnone size-full wp-image-2512" src="../img/Linux1.png" alt="Linux1" width="500" height="355" />
 
 * Install minicom:
- 
+
 ```bash
 
 sudo apt-get update
 sudo apt-get install minicom
 
 ```
- 
+
 * Open Minicom and configure it <strong>(only the first time)</strong> using the following command:
- 
+
 ```bash
- 
+
  sudo minicom -sw
- 
+
  ```
- 
+
 * Go to <strong>“Serial port setup”</strong> and edit as follow:
 Serial Device: /dev/ttyUSB0 (type a key)
 Hardware Flow Control: No (type f key)
 Software Flow Control: No (type g key)
 
-<img class="alignnone size-full wp-image-2513" src="/docs/img/Linux2.png" alt="Linux2" width="500" height="355" /> 
+<img class="alignnone size-full wp-image-2513" src="../img/Linux2.png" alt="Linux2" width="500" height="355" />
 
-* Press exit and <strong>"Save setup as dfl"</strong> 
+* Press exit and <strong>"Save setup as dfl"</strong>
 
-* Exit from Minicom 
+* Exit from Minicom
 
 * Let’s give proper access permissions to serial port with:
- 
+
 ```bash
- 
+
  sudo chmod 666 /dev/ttyUSB0
- 
+
  ```
- 
+
 * Now we can start listening with:
 
 ```bash
- 
+
  sudo minicom -w
- 
+
  ```
- 
-* Power cycle UDOO DUAL/QUAD to see the boot process and connect it to serial console shell 
- 
+
+* Power cycle UDOO DUAL/QUAD to see the boot process and connect it to serial console shell
+
 ## Connecting via Serial from Mac
- 
+
 * Download the serial adapter Driver here:
-<a href="http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx">http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx</a> 
+<a href="http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx">http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx</a>
 
-* Connect the serial port of UDOO DUAL/QUAD (CN6) to your PC using the micro USB cable. 
+* Connect the serial port of UDOO DUAL/QUAD (CN6) to your PC using the micro USB cable.
 
-* Download and install Serial Tools <a href="https://itunes.apple.com/it/app/serialtools/id611021963">https://itunes.apple.com/it/app/serialtools/id611021963</a> or directly from the Apple Store 
+* Download and install Serial Tools <a href="https://itunes.apple.com/it/app/serialtools/id611021963">https://itunes.apple.com/it/app/serialtools/id611021963</a> or directly from the Apple Store
 
 * Open Serial Tools, and change the following parameters:
 Serial Port: <strong>“SLEB_USBtoUART”</strong>
 Baud rate <strong>“115200”</strong>
 
-<img class="alignnone size-full wp-image-2514" src="/docs/img/Mac1.png" alt="Mac1" width="500" height="142" /> 
+<img class="alignnone size-full wp-image-2514" src="/docs/img/Mac1.png" alt="Mac1" width="500" height="142" />
 
-* Hit connect, and here you go! 
+* Hit connect, and here you go!
 
-<img class="alignnone size-full wp-image-2515" src="/docs/img/Mac2.png" alt="Mac2" width="500" height="207" /> 
- 
+<img class="alignnone size-full wp-image-2515" src="/docs/img/Mac2.png" alt="Mac2" width="500" height="207" />
