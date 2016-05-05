@@ -60,11 +60,11 @@ You can copy the kernel binary (zImage) and device tree binaries (.dtb) in the /
 ```bash
 e.g.
 cp arch/arm/boot/zImage /media/<user_name>/boot/
-cp arch/arm/boot/dts/imx6sx-udoo-neo*.dtb /media/<user_name>/boot/dts/
+cp arch/arm/boot/dts/imx*udoo*.dtb /media/<user_name>/boot/dts/
 
 ```
 
-Now install the modules and firmware in the NEO rootfs:
+Now install the modules and firmware in the UDOO rootfs:
 
 ```bash
 e.g.
