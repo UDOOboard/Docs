@@ -10,7 +10,7 @@ You can also watch our [connectivity walkthrough](/tutorial/connectivity-walkthr
 
 ### 1. Insert the micro SD card
 
-UDOO DUAL/QUAD has no internal storage or built-in boot code, OS and storage are on microSD so you need to plug a pre-loaded microSD to boot. If you didn’t get a pre-loaded microSD card, you should follow our step by step guide about [creating a bootable Micro SD card from precompiled image](/docs/Getting_Started/Create_A_Bootable_MicroSD_card_for_UDOO).
+UDOO DUAL/QUAD has no internal storage or built-in boot code, OS and storage are on microSD so you need to plug a pre-loaded microSD to boot. If you didn’t get a pre-loaded microSD card, you should follow our step by step guide about [creating a bootable Micro SD card from precompiled image](../Getting_Started/Create_A_Bootable_MicroSD_card_for_UDOO_QUAD-DUAL.html).
 
 ### 2. Connect the HDMI cable
 
@@ -29,5 +29,3 @@ Every keyboard and mouse should work with UDOO DUAL/QUAD. The board provides 5V 
 UDOO DUAL/QUAD starter kits and pre-orders come with a 12V and 2Amp switching DC supply with a standard 5.5mm/2.1mm barrel jack. This supply is designed to work anywhere in the world, 100V-240V AC wall power but you may need a plug adapter.
 
 UDOO DUAL/QUAD will boot as soon as you connect the power supply. You’re now good to go to start explore, learn and make with your UDOO DUAL/QUAD board!
-
-
