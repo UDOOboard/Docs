@@ -42,13 +42,6 @@ UDOO DUAL/QUAD retail line up consists of three models, sharing most of the feat
 
 <strong>Warning: The UDOO DUAL/QUAD I/O pins are 3.3V compliant. Higher voltages (like 5V) would damage the board.</strong>
 
-
-<br />
-
-<hr/>
-<h3>Board Overview</h3>
-<hr/>
-
 <br />
 
 <hr/>
@@ -61,7 +54,7 @@ UDOO DUAL/QUAD retail line up consists of three models, sharing most of the feat
 * Compatible with All Arduino Due Shields and most Arduino Shields
 * GPIO's can be accessed as Arduino pins, GPIO's or as additional S\PDIF, FlexCAN,I2S, SPI
 
-<a href="http://elinux.org/UDOO_GPIO_Pinout" target="_blank">More information about UDOO DUAL/QUAD_GPIO_Pinout</a> 
+[More information about UDOO DUAL/QUAD_GPIO_Pinout](../Hardware_&_Accessories/UDOO_GPIO_Pinout.html)
 
 <br />
 <hr/>
@@ -84,7 +77,7 @@ UDOO DUAL/QUAD retail line up consists of three models, sharing most of the feat
 
 VGA (320x480) @120fps VGA (640x480) @90fps 720p @60fps 1280x960 @45fps 1080p @30fps QSXGA (2592x1944) @15fps
 
-<a href="/docs/Resources/UDOO_Camera_Module" target="_blank">More informations about UDOO Camera Modules</a>
+[More informations about UDOO Camera Modules](../Hardware_&_Accessories/UDOO_Camera_Module.html)
 
 <a href="http://udoo.org/download/files/datasheets/datasheet_camera.pdf" target="_blank">UDOO Camera Module Datasheet</a>
 
@@ -103,7 +96,7 @@ VGA (320x480) @120fps VGA (640x480) @90fps 720p @60fps 1280x960 @45fps 1080p @30
 * UDOO_VK-7T video cable for UDOO
 * LCD BOARD ADAPTER
 
-<a href="http://www.udoo.org/docs/Troubleshooting/How_Do_I_Set_Up_My_LVDS_Panel" target="_blank">How to setup lvds panels</a>
+[How to setup LVDS panels](../Hardware_&_Accessories/UDOO_Setup_LVDS_Panels.html)
 
 <a href="http://udoo.org/download/files/datasheets/datasheet7.pdf" target="_blank">UDOO 7" Touch Panel Display Kit Datasheet</a>
 
@@ -119,7 +112,7 @@ VGA (320x480) @120fps VGA (640x480) @90fps 720p @60fps 1280x960 @45fps 1080p @30
 * USB CABLE for Third UDOO'USB
 * Touch Controller Board
 
-<a href="http://www.udoo.org/docs/Troubleshooting/How_Do_I_Set_Up_My_LVDS_Panel" target="_blank">How to setup lvds panels</a>
+[How to setup LVDS panels](../Hardware_&_Accessories/UDOO_Setup_LVDS_Panels.html)
 
 <a href="http://udoo.org/download/files/datasheets/datasheet15.pdf">UDOO 15" Touch Panel Display Kit Datasheet</a>
 

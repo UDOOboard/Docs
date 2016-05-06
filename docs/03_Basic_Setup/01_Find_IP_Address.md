@@ -1,12 +1,10 @@
 ## Overview
 
-Visit our Tutorials section to learn more about: [Find IP Address](/tutorial/find-ip-address/).
-
 We’ll find out how to discover the IP address associated with your UDOO DUAL/QUAD. The IP address is a number that uniquely identifies a device in a network. It will be useful to know which IP your UDOO DUAL/QUAD is assigned to for various reasons: connecting to it remotely, knowing wheter UDOO DUAL/QUAD is booting properly or not and configure it to interact correctly into a given network.
 We’ll have various way to find the IP Address, so let’s get started.
 
 
-## First method: command line
+## First method: Command Line
 
 If your UDOO QUAD/DUAL is connected to a screen (or via serial cable like explained in the previous page), you can simply open a terminal and type:
 
