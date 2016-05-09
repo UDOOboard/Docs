@@ -18,7 +18,7 @@ Besides the Ubuntu 14.04 LTS specifications, UDOObuntu differs for the following
  * gstreamer, which plays full HD videos via gplay
  * QT 5.2.1 with X11 OpenGL ES2 GPU acceleration
  * [Web Control Panel](../Basic_Setup/Web_Control_Panel.html)
- * Device Tree Editor, to control [pinmuxing](../Cookbook_Linux/Device_Tree_Editor.html)
+ * [Device Tree Editor](../Cookbook_Linux/Device_Tree_Editor.html), to control pinmuxing
 
 ## Updates
 

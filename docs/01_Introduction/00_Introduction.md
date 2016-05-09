@@ -96,7 +96,7 @@ VGA (320x480) @120fps VGA (640x480) @90fps 720p @60fps 1280x960 @45fps 1080p @30
 * UDOO_VK-7T video cable for UDOO
 * LCD BOARD ADAPTER
 
-[How to setup LVDS panels](../Hardware_&_Accessories/UDOO_Setup_LVDS_Panels.html)
+[How to setup LVDS panels](../Hardware_&_Accessories/UDOO_LVDS_Panels.html)
 
 <a href="http://udoo.org/download/files/datasheets/datasheet7.pdf" target="_blank">UDOO 7" Touch Panel Display Kit Datasheet</a>
 
@@ -112,7 +112,7 @@ VGA (320x480) @120fps VGA (640x480) @90fps 720p @60fps 1280x960 @45fps 1080p @30
 * USB CABLE for Third UDOO'USB
 * Touch Controller Board
 
-[How to setup LVDS panels](../Hardware_&_Accessories/UDOO_Setup_LVDS_Panels.html)
+[How to setup LVDS panels](../Hardware_&_Accessories/UDOO_LVDS_Panels.html)
 
 <a href="http://udoo.org/download/files/datasheets/datasheet15.pdf">UDOO 15" Touch Panel Display Kit Datasheet</a>
 

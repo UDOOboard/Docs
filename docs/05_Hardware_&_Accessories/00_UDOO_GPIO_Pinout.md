@@ -121,7 +121,9 @@ and it could result in damaging the processor driving the signal LOW. The same s
 ## Extra functions available on UDOO DUAL/QUAD pin headers
 
 UDOO DUAL/QUAD can provide for extra features on external pin headers. To enable them it is necessary to declare the correct alternative pin function in the device tree of the kernel.
-UDOObuntu 2 provides a simple graphic tool to allow you to manage these functionalities: the [Device Tree Editor](../Cookbook_Linux/Device_Tree_Editor.html).
+<br />
+UDOObuntu 2 provides a simple graphic tool to allow you to manage most of these functionalities: the [Device Tree Editor](../Cookbook_Linux/Device_Tree_Editor.html).
+<br />
 These functions are:
 
 * UARTs: uart1, uart3, uart4, uart5

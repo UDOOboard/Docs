@@ -13,12 +13,12 @@ VGA (320x480) @120fps VGA (640x480) @90fps 720p @60fps 1280x960 @45fps 1080p @30
 
 ## Usage
 
-### Connection 
+### Connection
 
 UDOO Camera module is designed to be connected via CSI interface to UDOO Camera Connector. Connection is made via a FLAT-213-16PIN cable.
-Make sure the blue part of the ribbon cable looks backwords respect to the camera side. 
-Lift the brown strip of the UDOO's camera connector and insert the ribbon cable into the connector making sure it goes as deep as it can, then pull down the brown strip of the connector to hold the cable. Make sure again that the blue part of the ribbon cable is looking on the outer side of UDOO. 
-To a clearer explanation of how to connect the UDOO Camera Module you can check  the initial part of this video. 
+Make sure the blue part of the ribbon cable looks backwords respect to the camera side.
+Lift the brown strip of the UDOO's camera connector and insert the ribbon cable into the connector making sure it goes as deep as it can, then pull down the brown strip of the connector to hold the cable. Make sure again that the blue part of the ribbon cable is looking on the outer side of UDOO.
+To a clearer explanation of how to connect the UDOO Camera Module you can check  the initial part of this video.
 
 [Video Explanation of UDOO Camera Module Connection](https://www.youtube.com/watch?v=ydpXTs7bHhY)
 
@@ -38,7 +38,7 @@ To get camera's stream in Fullscreen mode, you can use:
 
 ```bash
 
-gst-launch-1.0 imxv4l2videosrc ! imxipuvideosink 
+gst-launch-1.0 imxv4l2videosrc ! imxipuvideosink
 
 ```
 
@@ -46,7 +46,7 @@ To retrive camera's stream in windowed mode, use
 
 ```bash
 
-gst-launch-1.0 imxv4l2videosrc ! imxeglvivsink 
+gst-launch-1.0 imxv4l2videosrc ! imxeglvivsink
 
 ```
 
@@ -67,8 +67,8 @@ If you wish to retrieve more information on imxv4l2videosrc or other plugin, you
 gst-inspect-1.0 imxv4l2videosrc
 
 ```
-There are lot of useful option you can use from the imx plugins. 
-For example, you can find information of how to change the resolution of the camera stream using the 'imx-capture-mode' option of the imxv4l2videosrc plugin. 
+There are lot of useful option you can use from the imx plugins.
+For example, you can find information of how to change the resolution of the camera stream using the 'imx-capture-mode' option of the imxv4l2videosrc plugin.
 
 ```bash
 
@@ -104,9 +104,14 @@ More thorough information on gstreamer pipelines can be found at:
 
 
 
+
 ### Using with Loopback Device
 
-N.B. This section is valid only for the UDOObuntu 1 version (12.04)
+<div class="alert alert-danger" role="alert">
+  <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+  <span class="sr-only">Warning!</span>
+  This following Loopback Device section is deprecated since UDOObuntu 2.0. It is present only in UDOObuntu 1.0/1.1 versions.<br>
+</div>
 
 To use UDOO Camera Module as an ordinary webcam a loopback device is necessary. We can create such device routing the video stream from the camera to a virtual /dev/video device via [v4l2loopback](https://github.com/umlaeute/v4l2loopback)
 
@@ -127,10 +132,3 @@ sudo gst-launch-0.10 mfw_v4lsrc ! ffmpegcolorspace ! v4l2sink device=/dev/video7
 The first command loads v4l2loopback module and creates the video loopback device while sudo gst-launch-0.10 puts the hardware streams in it.
 
 Now we can access the UDOO Camera module as an ordinary webcam
-
-
-
-
-
-
-

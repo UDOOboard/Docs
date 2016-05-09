@@ -4,7 +4,7 @@ First, let's have a look on how UDOO DUAL/QUAD's architecture has been designed.
 
 <br />
 
-<img src="/docs/img/Udoo_imx6_sam3x.jpg" class="img-responsive pull-right" alt="udoo"  height="189px" width="600px" style="margin-bottom:20px; margin-left:30px;">
+<img src="../img/Udoo_imx6_sam3x.jpg" class="img-responsive pull-right" alt="udoo" height="189px" width="600px" style="margin-bottom:20px; margin-left:30px;">
 
 * iMX6 - ARM CPU Dual/Quad Core: This is the powertrain of UDOO DUAL/QUAD's operating system. This CPU handles the O.S. environments, such as Android, Ubuntu, Debian etc. iMX6 handles also AudioVideo operations ( audio io, HDMI video, LVDS), USB ports, SATA connection, Network connection and so on.
 * SAM3x - Arduino Due compatible processor: This is the core of UDOO DUAL/QUAD's extended input and output support. You can use the Sam3x as a standalone Arduino board, connecting every sensor, motor , device etc. you want to it. You can also connect every Arduino Due compatible shield you may need for your project.
@@ -12,7 +12,9 @@ UDOO DUAL/QUAD features a serial channel that interconnects these 2 processors, 
 
 Both processors can listen and send data via the serial line, the only thing you need is check that they communicate at the same baudrate. So, you can tie up two different scripts or events manager, on both processors, and make them react the way you want.
 
-Let's view some scenarios:
+To have full examples of communication in different programming languages go to the [Serial libraries examples](../Serial_Libraries/index.html)
+
+Let's view some bash scenarios:
 
 ## Unidirectional Communication from Linux to Arduino
 
@@ -55,7 +57,7 @@ Again, let's see a brief example: I have a sensor that reads environmental data,
 
 ```bash
 
-stty -F /dev/ttymxc3 cs8 115200 ignbrk -brkint -icrnl -imaxbel -opost -onlcr -isig -icanon -iexten -echo -echoe -echok -echoctl -echoke noflsh -ixon -crtscts 
+stty -F /dev/ttymxc3 cs8 115200 ignbrk -brkint -icrnl -imaxbel -opost -onlcr -isig -icanon -iexten -echo -echoe -echok -echoctl -echoke noflsh -ixon -crtscts
 
 ```
 
@@ -82,10 +84,3 @@ Controlling GPIO via iMX6 while they are also drived by SAM3x Arduino compatible
 **WARNING:** Setting up the same pin on different states in the same time, or controlling it at the same time with both iMX6 and SAM3x will result in damaging your board. Please make sure a pin/GPIO can have only one state at the same time, and it's controlled only by one processor at the time
 
 This allows to conveniently control the GPIOs for iMX6 related tasks, while letting Arduino do its job with a custom sketch. Let's see an example: I have an audio player running on Linux, and want to output artist and song name on a Oled display drived via i2c protocol (iMX6 direct GPIO handling) At the same time I can connect a rotary controller to SAM3x to control the output volume via an analog knob. I upload a sketch that reads the volume knob position and writes it to serial (Arduino to iMX6 via serial) I start a script on iMX6 that reads the volume knob position and tunes the volume mixer accordingly.
-
-
-
-
-
-
-
