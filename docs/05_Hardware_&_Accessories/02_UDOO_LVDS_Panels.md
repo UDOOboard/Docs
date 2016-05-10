@@ -124,7 +124,7 @@ EndSection
 
 ```
 
-If the calibration is not good enough you can connect a mouse to UDOO DUAL/QUAD and launch the "Calibrate Touchscreen" application from the top bar:
+If the calibration is not good enough you can connect a mouse to UDOO DUAL/QUAD and launch the "Calibrate Touchscreen" application from the bottom bar:
 
 ```bash
 
