@@ -1,4 +1,4 @@
-The recommended OS for developing UDOO Neo is Ubuntu. If you do not use Ubuntu, you will need to install a virtual machine, as indicated in this section.
+The recommended OS for developing UDOO is Ubuntu. If you do not use Ubuntu, you will need to install a virtual machine, as indicated in this section.
 
 If you are already running Ubuntu on your development computer, you can safely skip this section.
 
@@ -93,4 +93,3 @@ Open a terminal.
 <img style="width:800px;" src="../img/gionji/DOCS_dev_env_15.PNG">
 
     sudo apt-get update
-
