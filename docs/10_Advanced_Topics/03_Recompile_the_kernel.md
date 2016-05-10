@@ -16,7 +16,7 @@ then download the sources:
     git clone https://github.com/UDOOboard/linux_kernel
     cd linux_kernel
 
-The default branch `3.14-1.0.x-udoo` is the one where we are working on for the UDOO QUAD/DUAL. It is based on 3.14.56 Freescale community kernel.
+The default branch [`3.14-1.0.x-udoo`](https://github.com/UDOOboard/linux_kernel) is the one where we are working on for the UDOO QUAD/DUAL. It is based on 3.14.56 Freescale community kernel.
 
 
 ## Load the default kernel configuration
