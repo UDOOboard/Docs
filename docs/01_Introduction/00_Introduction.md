@@ -19,7 +19,7 @@
 <h3>Specifications</h3>
 <hr/>
 
-<img src="/docs/img/udoo_fritzing.png" alt="alt text" class="img-responsive pull-right" height="441px" width="350px"  style="margin-bottom:20px; margin-left:30px;">
+<img src="../img/udoo_fritzing.png" alt="alt text" class="img-responsive pull-right" height="441px" width="350px"  style="margin-bottom:20px; margin-left:30px;">
 
 
 UDOO DUAL/QUAD retail line up consists of three models, sharing most of the features and different only for connectivity and i.MX6 processor used. All three models feature an embedded Arduino compatible section based on Arduino Due schematic. UDOO DUAL/QUADâ€™s dimensions are: 4.33 inch x 3.35 inch (11 cm x 8.5 cm).
@@ -69,7 +69,7 @@ Here you can find a more technical and exhaustive document, the [UDOO QUAD/DUALâ
 <h3>UDOO Camera Module</h3>
 <hr/>
 
-<img src="/docs/img/600px-UDOO_Camera.jpg" alt="alt text" class="img-responsive pull-right" style="margin-bottom:20px; margin-left:30px; width:300px; height:169px;">
+<img src="../img/600px-UDOO_Camera.jpg" alt="alt text" class="img-responsive pull-right" style="margin-bottom:20px; margin-left:30px; width:300px; height:169px;">
 
 
 * Auto focus control (AFC) with embedded AF VCM driver
@@ -91,7 +91,7 @@ VGA (320x480) @120fps VGA (640x480) @90fps 720p @60fps 1280x960 @45fps 1080p @30
 
 <b>7" Touch Panel Kit</b>
 
-<img src="/docs/img/600px-UDOO_LVDS_7.jpg" alt="alt text" class="img-responsive pull-right" style="margin-bottom:20px; margin-left:30px; width:300px; height:169px;">
+<img src="../img/600px-UDOO_LVDS_7.jpg" alt="alt text" class="img-responsive pull-right" style="margin-bottom:20px; margin-left:30px; width:300px; height:169px;">
 
 * 7" TFT RGB Display
 * I2C Touch Screen
@@ -106,7 +106,7 @@ VGA (320x480) @120fps VGA (640x480) @90fps 720p @60fps 1280x960 @45fps 1080p @30
 
 <b>15" Touch Panel Kit</b>
 
-<img src="/docs/img/600px-UDOO_LVDS_15.jpg" alt="alt text" class="img-responsive pull-right" style="margin-bottom:20px; margin-left:30px; width:300px; height:169px;">
+<img src="../img/600px-UDOO_LVDS_15.jpg" alt="alt text" class="img-responsive pull-right" style="margin-bottom:20px; margin-left:30px; width:300px; height:169px;">
 
 
 * 15,6" LVDS Display

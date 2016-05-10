@@ -8,7 +8,16 @@ This guide will show you how to boot your UDOO DUAL/QUAD from an attached SATA d
 * A SD card
 * A micro USB cable such as one for charging a smart phone
 
-# UDOObuntu 2
+<div>
+ <ul id="adc-examples" class="nav nav-tabs" role="tablist">
+  <li role="presentation" class="active"><a href="#udoobuntu-due-example" aria-controls="udoobuntu-due" role="tab" data-toggle="tab">UDOObuntu 2.0</a></li>
+  <li role="presentation"><a href="#udoobuntu-uno-example" aria-controls="udoobuntu-uno" role="tab" data-toggle="tab">UDOObuntu 1.0/1.1</a></li>
+ </ul>
+
+ <div class="tab-content">
+  <div role="tabpanel" class="tab-pane active" id="udoobuntu-due-example">
+
+# UDOObuntu 2.0
 
 ## Flash the boot SD card
 You need an SD card with the bootloader in order to boot from SATA. Download this small (1MB) [boot image](http://www.udoo.org/download/files/qdl-sata.img.zip) and, after unzipping it, flash it to the SD:
@@ -34,7 +43,11 @@ Please note:
  * `/dev/sda`1,2 inside `fstab` must not be changed, these are the devices for the SATA partitions as seen by UDOO, not by your computer.
 
 
-# UDOObuntu 1
+ </div>
+ <div role="tabpanel" class="tab-pane" id="udoobuntu-uno-example">
+
+
+# UDOObuntu 1.0/1.1
 
 ## Preparing the drive
 
@@ -71,32 +84,32 @@ Run the following commands (Assuming /dev/sda1 is mounted at /mnt)
 
 # cd /mnt
 # tar xvzf tarball_you_just_grabbed.tar
- 
+
  ```
- 
+
  ### Using dd to flash an image
- 
+
  You can also flash the filesystem using DD. You will need a filessytem img such as the ones provided by UDOO DUAL/QUAD. Make sure your SATA disk is NOT mounted.
- 
+
  Flash by doing the following:
- 
+
  ```bash
 
 # dd if=path/to/fs.img of=/dev/sdb
- 
+
  ```
- 
+
 ### Using win32diskimager from windows
- 
+
  You can flash any image from windows with win32diskimager. You can get it from its SourceForge page [http://sourceforge.net/projects/win32diskimager/](http://sourceforge.net/projects/win32diskimager/)
- 
- <a name="prepareuboot"></a> 
- 
+
+ <a name="prepareuboot"></a>
+
 ##[Prepare U-Boot](#prepareuboot)
 
 The easiest way to start the OS from SATA is using the Configuration Tool preinstalled on UDOObuntu.
 
-Run UDOObuntu from MicroSD. Make sure the SATA Hard Drive you prepared above is plugged to your UDOO DUAL/QUAD. Open the Configuration Tool, 
+Run UDOObuntu from MicroSD. Make sure the SATA Hard Drive you prepared above is plugged to your UDOO DUAL/QUAD. Open the Configuration Tool,
 
 select "Set Default Boot Device" and choose SATA, then follow the simple instructions to select the right drive and partition.
 
@@ -115,9 +128,9 @@ With the SATA hard drive connected run the command:
 sata part
 
  ```
- 
+
  It will display some informations:
- 
+
  ```bash
 
 Partition Map for SATA device 0  --   Partition Type: DOS
@@ -125,7 +138,7 @@ Part    Start Sector    Num Sectors     UUID            Type
  1        16065           14185395     000c356e-01       83
 
  ```
- 
+
 Take note of the device n° and Part n° information.
 
 Now run the following commands:
@@ -169,10 +182,10 @@ setenv sataboot "if sata init; then echo Booting from sata ...; run sataloaduima
 
 
 saveenv
- 
+
   ```
-  
-  
+
+
 In this way, if you have a connected SATA hard drive, the boot will be from SATA otherwise it will occur from SD card.
 
 Now run the following to continue booting:
@@ -180,9 +193,9 @@ Now run the following to continue booting:
  ```bash
 
  boot
- 
+
    ```
-   
+
 ## Done!
 
 You should now be booting into the system on the SATA drive. If all goes well you can safely remove almost everything on the SD card.
@@ -194,10 +207,13 @@ If you used the udooupdate script to update the uboot version and kernel, you'll
 DO the SATA drive FIRST!!!!
 
 If you only do the SATA drive, you probably will not be able to reboot into the SATA drive until you also update the SD card to match.
-   
- 
- 
- 
- 
 
-
+</div>
+</div>
+</div>
+<script>
+$('#adc-examples a').click(function (e) {
+e.preventDefault()
+$(this).tab('show')
+})
+</script>
