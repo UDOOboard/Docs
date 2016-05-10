@@ -44,6 +44,10 @@ UDOO DUAL/QUAD retail line up consists of three models, sharing most of the feat
 
 <br />
 
+Here you can find a more technical and exhaustive document, the [UDOO QUAD/DUAL’s block diagram](http://udoo.org/wp-content/uploads/2013/04/UDOO_Block_Diagram_rel_1_1.pdf).
+
+<br />
+
 <hr/>
 <h3>GPIO Features</h3>
 <hr/>
