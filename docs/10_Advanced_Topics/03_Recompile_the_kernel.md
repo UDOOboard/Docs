@@ -8,21 +8,21 @@
 ## Get the kernel sources from GitHub
 Create a develop folder
 
-    mkdir udooneo-dev
-    cd udooneo-dev
+    mkdir udoo-dev
+    cd udoo-dev
 
 then download the sources:
 
     git clone https://github.com/UDOOboard/linux_kernel
     cd linux_kernel
 
-The default branch `3.14-1.0.x-udoo` is the one where we are working on for the UDOO NEO. It is based on 3.14.56 Freescale community kernel.
+The default branch `3.14-1.0.x-udoo` is the one where we are working on for the UDOO QUAD/DUAL. It is based on 3.14.56 Freescale community kernel.
 
 
 ## Load the default kernel configuration
-UDOO Neo has a dedicated default kernel configuration that you can import with:
+UDOO QUAD/DUAL has a dedicated default kernel configuration that you can import with:
 
-    ARCH=arm make udoo_neo_defconfig
+    ARCH=arm make udoo_quad_dual_defconfig
 
 ## (optional) Personalize the kernel configuration
 Add or remove kernel modules to fit your project:
@@ -74,8 +74,7 @@ You can overwrite the kernel on a UDOObuntu SD card with the following commands:
 
     BOOT_PARTITION=/path/to/boot-partition
     ROOT_PARTITION=/path/to/root-partition
-    
+
     cp arch/arm/boot/zImage $BOOT_PARTITION
     cp arch/arm/boot/dts/*.dtb $BOOT_PARTITION/dts
     ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- make firmware_install modules_install INSTALL_MOD_PATH=$ROOT_PARTITION
-
