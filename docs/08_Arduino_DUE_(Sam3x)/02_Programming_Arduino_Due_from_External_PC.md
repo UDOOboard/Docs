@@ -42,7 +42,7 @@ If all the requirements above are met, you’re ready to start. What we will bas
 
 * Wait few seconds 'till the end of the "index download" then look for `UDOO QUAD/DUAL (Arduino Due) by UDOO Team`. Click on it and install the latest version.
 
-<img width="550" height="415" src="../img/ext_ard_08.png" style="margin-left: 30px;">
+<img width="550" height="415" src="../img/ext_board_manager_install.PNG" style="margin-left: 30px;">
 
 <br />
 <br />
