@@ -58,7 +58,7 @@ Here you can find a more technical and exhaustive document, the [UDOO QUAD/DUALâ
 * Compatible with All Arduino Due Shields and most Arduino Shields
 * GPIO's can be accessed as Arduino pins, GPIO's or as additional S\PDIF, FlexCAN,I2S, SPI
 
-[More information about UDOO DUAL/QUAD_GPIO_Pinout](../Hardware_&_Accessories/UDOO_GPIO_Pinout.html)
+[More information about UDOO DUAL/QUAD_GPIO_Pinout](../Hardware_&_Accessories/GPIO_Pinout.html)
 
 <br />
 <hr/>

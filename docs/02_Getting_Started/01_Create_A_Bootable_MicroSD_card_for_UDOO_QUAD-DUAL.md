@@ -121,7 +121,7 @@ Now write the image on the Micro SD card using the command:
 
 Please make sure that you replaced the argument of input file (`if=<img_file_path>`) with the path to the .img file, and that the device name specified in output file’s argument (`of=/dev/<sd_name>`) is correct. For example:
 
-    sudo dd bs=1m if=/home/YourName/Download/udoobuntu-udoo-qdl_v2.0.img of=/dev/rdisk3
+    sudo dd bs=1m if=/home/YourName/Download/udoobuntu-udoo-qdl_v2.0.img of=/dev/sdd
 
 
 Once `dd` has been completed, run:

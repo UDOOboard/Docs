@@ -6,6 +6,16 @@ UDOO DUAL/QUAD features a built in USB to serial interface which is very useful 
 
 Connecting via serial will practically result in a shell console, the same as the one you’ll obtain through SSH connection [http://en.wikipedia.org/wiki/Secure_Shell](http://en.wikipedia.org/wiki/Secure_Shell).
 
+<div>
+ <ul id="adc-examples" class="nav nav-tabs" role="tablist">
+  <li role="presentation" class="active"><a href="#windows-example" aria-controls="windows" role="tab" data-toggle="tab">Windows</a></li>
+  <li role="presentation"><a href="#mac-example" aria-controls="mac" role="tab" data-toggle="tab">Mac OS X</a></li>
+  <li role="presentation"><a href="#linux-example" aria-controls="linux" role="tab" data-toggle="tab">Linux</a></li>
+ </ul>
+
+ <div class="tab-content">
+  <div role="tabpanel" class="tab-pane active" id="windows-example">
+
 ## Connecting via Serial from Windows
 
 * Download the serial adapter Driver here:
@@ -27,7 +37,12 @@ Port: <strong>“COM3”</strong> (please note that this value may be different,
 Speed: <strong>“115200”</strong>
 Save it as <strong>“Udoo-serial”</strong> for future uses.
 
-<img class="alignnone size-full wp-image-2510" src="../img/udooserial1win.png" alt="udooserial1win" width="466" height="448" />
+<br />
+
+<img class="alignnone size-full wp-image-2510" src="../img/udooserial1win.png" alt="udooserial1win" width="466" height="448" style="margin-left: 30px;"/>
+
+<br />
+<br />
 
 * Connect the serial port of UDOO DUAL/QUAD (CN6) to your PC using the micro USB cable.
 
@@ -37,7 +52,14 @@ Save it as <strong>“Udoo-serial”</strong> for future uses.
 
 * You’re in! You’ll be able to see the startup process and access to the remote shell console on UDOO DUAL/QUAD.
 
-<img class="alignnone size-full wp-image-2511" src="../img/udoowin2.png" alt="udoowin2" width="500" height="314" />
+<br />
+
+<img class="alignnone size-full wp-image-2511" src="../img/udoowin2.png" alt="udoowin2" width="500" height="314" style="margin-left: 30px;"/>
+
+<br />
+
+</div>
+<div role="tabpanel" class="tab-pane" id="linux-example"
 
 ## Connecting via Serial from Linux
 
@@ -107,6 +129,10 @@ Software Flow Control: No (type g key)
 
 * Power cycle UDOO DUAL/QUAD to see the boot process and connect it to serial console shell
 
+
+</div>
+<div role="tabpanel" class="tab-pane" id="mac-example">
+
 ## Connecting via Serial from Mac
 
 * Download the serial adapter Driver here:
@@ -120,8 +146,18 @@ Software Flow Control: No (type g key)
 Serial Port: <strong>“SLEB_USBtoUART”</strong>
 Baud rate <strong>“115200”</strong>
 
-<img class="alignnone size-full wp-image-2514" src="/docs/img/Mac1.png" alt="Mac1" width="500" height="142" />
+<img class="alignnone size-full wp-image-2514" src="../img/Mac1.png" alt="Mac1" width="500" height="142" />
 
 * Hit connect, and here you go!
 
-<img class="alignnone size-full wp-image-2515" src="/docs/img/Mac2.png" alt="Mac2" width="500" height="207" />
+<img class="alignnone size-full wp-image-2515" src="../img/Mac2.png" alt="Mac2" width="500" height="207" />
+
+</div>
+</div>
+</div>
+<script>
+$('#adc-examples a').click(function (e) {
+e.preventDefault()
+$(this).tab('show')
+})
+</script>
