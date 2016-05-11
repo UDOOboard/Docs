@@ -8,6 +8,6 @@ After you connected the board and boot the UDOObuntu 2 desktop environment:
 3. Tools -> Port -> /dev/ttymxc3
 4. File -> Examples -> Basics -> Blink
 5. Click on "Upload" button.
-6. Wait "Compiling sketch..." until "Uploadin complete".
+6. Wait "Compiling sketch..." until "Upload is complete".
 
 As you can see this is the same procedure you usually use with all the others Arduino board.
