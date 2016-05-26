@@ -30,7 +30,7 @@ No additional operations needed. Just connect the Camera Module and boot Android
 
 ### Using with Gstreamer on Linux
 
-UDOO Camera can be accessed in Hardware mode using [Gstreamer](http://gstreamer.freedesktop.org/) Pipelines Specifically with Freescale-provided elements and pugins.
+UDOO Camera can be accessed in Hardware mode using [Gstreamer 1.0](http://gstreamer.freedesktop.org/) Pipelines Specifically with Freescale-provided elements and pugins.
 Starting from UDOObuntu 2 (Ubuntu 14.04 - Kernel 3.14.x) you can use gstreamer 1.0 and gstreamer-imx plugin to use the camera.
 
 
