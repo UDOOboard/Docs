@@ -1,5 +1,8 @@
 ## Install the required packages
 
+Some packages are needed to compile the Linux Kernel for UDOO boards.
+E.g. in Ubuntu 14.04 it is necessary to install the following packages:
+
     sudo apt-get update
     sudo apt-get install gawk wget git diffstat unzip texinfo gcc-multilib \
          build-essential chrpath socat libsdl1.2-dev xterm picocom ncurses-dev lzop \
