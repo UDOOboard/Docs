@@ -33,7 +33,7 @@ CP210xVCPInstaller_x64.exe for 64-bit system
 
 * Open putty and configure it as follow:
 Connection type <strong>“serial”</strong>
-Port: <strong>“COM3”</strong> (please note that this value may be different, try to use COM4 if COM3 is not working)
+Port: <strong>“COM3”</strong> (please note that this value may be different, check the number of the COM assigned in Windows Device Manager)
 Speed: <strong>“115200”</strong>
 Save it as <strong>“Udoo-serial”</strong> for future uses.
 
