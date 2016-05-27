@@ -24,7 +24,7 @@ You can run video in `fullscreen mode` using:
 
 ```bash
 
-gst-launch-1.0 playbin uri=file:///path/to/file_video.mp4 video-sink=imxeglvivsink
+gst-launch-1.0 playbin uri=file:///path/to/file_video.mp4 video-sink=imxipuvideosink
 
 ```
 
