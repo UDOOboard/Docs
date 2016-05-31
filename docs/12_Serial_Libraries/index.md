@@ -6,7 +6,7 @@ Serial Libraries Communication Samples for [UDOO Board](http://www.udoo.org)
 
 Copyright (C) 2014 [Ekironji Solutions](mailto:ekironjisolutions@gmail.com)
 
-These example’s scripts are meant to demonstrate how to implement a uni\bidirectional communication between an Arduino sketch (running on SAM3X Arduino Compatible processor) and a binary application on iMX6 Linux processor.
+These example’s scripts are meant to demonstrate how to implement a uni\bidirectional communication between an Arduino sketch (running on SAM3X Arduino Due Compatible processor) and a binary application on iMX6 Linux processor.
 
 The Arduino sketch will remain the same no matter which programming language you’ll use to develop the binary on iMX6.
 
