@@ -3,17 +3,24 @@ Python serial libraries for UDOO DUAL/QUAD
 
 This file describes how to run the python examples contained in this folder.
 
-1- Install the Python library to manage the serial:
-(NB: jump this step if you have this example preinstalled in you UDOObuntu distribution, release 1.1 and above)
+1 - Starting from UDOObuntu 2 all the libraries and link should be preinstalled. Otherwise install the Python serial library:
 
-    sudo pip install pyserial
+  sudo apt-get install python-serial
 
-2- Open a terminal and navigate to this folder:
+2 - Create the needed serial link with these commands:
 
-    cd serial_libraries_examples/java/
+  sudo ln -s /dev/ttymxc3 /dev/ttyS0
 
-3- Run the python program:
+3 - Open a terminal and navigate to this folder:
 
-for python_serial_example.py:
+  cd serial_libraries_examples/python/
 
-    python python_serial_example.py
+4 - Run the python program:
+
+for the base python_serial_example.py:
+
+  python python_serial_example.py
+
+for the bidirectional python_serial_example_bidirectional.py:
+
+  python python_serial_example_bidirectional.py
