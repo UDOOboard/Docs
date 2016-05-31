@@ -12,9 +12,11 @@ The Arduino sketch will remain the same no matter which programming language you
 
 There are two example scripts for each programming language: C, Java, PHP, Python.
 
-Each program is meant to be executed while the matching Arduino Sketch is running on SAM3X:
+You can find the whole repo in our [Github Channel](https://github.com/UDOOboard/serial_libraries_examples).
 
-arduino_serial_example.ino
+Each program is meant to be executed while the matching Arduino Sketch is running on SAM3X.
+
+Program the Arduino Due embedded with the sketch named `arduino_serial_example.ino` before run these examples:
 
     c_serial_example.c
     java_serial_example.java
@@ -22,7 +24,7 @@ arduino_serial_example.ino
     python_serial_example.py
 
 
-arduino_serial_example_bidirectional.ino
+Program the Arduino Due embedded with the sketch named `arduino_serial_example_bidirectional.ino` before run these examples:
 
     c_serial_example_bidirectional.c
     java_serial_example_bidirectional.java
