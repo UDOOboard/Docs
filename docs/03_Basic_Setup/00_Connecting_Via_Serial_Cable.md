@@ -59,7 +59,7 @@ Save it as <strong>“Udoo-serial”</strong> for future uses.
 <br />
 
 </div>
-<div role="tabpanel" class="tab-pane" id="linux-example"
+<div role="tabpanel" class="tab-pane" id="linux-example">
 
 ## Connecting via Serial from Linux
 
