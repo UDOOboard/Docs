@@ -2,7 +2,7 @@ This describes the necessary steps to start and use the pre-compiled Android sof
 
 ## System Requirements
 
-Android system for UDOO DUAL/QUAD board is provided as precompiled images or as source code to be customized and rebuilt. Running the full procedure described in this wiki, rebuilding the Android system from source files, it is necessary to have an host PC (or Virtual Machine) running Ubuntu Linux 10.04 64bit with at least 40 GB of free disk space, configured in the set up the work environment section below. The host PC should also include:
+Android system for UDOO DUAL/QUAD board is provided as precompiled images or as source code to be customized and rebuilt. Running the full procedure described in this wiki, rebuilding the Android system from source files, it is necessary to have an host PC (or Virtual Machine) running Ubuntu Linux 14.04 64bit with at least 40 GB of free disk space, configured in the set up the work environment section below. The host PC should also include:
 
 * an SD/µSD card reader;
 * an host pc with internet connection;
