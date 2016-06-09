@@ -27,7 +27,7 @@ If all the requirements above are met, you’re ready to start. What we will bas
   Udoo QUAD/DUAL works ONLY with Arduino IDE version 1.6.5. Download it from <a href="https://www.arduino.cc/en/Main/OldSoftwareReleases#previous">here!</a>
 </div>
 
-* From your computer go to the Arduino website and downlaod the 1.6.5 version of the IDE: https://www.arduino.cc/en/Main/OldSoftwareReleases#previous
+* From your computer go to the Arduino website and downlaod the 1.6.5 version of the IDE: [Arduino IDE 1.6.5](https://www.arduino.cc/en/Main/OldSoftwareReleases#previous)
 
 * Select the OS you have in your computer and download the IDE then install it
 
