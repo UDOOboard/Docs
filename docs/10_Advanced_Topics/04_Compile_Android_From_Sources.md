@@ -51,7 +51,7 @@ Next step is downloading the source code. To do so you need the [`repo`](https:/
     ~$ ~/bin/repo init -u https://github.com/UDOOboard/android_udoo_platform_manifest -b android-6.0.1
     ~$ ~/bin/repo sync -j5
 
-N.B. the `repo sync` loads the repos needed. Therefore, it can take several hours to load. The `-jN` command run `N` job at the same time to speed up this process.
+N.B. the `repo sync` loads the repos needed. Therefore, it can take several hours to load. The `-jN` command run `N` tasks at the same time to speed up this process.
 
 ## Configure the environment
 
