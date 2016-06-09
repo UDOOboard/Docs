@@ -72,7 +72,7 @@ Finally, it is necessary to choose which target to build. The command below show
 
 ```
 
-For each possible target, the first part of the name indicates the board you are building for, while the second part selects the build type, as described [here](http://source.android.com/source/building-running.html).
+For each possible target, the first part of the name indicates the board you are building for, while the second part selects the build type, as described [here](http://source.android.com/source/building.html).
 
 In particular, valid options to build for UDOO DUAL/QUAD board are:
 
