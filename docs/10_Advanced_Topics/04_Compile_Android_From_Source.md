@@ -43,13 +43,17 @@ The number of messages sent via serial port can be very high. For this reason, i
 
 Next step is downloading the source code. To do so you need the [`repo`](https://source.android.com/source/using-repo.html) tool which has been developed especially for Android in order to manage the hundreds of Git repositories this project contains:
 
-    ~$ cd ~
-    ~$ mkdir myandroid bin
-    ~$ curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
-    ~$ chmod a+x ~/bin/repo
-    ~$ cd myandroid
-    ~$ ~/bin/repo init -u https://github.com/UDOOboard/android_udoo_platform_manifest -b android-6.0.1
-    ~$ ~/bin/repo sync -j5
+```bash
+
+~$ cd ~
+~$ mkdir myandroid bin
+~$ curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+~$ chmod a+x ~/bin/repo
+~$ cd myandroid
+~$ ~/bin/repo init -u https://github.com/UDOOboard/android_udoo_platform_manifest -b android-6.0.1
+~$ ~/bin/repo sync -j5
+
+```
 
 N.B. the `repo sync` loads the repos needed. Therefore, it can take several hours to load. The `-jN` command run `N` tasks at the same time to speed up this process.
 
@@ -136,9 +140,9 @@ Launch the script to prepare the SD
 
 ```bash
 
-~# cp make_sd.sh $OUT
-~# cd $OUT
-~# sudo -E ./make_sd.sh /dev/sdc
+~$ cp make_sd.sh $OUT
+~$ cd $OUT
+~$ sudo -E ./make_sd.sh /dev/sdc
 
 ```
 
