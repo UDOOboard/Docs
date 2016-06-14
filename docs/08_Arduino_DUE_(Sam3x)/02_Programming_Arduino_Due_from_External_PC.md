@@ -21,17 +21,13 @@ If all the requirements above are met, you’re ready to start. What we will bas
 
 ## Install and configure the Arduino IDE
 
-<div class="alert alert-danger" role="alert">
-  <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-  <span class="sr-only">Warning!</span>
-  Udoo QUAD/DUAL works ONLY with Arduino IDE version 1.6.5. Download it from <a href="https://www.arduino.cc/en/Main/OldSoftwareReleases#previous">here!</a>
-</div>
-
-* From your computer go to the Arduino website and downlaod the 1.6.5 version of the IDE: [Arduino IDE 1.6.5](https://www.arduino.cc/en/Main/OldSoftwareReleases#previous)
+* From your computer go to the Arduino website and downlaod the last Arduino IDE version (currently 1.6.9): [Arduino IDE 1.6.9](https://www.arduino.cc/en/Main/Software)
 
 * Select the OS you have in your computer and download the IDE then install it
 
-* Open the IDE, go to File -> Preferences and add this link to Additional Boards Manager URLs: `https://udooboard.github.io/arduino-board-package/package_udoo_index.json` , then click Ok.  
+* Open the IDE, go to File -> Preferences and add this link to Additional Boards Manager URLs:
+    https://udooboard.github.io/arduino-board-package/package_udoo_index.json
+then click `OK`.  
 
 <img width="550" height="447" src="../img/ext_ard_07.png" style="margin-left: 30px;">  
 
