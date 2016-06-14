@@ -25,8 +25,9 @@ If all the requirements above are met, you’re ready to start. What we will bas
 
 * Select the OS you have in your computer and download the IDE then install it
 
-* Open the IDE, go to File -> Preferences and add this link to Additional Boards Manager URLs:
-    https://udooboard.github.io/arduino-board-package/package_udoo_index.json
+* Open the IDE, go to File -> Preferences and add this link to Additional Boards Manager URLs:  
+
+      https://udooboard.github.io/arduino-board-package/package_udoo_index.json  
 then click `OK`.  
 
 <img width="550" height="447" src="../img/ext_ard_07.png" style="margin-left: 30px;">  
