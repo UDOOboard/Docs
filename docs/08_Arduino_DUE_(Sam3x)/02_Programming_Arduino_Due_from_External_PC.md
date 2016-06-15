@@ -25,7 +25,7 @@ If all the requirements above are met, you’re ready to start. What we will bas
 
 * Select the OS you have in your computer and download the IDE then install it
 
-* Open the IDE, go to File -> Preferences and add this link to Additional Boards Manager URLs and then click `OK`:  
+* Open the IDE, go to `File -> Preferences` and add this link to `Additional Boards Manager URLs` and then click `OK`:  
 
       https://udooboard.github.io/arduino-board-package/package_udoo_index.json  
 
@@ -34,7 +34,7 @@ If all the requirements above are met, you’re ready to start. What we will bas
 <br />
 <br />
 
-* Go to Tools -> Boards and open the Board Manager.
+* Go to `Tools -> Boards` and open the `Board Manager`.
 
 * Wait few seconds 'till the end of the "index download" then look for `UDOO QUAD/DUAL (Arduino Due) by UDOO Team`. Click on it and install the latest version.
 
@@ -43,16 +43,16 @@ If all the requirements above are met, you’re ready to start. What we will bas
 <br />
 <br />
 
-* In the board manager install also the latest version of `Arduino SAM Boards (32-bit ARM Cortex-M3) by Arduino` package. (**Note:** This is the original Arduino DUE package. Install it is needed only in the Arduino IDE 1.6.5. In the next versions install this package won't be necessary.)
+* If you use the older 1.6.5 Arduino IDE version you need to install also the `Arduino SAM Boards (32-bit ARM Cortex-M3) by Arduino` package. If you use a newer Arduino IDE version this package isn't needed.
 
-* Now in Tools -> Boards you should see the `UDOO QUAD/DUAL (Arduino Due)`, if so Click on it.
+* Now in `Tools -> Boards` you should see the `UDOO QUAD/DUAL (Arduino Due)`, if so Click on it.
 
 <img width="550" height="587" src="../img/ext_board_manager_boards.PNG" style="margin-left: 30px;">
 
 <br />
 <br />
 
-* Select the right Tools -> Port of the UDOO QUAD/DUAL Arduino Due
+* Select the right `Tools -> Port` of the UDOO QUAD/DUAL Arduino Due
 
 * Done, now you're ready to use your UDOO QUAD/DUAL with the Arduino IDE installed on your Computer.
 
