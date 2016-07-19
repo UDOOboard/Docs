@@ -2,7 +2,8 @@ Android has been ported to UDOO QUAD/DUAL.
 
 ## Technical specifications
 
-Android for UDOO QUAD/DUAL is based on Android 4.2.2 but it will be upgraded soon.
+Android stable for UDOO QUAD/DUAL is based on Android 4.2.2.
+In the Download page you can also find an image of Android 6.0.1 Marshmallow that is still in Beta but almost fully functionally.
 
 SD card images can be downloaded from the [image section of the website](http://www.udoo.org/downloads/).
 

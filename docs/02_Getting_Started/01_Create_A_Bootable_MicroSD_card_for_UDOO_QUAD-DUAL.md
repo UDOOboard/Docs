@@ -32,7 +32,7 @@ Please consider that the size of a Micro SD card must be at least 4/8GB (dependi
 
 <img style="width:400px; height:218px" src="../img/Box3_Tutorials_UdooSite.png">
 
-Extract the downloaded zip file, so you'll have a .img image file. Do not use the preinstalled archive extractor, use <a href="http://www.7-zip.org/" target="_blank">7-zip</a> or similar to decompress the zip file.
+Extract the downloaded zip file, so you'll have a .img image file. Do not use the preinstalled archive extractor, use [7-zip](http://www.7-zip.org/) or similar to decompress the zip file.
 
 Download the [Win32DiskImager software](http://sourceforge.net/projects/win32diskimager/) and unzip it.
 
