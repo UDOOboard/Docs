@@ -26,6 +26,8 @@ With this configuration **Android(i.MX6) communicates with the Arduino&trade; DU
 
 By default the USB OTG bus is connected to microUSB connector(CN3). To switch the OTG bus channel and use the ADK communication follow the steps listed in the appropriate section.
 
+Here you can find some useful `examples` of how to program an Android App and an Arduino Sketch that communicate in [single](../Android/Android_And_Arduino_Simple_Hello_World_Tutorial.html) and [bidirectional](../Android/Android_And_Arduino_Bidirectional_Communication.html) way.
+
 ## Switching between modes
 
 ### GUI Switch

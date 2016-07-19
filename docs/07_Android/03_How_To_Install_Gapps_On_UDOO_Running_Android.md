@@ -1,9 +1,8 @@
-## Install the Oracle Java JDK
+## Install ADB tools
 
+UDOO DUAL/QUAD board ships with a custom build of vanilla Android operating system, the original **Android Open Source Project (AOSP)**. Like you may have noticed when you run Android for the first time, there is no trace of any [Google Mobile Services](http://www.google.com/mobile/) or applications such as Google Play Store, Gmail or others, usually known as **Google Apps**.
 
-UDOO DUAL/QUAD board ships with a custom build of vanilla Android operating system, the original **Android Open Source Project (AOSP)**. Like you may have noticed when you run Android for the first time, there is no trace of any [Google Mobile Services](http://www.google.com/mobile/) or applications such as Google Play Store, Gmail or others, usually known as **Google Apps**. 
-
-To install these services in your UDOO DUAL/QUAD board, you must first download a set of tools that will grant you the access to the Android filesystem, and then copy downloaded Google Apps inside your board. This guide requires that you know [how to connect UDOO board](/docs/Tutorials/UDOO_Switch_Between_Adb_Debug_And_ADK_Connection) with Android operating system to your computer.
+To install these services in your UDOO DUAL/QUAD board, you must first download a set of tools that will grant you the access to the Android filesystem, and then copy downloaded Google Apps inside your board. This guide requires that you know [how to connect UDOO board](../Android/Switch_Between_Adb_Debug_And_ADK_Connection) with Android operating system to your computer.
 
 Required tools are available in the **Android SDK** used by Android developers to create their mobile applications. Anyhow, we will use these tools only to install Google Apps in your board and no competence in application development is required to follow this guide. The SDK could be downloaded in your system in two different ways:
 
@@ -12,7 +11,7 @@ Required tools are available in the **Android SDK** used by Android developers t
 * Using only the Android SDK to install required tools.
 
 
-Whatever is your choice, [here](http://developer.android.com/sdk/installing/index.html) you can find the page where you can download both solutions. If you aren’t an Android developer and you don’t want to delve in application development, you can directly download only the Android SDK. 
+Whatever is your choice, [here](http://developer.android.com/sdk/installing/index.html) you can find the page where you can download both solutions. If you aren’t an Android developer and you don’t want to delve in application development, you can directly download only the Android SDK.
 When the download finishes you can proceed installing the Android SDK but bear in mind that, during the installation, you should make a note of the name and location where you save the SDK on your system; you will need to refer to the SDK directory later when using the SDK tools from the command line.
 
 After the installation, follow the suggestions you will find in the Adding SDK Packages section available in the link above, in which you will use the **SDK Manager** to download required tools. Again, if you’re not interested in application development, you can simply download the following items:
@@ -33,7 +32,7 @@ We have to locate the <i>adb</i> executable and use it through the command line 
 Note: the SDK_location_on_your_system is the location where you save the SDK on your system, during the first step
 
 
-### Windows 8
+### Windows 7/8/8.1/10
 
 To open the command line, point the mouse to the upper-right corner of the screen, move the mouse pointer down, and then click Search. From the search box, write cmd and click Command Prompt.
 
@@ -107,27 +106,3 @@ Note: [your_download_folder] is the location where you’ve downloaded and extra
 When the process is finished, we can reboot the Android system using the reboot button.
 
 The process ends with a success if we found, in the Android launcher, new applications such as Google Play Store and Gmail.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
