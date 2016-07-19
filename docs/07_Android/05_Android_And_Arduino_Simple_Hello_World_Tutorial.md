@@ -47,12 +47,12 @@ These are the needed components of the App:
 
 
 
-	
+
 <p dir="ltr">Include a &lt;uses-feature&gt; element that declares that your application uses the android.hardware.usb.accessory feature.</p>
 
 ```bash
 
-&lt;uses-feature android:name="android.hardware.usb.accessory" /&gt;
+<uses-feature android:name="android.hardware.usb.accessory">
 
 ```
 
@@ -60,7 +60,7 @@ These are the needed components of the App:
 
 ```bash
 
-&lt;uses-sdk android:minSdkVersion="15" android:targetSdkVersion="18" /&gt;
+<uses-sdk android:minSdkVersion="15" android:targetSdkVersion="18">
 
 ```
 
@@ -71,17 +71,17 @@ These are the needed components of the App:
 
 ```bash
 
-&lt;activity
+<activity
 ……
 
-   &lt;intent-filter&gt;
+   <intent-filter>
       &lt;action android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED" /&gt;
-   &lt;/intent-filter&gt;
+   <intent-filter>
 
-   &lt;meta-data android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED"
-      android:resource="@xml/accessory_filter" /&gt;
+   <meta-data android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED"
+      android:resource="@xml/accessory_filter">
 
-&lt;/activity&gt;
+</activity>
 
 ```
 
@@ -106,12 +106,12 @@ In the XML resource file, declare &lt;usb-accessory&gt; elements for the accesso
 
 ```bash
 
-&lt;?xml version="1.0" encoding="utf-8"?&gt;
-&lt;resources&gt;
+<?xml version="1.0" encoding="utf-8">
+<resources>
 
-   &lt;usb-accessory manufacturer="Aidilab" model="UDOO_ADK" version="1.0" /&gt;
+   <usb-accessory manufacturer="Aidilab" model="UDOO_ADK" version="1.0">
 
-&lt;/resources&gt;
+</resources>
 
 ```
 
@@ -214,7 +214,7 @@ void loop()
              digitalWrite(LED_PIN, HIGH);
           } else if (parseCommand(buf[0]) == 0) {
              // Received "0" - turn off LED
-             digitalWrite(LED_PIN, LOW); 
+             digitalWrite(LED_PIN, LOW);
           }
 …
 }
