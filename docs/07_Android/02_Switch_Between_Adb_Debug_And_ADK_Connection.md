@@ -10,7 +10,7 @@ Since the 6.0 Marshmallow version, the default option let Android's OTG bus comm
 
 The first time Android show an text alert like this.
 
-![Allow USB Debugging](/img/android_allow_usb_dbg.png)
+![Allow USB Debugging](../img/android_allow_usb_dbg.png)
 
 Android asks you to accept the fingerprint of your pc. Select the option `Always allow from this computer` and press `OK` button.
 
@@ -44,7 +44,7 @@ Here you can find some useful `examples` of how to program an Android App and an
 
 Since the 6.0 Marshmallow version, the UDOO Android distro comes with a custom `UDOO` section in Setting App to configure custom options for UDOO boards.
 
-![OTG](/img/android_setting/setting_udoo_intotg.png)
+![OTG](../img/android_setting/setting_udoo_intotg.png)
 
 Visit the previous [UDOO Android Setting](../Android/UDOO_Android_Setting.html) section.
 

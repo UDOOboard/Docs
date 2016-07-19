@@ -2,12 +2,12 @@
 
 Since the 6.0 Marshmallow version, the UDOO Android distro comes with a custom `UDOO` section in Setting App to configure custom options for UDOO boards.
 
-![UDOO Settings](/img/android_setting/setting_udoo.png)
+![UDOO Settings](../img/android_setting/setting_udoo.png)
 
 
 In `General` you can find misc custom options to set video output, audio device, processor's governor, OTG communication and reboot Android in recovery.
 
-![UDOO General Settings](/img/android_setting/setting_udoo_general.png)
+![UDOO General Settings](../img/android_setting/setting_udoo_general.png)
 
 ## Select Video Output
 
@@ -19,7 +19,7 @@ In UDOO QUAD/DUAL you have three options as video output.
 
 The default one at boot is HDMI.
 
-![Video Output](/img/android_setting/setting_udoo_vidout.png)
+![Video Output](../img/android_setting/setting_udoo_vidout.png)
 
 ## Enable internal Arduino Communication (ADK)
 
@@ -31,7 +31,7 @@ Visit the `External OTG connection to i.MX6` and `OTG connection between i.MX6 a
 
 Since the 6.0 Marshmallow version the default option let UDOO's OTG bus communicate with and external PC (ADB). Check this option to make an Adroid App communicate with the UDOO's Arduino&trade; DUE processor.
 
-![OTG](/img/android_setting/setting_udoo_intotg.png)
+![OTG](../img/android_setting/setting_udoo_intotg.png)
 
 Visit the [Switch Between Adb Debug and ADK Connection](../Android/Switch_Between_Adb_Debug_and_ADK_Connection.html) to find more info about how to change the iMX^ USB OTG physically connection.
 
@@ -47,7 +47,7 @@ You can select a CPU governor among one of:
  * `interactive`: dynamically scales CPU clockspeed in response to the workload placed on the CPU by the user. Significantly more responsive than ondemand.
  * `performance`:	Run the cpu at max frequency.
 
-![Governor](/img/android_setting/setting_udoo_gov.png)
+![Governor](../img/android_setting/setting_udoo_gov.png)
 
 
 ## Select Audio device
@@ -57,7 +57,7 @@ You can select the Output Audio Device among one of:
  * HDMI (imx-hdmi-soc) : audio from the HDMI monitor
  * OnBoard (vt1613-audio) : audio from the green speaker 3.5mm jack.
 
-![AudioDevice](/img/android_setting/setting_udoo_auddev.png)
+![AudioDevice](../img/android_setting/setting_udoo_auddev.png)
 
 You need to reboot Android to apply this change.
 
@@ -68,7 +68,7 @@ Since Android 6.0 Marshmallow version the UDOO Android distro provides [TWRP rec
 
 Booting Android in Recovery mode allow you to install zip update package. For example you can install the [Open GApps](http://opengapps.org/) packages to install Google Apps.
 
-![Recovery](/img/android_setting/setting_udoo_recovery.png)
+![Recovery](../img/android_setting/setting_udoo_recovery.png)
 
 You can find an exhaustive guide of [how to install Gapps](../Android/How_To_Install_Gapps_On_UDOO_Running_Android.html) here.
 
