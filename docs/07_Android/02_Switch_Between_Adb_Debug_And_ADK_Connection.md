@@ -30,8 +30,9 @@ Here you can find some useful `examples` of how to program an Android App and an
 
 ## Switching between modes
 
-### GUI Switch
+You can switch between the two USB OTG connection by Android Setting Interface or by commands in terminal.
 
+### GUI Switch
 
 <div>
  <ul id="adc-examples" class="nav nav-tabs" role="tablist">
@@ -49,7 +50,7 @@ Since the 6.0 Marshmallow version, the UDOO Android distro comes with a custom `
 Visit the previous [UDOO Android Setting](../Android/UDOO_Android_Setting.html) section.
 
   </div>
-  <div role="tabpanel" class="tab-pane" id="mandroid4">
+  <div role="tabpanel" class="tab-pane" id="android4">
 
 You can automatically switch between modes using the options menu checkbox.
 
