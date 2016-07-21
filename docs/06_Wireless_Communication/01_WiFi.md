@@ -1,4 +1,4 @@
-## Ralink/Mediatenk RT5370
+## Ralink/Mediatek RT5370
 
 UDOO QUAD/DUAL uses the Ralink/Mediatek RT5370 to provide the Wi-Fi connectivity. Ralink/MediaTek RT5370 is a system on a chip (SOC) with a USB 2.0 interface for 802.11n Wi-Fi at data rates up to 150Mbit/s. RT5370 features integrated 802.11n baseband and MAC (media access control), power amplifier and low-noise amplifier, along with both transmit-receive and antenna diversity switches. Together with an optimised RF architecture and baseband algorithms, RT5370 gives superb performance and reliable throughput with low power consumption.
 
