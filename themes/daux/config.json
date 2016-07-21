@@ -14,7 +14,7 @@
         },
         "navy": {
             "favicon": "<theme_url>img/favicon-navy.png",
-            "css": ["<theme_url>css/theme-navy.min.css", "<theme_url>css/udoo.css"]
+            "css": ["<theme_url>css/theme-navy.udoo.css", "<theme_url>css/udoo.css"]
         },
         "red": {
             "favicon": "<theme_url>img/favicon-red.png",
