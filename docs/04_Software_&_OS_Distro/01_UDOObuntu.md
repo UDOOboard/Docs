@@ -22,7 +22,7 @@ Besides the Ubuntu 14.04 LTS specifications, UDOObuntu differs for the following
 
 ## Updates
 
-The distribution uses the official Ubuntu repository and the UDOO repository, so it is possible to update a running system via
+The distribution uses the official Ubuntu repositories and the UDOO repository, so it is possible to update a running system in easy way via:
 
     sudo apt update
     sudo apt dist-upgrade
