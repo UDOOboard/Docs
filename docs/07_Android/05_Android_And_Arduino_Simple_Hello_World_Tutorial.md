@@ -71,11 +71,11 @@ These are the needed components of the App:
 
 ```bash
 
-<activity
+<activity>
 ……
 
    <intent-filter>
-      &lt;action android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED" /&gt;
+      <action android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED" >
    <intent-filter>
 
    <meta-data android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED"
@@ -87,7 +87,7 @@ These are the needed components of the App:
 
 &nbsp;
 
-<strong>res/xml/accessory_filter.xml</strong>
+**res/xml/accessory_filter.xml**
 
 In the XML resource file, declare &lt;usb-accessory&gt; elements for the accessories that you want to filter. Each&lt;usb-accessory&gt; can have the following attributes:
 <ul>
@@ -117,7 +117,7 @@ In the XML resource file, declare &lt;usb-accessory&gt; elements for the accesso
 
 &nbsp;
 
-<strong>UDOOBlinkLEDActivity.java</strong>
+**UDOOBlinkLEDActivity.java**
 
 There’s a new easiest way to implement the ADK communication, the <a href="https://github.com/palazzem/adk-toolkit">ADK Toolkit</a> by palazzem, a member of our great community.
 This toolkit helps beginners to be up and running with ADK 2012 without difficulties.
@@ -131,7 +131,7 @@ if you are using <strong>Gradle</strong>, the library is available on MavenCentr
 ```bash
 
 dependencies {
-    compile 'me.palazzetti:adktoolkit:0.2.0'
+    compile 'me.palazzetti:adktoolkit:0.3.0'
 }
 
 ```
@@ -144,7 +144,7 @@ import me.palazzetti.adktoolkit.AdkManager
 
 ```
 
-You need to inizialize the AdkManager in the onCreate() method:
+You need to initialize the AdkManager in the onCreate() method:
 
 ```bash
 
@@ -160,8 +160,8 @@ protected void onCreate(Bundle savedInstanceState) {
 
 ```
 
-To write and read messages to and from the Arduino accessory you can use the <em>writeSerial()</em> and <em>readSerial()</em> methods. You can write and read a single char or a String object. So easy.
-In this example we used only the <em>writeSerial()</em> method to write a single char in order to instruct the accessory to turns on (we send “1″) or turn off (we send “0″) the LED.
+To write and read messages to and from the Arduino Accessory you can use the *writeSerial()* and *readSerial()* methods. You can write and read a single char or a String object. So easy.
+In this example we used only the *writeSerial()* method to write a single char in order to instruct the accessory to turns on (we send “1″) or turn off (we send “0″) the LED.
 
 ```bash
 
@@ -216,7 +216,7 @@ void loop()
              // Received "0" - turn off LED
              digitalWrite(LED_PIN, LOW);
           }
-…
+
 }
 
 // the characters sent to Arduino are interpreted as ASCII, we decrease 48 to return to ASCII range.
