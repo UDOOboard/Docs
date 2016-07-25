@@ -36,7 +36,7 @@ Once the `TWRP recovery` is loaded, enter in the `Install` menu. Navigate the fo
 
 You need to `Swipe to confirm Flash`. The procedure that install the GApps will start and will take few minutes. Once the procedure end  successful you can press the `Reboot System`.
 
-<span class="label label-warning">Heads up!</span> The first time you reboot the system after GApps installation a Setup Wizard will start. The wizard will fail but this is an expected behavior(this Google wizard is thinked to be executed after a fresh Android installation). Just ignore the message by clicking `ok`.
+<span class="label label-warning">Heads up!</span> The first time you reboot the system after GApps installation a Setup Wizard will start. The wizard will fail but this is an expected behavior(this Google wizard is thought to be executed after a fresh Android installation). Just ignore the message by clicking `ok`.
 
 At this point the Google Apps are installed in you system. You can check it navigate the App Menu. Enjoy.
 
