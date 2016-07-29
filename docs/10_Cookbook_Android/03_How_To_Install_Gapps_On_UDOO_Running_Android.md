@@ -26,7 +26,7 @@ Alternatively you can download GApps package on your external PC and copy it in 
 Navigate in this folders with the App `CMFileManager` (the *Root Access* option is needed) and copy the package in the Android SD partition, for example in the path: `/storage/emulated/0/Download/`.
 
 Once you have the .zip file in the Android SD card partition you can reboot the board in **Recovery Mode** to run the `TWRP recovery`.
-You can find info about how to reboot the board in **Recovery Mode** reading the `Reboot in TWRP recovery` section of the [UDOO Android Settings](../Android/UDOO_Android_Settings.html) page.
+You can find info about how to reboot the board in **Recovery Mode** reading the `Reboot in TWRP recovery` section of the [UDOO Android Settings](../Cookbook_Android/UDOO_Android_Settings.html) page.
 
 <img style="width:600px; height:338px" src="../img/android_recovery_menu.jpg">   
 
