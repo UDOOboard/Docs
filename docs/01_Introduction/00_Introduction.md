@@ -1,7 +1,7 @@
 <h1>UDOO DUAL/QUAD</h1>
 <hr/>
 <p>
-	<strong>UDOO DUAL/QUAD</strong> is a single board computer that can be used both with Android and Linux, paired with an Arduino-compatible processor. It is a powerful prototyping board for software development and design; it’s easy to use and allows developing projects with minimum knowledge of hardware design. UDOO DUAL/QUAD merges different computing worlds together: each one has its proper strengths and weak points, but all of them are useful in todays life for educational purposes as well as Do-It-Yourself (DIY) and quick prototyping. UDOO DUAL/QUAD is an open hardware, low-cost platform equipped with an ARM i.MX6 Freescale processor, and an Arduino Due compatible section based on ATMEL SAM3X8E ARM processor, all this available on the same board!
+	<strong>UDOO DUAL/QUAD</strong> is a single board computer that can be used both with Android and Linux, paired with an Arduino-compatible processor. It is a powerful prototyping board for software development and design; it’s easy to use and allows developing projects with minimum knowledge of hardware design. UDOO DUAL/QUAD merges different computing worlds together: each one has its proper strengths and weak points, but all of them are useful in todays life for educational purposes as well as Do-It-Yourself (DIY) and quick prototyping. UDOO DUAL/QUAD is an open hardware, low-cost platform equipped with an ARM i.MX6 NXP® processor, and an Arduino Due compatible section based on ATMEL SAM3X8E ARM processor, all this available on the same board!
 </p>
 <hr/>
 
@@ -24,7 +24,7 @@
 
 UDOO DUAL/QUAD retail line up consists of three models, sharing most of the features and different only for connectivity and i.MX6 processor used. All three models feature an embedded Arduino compatible section based on Arduino Due schematic. UDOO DUAL/QUAD’s dimensions are: 4.33 inch x 3.35 inch (11 cm x 8.5 cm).
 
-* Freescale i.MX6Quad, 2\4 x ARM® Cortex™-A9 core @ 1GHz with ARMv7A instruction set
+* NXP® i.MX6Quad, 2\4 x ARM® Cortex™-A9 core @ 1GHz with ARMv7A instruction set
 * GPU Vivante GC 2000 for 3D + Vivante GC 355 for 2D (vector graphics) + Vivante GC 320 for 2D
 * Atmel SAM3X8E ARM Cortex-M3 CPU (same as Arduino Due)
 * RAM DDR3 1GB
