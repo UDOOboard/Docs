@@ -231,7 +231,7 @@ uint8_t parseCommand(uint8_t received) {
 <p dir="ltr">If you need more documentation, you can just check those links out:</p>
 <p dir="ltr"><a href="http://developer.android.com/guide/topics/connectivity/usb/accessory.html">USB Accessory</a></p>
 <p dir="ltr"><a href="http://developer.android.com/tools/adk/adk2.html">ADK 2012</a></p>
-<p dir="ltr">Here you can download the <a href="http://udoo.org/download/files/Tutorials/AndroidADKDemoBase/UDOOADKDemoV2.zip">complete code</a> of this example demo</p>
+<p dir="ltr">Here you can download the <a href="https://github.com/UDOOboard/android_adk_demo">complete code</a> of this example demo</p>
 
 If you need the ADB driver you can get it from the <a href="http://adbdriver.com/downloads/" title="adbdriver" target="_blank">adbdriver website</a>
 <p dir="ltr">This was just a simple tutorial showing how to interface Android and Arduino natively on UDOO DUAL/QUAD. We're already preparing some brand new tutorials to further digg into that matter, enabling you to create advanced Android powered projects!</p>
