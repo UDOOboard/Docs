@@ -94,13 +94,30 @@ gst-launch-1.0 imxv4l2videosrc imx-capture-mode=5 ! imxipuvideosink  use-vsync=t
 
 ```
 
-More thorough information on gstreamer pipelines can be found at:
+More thorough information on gstreamer pipelines can be found at this links:
 
 [Gstreamer-imx](https://github.com/Freescale/gstreamer-imx)
 
 [Gateworks video](http://trac.gateworks.com/wiki/Yocto/gstreamer/video)
 
-[Gateworks video](http://trac.gateworks.com/wiki/Yocto/gstreamer/streaming) (RTSP streaming)
+### Streaming with Gstreamer on UDOObuntu
+
+To create a stream using HW encoding you can use Gstreamer.  
+For example to create a low latency stream server of the UDOO Camera Module from UDOObuntu you can use this command:
+
+    gst-launch-1.0 imxv4l2videosrc ! imxvpuenc ! tcpserversink host=<UDOO_ip> port=9000
+
+On a Linux client you can play the stream using MPlayer media player with this command:
+
+    nc <UDOO_ip> 9000 | mplayer -nocache -framedrop -benchmark -
+
+If you get an error related to `LIRC`, add the following line to the file `~/.mplayer/conf` of the client:
+
+    lirc=no
+
+You can find an example of an `RTSP` stream here:
+
+[Gateworks Streaming](http://trac.gateworks.com/wiki/Yocto/gstreamer/streaming) (RTSP streaming example)
 
 
 
