@@ -79,4 +79,4 @@ Alternatively you can use `adb` tools in [Adb Debug mode](../Android/Switch_Betw
 
 ## Expand /data partition to fit the micro SD card
 
-Since Android 6.0.1 R2 you can expand the /data partition to fit the maximum space available on the microSD card.
+Since Android 6.0.1 R2 you can expand the `/data` partition to fit the maximum space available on the microSD card. The UDOO Android image can be flashed on a Micro SD of at least 4 GB. The image is not expanded automatically and stuck at 4GB even if you use a bigger SD card; however you can expand your `/data` partition manually using this menu option.
