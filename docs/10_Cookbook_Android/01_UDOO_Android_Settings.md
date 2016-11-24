@@ -2,8 +2,6 @@
 
 Since the 6.0 Marshmallow version, the UDOO Android distro comes with a custom `UDOO` section in Setting App to configure custom options for UDOO boards.
 
-<img style="width:600px; height:338px" src="../img/android_setting/setting_udoo.png">   
-
 In `General` you can find misc custom options to set video output, audio device, processor's governor, OTG communication and reboot Android in recovery.
 
 <img style="width:600px; height:338px" src="../img/android_setting/setting_udoo_general.png">
@@ -18,7 +16,7 @@ In UDOO QUAD/DUAL you have three options as video output.
 
 The default one at boot is HDMI.
 
-<img style="width:700px; height:281px" src="../img/android_setting/setting_udoo_vidout.png">
+<img src="../img/android_setting/setting_udoo_vidout.png">
 
 ## Enable internal Arduino Communication (ADK)
 
@@ -46,7 +44,7 @@ You can select a CPU governor among one of:
  * `interactive`: dynamically scales CPU clockspeed in response to the workload placed on the CPU by the user. Significantly more responsive than ondemand.
  * `performance`:	Run the cpu at max frequency.
 
-<img style="width:700px; height:281px" src="../img/android_setting/setting_udoo_gov.png">
+<img src="../img/android_setting/setting_udoo_gov.png">
 
 ## Select Audio device
 
@@ -55,7 +53,7 @@ You can select the Output Audio Device among one of:
  * HDMI (imx-hdmi-soc) : audio from the HDMI monitor
  * OnBoard (vt1613-audio) : audio from the green speaker 3.5mm jack.
 
-<img style="width:700px; height:281px" src="../img/android_setting/setting_udoo_auddev.png">
+<img src="../img/android_setting/setting_udoo_auddev.png">
 
 You need to reboot Android to apply this change.
 
@@ -77,3 +75,8 @@ Another way to boot the Android Distro in Recovery Mode is run the following com
 Alternatively you can use `adb` tools in [Adb Debug mode](../Android/Switch_Between_Adb_Debug_And_ADK_Connection.html) from you external PC using the command:
 
     adb reboot recovery
+
+
+## Expand /data partition to fit the micro SD card
+
+Since Android 6.0.1 R2 you can expand the /data partition to fit the maximum space available on the microSD card.

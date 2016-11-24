@@ -6,7 +6,7 @@ The procedure is quite easy: simply unzip the image and write it on the Micro SD
 
 ## SD Card Requirements
 
-Please consider that the size of a Micro SD card must be at least 4/8GB (depending on the operating system); Micro SD memory cards with a higher capacity (tested up to 64GB) may be used, and the Linux root partition will be expanded to the full SD card size during the first boot. Android images are not expanded and stuck at 8GB even if you use a bigger SD card; however you can expand your partitions manually using tools like [gparted](http://gparted.org/).
+Please consider that the size of a Micro SD card must be at least 4/8GB (depending on the operating system); Micro SD memory cards with a higher capacity (tested up to 64GB) may be used, and the **Linux** root partition will be expanded to the full SD card size during the first boot. **Android** images are not expanded and stuck at 4GB even if you use a bigger SD card; however you can expand your `/data` partition manually using [UDOO Settings](../Cookbook_Android/UDOO_Android_Settings.html).
 
 | OS              | Minimum SD size | Maximum SD size | Automatic expansion |
 |-----------------|-----------------|-----------------|---------------------|
