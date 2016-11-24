@@ -6,7 +6,7 @@ Visit our Tutorials section to watch the video guide: [UDOO Android Boot Walkthr
 
 Android 6 Marshmallow is based on:
 
- * Android 6.0.1 (tag AOSP android-6.0.1_r70)
+ * Android 6.0.1 (tag AOSP android-6.0.1_r74)
  * Kernel 3.14.52
  * U-Boot v2015.10
 
