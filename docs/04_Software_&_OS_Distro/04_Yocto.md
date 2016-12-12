@@ -23,6 +23,10 @@ Within builds, there are options for various build-time sanity/regression tests,
 Download: [udoo-image-qt5-udooqdl.wic.bz2](https://buildr.ege.io/YOCTO/krogoth/udoo/udooqdl/udoo-image-qt5-udooqdl.wic.bz2)     
 SHA256: be552caf5c97fcc4b7f677f96449b7c39e3c47ee4e4bda2614fb129a58c8f07d
 
+## QT5 Toolchain
+poky-glibc-x86_64-udoo-image-qt5-cortexa9hf-neon-toolchain-2.1.1.sh     
+SHA256: d0189f96e7d9e8cd7e871a4c96fc127262d0c7a161beadd61d9ef823eec7b505
+
 # Installation
 To install Yocto type into the terminal:
 
