@@ -24,7 +24,8 @@ If you are searching for technical details check the <a href="http://udoo.org/do
 <div>
  <ul id="adc-examples" class="nav nav-tabs" role="tablist">
   <li role="presentation" class="active"><a href="#linux-example" aria-controls="linux" role="tab" data-toggle="tab">Linux (UDOObuntu 2)</a></li>
-  <li role="presentation"><a href="#android-example" aria-controls="android" role="tab" data-toggle="tab">Android</a></li>
+  <li role="presentation"><a href="#android-example" aria-controls="android" role="tab" data-toggle="tab">Android 6.x</a></li>
+  <li role="presentation"><a href="#android4-example" aria-controls="android4" role="tab" data-toggle="tab">Android 4.x</a></li>
  </ul>
 
  <div class="tab-content">
@@ -144,6 +145,12 @@ and follow the video instruction to change your calibration.
 
   </div>
   <div role="tabpanel" class="tab-pane" id="android-example">
+
+The official UDOO's Android 6.x version allow you to configure the Video Output directly from the Settings App.
+Visit the [UDOO Android Settings](../Cookbook_Android/UDOO_Android_Settings.html) section for more info.
+
+  </div>
+  <div role="tabpanel" class="tab-pane" id="android4-example">
 
 ## Manual Video Output Configuration
 
