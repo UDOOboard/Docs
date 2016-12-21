@@ -1,7 +1,7 @@
 <h1>UDOO DUAL/QUAD</h1>
 <hr/>
 <p>
-	<strong>UDOO DUAL/QUAD</strong> is a single board computer that can be used both with Android and Linux, paired with an Arduino-compatible processor. It is a powerful prototyping board for software development and design; it’s easy to use and allows developing projects with minimum knowledge of hardware design. UDOO DUAL/QUAD merges different computing worlds together: each one has its proper strengths and weak points, but all of them are useful in todays life for educational purposes as well as Do-It-Yourself (DIY) and quick prototyping. UDOO DUAL/QUAD is an open hardware, low-cost platform equipped with an ARM i.MX6 NXP® processor, and an Arduino Due compatible section based on ATMEL SAM3X8E ARM processor, all this available on the same board!
+	<strong>UDOO DUAL/QUAD</strong> is a single board computer that can run Android or Linux OS, and also features an Arduino-compatible microcontroller embedded onboard. It is a powerful prototyping board for software development and design. Easy to use, it  allows to develop projects with minimum knowledge of hardware design. UDOO DUAL/QUAD merges different computing worlds together: each one has its proper strengths and weak points, but all of them are useful in todays life for educational purposes as well as Do-It-Yourself (DIY) and quick prototyping. UDOO DUAL/QUAD is an open hardware, low-cost platform equipped with an ARM i.MX6 NXP® processor, and an Arduino Due compatible section based on ATMEL SAM3X8E ARM processor, all this available on the same board!
 </p>
 <hr/>
 
