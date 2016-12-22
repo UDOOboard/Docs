@@ -4,11 +4,11 @@ Apart from UDOObuntu and Android there are other Operating Systems available for
 
 Below you can find information about these Operating Systems.
 
-Please, note that these guides may be outdated, and that we do not guarantee that they are not. 
+Please, note that the guides linked below may be outdated, and that we do not guarantee that they are not. 
 
-If you find these guides outdated and you got problems with these Operating Systems you should search our Forum and eventually open a topic, but we also strongly suggest you to search the forum of the unofficial OS that you are using and eventually open a topic there, since unofficial Operating Systems, as said above, are not officially supported by the UDOO Team. 
+If you find that the guides linked below are outdated and you got problems with these Operating Systems, search the website/forum of the unofficial Operating System that you are using. 
 
-If you want to edit the guides below, make a pull request.
+If you want to edit the links below, make a pull request.
 
 ### General Purpose
 
