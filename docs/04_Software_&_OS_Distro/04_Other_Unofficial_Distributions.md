@@ -1,4 +1,14 @@
-## Available Distributions
+## Available Unofficial Distributions
+
+Apart from UDOObuntu and Android there are other Operating Systems available for UDOO Dual/Quad, but they have not been developed / ported by the UDOO Team, and are not officially supported by the UDOO Team.
+
+Below you can find information about these Operating Systems.
+
+Please, note that these guides may be outdated, and that we do not guarantee that they are not. 
+
+If you find these guides outdated and you got problems with these Operating Systems you should search our Forum and eventually open a topic, but we also strongly suggest you to search the forum of the unofficial OS that you are using and eventually open a topic there, since unofficial Operating Systems, as said above, are not officially supported by the UDOO Team. 
+
+If you want to edit the guides below, make a pull request.
 
 ### General Purpose
 
