@@ -26,8 +26,14 @@ cd uboot-imx
 
 ```
 
-To build the U-Boot for UDOO Quad/Dual, you can use the master [`2015.04-imx`](https://github.com/UDOOboard/uboot-imx) branch.
-This branch is based on NXP&trade;/Freescale U-Boot fork project.
+To build the U-Boot for UDOO Quad/Dual, use the [2015.10.fslc-qdl](https://github.com/UDOOboard/uboot-imx/tree/2015.10.fslc-qdl) branch.
+This branch is based on NXP&trade;/Freescale U-Boot Community fork project.
+
+```bash
+
+git checkout 2015.10.fslc-qdl
+
+```
 
 ## Compile sources
 
@@ -35,7 +41,7 @@ The build can be started with:
 
 ```bash
 
-ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- make udoo_qd_config
+ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- make udoo_qdl_defconfig
 ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- make
 
 ```
