@@ -29,11 +29,11 @@ In addition to the AOSP requirements, the following packages are needed to build
     liblz-dev liblzo2-2 liblzo2-dev u-boot-tools lib32z1 flex git-core \
     curl mtd-utils android-tools-fsutils
 
-At this page you can find how to [create a Virtual Machine for Development](../Advanced_Topics/Setup_Development_Environment.html). Remember you need a 64 bit Linux Distro to compile Android.
+At this page you can find how to [create a Virtual Machine for Development](!Advanced_Topics/Setup_development_environment). Remember you need a 64 bit Linux Distro to compile Android.
 
 ## Serial communication
 
-While not exactly necessary, serial communication with UDOO DUAL/QUAD is strongly recommended as the first debug method. In order to use the serial debug port on UDOO DUAL/QUAD, after connecting the board and host PC ports, it is necessary to install and setup an application for serial communication, such as minicom. At this page you can find how to [Conecting via Serial Cable](../Basic_Setup/Connecting_Via_Serial_Cable.html).
+While not exactly necessary, serial communication with UDOO DUAL/QUAD is strongly recommended as the first debug method. In order to use the serial debug port on UDOO DUAL/QUAD, after connecting the board and host PC ports, it is necessary to install and setup an application for serial communication, such as minicom. At this page you can find how to [Conecting via Serial Cable](!Basic_Setup/Connecting_Via_Serial_Cable).
 
 The serial debug port is used for two different reasons: The bootloader and kernel send debug messages via serial port, so that the user can monitor the low level system state; a root console is opened on the serial port, allowing bootloader configuration and system control.
 

@@ -46,5 +46,5 @@ sudo ./mkudoobuntu.sh udoo-qdl minimal
 You can find more info and commands about this script directly on the [Github repo](https://github.com/UDOOboard/mkudoobuntu).
 
 Once the script finished you can find the .img file in the main mkudoobuntu folder.
-You can create a bootable microSD from the .img file following this guide: [creating a bootable Micro SD card from precompiled image](../Getting_Started/Create_A_Bootable_MicroSD_card_for_UDOO_QUAD-DUAL.html).
+You can create a bootable microSD from the .img file following this guide: [creating a bootable Micro SD card from precompiled image](!Getting_Started/Create_A_Bootable_MicroSD_card_for_UDOO_QUAD-DUAL).
  

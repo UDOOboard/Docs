@@ -54,7 +54,7 @@ The mini USB OTG, when switched to the iMX6 OTG BUS, can be used, for example, t
 
 Both processors can listen and send data via the serial line, the only thing you need is check that they communicate at the same baudrate. So, you can tie up two different scripts or events manager, on both processors, and make them react the way you want.
 
-To have full examples of communication in different programming languages (Java, C, PHP, Python) go to the [Serial libraries examples](../Serial_Libraries/index.html)
+To have full examples of communication in different programming languages (Java, C, PHP, Python) go to the [Serial libraries examples](!Serial_Libraries/index)
 
 Let's view some bash scenarios:
 

@@ -1,7 +1,7 @@
 ## Overview
 
 This easy step by step guide will lead you through the procedure to boot your UDOO DUAL/QUAD for the very first time.
-You can also watch our [connectivity walkthrough](/tutorial/connectivity-walkthrough/).
+You can also watch our [connectivity walkthrough](http://www.udoo.org/tutorial/connectivity-walkthrough/).
 
 <img src="/docs/img/Box1_Tutorials_UdooSite.png">
 
@@ -10,7 +10,7 @@ You can also watch our [connectivity walkthrough](/tutorial/connectivity-walkthr
 
 ### 1. Insert the micro SD card
 
-UDOO DUAL/QUAD has no internal storage or built-in boot code, OS and storage are on microSD so you need to plug a pre-loaded microSD to boot. If you didn’t get a pre-loaded microSD card, you should follow our step by step guide about [creating a bootable Micro SD card from precompiled image](../Getting_Started/Create_A_Bootable_MicroSD_card_for_UDOO_QUAD-DUAL.html).
+UDOO DUAL/QUAD has no internal storage or built-in boot code, OS and storage are on microSD so you need to plug a pre-loaded microSD to boot. If you didn’t get a pre-loaded microSD card, you should follow our step by step guide about [creating a bootable Micro SD card from precompiled image](!Getting_Started/Create_A_Bootable_MicroSD_card_for_UDOO_QUAD-DUAL).
 
 ### 2. Connect the HDMI cable
 

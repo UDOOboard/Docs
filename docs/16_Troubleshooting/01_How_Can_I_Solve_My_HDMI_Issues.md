@@ -1,5 +1,5 @@
 
-If you can't see anything from your HDMI monitor be sure to follow the [why my udoo wont boot](/docs/Troubleshooting/Why_My_UDOO_Wont_Boot) guide and have a serial debug connection first.
+If you can't see anything from your HDMI monitor be sure to follow the [why my udoo wont boot](!Troubleshooting/Why_My_UDOO_Wont_Boot) guide and have a serial debug connection first.
 
 If the Serial returns the following output:
 

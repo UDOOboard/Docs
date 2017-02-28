@@ -2,7 +2,7 @@ If you want to install a webserver, in order to avoid port conflicts, you need t
 
 ## Using the Web Control Panel
 
-You can change the port using the GUI provided by the [Web Control Panel](../Basic_Setup/Web_Control_Panel.html) itself, in *Configuration*/*Advanced settings*.
+You can change the port using the GUI provided by the [Web Control Panel](!Basic_Setup/Web_Control_Panel) itself, in *Configuration*/*Advanced settings*.
 
 Reboot your board to apply the settings.
 

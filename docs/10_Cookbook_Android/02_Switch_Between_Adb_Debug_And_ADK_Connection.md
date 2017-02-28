@@ -26,7 +26,7 @@ With this configuration **Android(i.MX6) communicates with the Arduino&trade; DU
 
 By default the USB OTG bus is connected to microUSB connector(CN3). To switch the OTG bus channel and use the ADK communication follow the steps listed in the appropriate section.
 
-Here you can find some useful `examples` of how to program an Android App and an Arduino Sketch that communicate in [single](../Android/Android_And_Arduino_Simple_Hello_World_Tutorial.html) and [bidirectional](../Android/Android_And_Arduino_Bidirectional_Communication.html) way.
+Here you can find some useful `examples` of how to program an Android App and an Arduino Sketch that communicate in [single](!Cookbook_Android/Android_And_Arduino_Simple_Hello_World_Tutorial) and [bidirectional](!Cookbook_Android/Android_And_Arduino_Bidirectional_Communication) way.
 
 ## Switching between modes
 
@@ -47,7 +47,7 @@ Since the 6.0 Marshmallow version, the UDOO Android distro comes with a custom `
 
 ![OTG](../img/android_setting/setting_udoo_intotg.png)
 
-Visit the previous [UDOO Android Setting](../Android/UDOO_Android_Setting.html) section.
+Visit the previous [UDOO Android Setting](!Cookbook_Android/UDOO_Android_Settings) section.
 
   </div>
   <div role="tabpanel" class="tab-pane" id="android4">

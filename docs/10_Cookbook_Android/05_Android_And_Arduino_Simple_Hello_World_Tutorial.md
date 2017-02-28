@@ -1,6 +1,6 @@
 ## Overview
 
-Visit our Tutorials section to learn more about: [Android And Arduino - Simple Hello World Tutorial](/tutorial/android-arduino-udoo-simple-hello-world-tutorial/).
+Visit our Tutorials section to learn more about: [Android And Arduino - Simple Hello World Tutorial](http://www.udoo.org/tutorial/android-arduino-udoo-simple-hello-world-tutorial/).
 
 <p dir="ltr">Hi guys,
 in this tutorial we'll see how to implement an Android App and an Arduino sketch that exploit UDOO DUAL/QUAD's potentials thanks to the ADK (<a title="Accessory Development Kit" href="http://developer.android.com/tools/adk/index.html">Accessory Development Kit</a>). Take it as a learning excercise, because we're just using the very basic Hello World you previously saw with Arduino. This time however, the LED will be turned on via an Android App.</p>

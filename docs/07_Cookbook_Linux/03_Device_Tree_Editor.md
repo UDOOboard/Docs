@@ -13,11 +13,11 @@ UDOObuntu provides out-of-the-box device tree blobs, available in `/boot/dts/`, 
     imx6dl-udoo-lvds15.dtb  
     imx6dl-udoo-lvds7.dtb
 
-The [boot loader](../Advanced_Topics/Boot_process.html) loads the correct `dtb` file, depending on the board and the chosen display.
+The [boot loader](!Advanced_Topics/Boot_process) loads the correct `dtb` file, depending on the board and the chosen display.
 
 ## Custom device trees
 
-While the board can be used with the default device tree, which exports most of the external pins as GPIO, it is also possible to export more features on the external pinout. See the section [GPIO Pinout](../Hardware_&_Accessories/GPIO_Pinout.html) to discover all the exportable configurations for the Cortex-A9 main Processor.
+While the board can be used with the default device tree, which exports most of the external pins as GPIO, it is also possible to export more features on the external pinout. See the section [GPIO Pinout](!Hardware_&_Accessories/GPIO_Pinout) to discover all the exportable configurations for the Cortex-A9 main Processor.
 
 On UDOO QUAD/DUAL the external pins are shared between the two Processors and can be programmed one by one. The pins controlled by i.MX6 main processor can export different features (e.g. UART, PWM, I2C etc.)
 

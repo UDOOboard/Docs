@@ -42,7 +42,7 @@ Go to the Arduino section to learn how to program the Arduino DUE embedded
 
 ## Linux (i.MX6) GPI/Os Management
 
-i.MX6 can handle external pins in many different ways. In default configuration, they can be accessed from user level through the standard Kernel Linux interface. Some of them can be configured for specific functionalities provided by i.MX6 architecture, like SPI, I2C, I2S, audiomux, PWMs output, UARTs and so on. Go to the [Device Tree Editor](../Cookbook_Linux/Device_Tree_Editor.html) section to know how export these functionalities.
+i.MX6 can handle external pins in many different ways. In default configuration, they can be accessed from user level through the standard Kernel Linux interface. Some of them can be configured for specific functionalities provided by i.MX6 architecture, like SPI, I2C, I2S, audiomux, PWMs output, UARTs and so on. Go to the [Device Tree Editor](!Cookbook_Linux/Device_Tree_Editor) section to know how export these functionalities.
 <br />
 By default (for safety reasons), all GPIOs are exported in *input* configuration from the Linux side, to let you use they from the Arduino DUE side. This means the board CPU can read the value of the voltage connected to the pins. The other possible configuration is *output*, which forces a pin to take a specific voltage.
 
@@ -411,7 +411,7 @@ and it could result in damaging the processor driving the signal LOW. The same s
 
 UDOO DUAL/QUAD can provide for extra features on external pin headers. To enable them it is necessary to declare the correct alternative pin function in the device tree of the kernel.
 <br />
-UDOObuntu 2 provides a simple graphic tool to allow you to manage most of these functionalities: the [Device Tree Editor](../Cookbook_Linux/Device_Tree_Editor.html).
+UDOObuntu 2 provides a simple graphic tool to allow you to manage most of these functionalities: the [Device Tree Editor](!Cookbook_Linux/Device_Tree_Editor).
 <br />
 These functions are:
 

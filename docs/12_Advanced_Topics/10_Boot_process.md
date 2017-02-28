@@ -26,7 +26,7 @@ Once the hardware is correctly initialized, the `uEnv.txt` file is read from the
 | `m4_enabled`     | `true`          | `true`, `false`             |
 | `use_custom_dtb` | `false`         | `true`, `false`             |
 
-Those variables (screen type, M4 core status and the use of [custom device tree](../Cookbook_Linux/Device_Tree_Editor.html)) are used to [select](https://github.com/UDOOboard/uboot-imx/blob/2015.04.imx-neo/board/udoo/neo/neo.c#L1129) the correct device tree file to load.
+Those variables (screen type, M4 core status and the use of [custom device tree](!Cookbook_Linux/Device_Tree_Editor)) are used to [select](https://github.com/UDOOboard/uboot-imx/blob/2015.04.imx-neo/board/udoo/neo/neo.c#L1129) the correct device tree file to load.
 
 
 ## Linux kernel boot

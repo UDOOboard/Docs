@@ -17,8 +17,8 @@ Besides the Ubuntu 14.04 LTS specifications, UDOObuntu differs for the following
  * Chromium browser 48, with WebGL enabled
  * gstreamer, which plays full HD videos via gplay
  * QT 5.2.1 with X11 OpenGL ES2 GPU acceleration
- * [Web Control Panel](../Basic_Setup/Web_Control_Panel.html)
- * [Device Tree Editor](../Cookbook_Linux/Device_Tree_Editor.html), to control pinmuxing
+ * [Web Control Panel](!Basic_Setup/Web_Control_Panel)
+ * [Device Tree Editor](!Cookbook_Linux/Device_Tree_Editor), to control pinmuxing
 
 ## Updates
 
@@ -30,7 +30,7 @@ The distribution uses the official Ubuntu repositories and the UDOO repository, 
 
 ## Installation
 
-Instructions to download and flash the SD card image are available on [this page](../Getting_Started/Create_A_Bootable_MicroSD_card_for_UDOO_QUAD-DUAL.html).
+Instructions to download and flash the SD card image are available on [this page](!Getting_Started/Create_A_Bootable_MicroSD_card_for_UDOO_QUAD-DUAL).
 
 
 ## Default passwords

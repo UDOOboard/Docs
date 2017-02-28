@@ -1,6 +1,6 @@
 ## Overview
 
-Visit our Tutorials section to learn more about: [Arduino Shields With UDOO](/tutorial/arduino-shields-udoo/).
+Visit our Tutorials section to learn more about: [Arduino Shields With UDOO](http://www.udoo.org/tutorial/arduino-shields-udoo/).
 
 Learn how to use Arduino Shields with UDOO DUAL/QUAD. We'll also give you some guidelines on how to understand if your Shields are compatible straight away or if they need some fixes to be used safely with UDOO DUAL/QUAD.
 As you may know, the Arduino controller on UDOO DUAL/QUAD is <a title="SAM3X" href="http://www.atmel.com/images/doc11057s.pdf">Atmel SAM3X</a>, which is the exact same you'll find on Arduino DUE. You may also be aware that there is a fundamental difference beetween Arduino UNO and DUE: UNO's voltage is 5V and DUE's is 3,3V. That means that the voltage carried in and out digital and analog pins differ significantly among the two board versions, and feeding right away a circuit designed to operate at 3,3V with 5V is not a good idea.

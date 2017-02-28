@@ -62,7 +62,7 @@ It is possible to erase the Flash memory of the SAM3X with the onboard jumper `J
 
 ## Input and outputs
 
-A graphical overview could be found in the [GPIO section](../Hardware_\&_Accessories/GPIO_Pinout.html).
+A graphical overview could be found in the [GPIO section](!Hardware_\&_Accessories/GPIO_Pinout).
 
 * **Digital I/O**: pins from 0 to 53
 Each of the 54 digital pins on the Due can be used as an input or output, using pinMode(), digitalWrite(), and digitalRead() functions. They operate at 3.3 volts. Each pin can provide (source) a current of 3 mA or 15 mA, depending on the pin, or receive (sink) a current of 6 mA or 9 mA, depending on the pin. They also have an internal pull-up resistor (disconnected by default) of 100 KOhm. In addition, some pins have specialized functions:
@@ -91,7 +91,7 @@ The embedded Arduino DUE compatible could be reset by the `J16` jumper. To reset
 
 ## Communication
 
-The communication between the two processors is well described in the [IMX6_And_Sam3X_Communication](../Hardware_\&_Accessories/IMX6_And_Sam3X_Communication.html) section.
+The communication between the two processors is well described in the [IMX6_And_Sam3X_Communication](!Hardware_\&_Accessories/IMX6_And_Sam3X_Communication) section.
 <br />
 The embedded Arduino DUE compatible of the UDOO QUAD/DUAL can communicate with an external PC through the **Programming Port** on the micro-USB `CN6` connector when the jumper `J18` is NOT plugged.
 The micro-USB `CN6` port is connected to a [CP210x USB to UART Bridge](http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx), which provides a virtual COM port to software on a connected Windows computer, or a TTY device on a connected Linux/OSX computer.

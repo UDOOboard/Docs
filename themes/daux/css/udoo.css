@@ -1,16 +1,17 @@
-.navbar {
+.Navbar {
 	background-color: white;
+}
+.udoologo {
+	padding-left: 15px;
 }
 .udoologo img {
 	position: relative;
 	top: 2px;
 }
 .udoologo span {
-	font-size: 18px;
+	font-size: 22px;
 	color: black;
 	font-weight: bold;
-	position: relative;
-	top: 6px;
 }
 .button_docs {
 	font-weight: bold;
@@ -19,27 +20,21 @@
 	color: white;
 	font-size: 14px;
 	position: relative;
-	top: 6px;
+	top: 3px;
+	margin-right: 15px;
 }
 
 
-
-
-.label-warning {
-    background-color: #f0ad4e;
+.nav > li > a {
+    text-decoration: none !important;
 }
 
-.label {
-    display: inline;
-    padding: .2em .6em .3em;
-    font-size: 75%;
-    font-weight: 700;
-    line-height: 1;
-    color: #fff;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: baseline;
-    border-radius: .25em;
+.nav-tabs > li {
+    bottom: -1px;
+}
+
+.s-content p {
+    margin-bottom: 10px;
 }
 
 .alert-danger {
@@ -102,7 +97,7 @@ article .tomorrow-yellow, article pre .hljs-class, article pre .hljs-ruby .class
 }
 
 article .tomorrow-green, article pre .hljs-string, article pre .hljs-value, article pre .hljs-inheritance, article pre .hljs-header, article pre .hljs-ruby .symbol, article pre .hljs-xml .cdata {
-  color: #b9ca4a !important;
+  color: #727b37 !important;
 }
 
 article .tomorrow-aqua, article pre .hljs-css .hexcolor {
@@ -114,7 +109,7 @@ article .tomorrow-blue, article pre .hljs-function, article pre .hljs-python .de
 }
 
 article .tomorrow-purple, article pre .hljs-keyword, article pre .hljs-javascript .function {
-  color: #c397d8 !important;
+  color: #d681ff !important;
 }
 
 article pre {
@@ -125,7 +120,8 @@ article pre {
 }
 
 article pre code.hljs {
-  color: #eaeaea;
+  color: #5d6a6f;
   font-family: Menlo, Monaco, Consolas, monospace;
   line-height: 1.5;
 }
+

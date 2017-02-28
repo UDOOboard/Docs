@@ -28,8 +28,8 @@ More information are available on [Mediatek page](http://www.mediatek.com/en/pro
 
 You can connect to wireless networks by:
  * using the network utility in the UDOObuntu desktop environment (in the bottom-right corner).
- * using the [Web Control Panel](../Basic_Setup/Web_Control_Panel.html), in *Configuration*/*Network settings*;
+ * using the [Web Control Panel](!Basic_Setup/Web_Control_Panel), in *Configuration*/*Network settings*;
 
 ## Improve Wi-Fi signal performances
 
-UDOO's Wi-Fi modules comes with an on-board PCB antenna. To improve the Wi-Fi signal performances you can follow this tutorial to use an external antenna via soldered RF cable: [Mod your UDOO to Improve Wi-Fi Performances](/tutorial/mod-udoo-improve-wi-fi-performances/).
+UDOO's Wi-Fi modules comes with an on-board PCB antenna. To improve the Wi-Fi signal performances you can follow this tutorial to use an external antenna via soldered RF cable: [Mod your UDOO to Improve Wi-Fi Performances](http://www.udoo.org/tutorial/mod-udoo-improve-wi-fi-performances/).

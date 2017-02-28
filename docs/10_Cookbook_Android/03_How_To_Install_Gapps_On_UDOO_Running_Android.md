@@ -26,7 +26,7 @@ Alternatively you can download GApps package on your external PC and copy it in 
 Navigate in this folders with the App `CMFileManager` (the *Root Access* option is needed) and copy the package in the Android SD partition, for example in the path: `/storage/emulated/0/Download/`.
 
 Once you have the .zip file in the Android SD card partition you can reboot the board in **Recovery Mode** to run the `TWRP recovery`.
-You can find info about how to reboot the board in **Recovery Mode** reading the `Reboot in TWRP recovery` section of the [UDOO Android Settings](../Cookbook_Android/UDOO_Android_Settings.html) page.
+You can find info about how to reboot the board in **Recovery Mode** reading the `Reboot in TWRP recovery` section of the [UDOO Android Settings](!Cookbook_Android/UDOO_Android_Settings) page.
 
 <img style="width:600px; height:338px" src="../img/android_recovery_menu.jpg">   
 
@@ -52,7 +52,7 @@ At this point the Google Apps are installed in you system. You can check it navi
 
 ## Install ADB tools
 
-To install GAPPS in your UDOO DUAL/QUAD board, you must first download a set of tools that will grant you the access to the Android filesystem, and then copy downloaded Google Apps inside your board. This guide requires that you know [how to connect UDOO board](../Android/Switch_Between_Adb_Debug_And_ADK_Connection) with Android operating system to your computer.
+To install GAPPS in your UDOO DUAL/QUAD board, you must first download a set of tools that will grant you the access to the Android filesystem, and then copy downloaded Google Apps inside your board. This guide requires that you know [how to connect UDOO board](!Cookbook_Android/Switch_Between_Adb_Debug_And_ADK_Connection) with Android operating system to your computer.
 
 Required tools are available in the **Android SDK** used by Android developers to create their mobile applications. Anyhow, we will use these tools only to install Google Apps in your board and no competence in application development is required to follow this guide. The SDK could be downloaded in your system in two different ways:
 

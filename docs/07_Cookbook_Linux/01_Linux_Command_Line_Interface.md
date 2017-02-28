@@ -1,6 +1,6 @@
 ## Overview
 
-Visit our Tutorials section to learn more about: [Linux Command Line Interface](/tutorial/linux-command-line-interface/).
+Visit our Tutorials section to learn more about: [Linux Command Line Interface](http://www.udoo.org/tutorial/linux-command-line-interface/).
 
 Linux Command Line Interface, (CLI from now on) could be at first glance discouraging for the average Joe, since nowadays we are only used to Graphic Interfaces. But don’t let you down, using a command line shell could be, not only  very useful, but also kind of  funny. 
 This Tutorial will help you move your first steps in the command shell environment.

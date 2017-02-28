@@ -56,7 +56,7 @@ This allows to enable UDOO DUAL/QUAD LVDS Panel, 7 or 15 inches. A reboot is req
 
 * **Enable UDOO Camera Module**
 
-This enables the Camera Module. A service is required to enable the loopback device. [More informations about UDOO Camera Modules](../Hardware_&_Accessories/UDOO_Camera_Module.html)
+This enables the Camera Module. A service is required to enable the loopback device. [More informations about UDOO Camera Modules](!Hardware_&_Accessories/UDOO_Camera_Module)
 
 
 * **U-Boot**

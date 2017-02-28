@@ -6,7 +6,7 @@ Connecting UDOO Dual/Quad to your computer will result in:
 
 * UDOO Dual/Quad powering on, taking power from its USB Port
 * A storage device will be available, containing UDOO Dual/Quad'S Kernel and DTB files, together with an offline documentation and quick start guide
-* UDOO Dual/Quad will establish a network connection with your Computer, allowing to use it in [headless mode](../Getting_Started/Use_as_a_headless_IoT_Device.html)
+* UDOO Dual/Quad will establish a network connection with your Computer, allowing to use it in [headless mode]!Getting_Started/Use_as_a_headless_IoT_Device)
 
 In order to use UDOO Dual/Quad'S USB Connection on Mac and Windows, you must install few drivers first as described below:
 
@@ -16,7 +16,7 @@ Linux doesn't need drivers to make USB connection work properly. For other OS fo
 
 ### Installing Drivers on Mac OS X
 
-* Install both of this drivers: [Serial](../driversandtools/Mac%20USB%20Drivers/EnergiaFTDIDrivers2.2.18.pkg) and [Network](../driversandtools/Mac%20USB%20Drivers/HoRNDIS.pkg)
+* Install both of this drivers: [Serial](http://www.udoo.org/docs/driversandtools/Mac%20USB%20Drivers/EnergiaFTDIDrivers2.2.18.pkg) and [Network](http://www.udoo.org/docs/driversandtools/Mac%20USB%20Drivers/HoRNDIS.pkg)
 
 <span class="label label-warning">Heads up!</span> If you're using the Newest `OSX EL CAPITAN` please install this [Network Driver](http://nyus.joshuawise.com/HoRNDIS-rel8pre1.pkg) insted.
 
@@ -52,9 +52,9 @@ Linux doesn't need drivers to make USB connection work properly. For other OS fo
 ## Use USB Direct Connection to control UDOO Dual/Quad
 
 * Upon successful connection, UDOO Dual/Quad will be available at the address [192.168.7.2](http://192.168.7.2)
-* You can establish a <a href="../Basic_Setup/Remote_Terminal_(SSH).html">SSH Remote Terminal</a> using the address 192.168.7.2 with credentials udooer/udooer
-* You can establish a <a href="../Basic_Setup/Remote_Desktop_(VNC).html">VNC Remote Desktop</a> Session using the address 192.168.7.2 and port 5900 (192.168.7.2:5900). The default password is udooer.
-* You can configure UDOO Dual/Quad via the [Web Control Panel](../Basic_Setup/Web_Control_Panel.html)
+* You can establish a <a href="!Basic_Setup/Remote_Terminal_(SSH)">SSH Remote Terminal</a> using the address 192.168.7.2 with credentials udooer/udooer
+* You can establish a <a href="!Basic_Setup/Remote_Desktop_(VNC)">VNC Remote Desktop</a> Session using the address 192.168.7.2 and port 5900 (192.168.7.2:5900). The default password is udooer.
+* You can configure UDOO Dual/Quad via the [Web Control Panel](!Basic_Setup/Web_Control_Panel)
 
 ## Troubleshooting
 

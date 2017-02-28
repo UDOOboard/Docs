@@ -17,7 +17,7 @@ I'm going to use /dev/sdb to represent the SD card and ~/deb as the directory I'
 
 You can also use a SATA disk instead of an SD card, if using a SATA disk, it is even possible to build the system entirely on the UDOO DUAL/QUAD.
 
-Also, with SATA be sure to [setup U-Boot](/docs/Advanced_Setup/UDOO_Boot_From_SATA#prepareuboot)
+Also, with SATA be sure to setup U-Boot.
 
 Substitute these with your own paths as needed.
 

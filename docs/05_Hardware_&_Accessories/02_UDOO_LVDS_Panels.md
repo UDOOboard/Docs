@@ -47,11 +47,11 @@ You can revert this change by typing:
 
     sudo udooscreenctl set hdmi
 
-If you want more info about the *udooscreenctl* command visit the [Set Video Output](../Cookbook_Linux/Set_video_output.html).
-If you prefer a graphical simple way to change the default video output, it is provided by the [UDOO Web Control Panel](../Basic_Setup/Web_Control_Panel.html) in the "Configuration"->"Advanced setting" section.
+If you want more info about the *udooscreenctl* command visit the [Set Video Output](!Cookbook_Linux/Set_video_output).
+If you prefer a graphical simple way to change the default video output, it is provided by the [UDOO Web Control Panel](!Basic_Setup/Web_Control_Panel) in the "Configuration"->"Advanced setting" section.
 
 #### Option 2: you can connect via VNC or SSH
-If you can [connect to your board via VNC](../Basic_Setup/Remote_Desktop_(VNC).html) or via [SSH (using the USB, WiFi or Ethernet connection)](../Basic_Setup/Remote_Terminal_(SSH).html) , you can follow the steps explained in the previous section.
+If you can [connect to your board via VNC](!Basic_Setup/Remote_Desktop_(VNC).html) or via [SSH (using the USB, WiFi or Ethernet connection)](../Basic_Setup/Remote_Terminal_(SSH)) , you can follow the steps explained in the previous section.
 
 #### Option 3: you have neither HDMI nor network
 If you cannot connect to your board via the network (VNC or SSH) and you have no HDMI screen, you can enable the LVDS display port editing a file in the UDOO QUAD/DUAL SD card. Put the flashed SD card in your computer.
@@ -147,7 +147,7 @@ and follow the video instruction to change your calibration.
   <div role="tabpanel" class="tab-pane" id="android-example">
 
 The official UDOO's Android 6.x version allow you to configure the Video Output directly from the Settings App.
-Visit the [UDOO Android Settings](../Cookbook_Android/UDOO_Android_Settings.html) section for more info.
+Visit the [UDOO Android Settings](!Cookbook_Android/UDOO_Android_Settings) section for more info.
 
   </div>
   <div role="tabpanel" class="tab-pane" id="android4-example">
@@ -156,7 +156,7 @@ Visit the [UDOO Android Settings](../Cookbook_Android/UDOO_Android_Settings.html
 
 To use your LVDS with UDOO DUAL/QUAD you have to follow these simple instructions.
 
-First connect an external pc to the debug serial of UDOO DUAL/QUAD. Once done [connect the serial USB Cable](../Basic_Setup/Connecting_Via_Serial_Cable.html) to UDOO DUAL/QUAD and turn it on by plugging the Power Supply.
+First connect an external pc to the debug serial of UDOO DUAL/QUAD. Once done [connect the serial USB Cable](!Basic_Setup/Connecting_Via_Serial_Cable) to UDOO DUAL/QUAD and turn it on by plugging the Power Supply.
 
 From your computer, hit a key before normal boot starts up and type the right parameters for your Operating system and LVDS panel.
 

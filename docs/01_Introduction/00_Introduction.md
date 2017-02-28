@@ -58,7 +58,7 @@ Here you can find a more technical and exhaustive document, the [UDOO QUAD/DUALâ
 * Compatible with All Arduino Due Shields and most Arduino Shields
 * GPIO's can be accessed as Arduino pins, GPIO's or as additional S\PDIF, FlexCAN,I2S, SPI
 
-[More information about UDOO DUAL/QUAD_GPIO_Pinout](../Hardware_&_Accessories/GPIO_Pinout.html)
+[More information about UDOO DUAL/QUAD_GPIO_Pinout](!Hardware_&_Accessories/GPIO_Pinout)
 
 <br />
 <hr/>
@@ -81,7 +81,7 @@ Here you can find a more technical and exhaustive document, the [UDOO QUAD/DUALâ
 
 VGA (320x480) @120fps VGA (640x480) @90fps 720p @60fps 1280x960 @45fps 1080p @30fps QSXGA (2592x1944) @15fps
 
-[More informations about UDOO Camera Modules](../Hardware_&_Accessories/UDOO_Camera_Module.html)
+[More informations about UDOO Camera Modules](!Hardware_&_Accessories/UDOO_Camera_Module)
 
 <a href="http://udoo.org/download/files/datasheets/datasheet_camera.pdf" target="_blank">UDOO Camera Module Datasheet</a>
 
@@ -100,7 +100,7 @@ VGA (320x480) @120fps VGA (640x480) @90fps 720p @60fps 1280x960 @45fps 1080p @30
 * UDOO_VK-7T video cable for UDOO
 * LCD BOARD ADAPTER
 
-[How to setup LVDS panels](../Hardware_&_Accessories/UDOO_LVDS_Panels.html)
+[How to setup LVDS panels](!Hardware_&_Accessories/UDOO_LVDS_Panels)
 
 <a href="http://udoo.org/download/files/datasheets/datasheet7.pdf" target="_blank">UDOO 7" Touch Panel Display Kit Datasheet</a>
 
@@ -116,7 +116,7 @@ VGA (320x480) @120fps VGA (640x480) @90fps 720p @60fps 1280x960 @45fps 1080p @30
 * USB CABLE for Third UDOO'USB
 * Touch Controller Board
 
-[How to setup LVDS panels](../Hardware_&_Accessories/UDOO_LVDS_Panels.html)
+[How to setup LVDS panels](!Hardware_&_Accessories/UDOO_LVDS_Panels)
 
 <a href="http://udoo.org/download/files/datasheets/datasheet15.pdf">UDOO 15" Touch Panel Display Kit Datasheet</a>
 

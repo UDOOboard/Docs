@@ -24,13 +24,13 @@ The i.MX6 `USB OTG` bus can be physically connected to:
  * The external **micro USB connector (CN3)** to communicate through adb with an External PC exactly like you do with an Android smartphone/tablet.
  * The UDOO's **Arduino&trade; DUE processor** USB Native port to make communicate an Android App and an Arduino sketch through `ADK` protocol.
 
-Visit the `External OTG connection to i.MX6` and `OTG connection between i.MX6 and SAM3X` sections in the page [i.MX6 and Sam3X Communication](../Hardware_&_Accessories/IMX6_And_Sam3X_Communication.html) to find more info about.
+Visit the `External OTG connection to i.MX6` and `OTG connection between i.MX6 and SAM3X` sections in the page [i.MX6 and Sam3X Communication](!Hardware_&_Accessories/IMX6_And_Sam3X_Communication) to find more info about.
 
 Since the 6.0 Marshmallow version the default option let UDOO's OTG bus communicate with and external PC (ADB). Check this option to make an Adroid App communicate with the UDOO's Arduino&trade; DUE processor.
 
 <img src="../img/android_setting/setting_udoo_intotg.png">
 
-Visit the [Switch Between Adb Debug and ADK Connection](../Android/Switch_Between_Adb_Debug_and_ADK_Connection.html) to find more info about how to change the iMX^ USB OTG physically connection.
+Visit the [Switch Between Adb Debug and ADK Connection](!Cookbook_Android/Switch_Between_Adb_Debug_And_ADK_Connection) to find more info about how to change the iMX^ USB OTG physically connection.
 
 
 ## Select the Processor's Governor
@@ -64,15 +64,15 @@ Since Android 6.0 Marshmallow version the UDOO Android distro provides [TWRP rec
 
 Booting Android in Recovery mode allow you to install zip update packages. For example you can install the [Open GApps](http://opengapps.org/) packages to Google Play Services, Play Store and Google Apps.  
 
-You can find an exhaustive guide of [how to install Gapps](../Android/How_To_Install_Gapps_On_UDOO_Running_Android.html) here.
+You can find an exhaustive guide of [how to install Gapps](!Cookbook_Android/How_To_Install_Gapps_On_UDOO_Running_Android) here.
 
 <img src="../img/android_setting/setting_udoo_recovery.png">
 
-Another way to boot the Android Distro in Recovery Mode is run the following command in the `U-Boot console` through the [Serial Connection](../Basic_Setup/Connecting_Via_Serial_Cable.html):
+Another way to boot the Android Distro in Recovery Mode is run the following command in the `U-Boot console` through the [Serial Connection](!Basic_Setup/Connecting_Via_Serial_Cable):
 
     run recovery cmd
 
-Alternatively you can use `adb` tools in [Adb Debug mode](../Android/Switch_Between_Adb_Debug_And_ADK_Connection.html) from you external PC using the command:
+Alternatively you can use `adb` tools in [Adb Debug mode](!Cookbook_Android/Switch_Between_Adb_Debug_And_ADK_Connection) from you external PC using the command:
 
     adb reboot recovery
 

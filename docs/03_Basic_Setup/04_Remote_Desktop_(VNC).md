@@ -2,7 +2,7 @@ What you should do now is downloading a suitable VNC client, like [VNC Viewer](h
 So, once downloaded just execute the program and install it.
 Then, open the program: a window will pop up.
 
-Assuming your host computer is connected to the same network of UDOO QUAD/DUAL, type the [UDOO's IP Address](../Basic_Setup/Find_IP_Address.html). in the VNC Server adddress, then press "Connect".
+Assuming your host computer is connected to the same network of UDOO QUAD/DUAL, type the [UDOO's IP Address](!Basic_Setup/Find_IP_Address). in the VNC Server adddress, then press "Connect".
 
 <img src="../img/gionji/DOCS_vnc_usb_1.jpg">
 

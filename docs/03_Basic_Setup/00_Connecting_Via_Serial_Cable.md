@@ -1,6 +1,6 @@
 ## Overview
 
-Visit our Tutorials section to learn more about: [Connecting Via Serial Cable](/tutorial/connecting-via-serial-cable/).
+Visit our Tutorials section to learn more about: [Connecting Via Serial Cable](http://www.udoo.org/tutorial/connecting-via-serial-cable/).
 
 UDOO DUAL/QUAD features a built in USB to serial interface which is very useful for various reasons: You can use it to connect UDOO DUAL/QUAD via SSH without a network connection, programming the Sam3x (arduino) and access the debug console for troubleshooting purposes.
 

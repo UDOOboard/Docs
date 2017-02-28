@@ -53,7 +53,7 @@ UDOO QUAD/DUAL exposes 2 **ECSPI** channels:
 | ECSPI_5 |  3   |  5   |  2    |  4    |  9  |  8  |  -  |
 
 By default the SPI buses are not enabled and their pins are configured as GPIO. In order to enable
-ECSPI, follow this [guide](../Cookbook_Linux/Device_Tree_Editor.html).
+ECSPI, follow this [guide](!Cookbook_Linux/Device_Tree_Editor).
 
 ### ECSPI 1
 ECSPI 1 is a full SPI, including Select Signals (SS0, SS1, SS2).
