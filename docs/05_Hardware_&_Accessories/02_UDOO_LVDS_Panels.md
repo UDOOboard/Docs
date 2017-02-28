@@ -10,12 +10,12 @@ LVDS screens can be connected to the `CN13` port. Before the screen can be used,
 
 
 ## 7-inches LVDS panel
-The [KIT LCD 7" - Touch for QUAD/DUAL](http://http://shop.udoo.org/eu/accessories/video-kit-7-touch-for-quaddual.html) is compatible with UDOO QUAD/DUAL. If you previously bought one for the UDOO NEO, you just need to buy a new cable and keep the same screen.
+The [KIT LCD 7" - Touch for QUAD/DUAL](http://shop.udoo.org/accessories/video-kit-7-touch-for-quaddual.html) is compatible with UDOO QUAD/DUAL. If you previously bought one for the UDOO NEO, you just need to buy a new cable and keep the same screen.
 
 If you are searching for technical details check the <a href="http://udoo.org/download/files/datasheets/datasheet7.pdf" target="_blank">UDOO 7" Touch Panel Display Kit Datasheet</a>
 
 ## 15-inches LVDS panel
-The [KIT LCD 15,6" for QUAD/DUAL](http://http://shop.udoo.org/eu/accessories/video-kit-15-6-for-quaddual.html) and the [KIT LCD 15,6" Touch for QUAD/DUAL](http://http://shop.udoo.org/eu/accessories/video-kit-15-6-lvds-for-quaddual.html)
+The [KIT LCD 15,6" for QUAD/DUAL](http://shop.udoo.org/accessories/video-kit-15-6-for-quaddual.html) and the [KIT LCD 15,6" Touch for QUAD/DUAL](http://shop.udoo.org/accessories/video-kit-15-6-lvds-for-quaddual.html)
 are compatible with UDOO QUAD/DUAL.
 
 If you are searching for technical details check the <a href="http://udoo.org/download/files/datasheets/datasheet15.pdf">UDOO 15" Touch Panel Display Kit Datasheet</a>
