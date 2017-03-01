@@ -4,26 +4,6 @@
 .udoologo {
 	padding-left: 15px;
 }
-.udoologo img {
-	position: relative;
-	top: 2px;
-}
-.udoologo span {
-	font-size: 22px;
-	color: black;
-	font-weight: bold;
-}
-.button_docs {
-	font-weight: bold;
-	border: 3px solid #ec009c;
-	background: #ec009c;
-	color: white;
-	font-size: 14px;
-	position: relative;
-	top: 3px;
-	margin-right: 15px;
-}
-
 
 .nav > li > a {
     text-decoration: none !important;
