@@ -4,7 +4,7 @@ First, let's have a look on how UDOO DUAL/QUAD's architecture has been designed.
 
 <br />
 
-<img src="../img/UDOO_qdl_communication_00.png" class="img-responsive pull-right" alt="udoo" height="189px" width="600px" style="margin-bottom:20px; margin-left:30px;">
+<img src="../img/UDOO_qdl_communication_00.png" class="img-responsive pull-right" alt="udoo" height="600px" width="600px" style="margin-bottom:20px; margin-left:30px;">
 
 * iMX6 - ARM CPU Dual/Quad Core: This is the powertrain of UDOO DUAL/QUAD's operating system. This CPU handles the O.S. environments, such as Android, Ubuntu, Debian etc. iMX6 handles also AudioVideo operations ( audio io, HDMI video, LVDS), USB ports, SATA connection, Network connection and so on.
 * SAM3x - Arduino Due compatible processor: This is the core of UDOO DUAL/QUAD's extended input and output support. You can use the Sam3x as a standalone Arduino board, connecting every sensor, motor , device etc. you want to it. You can also connect every Arduino Due compatible shield you may need for your project.
