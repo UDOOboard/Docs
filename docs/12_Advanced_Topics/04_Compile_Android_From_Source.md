@@ -134,7 +134,9 @@ The images are sufficient to boot UDOO DUAL/QUAD board with the default kernel c
 
 Once the new Android system images are created, it is necessary to prepare a µSD card with the images and boot UDOO DUAL/QUAD board. A script is provided to help with this step. In a way similar to what is described in the Run Android section, the script will partition and format the SD card and then copies the new Android images into the correct partitions, reading them directly from [$OUT]. It is sufficient to follow the next steps.
 
-Connect the SD card to your host PC, and use the `dmesg` or `fdisk -l` commands to find the device name; we suppose it is /dev/sdc.
+Connect the SD card to your host PC, and use the `dmesg` or `fdisk -l` commands to find the device name; we suppose in this case it is `/dev/sdc`.
+
+<span class="label label-warning">Heads up!</span> Please be careful to select the correct microSD device identifier; if you use the wrong identifier you may lose all data in your PC!
 
 Launch the script to prepare the SD
 
