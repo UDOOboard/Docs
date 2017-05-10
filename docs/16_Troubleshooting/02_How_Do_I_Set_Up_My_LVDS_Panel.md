@@ -19,7 +19,7 @@ With the last U-Boot version (release 2.1 - v.119) you need to change the "video
 
 hdmi --&gt; video=mxcfb0:dev=hdmi,1920x1080M@60,if=RGB24,bpp=32 (default environment variable)
 
-To do this you need to connect an external pc to the debug serial of UDOO DUAL/QUAD and stop the boot procedure at U-Boot. For more info see the Tutorial <a href="/docs/Connecting%20UDOO/Connecting_Via_Serial_Cable" title="Connecting via serial cable">connecting via serial cable</a> or the <a title="UDOO Manual" href="http://udoo.org/download/files/Documents/UDOO_Starting_Manual_beta0.4_11_28_2013.pdf" target="_blank">UDOO DUAL/QUAD starting manual</a> at the “Establish serial debug connection with UDOO DUAL/QUAD” section.
+To do this you need to connect an external pc to the debug serial of UDOO DUAL/QUAD and stop the boot procedure at U-Boot. For more info see the Tutorial <a href="/docs/Connecting%20UDOO/Connecting_Via_Serial_Cable" title="Connecting via serial cable">connecting via serial cable</a> or the <a title="UDOO Manual" href="https://www.udoo.org/download/files/Documents/UDOO_Starting_Manual_beta0.4_11_28_2013.pdf" target="_blank">UDOO DUAL/QUAD starting manual</a> at the “Establish serial debug connection with UDOO DUAL/QUAD” section.
 
 These are the commands you need to insert in the U-Boot console:
 &nbsp;

@@ -5,7 +5,7 @@ If the Serial returns the following output:
 
 <img src="https://www.udoo.org/wp-content/uploads/2013/10/screenshot-hdmi-error.jpg" alt="screenshot hdmi error" width="500" height="261" class="alignnone size-full wp-image-2436" />
 
-Reboot the board and stop the process at U-Boot stage (hit any key to stop autoboot during countdown). For more info see the <a title="UDOO Starting Manual" href="http://udoo.org/download/files/Documents/UDOO_Starting_Manual_beta0.4_11_28_2013.pdf" target="_blank">UDOO DUAL/QUAD starting manual</a>.
+Reboot the board and stop the process at U-Boot stage (hit any key to stop autoboot during countdown). For more info see the <a title="UDOO Starting Manual" href="https://www.udoo.org/download/files/Documents/UDOO_Starting_Manual_beta0.4_11_28_2013.pdf" target="_blank">UDOO DUAL/QUAD starting manual</a>.
 
 To apply the HDMI detect patch you have to execute the following commands:
 
@@ -40,7 +40,7 @@ mxc_hdmi mxc_hdmi: No nodes read from edid
 
 there is a problem in reading the EDID code from HDMI monitor.
 
-Reboot the board again and stop the process at U-Boot stage (hit any key to stop autoboot during countdown). For more info see the <a title="UDOO Starting Manual" href="http://udoo.org/download/files/Documents/UDOO_Starting_Manual_beta_0.3_10_10_2013.pdf" target="_blank">UDOO DUAL/QUAD starting manual</a>.
+Reboot the board again and stop the process at U-Boot stage (hit any key to stop autoboot during countdown). For more info see the <a title="UDOO Starting Manual" href="https://www.udoo.org/download/files/Documents/UDOO_Starting_Manual_beta_0.3_10_10_2013.pdf" target="_blank">UDOO DUAL/QUAD starting manual</a>.
 Run these commands:
 
 ```bash

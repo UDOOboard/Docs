@@ -9,7 +9,7 @@
 
 VGA (320x480) @120fps VGA (640x480) @90fps 720p @60fps 1280x960 @45fps 1080p @30fps QSXGA (2592x1944) @15fps
 
-[UDOO Camera Module Datasheet](http://udoo.org/download/files/datasheets/datasheet_camera.pdf)
+[UDOO Camera Module Datasheet](https://www.udoo.org/download/files/datasheets/datasheet_camera.pdf)
 
 ## Usage
 

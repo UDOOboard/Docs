@@ -99,4 +99,4 @@ sudo xvncviewer
 Insert UDOO DUAL/QUAD’s IP followed by :5901 (192.168.137.2:5901)
 Insert Server’s Password: ubuntu
 Done! Browse UDOO DUAL/QUAD remotely with your Linux machine!
-More informations can be found at the [UDOO VNC Tutorial Page](http://udoo.org/tutorial/vnc-server-with-udoo/)
+More informations can be found at the [UDOO VNC Tutorial Page](https://www.udoo.org/tutorial/vnc-server-with-udoo/)

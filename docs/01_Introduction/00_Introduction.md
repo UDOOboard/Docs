@@ -44,7 +44,7 @@ UDOO DUAL/QUAD retail line up consists of three models, sharing most of the feat
 
 <br />
 
-Here you can find a more technical and exhaustive document, the [UDOO QUAD/DUAL’s block diagram](http://udoo.org/wp-content/uploads/2013/04/UDOO_Block_Diagram_rel_1_1.pdf).
+Here you can find a more technical and exhaustive document, the [UDOO QUAD/DUAL’s block diagram](https://www.udoo.org/wp-content/uploads/2013/04/UDOO_Block_Diagram_rel_1_1.pdf).
 
 <br />
 
@@ -83,7 +83,7 @@ VGA (320x480) @120fps VGA (640x480) @90fps 720p @60fps 1280x960 @45fps 1080p @30
 
 [More informations about UDOO Camera Modules](!Hardware_&_Accessories/UDOO_Camera_Module)
 
-<a href="http://udoo.org/download/files/datasheets/datasheet_camera.pdf" target="_blank">UDOO Camera Module Datasheet</a>
+<a href="https://www.udoo.org/download/files/datasheets/datasheet_camera.pdf" target="_blank">UDOO Camera Module Datasheet</a>
 
 <hr/>
 <h3>UDOO LVDS Touch Screens</h3>
@@ -102,7 +102,7 @@ VGA (320x480) @120fps VGA (640x480) @90fps 720p @60fps 1280x960 @45fps 1080p @30
 
 [How to setup LVDS panels](!Hardware_&_Accessories/UDOO_LVDS_Panels)
 
-<a href="http://udoo.org/download/files/datasheets/datasheet7.pdf" target="_blank">UDOO 7" Touch Panel Display Kit Datasheet</a>
+<a href="https://www.udoo.org/download/files/datasheets/datasheet7.pdf" target="_blank">UDOO 7" Touch Panel Display Kit Datasheet</a>
 
 <b>15" Touch Panel Kit</b>
 
@@ -118,7 +118,7 @@ VGA (320x480) @120fps VGA (640x480) @90fps 720p @60fps 1280x960 @45fps 1080p @30
 
 [How to setup LVDS panels](!Hardware_&_Accessories/UDOO_LVDS_Panels)
 
-<a href="http://udoo.org/download/files/datasheets/datasheet15.pdf">UDOO 15" Touch Panel Display Kit Datasheet</a>
+<a href="https://www.udoo.org/download/files/datasheets/datasheet15.pdf">UDOO 15" Touch Panel Display Kit Datasheet</a>
 
 
 ## Community
