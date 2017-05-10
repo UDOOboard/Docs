@@ -1,4 +1,4 @@
-With the official <a href="http://www.udoo.org/downloads/" title="Download section"><strong>UDOObuntu</strong></a> distro using your LVDS is very easy!! Follow these simple steps:
+With the official <a href="https://www.udoo.org/downloads/" title="Download section"><strong>UDOObuntu</strong></a> distro using your LVDS is very easy!! Follow these simple steps:
 
 Open the <strong>"UDOO DUAL/QUAD configuration tool"</strong> you can find in desktop or in the applications top bar.
 Select <em>"Set Default Video Output (LVDS\HDMI)"</em>.

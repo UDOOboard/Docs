@@ -1,8 +1,8 @@
 **Prerequisites**
 
 * A SD card for the resulting system (1GB or larger)
-* Official UDOO DUAL/QUAD Kernel and Modules for your model http://www.udoo.org/downloads/
-* U-boot for your model http://www.udoo.org/downloads/
+* Official UDOO DUAL/QUAD Kernel and Modules for your model https://www.udoo.org/downloads/
+* U-boot for your model https://www.udoo.org/downloads/
 * Debian or Linux OS for creating the install
 
 **Required software**

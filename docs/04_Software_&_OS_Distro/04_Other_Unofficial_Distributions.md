@@ -16,7 +16,7 @@ If you want to edit the links below, make a pull request.
 
 Debian is an operating system composed of free software mostly carrying the GNU General Public License. The operating system is developed by an internet collaboration of volunteers aligned with The Debian Project. Username: debian Password: debian
 
-Available at [UDOO Downloads Page](http://www.udoo.org/downloads/)
+Available at [UDOO Downloads Page](https://www.udoo.org/downloads/)
 
 #### Yocto
 
@@ -36,9 +36,9 @@ ArchLinux design approach of the development team focuses on elegance, code corr
 
 XBMC is a free and open source media player developed by the XBMC Foundation, a non-profit technology consortium.XBMC is available for multiple operating systems and hardware platforms, with a software 10-foot user interface for use with televisions and remote controls. It allows users to play and view most videos, music, such as podcasts from the internet, and all common digital media files from local and network storage media.
 
-[XBMC for UDOO by Stephan Rafin](http://www.udoo.org/forum/viewtopic.php?f=28&t=518)
+[XBMC for UDOO by Stephan Rafin](https://www.udoo.org/forum/viewtopic.php?f=28&t=518)
 
-[XBMC for UDOO by Isronga](http://www.udoo.org/forum/viewtopic.php?f=28&t=357)
+[XBMC for UDOO by Isronga](https://www.udoo.org/forum/viewtopic.php?f=28&t=357)
 
 #### OpenElec
 
@@ -80,7 +80,7 @@ ROS (Robot Operating System) provides libraries and tools to help software devel
 
 OpenMediaVault is the next generation network attached storage (NAS) solution based on Debian Linux. It contains services like SSH, (S)FTP, SMB/CIFS, DAAP media server, RSync, BitTorrent client and many more. With OpenMediaVault your can create your very own UDOO DUAL/QUAD powered Home Server and NAS.
 
-[Download link](http://sourceforge.net/projects/minimaldeb/files/Open%20Media%20Vault%20Udoo/Quad/OMV_Udoo_Quad.zip/download) for UDOO QUAD only [Forum Thread](http://www.udoo.org/forum/open-media-vault-nas-operating-system-t337.html)
+[Download link](http://sourceforge.net/projects/minimaldeb/files/Open%20Media%20Vault%20Udoo/Quad/OMV_Udoo_Quad.zip/download) for UDOO QUAD only [Forum Thread](https://www.udoo.org/forum/open-media-vault-nas-operating-system-t337.html)
 
 ### Domotics
 

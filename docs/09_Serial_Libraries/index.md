@@ -2,7 +2,7 @@ UDOO DUAL/QUAD Serial Libraries Examples
 ==========
 
 
-Serial Libraries Communication Samples for [UDOO Board](http://www.udoo.org)
+Serial Libraries Communication Samples for [UDOO Board](https://www.udoo.org)
 
 Copyright (C) 2014 <a href="mailto:ekironjisolutions@gmail.com">Ekironji Solutions</a>
 

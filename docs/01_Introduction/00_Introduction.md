@@ -123,14 +123,14 @@ VGA (320x480) @120fps VGA (640x480) @90fps 720p @60fps 1280x960 @45fps 1080p @30
 
 ## Community
 
-* Official web site [www.udoo.org](http://www.udoo.org)
-* Official forum [www.udoo.org/forum](http://www.udoo.org/forum/index.php)
+* Official web site [www.udoo.org](https://www.udoo.org)
+* Official forum [www.udoo.org/forum](https://www.udoo.org/forum/index.php)
 
 ### Forums
 
 <hr/>
 
-The official UDOO forums can be found at [www.udoo.org/forum](http://www.udoo.org/forum)
+The official UDOO forums can be found at [www.udoo.org/forum](https://www.udoo.org/forum)
 
 The forum search facility has been tweaked to allow more general searching. <b>Please</b> do a search before making a post as the issue may already have been raised and answered.
 

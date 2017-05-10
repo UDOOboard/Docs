@@ -7,7 +7,7 @@ UDOObuntu 2 is based on Ubuntu 14.04 LTS. It is provided in two flavours:
  * without any GUI (ideal for headless installations)
  * with a full LXDE desktop environment
 
-Both images can be downloaded from the [image section of the website](http://www.udoo.org/downloads/).
+Both images can be downloaded from the [image section of the website](https://www.udoo.org/downloads/).
 
 Besides the Ubuntu 14.04 LTS specifications, UDOObuntu differs for the following elements:
 
@@ -68,4 +68,4 @@ Username: ubuntu
 
 Password: ubuntu
 
-Available at [UDOO Downloads Page](http://www.udoo.org/downloads/)
+Available at [UDOO Downloads Page](https://www.udoo.org/downloads/)

@@ -6,7 +6,7 @@ A different way for programming the Arduino side without install board manager p
 
 To do so you’ll have to:
 
-* Access to the debug serial monitor of the board following the [Connecting Via Serial Cable](http://www.udoo.org/do!Basic_Setup/Connecting_Via_Serial_Cable) section.
+* Access to the debug serial monitor of the board following the [Connecting Via Serial Cable](https://www.udoo.org/do!Basic_Setup/Connecting_Via_Serial_Cable) section.
 
 Then insert the power plug and start the system. On the serial monitor it will appear something similar:
 

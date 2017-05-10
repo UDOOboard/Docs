@@ -1,7 +1,7 @@
 Yocto is an unofficial distribution for UDOO boads.
 It is developed maintained by the community, almost entirely by [Christian Ege](https://github.com/graugans) who also started the porting of Yocto for UDOO boards.
-For problems you may encounter with this distribution your go-to place is the [Yocto Subforum](http://www.udoo.org/forum/forums/yocto.46/) in UDOO Forum
-Also, Christian Ege is aso a [user](http://www.udoo.org/forum/members/graugans.37591/) of the UDOO Forum, as well as admin of the Yocto Subforum.
+For problems you may encounter with this distribution your go-to place is the [Yocto Subforum](https://www.udoo.org/forum/forums/yocto.46/) in UDOO Forum
+Also, Christian Ege is aso a [user](https://www.udoo.org/forum/members/graugans.37591/) of the UDOO Forum, as well as admin of the Yocto Subforum.
 
 ## What is Yocto
 The Yocto Project is a Linux Foundation workgroup whose goal is to produce tools and processes that will enable the creation of Linux
@@ -32,5 +32,5 @@ To install Yocto type into the terminal:
 
 ```umount /dev/sd<disk>?; bzcat /tmp/udoo-image-qt5-udooqdl.wic.bz2 | sudo dd of=/dev/<disk> bs=32M```
 
-For more information visit [this Yocto-related topic](http://www.udoo.org/forum/threads/new-test-releases.5153/) in the UDOO Forum.
+For more information visit [this Yocto-related topic](https://www.udoo.org/forum/threads/new-test-releases.5153/) in the UDOO Forum.
 Here instead you can find the [Open Embedded meta-layer for UDOO boards](https://github.com/graugans/meta-udoo).

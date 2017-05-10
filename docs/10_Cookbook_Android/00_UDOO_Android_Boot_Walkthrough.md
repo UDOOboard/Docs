@@ -2,7 +2,7 @@
 The stable Android version for UDOO QUAD/DUAL is based on Android Marshmallow 6.0.1.
 The previous release, still available for download, is KitKat 4.4.2.
 
-Visit our Tutorials section to watch the video guide: [UDOO Android Boot Walkthrough](http://www.udoo.org/tutorial/udoo-android-boot-walkthrough/).
+Visit our Tutorials section to watch the video guide: [UDOO Android Boot Walkthrough](https://www.udoo.org/tutorial/udoo-android-boot-walkthrough/).
 
 Android 6 Marshmallow is based on:
 

@@ -5,7 +5,7 @@ Android has been ported to UDOO QUAD/DUAL.
 The stable Android version for UDOO QUAD/DUAL is based on Android Marshmallow 6.0.1.
 The previous release, still available for download, is KitKat 4.4.2.
 
-SD card images can be downloaded from the [image section of the website](http://www.udoo.org/downloads/).
+SD card images can be downloaded from the [image section of the website](https://www.udoo.org/downloads/).
 
 ## Installation
 

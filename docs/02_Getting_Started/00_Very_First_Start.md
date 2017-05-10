@@ -1,7 +1,7 @@
 ## Overview
 
 This easy step by step guide will lead you through the procedure to boot your UDOO DUAL/QUAD for the very first time.
-You can also watch our [connectivity walkthrough](http://www.udoo.org/tutorial/connectivity-walkthrough/).
+You can also watch our [connectivity walkthrough](https://www.udoo.org/tutorial/connectivity-walkthrough/).
 
 <img src="/docs/img/Box1_Tutorials_UdooSite.png">
 

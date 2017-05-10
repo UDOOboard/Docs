@@ -1,18 +1,18 @@
 ## Overview
 
-Visit our Tutorials section to learn more about: [Android And Arduino On UDOO: Bidirectional Communication](http://www.udoo.org/tutorial/android-arduino-udoo-bidirectional-communication/).
+Visit our Tutorials section to learn more about: [Android And Arduino On UDOO: Bidirectional Communication](https://www.udoo.org/tutorial/android-arduino-udoo-bidirectional-communication/).
 
 Hi guys,
 
-in this tutorial we'll extend our Android ADK communication skills. You've already learned how to interact with Arduino trough Android in our previous <a href="http://www.udoo.org/ProjectsAndTutorials/android-and-arduino-on-udoo-simple-hello-world-tutorial/">Android and Arduino Hello World Tutorial</a>, and now we'll understand how to exploit bidirectional communication capabilites in Android environment.
+in this tutorial we'll extend our Android ADK communication skills. You've already learned how to interact with Arduino trough Android in our previous <a href="https://www.udoo.org/ProjectsAndTutorials/android-and-arduino-on-udoo-simple-hello-world-tutorial/">Android and Arduino Hello World Tutorial</a>, and now we'll understand how to exploit bidirectional communication capabilites in Android environment.
 
 First, let's clear what is bidirectional communication: trivially speaking, we have bidirectional communication patterns when both Android and Arduino Compatible Sam3X (in this particular scenario, but the principle is valid also elsewhere) talk to each other, both sending and receiving data.
 
-So, let's start! In this tutorial we just use the exact same code of  <a href="http://www.udoo.org/ProjectsAndTutorials/android-and-arduino-on-udoo-simple-hello-world-tutorial/">Android and Arduino Hello World Tutorial</a>, plus adding the readings from a  Sharp 0A41SK ping IR sensor (which you may suspect we love so much, since we used it also <a href="https://www.hackster.io/mikelangeloz/android-digital-signage-with-udoo?offset=0&ref=search&ref_id=digital+signage">here</a> and <a href="https://www.hackster.io/mikelangeloz/udoo-smart-theremin?offset=1&ref=search&ref_id=theremin">here</a> ).
+So, let's start! In this tutorial we just use the exact same code of  <a href="https://www.udoo.org/ProjectsAndTutorials/android-and-arduino-on-udoo-simple-hello-world-tutorial/">Android and Arduino Hello World Tutorial</a>, plus adding the readings from a  Sharp 0A41SK ping IR sensor (which you may suspect we love so much, since we used it also <a href="https://www.hackster.io/mikelangeloz/android-digital-signage-with-udoo?offset=0&ref=search&ref_id=digital+signage">here</a> and <a href="https://www.hackster.io/mikelangeloz/udoo-smart-theremin?offset=1&ref=search&ref_id=theremin">here</a> ).
 
 <strong>UDOOArduinoADKDemoBidirectional.ino</strong>
 
-First we connect our Ping IR Sensor, you can use the reference wiring shown <a href="http://www.udoo.org/ProjectsAndTutorials/udoo-theremin-with-puredata-arduino-and-ping-ir-sensors/">here</a> and edit our Arduino Sketch to read distance readings and send it via OTG. So, in the Arduino sketch we add code to read values from the analog sensor, cut off the outlier values to cut the noise for this specific sensor, and send the bytes with <em>adk method write()</em>
+First we connect our Ping IR Sensor, you can use the reference wiring shown <a href="https://www.udoo.org/ProjectsAndTutorials/udoo-theremin-with-puredata-arduino-and-ping-ir-sensors/">here</a> and edit our Arduino Sketch to read distance readings and send it via OTG. So, in the Arduino sketch we add code to read values from the analog sensor, cut off the outlier values to cut the noise for this specific sensor, and send the bytes with <em>adk method write()</em>
 
 ```bash
 

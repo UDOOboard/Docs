@@ -32,4 +32,4 @@ You can connect to wireless networks by:
 
 ## Improve Wi-Fi signal performances
 
-UDOO's Wi-Fi modules comes with an on-board PCB antenna. To improve the Wi-Fi signal performances you can follow this tutorial to use an external antenna via soldered RF cable: [Mod your UDOO to Improve Wi-Fi Performances](http://www.udoo.org/tutorial/mod-udoo-improve-wi-fi-performances/).
+UDOO's Wi-Fi modules comes with an on-board PCB antenna. To improve the Wi-Fi signal performances you can follow this tutorial to use an external antenna via soldered RF cable: [Mod your UDOO to Improve Wi-Fi Performances](https://www.udoo.org/tutorial/mod-udoo-improve-wi-fi-performances/).

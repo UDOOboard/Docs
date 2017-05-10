@@ -80,7 +80,7 @@ If the direction is set to `in`, it is possible to read the GPIO value reading t
 
 If the direction is set to `out` and you try to read the value, is not guaranteed that the value is coherent with the voltage found on the external pinout.
 
-To make your life even simplier, you can find <a href="http://www.udoo.org/labels-for-pinout-headers/">a super handy printable label</a> for your GPIOs (thanks <em>ralphie79</em>!).
+To make your life even simplier, you can find <a href="https://www.udoo.org/labels-for-pinout-headers/">a super handy printable label</a> for your GPIOs (thanks <em>ralphie79</em>!).
 
 ### Advanced usage
 GPIO management is made simple by the `udoo-gpio-export` package, which comes pre-installed in UDOObuntu 2 Linux. This package takes care of exporting all GPIOs in input mode, and creates the symlinks from the `/sys/class/gpio` entries to the `/gpio` directory.

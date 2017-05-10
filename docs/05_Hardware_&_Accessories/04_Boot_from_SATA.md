@@ -20,12 +20,12 @@ This guide will show you how to boot your UDOO DUAL/QUAD from an attached SATA d
 # UDOObuntu 2.0
 
 ## Flash the boot SD card
-You need an SD card with the bootloader in order to boot from SATA. Download this small (1MB) [boot image](http://www.udoo.org/download/files/qdl-sata.img.zip) and, after unzipping it, flash it to the SD:
+You need an SD card with the bootloader in order to boot from SATA. Download this small (1MB) [boot image](https://www.udoo.org/download/files/qdl-sata.img.zip) and, after unzipping it, flash it to the SD:
 
     dd if=qdl-sata.img of=/dev/mmcblk0 bs=1M
 
 ## Flash the SATA drive
-Download the [latest UDOObuntu](http://www.udoo.org/downloads/) from the official site. Decompress the image and flash it to the SATA drive:
+Download the [latest UDOObuntu](https://www.udoo.org/downloads/) from the official site. Decompress the image and flash it to the SATA drive:
 
     # in this example, the SATA drive device is /dev/SATA
     dd if=UDOObuntu_qdl_v2.0.img of=/dev/SATA bs=1M
@@ -76,7 +76,7 @@ Unmount both. Once that is complete, connect the SATA disk to the UDOO DUAL/QUAD
 
 ### Extracting a FS tarball
 
-You may use the filesystem tarball from the binaries tab on [udoo.org](http://www.udoo.org/downloads/) or use your own. Place this tarball on the SATA disk. You can transfer this over the network or wget the file straight onto it.
+You may use the filesystem tarball from the binaries tab on [udoo.org](https://www.udoo.org/downloads/) or use your own. Place this tarball on the SATA disk. You can transfer this over the network or wget the file straight onto it.
 
 Run the following commands (Assuming /dev/sda1 is mounted at /mnt)
 

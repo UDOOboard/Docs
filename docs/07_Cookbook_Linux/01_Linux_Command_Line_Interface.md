@@ -1,6 +1,6 @@
 ## Overview
 
-Visit our Tutorials section to learn more about: [Linux Command Line Interface](http://www.udoo.org/tutorial/linux-command-line-interface/).
+Visit our Tutorials section to learn more about: [Linux Command Line Interface](https://www.udoo.org/tutorial/linux-command-line-interface/).
 
 Linux Command Line Interface, (CLI from now on) could be at first glance discouraging for the average Joe, since nowadays we are only used to Graphic Interfaces. But don’t let you down, using a command line shell could be, not only  very useful, but also kind of  funny. 
 This Tutorial will help you move your first steps in the command shell environment.
@@ -8,7 +8,7 @@ This Tutorial will help you move your first steps in the command shell environme
 First, when a Command Line Interface could be useful for you? 
 
 
-* Remote Connection <a href="http://www.udoo.org/ProjectsAndTutorials/connecting-via-serial-cable/?portfolioID=1394">via SSH</a>: SSH remote connection allows to interact with UDOO DUAL/QUAD without physical access to it. SSH is available only with command line interface.
+* Remote Connection <a href="https://www.udoo.org/ProjectsAndTutorials/connecting-via-serial-cable/?portfolioID=1394">via SSH</a>: SSH remote connection allows to interact with UDOO DUAL/QUAD without physical access to it. SSH is available only with command line interface.
 * Using a minimal Linux Distribution without a graphical interface. Some Linux Distribution come without a Graphical User Interface, in order to maximize available resources. Command line interface is your only bet in this scenario
 * Some power-users consider CLI the most convenient way to perform code execution and file-system operations. Even if you are not in this category, you may found out that CLI can be very fast when you get used to it.
 * Showing up with your mates, the longest your CLI strings, the more rep you’ll get.

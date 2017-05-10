@@ -16,7 +16,7 @@ Please consider that the size of a Micro SD card must be at least 4/8GB (dependi
 
 ## Step by Step Guide
 
-* Download any official Micro SD image from the [image section of the website](http://www.udoo.org/downloads/).
+* Download any official Micro SD image from the [image section of the website](https://www.udoo.org/downloads/).
 * Extract the .img file from the .zip file you downloaded into any folder (this path will be referred to as <img_file_path> in the guide).
 * Follow the instructions below for the OS you use:
 
@@ -48,7 +48,7 @@ In the Image File box, choose the downloaded .img file and click “Write”. Cl
 
 The Micro SD card is now ready to be used. Simply insert it in the board’s Micro SD Card slot and boot the system.
 
-If you have problems, have a look to the video tutorial [Creating a bootable MicroSD card using Windows from image](http://www.udoo.org/tutorial/creating-a-bootable-micro-sd-card-using-windows-from-image/).
+If you have problems, have a look to the video tutorial [Creating a bootable MicroSD card using Windows from image](https://www.udoo.org/tutorial/creating-a-bootable-micro-sd-card-using-windows-from-image/).
 
   </div>
   <div role="tabpanel" class="tab-pane" id="mac-example">
@@ -90,7 +90,7 @@ Once `dd` has been completed, run:
 
 The Micro SD card is now ready to be used. Simply insert it in the board’s Micro SD Card slot and boot the system.
 
-If you have problems, have a look to the video tutorial [Creating a bootable MicroSD card with Mac OSX from image](http://www.udoo.org/tutorial/creating-a-bootable-micro-sd-card-with-mac-os-x-from-image/).
+If you have problems, have a look to the video tutorial [Creating a bootable MicroSD card with Mac OSX from image](https://www.udoo.org/tutorial/creating-a-bootable-micro-sd-card-with-mac-os-x-from-image/).
 
   </div>
   <div role="tabpanel" class="tab-pane" id="linux-example">
@@ -131,7 +131,7 @@ Once `dd` has been completed, run:
 
 The Micro SD card is now ready to be used. Simply insert it in the board’s Micro SD Card slot and boot the system.
 
-If you have problems, have a look to the video tutorial [Creating a bootable MicroSD card with Linux Ubuntu from image](http://www.udoo.org/tutorial/creating-a-bootable-micro-sd-card-with-linux-ubuntu-from-image/).
+If you have problems, have a look to the video tutorial [Creating a bootable MicroSD card with Linux Ubuntu from image](https://www.udoo.org/tutorial/creating-a-bootable-micro-sd-card-with-linux-ubuntu-from-image/).
 
   </div>
  </div>

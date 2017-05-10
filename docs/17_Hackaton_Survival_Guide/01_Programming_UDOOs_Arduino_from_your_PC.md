@@ -19,10 +19,10 @@ This will allow the communication between your computer and the programming port
 
 Install the driver for the cn6 MicroUSB port that allows the correct communication between your external computer and UDOO DUAL/QUAD (choose the correct Operating System of your Computer).
 
-* [Windows](http://www.udoo.org/docs/driversandtools/CP210x_VCP_Windows.zip)
-* [MacOsX](http://www.udoo.org/docs/driversandtools/Mac_OSX_VCP_Driver.zip)
-* [Linux 3.X](http://www.udoo.org/docs/driversandtools/Linux_3.x.x_VCP_Driver_Source.zip)
-* [Linux 2.6.X](http://www.udoo.org/docs/driversandtools/Linux_2.6.x_VCP_Driver_Source.zip)
+* [Windows](https://www.udoo.org/docs/driversandtools/CP210x_VCP_Windows.zip)
+* [MacOsX](https://www.udoo.org/docs/driversandtools/Mac_OSX_VCP_Driver.zip)
+* [Linux 3.X](https://www.udoo.org/docs/driversandtools/Linux_3.x.x_VCP_Driver_Source.zip)
+* [Linux 2.6.X](https://www.udoo.org/docs/driversandtools/Linux_2.6.x_VCP_Driver_Source.zip)
 
 ### Patch the Arduino IDE
 
@@ -33,10 +33,10 @@ Download and install the Arduino IDE version 1.5 for your specific operating sys
 
 Download the patch for your Operating system:
 
-* [Windows](http://www.udoo.org/docs/driversandtools/bossac_windows.zip)
-* [MacOsX](http://www.udoo.org/docs/driversandtools/bossac_osx.zip)
-* [Linux64](http://www.udoo.org/docs/driversandtools/bossac_linux64.tar.gz)
-* [Linux32](http://www.udoo.org/docs/driversandtools/bossac_linux32.tar.gz)
+* [Windows](https://www.udoo.org/docs/driversandtools/bossac_windows.zip)
+* [MacOsX](https://www.udoo.org/docs/driversandtools/bossac_osx.zip)
+* [Linux64](https://www.udoo.org/docs/driversandtools/bossac_linux64.tar.gz)
+* [Linux32](https://www.udoo.org/docs/driversandtools/bossac_linux32.tar.gz)
 
 Extract the files in the archive and place them in the following paths, overwriting the previous existing files:
 

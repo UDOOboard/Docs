@@ -3,7 +3,7 @@ If you can't see anything from your HDMI monitor be sure to follow the [why my u
 
 If the Serial returns the following output:
 
-<img src="http://www.udoo.org/wp-content/uploads/2013/10/screenshot-hdmi-error.jpg" alt="screenshot hdmi error" width="500" height="261" class="alignnone size-full wp-image-2436" />
+<img src="https://www.udoo.org/wp-content/uploads/2013/10/screenshot-hdmi-error.jpg" alt="screenshot hdmi error" width="500" height="261" class="alignnone size-full wp-image-2436" />
 
 Reboot the board and stop the process at U-Boot stage (hit any key to stop autoboot during countdown). For more info see the <a title="UDOO Starting Manual" href="http://udoo.org/download/files/Documents/UDOO_Starting_Manual_beta0.4_11_28_2013.pdf" target="_blank">UDOO DUAL/QUAD starting manual</a>.
 
