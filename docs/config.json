@@ -2,7 +2,7 @@
     "title": "UDOO Quad/Dual Docs",
     "tagline": "UDOO Quad/Dual Documentation",
     "author": "UDOO Team",   
-    "image": "/docs/img/logo/docs.png",
+    "image": "/docs/img/logos/docs.png",
     "ignore": {
         "files": [
         ]
