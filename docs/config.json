@@ -2,7 +2,7 @@
     "title": "UDOO Quad/Dual Docs",
     "tagline": "UDOO Quad/Dual Documentation",
     "author": "UDOO Team",   
-    "image": "http://www.udoo.org/docs/img/logo_docs.png",
+    "image": "/docs/img/logo/docs.png",
     "ignore": {
         "files": [
         ]
@@ -15,10 +15,10 @@
 	    "float": false,
 	    "repo": "UDOOboard/Docs",
 	    "links": {
-	        "Home": "http://www.udoo.org",
-	        "Downloads": "http://www.udoo.org/downloads",
-	        "Tutorials": "http://www.udoo.org/tutorial",
-	        "Forum": "http://www.udoo.org/forum"
+	        "Home": "https://www.udoo.org",
+	        "Downloads": "https://www.udoo.org/downloads",
+	        "Tutorials": "https://www.udoo.org/tutorial",
+	        "Forum": "https://www.udoo.org/forum"
 	    }
     }
 }
