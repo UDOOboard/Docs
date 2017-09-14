@@ -1,5 +1,7 @@
 # UDOO Quad/Dual Documentation
 
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](https://github.com/UDOOboard/X86-Docs/LICENSE)
+
 Travis build status: [![Build Status](https://travis-ci.org/UDOOboard/Docs.svg?branch=master)](https://travis-ci.org/UDOOboard/Docs)
 
 This repository contains the source code for the documentation hosted at [www.udoo.org/docs/](http://www.udoo.org/docs/).
