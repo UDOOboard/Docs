@@ -35,8 +35,8 @@ UDOO DUAL/QUAD retail line up consists of three models, sharing most of the feat
 * Analog Audio and Mic jacks
 * CSI Camera Connection
 * on board Micro SD card reader (boot device)
-* Power Supply (6-15V) and External Battery connector
-* Ethernet RJ45 (10/100/1000 MBit)
+* Power Supply (**6-15V DC**) and External Battery connector
+* Gigabit Ethernet RJ45 (10/100/1000 MBit)
 * WiFi Module
 * SATA connector with power header
 
