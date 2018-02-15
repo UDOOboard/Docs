@@ -1,6 +1,6 @@
 In this guide we'll learn how to compile and setup **OpenCV** (version 3.4.0) and use it with **Python 2.7** in your **UDOObuntu 2** system.
 
-<span class="label label-warning">Heads up!</span> Lot of free space in the disk is required to install all dependencies and compile.
+<span class="label label-warning">Heads up!</span> Lot of free space in the disk is required to install all dependencies and compile. An 8GB microSD is probably not enough.
 
 ### Install dependencies
 
