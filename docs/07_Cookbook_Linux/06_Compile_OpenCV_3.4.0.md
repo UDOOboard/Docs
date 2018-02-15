@@ -132,7 +132,7 @@ cv2.destroyAllWindows()
 
 ### Reference and useful links
 
-* https://community.nxp.com/docs/DOC-331941
-* https://www.udoo.org/forum/threads/using-udoo-camera-with-opencvs-videocapture-class-2-0.6130/#post-23716
-* https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_setup/py_setup_in_fedora/py_setup_in_fedora.html#installing-opencv-from-source
-* https://www.pyimagesearch.com/2015/07/20/install-opencv-3-0-and-python-3-4-on-ubuntu/
+* [https://community.nxp.com/docs/DOC-331941](https://community.nxp.com/docs/DOC-331941)
+* [https://www.udoo.org/forum/threads/using-udoo-camera-with-opencvs-videocapture-class-2-0.6130/#post-23716](https://www.udoo.org/forum/threads/using-udoo-camera-with-opencvs-videocapture-class-2-0.6130/#post-23716) - Thanks to our forum user `Justyn Bell`
+* [https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_setup/py_setup_in_fedora/py_setup_in_fedora.html#installing-opencv-from-source](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_setup/py_setup_in_fedora/py_setup_in_fedora.html#installing-opencv-from-source)
+* [https://www.pyimagesearch.com/2015/07/20/install-opencv-3-0-and-python-3-4-on-ubuntu/](https://www.pyimagesearch.com/2015/07/20/install-opencv-3-0-and-python-3-4-on-ubuntu/)
