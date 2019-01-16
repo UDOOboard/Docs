@@ -8,7 +8,7 @@ If your UDOO DUAL/QUAD doesn't boot, you first need to:
 * After plugging the PSU cable, try to hit the reset button.
 
 
-If the board still doesn't boot you need to verify if your OS actually starts using a serial debug connection. This allows a more complete analysis of your situation. To establish a USB Debug connection follow these <a href="/do!Basic_Setup/Connecting_Via_Serial_Cable">easy steps on our Docs</a>.
+If the board still doesn't boot you need to verify if your OS actually starts using a serial debug connection. This allows a more complete analysis of your situation. To establish a USB Debug connection follow these [easy steps on our Docs](!Basic_Setup/Connecting_Via_Serial_Cable).
 
 Once you're ready, power up your UDOO DUAL/QUAD and look at the serial output:
 
