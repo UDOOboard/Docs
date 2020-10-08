@@ -1,0 +1,8 @@
+{
+    "require": {
+        "daux/daux.io": "0.7.*"
+    },
+    "scripts": {
+	    "generate" : "daux generate"
+    }
+}
