@@ -1,0 +1,90 @@
+.Navbar {
+	background-color: white;
+}
+.udoologo {
+	padding-left: 15px;
+}
+
+.nav > li > a {
+    text-decoration: none !important;
+}
+
+.nav-tabs > li {
+    bottom: -1px;
+}
+
+.s-content p {
+    margin-bottom: 10px;
+}
+
+.alert-danger {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+
+
+
+
+article .tomorrow-comment, article pre .hljs-comment, article pre .hljs-title {
+  color: #969896 !important;
+}
+
+article .tomorrow-red, article pre .hljs-variable, article pre .hljs-attribute, article pre .hljs-tag, article pre .hljs-regexp, article pre .hljs-ruby .constant, article pre .hljs-xml .tag .title, article pre .hljs-xml .pi, article pre .hljs-xml .doctype, article pre .hljs-html .doctype, article pre .hljs-css .id, article pre .hljs-css .class, article pre .hljs-css .pseudo, article pre .hljs-pseudo {
+  color: #d54e53 !important;
+}
+
+article .tomorrow-orange, article pre .hljs-number, article pre .hljs-preprocessor, article pre .hljs-built_in, article pre .hljs-literal, article pre .hljs-params, article pre .hljs-constant {
+  color: #e78c45 !important;
+}
+
+article .tomorrow-yellow, article pre .hljs-class, article pre .hljs-ruby .class .title, article pre .hljs-css .rules .attribute {
+  color: #e7c547 !important;
+}
+
+article .tomorrow-green, article pre .hljs-string, article pre .hljs-value, article pre .hljs-inheritance, article pre .hljs-header, article pre .hljs-ruby .symbol, article pre .hljs-xml .cdata {
+  color: #727b37 !important;
+}
+
+article .tomorrow-aqua, article pre .hljs-css .hexcolor {
+  color: #70c0b1 !important;
+}
+
+article .tomorrow-blue, article pre .hljs-function, article pre .hljs-python .decorator, article pre .hljs-python .title, article pre .hljs-ruby .function .title, article pre .hljs-ruby .title .keyword, article pre .hljs-perl .sub, article pre .hljs-javascript .title, article pre .hljs-coffeescript .title {
+  color: #7aa6da !important;
+}
+
+article .tomorrow-purple, article pre .hljs-keyword, article pre .hljs-javascript .function {
+  color: #d681ff !important;
+}
+
+article pre {
+  display: block;
+  background: black;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+article pre code.hljs {
+  color: #5d6a6f;
+  font-family: Menlo, Monaco, Consolas, monospace;
+  line-height: 1.5;
+}
+
