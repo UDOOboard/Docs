@@ -1,0 +1,37 @@
+name: PHP Composer
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Setup PHP with PECL extension
+      uses: shivammathur/setup-php@v2
+      with:
+          php-version: '7.4'
+          
+    - name: Cache Composer packages
+      id: composer-cache
+      uses: actions/cache@v2
+      with:
+        path: vendor
+        key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-php-
+    
+    - name: Install Dependences Build and Deploy
+      env: 
+          GH_REF: github.com/UDOOboard/Docs.git
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          TKX: ${{ secrets.TKX }}
+      run: ./deploy.sh
+      
