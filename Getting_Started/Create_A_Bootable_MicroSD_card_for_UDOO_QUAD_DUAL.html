@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>       <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>          <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>          <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <title>Create A Bootable MicroSD card for UDOO QUAD-DUAL - UDOO Quad/Dual Docs</title>
+    <meta name="description" content="UDOO Quad/Dual Documentation" />
+    <meta name="author" content="UDOO Team">
+    <meta charset="UTF-8">
+    <link rel="icon" href="../themes/daux/img/favicon-udoo.ico" type="image/x-icon">
+    <!-- Mobile -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin' rel='stylesheet' type='text/css'>
+    <!-- CSS -->
+    <link href='../themes/daux/css/theme-navy.min.css' rel='stylesheet' type='text/css'><link href='../themes/daux/css/udoo.css' rel='stylesheet' type='text/css'>
+            <!-- Tipue Search -->
+        <link href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+    
+    <!-- jQuery -->
+    <script src="../themes/daux/js/jquery-1.11.3.min.js"></script>
+    <script src="../themes/daux/js/bootstrap.min.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body class="">
+    
+<header class="Navbar hidden-print">
+    <img class="pull-left udoologo" src="/docs/img/logos/docs.png"> 
+<a class="Navbar__brand" href="../index.html">
+UDOO Quad/Dual Documentation</a>
+
+    <div class="Search">
+        <svg class="Search__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 451 451"><path d="M447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1C384.65 86.2 298.35 0 192.35 0 86.25 0 .05 86.3.05 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2L428.05 447c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zM26.95 192.3c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z"/></svg>
+        <input type="search" id="tipue_search_input" class="Search__field" placeholder="Search..." autocomplete="on" results=25 autosave=text_search>
+    </div>
+</header>
+<div class="Columns content">
+    <aside class="Columns__left Collapsible">
+        <div class="Collapsible__container">
+            <button type="button" class="Button Collapsible__trigger">
+                <span class="Collapsible__trigger--bar"></span>
+                <span class="Collapsible__trigger--bar"></span>
+                <span class="Collapsible__trigger--bar"></span>
+            </button>
+        </div>
+
+        <div class="Collapsible__content">
+            <!-- Navigation -->
+            <ul class='Nav'><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Introduction</a><ul class='Nav'><li class='Nav__item '><a href="../Introduction/Introduction.html">Introduction</a></li></ul></li><li class='Nav__item Nav__item--open has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Getting Started</a><ul class='Nav'><li class='Nav__item '><a href="../Getting_Started/Very_First_Start.html">Very First Start</a></li><li class='Nav__item Nav__item--active'><a href="../Getting_Started/Create_A_Bootable_MicroSD_card_for_UDOO_QUAD_DUAL.html">Create A Bootable MicroSD card for UDOO QUAD-DUAL</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Basic Setup</a><ul class='Nav'><li class='Nav__item '><a href="../Basic_Setup/Connecting_Via_Serial_Cable.html">Connecting Via Serial Cable</a></li><li class='Nav__item '><a href="../Basic_Setup/Find_IP_Address.html">Find IP Address</a></li><li class='Nav__item '><a href="../Basic_Setup/Web_Control_Panel.html">Web Control Panel</a></li><li class='Nav__item '><a href="../Basic_Setup/Remote_Terminal_(SSH).html">Remote Terminal (SSH)</a></li><li class='Nav__item '><a href="../Basic_Setup/Remote_Desktop_(VNC).html">Remote Desktop (VNC)</a></li><li class='Nav__item '><a href="../Basic_Setup/UDOO_Configuration_Tool.html">UDOO Configuration Tool</a></li><li class='Nav__item '><a href="../Basic_Setup/Usb_Direct_Connection.html">Usb Direct Connection</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Software & OS Distro</a><ul class='Nav'><li class='Nav__item '><a href="../Software_OS_Distro/UDOObuntu.html">UDOObuntu</a></li><li class='Nav__item '><a href="../Software_OS_Distro/Android.html">Android</a></li><li class='Nav__item '><a href="../Software_OS_Distro/Yocto.html">Yocto</a></li><li class='Nav__item '><a href="../Software_OS_Distro/Other_Unofficial_Distributions.html">Other Unofficial Distributions</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Hardware & Accessories</a><ul class='Nav'><li class='Nav__item '><a href="../Hardware_Accessories/GPIO_Pinout.html">GPIO Pinout</a></li><li class='Nav__item '><a href="../Hardware_Accessories/IMX6_And_Sam3X_Communication.html">IMX6 And Sam3X Communication</a></li><li class='Nav__item '><a href="../Hardware_Accessories/UDOO_LVDS_Panels.html">UDOO LVDS Panels</a></li><li class='Nav__item '><a href="../Hardware_Accessories/UDOO_Camera_Module.html">UDOO Camera Module</a></li><li class='Nav__item '><a href="../Hardware_Accessories/Boot_from_SATA.html">Boot from SATA</a></li><li class='Nav__item '><a href="../Hardware_Accessories/SPI.html">SPI</a></li><li class='Nav__item '><a href="../Hardware_Accessories/PWM.html">PWM</a></li><li class='Nav__item '><a href="../Hardware_Accessories/Watchdog.html">Watchdog</a></li><li class='Nav__item '><a href="../Hardware_Accessories/Resources.html">Resources</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Wireless Communication</a><ul class='Nav'><li class='Nav__item '><a href="../Wireless_Communication/WiFi.html">WiFi</a></li><li class='Nav__item '><a href="../Wireless_Communication/WiFi_SoftAP.html">WiFi SoftAP</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Cookbook Linux</a><ul class='Nav'><li class='Nav__item '><a href="../Cookbook_Linux/Understanding_Linux_Software_Management_And_Installing.html">Understanding Linux Software Management And Installing</a></li><li class='Nav__item '><a href="../Cookbook_Linux/Linux_Command_Line_Interface.html">Linux Command Line Interface</a></li><li class='Nav__item '><a href="../Cookbook_Linux/Set_video_output.html">Set video output</a></li><li class='Nav__item '><a href="../Cookbook_Linux/Device_Tree_Editor.html">Device Tree Editor</a></li><li class='Nav__item '><a href="../Cookbook_Linux/Change_Web_Control_Panel_port.html">Change Web Control Panel port</a></li><li class='Nav__item '><a href="../Cookbook_Linux/Playing_video_with_GStreamer.html">Playing video with GStreamer</a></li><li class='Nav__item '><a href="../Cookbook_Linux/Compile_OpenCV_3.4.0.html">Compile OpenCV 3.4.0</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Arduino DUE (Sam3x)</a><ul class='Nav'><li class='Nav__item '><a href="../Arduino_DUE_(Sam3x)/Overview.html">Overview</a></li><li class='Nav__item '><a href="../Arduino_DUE_(Sam3x)/Programming_Arduino_Due_from_Internal_Processor(iMX6).html">Programming Arduino Due from Internal Processor(iMX6)</a></li><li class='Nav__item '><a href="../Arduino_DUE_(Sam3x)/Programming_Arduino_Due_from_External_PC.html">Programming Arduino Due from External PC</a></li><li class='Nav__item '><a href="../Arduino_DUE_(Sam3x)/Troubleshooting_Programming_Arduino_Due_from_External_PC.html">Troubleshooting Programming Arduino Due from External PC</a></li><li class='Nav__item '><a href="../Arduino_DUE_(Sam3x)/Arduino_Shields_With_UDOO.html">Arduino Shields With UDOO</a></li></ul></li><li class='Nav__item  has-children'><a href="../Serial_Libraries/index.html" class="folder"><i class="Nav__arrow">&nbsp;</i>Serial Libraries</a><ul class='Nav'><li class='Nav__item '><a href="../Serial_Libraries/Java_Serial_Libraries.html">Java Serial Libraries</a></li><li class='Nav__item '><a href="../Serial_Libraries/C_Serial_Libraries.html">C Serial Libraries</a></li><li class='Nav__item '><a href="../Serial_Libraries/PHP_Serial_Libraries.html">PHP Serial Libraries</a></li><li class='Nav__item '><a href="../Serial_Libraries/Python_Serial_Libraries.html">Python Serial Libraries</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Cookbook Android</a><ul class='Nav'><li class='Nav__item '><a href="../Cookbook_Android/UDOO_Android_Boot_Walkthrough.html">UDOO Android Boot Walkthrough</a></li><li class='Nav__item '><a href="../Cookbook_Android/UDOO_Android_Settings.html">UDOO Android Settings</a></li><li class='Nav__item '><a href="../Cookbook_Android/Switch_Between_Adb_Debug_And_ADK_Connection.html">Switch Between Adb Debug And ADK Connection</a></li><li class='Nav__item '><a href="../Cookbook_Android/How_To_Install_Gapps_On_UDOO_Running_Android.html">How To Install Gapps On UDOO Running Android</a></li><li class='Nav__item '><a href="../Cookbook_Android/Android_And_Arduino_Simple_Hello_World_Tutorial.html">Android And Arduino Simple Hello World Tutorial</a></li><li class='Nav__item '><a href="../Cookbook_Android/Android_And_Arduino_Bidirectional_Communication.html">Android And Arduino Bidirectional Communication</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Projects Examples</a><ul class='Nav'><li class='Nav__item '><a href="../Projects_Examples/Face_Recognition_And_Face_Tracking_Via_OpenCV_And_UDOO.html">Face Recognition And Face Tracking Via OpenCV And UDOO</a></li><li class='Nav__item '><a href="../Projects_Examples/Remote_Metereological_Station_With_UDOO.html">Remote Metereological Station With UDOO</a></li><li class='Nav__item '><a href="../Projects_Examples/DIY_NAS_With_Openmediavault_And_UDOO.html">DIY NAS With Openmediavault And UDOO</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Advanced Topics</a><ul class='Nav'><li class='Nav__item '><a href="../Advanced_Topics/Setup_development_environment.html">Setup development environment</a></li><li class='Nav__item '><a href="../Advanced_Topics/Compile_UDOObuntu_(complete_bootable_image).html">Compile UDOObuntu (complete bootable image)</a></li><li class='Nav__item '><a href="../Advanced_Topics/Compile_U_Boot_Bootloader.html">Compile U-Boot Bootloader</a></li><li class='Nav__item '><a href="../Advanced_Topics/Compile_Linux_Kernel.html">Compile Linux Kernel</a></li><li class='Nav__item '><a href="../Advanced_Topics/Compile_Android_From_Source.html">Compile Android From Source</a></li><li class='Nav__item '><a href="../Advanced_Topics/Install_A_Custom_Debian_Distro_With_Debootstrap.html">Install A Custom Debian Distro With Debootstrap</a></li><li class='Nav__item '><a href="../Advanced_Topics/Boot_process.html">Boot process</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Mods</a><ul class='Nav'><li class='Nav__item '><a href="../Mods/Mod_Your_UDOO_To_Improve_WiFi_Performances.html">Mod Your UDOO To Improve WiFi Performances</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>FAQ</a><ul class='Nav'><li class='Nav__item '><a href="../FAQ/Introductive.html">Introductive</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Troubleshooting</a><ul class='Nav'><li class='Nav__item '><a href="../Troubleshooting/Why_My_UDOO_Wont_Boot.html">Why My UDOO Wont Boot</a></li><li class='Nav__item '><a href="../Troubleshooting/How_Can_I_Solve_My_HDMI_Issues.html">How Can I Solve My HDMI Issues</a></li><li class='Nav__item '><a href="../Troubleshooting/How_Do_I_Set_Up_My_LVDS_Panel.html">How Do I Set Up My LVDS Panel</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Hackaton Survival Guide</a><ul class='Nav'><li class='Nav__item '><a href="../Hackaton_Survival_Guide/Mirroring_UDOOs_Desktop_on_your_PC_with_VNC_Remote_Desktop.html">Mirroring UDOOs Desktop on your PC with VNC Remote Desktop</a></li><li class='Nav__item '><a href="../Hackaton_Survival_Guide/Programming_UDOOs_Arduino_from_your_PC.html">Programming UDOOs Arduino from your PC</a></li><li class='Nav__item '><a href="../Hackaton_Survival_Guide/Useful_Resources.html">Useful Resources</a></li></ul></li></ul>
+
+            <div class="Links">
+                                    <hr/>
+                                            <a href="https://www.udoo.org" target="_blank">Home</a>
+                        <br />
+                                            <a href="https://www.udoo.org/downloads" target="_blank">Downloads</a>
+                        <br />
+                                            <a href="https://www.udoo.org/tutorial" target="_blank">Tutorials</a>
+                        <br />
+                                            <a href="https://www.udoo.org/forum" target="_blank">Forum</a>
+                        <br />
+                                    
+                
+                            </div>
+        </div>
+    </aside>
+    <div class="Columns__right ">
+        <div class="Columns__right__content">
+            <div class="doc_content">
+                <article class="Page">
+
+    <div class="Page__header">
+        <h1>Create A Bootable MicroSD card for UDOO QUAD-DUAL</h1>
+            </div>
+
+
+    <div class="s-content">
+        <h2 id="page_Overview">Overview</h2>
+<p>The following paragraphs will guide you through the creation of a bootable Micro SD card for UDOO QUAD/DUAL, starting from a precompiled image file containing the UDOObuntu 2 or Android Lollipop Operating system, which runs on the i.MX6 processor.</p>
+<p>The procedure is quite easy: simply unzip the image and write it on the Micro SD card using the dd tool for UNIX/MAC users or Win32DiskImager for Windows users. It is not possible to create a bootable Micro SD card with drag and drop.</p>
+<h2 id="page_SD-Card-Requirements">SD Card Requirements</h2>
+<p>Please consider that the size of a Micro SD card must be at least 4/8GB (depending on the operating system); Micro SD memory cards with a higher capacity (tested up to 64GB) may be used, and the <strong>Linux</strong> root partition will be expanded to the full SD card size during the first boot. <strong>Android</strong> images are not expanded and stuck at 4GB even if you use a bigger SD card; however you can expand your <code>/data</code> partition manually using <a href="../Cookbook_Android/UDOO_Android_Settings.html">UDOO Settings</a>.</p>
+<table>
+<thead>
+<tr>
+<th>OS</th>
+<th>Minimum SD size</th>
+<th>Maximum SD size</th>
+<th>Automatic expansion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>UDOObuntu Linux</td>
+<td>4GB</td>
+<td>64GB</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Android</td>
+<td>8GB</td>
+<td>64GB</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<h2 id="page_Step-by-Step-Guide">Step by Step Guide</h2>
+<ul>
+<li>Download any official Micro SD image from the <a href="https://www.udoo.org/downloads/" class="Link--external">image section of the website</a>.</li>
+<li>Extract the .img file from the .zip file you downloaded into any folder (this path will be referred to as &lt;img_file_path&gt; in the guide).</li>
+<li>Follow the instructions below for the OS you use:</li>
+</ul>
+<div>
+ <ul id="adc-examples" class="nav nav-tabs" role="tablist">
+  <li role="presentation" class="active"><a href="#windows-example" aria-controls="windows" role="tab" data-toggle="tab">Windows</a></li>
+  <li role="presentation"><a href="#mac-example" aria-controls="mac" role="tab" data-toggle="tab">Mac OS X</a></li>
+  <li role="presentation"><a href="#linux-example" aria-controls="linux" role="tab" data-toggle="tab">Linux</a></li>
+ </ul>
+ <div class="tab-content">
+  <div role="tabpanel" class="tab-pane active" id="windows-example">
+<img style="width:400px; height:218px" src="../img/Box3_Tutorials_UdooSite.png">
+<p>Extract the downloaded zip file, so you'll have a .img image file. Do not use the preinstalled archive extractor, use <a href="http://www.7-zip.org/" class="Link--external">7-zip</a> or similar to decompress the zip file.</p>
+<p>Download the <a href="http://sourceforge.net/projects/win32diskimager/" class="Link--external">Win32DiskImager software</a> and unzip it.</p>
+<p>If your PC has a slot for SD cards (you may need a Micro SD to SD adapter), simply insert the card. If not, insert the card into any SD card reader and then connect it to the PC.</p>
+<p>Run the file named Win32DiskImager.exe right-clicking it and selecting “Run as administrator”.</p>
+<p>If the Micro SD card (Device) used is not detected automatically, click on the drop down box on the right and select the identifier of the Micro SD card that has been plugged in (e.g. [H:]). If your Micro SD card is not listed, try to format it using the FAT32 file system.</p>
+<p><span class="label label-warning">Heads up!</span> Please be careful to select the correct drive identifier; if you use the wrong identifier you may lose all data in your PC!</p>
+<p>In the Image File box, choose the downloaded .img file and click “Write”. Click <em>yes</em> in case a warning message pops up.</p>
+<p>The Micro SD card is now ready to be used. Simply insert it in the board’s Micro SD Card slot and boot the system.</p>
+<p>If you have problems, have a look to the video tutorial <a href="https://www.udoo.org/tutorial/creating-a-bootable-micro-sd-card-using-windows-from-image/" class="Link--external">Creating a bootable MicroSD card using Windows from image</a>.</p>
+  </div>
+  <div role="tabpanel" class="tab-pane" id="mac-example">
+<img style="width:400px; height:218px" src="../img/Box4_Tutorials_UdooSite.png">
+<p>From the Terminal app run</p>
+<pre><code>df -h
+</code></pre>
+<p>If your Mac has a slot for SD cards (you may need a Micro SD to SD adapter), simply insert the card. If not, insert the card into any SD card reader and then connect it to the Mac.</p>
+<p>Run again</p>
+<pre><code>df -h
+</code></pre>
+<p>The device that wasn't listed before is the Micro SD card just inserted. The name shown will be the one of the filesystem’s partition, for example, <code>/dev/disk3s1</code>. Now consider the raw device name for using the entire disk, by omitting the final <code>s1</code> and replacing <code>disk</code> with <code>rdisk</code> (considering the previous example, use <code>rdisk3</code>, not <code>disk3</code> nor <code>rdisk3s1</code>).</p>
+<p><span class="label label-warning">Heads up!</span> Please be careful to select the correct device identifier; if you use the wrong identifier you may lose all data in your Mac!</p>
+<p>Unmount all the partitions in the SD card (use the correct name found previously, followed by letters and numbers that identify the partitions). using diskutil:</p>
+<pre><code>sudo diskutil unmount /dev/disk3s1
+</code></pre>
+<p>Now write the image on the Micro SD card using the command:</p>
+<pre><code>sudo dd bs=1m if=&lt;img_file_path&gt; of=/dev/&lt;sd_name&gt;
+</code></pre>
+<p>Please make sure that you replaced the argument of input file (<code>if=&lt;img_file_path&gt;</code>) with the path to the .img file, and that the device name specified in output file’s argument (<code>of=/dev/&lt;sd_name&gt;</code>) is correct. Please also make sure that the device name is the one of the whole Micro SD card as described above, not just a partition (for example, <code>rdisk3</code>, not <code>disk3s1</code>). For example:</p>
+<pre><code>sudo dd bs=1m if=/Users/YourName/Download/udoobuntu-udoo-qdl_v2.0.img of=/dev/rdisk3
+</code></pre>
+<p>Once <code>dd</code> has been completed, run:</p>
+<pre><code>sudo sync
+sudo diskutil eject /dev/rdisk3
+</code></pre>
+<p>The Micro SD card is now ready to be used. Simply insert it in the board’s Micro SD Card slot and boot the system.</p>
+<p>If you have problems, have a look to the video tutorial <a href="https://www.udoo.org/tutorial/creating-a-bootable-micro-sd-card-with-mac-os-x-from-image/" class="Link--external">Creating a bootable MicroSD card with Mac OSX from image</a>.</p>
+  </div>
+  <div role="tabpanel" class="tab-pane" id="linux-example">
+<img style="width:400px; height:218px" src="../img/Box2_Tutorials_UdooSite.png">
+<p>From the terminal run</p>
+<pre><code>df -h
+</code></pre>
+<p>If your PC has a slot for SD cards (you may need a Micro SD to SD adapter), simply insert the card. If not, insert the card into any SD card reader and then connect it to the PC.</p>
+<p>Run again</p>
+<pre><code>df -h
+</code></pre>
+<p>The device that wasn't listed before is the Micro SD card just inserted. The left column will show the device name assigned to the Micro SD card. It will have a name similar to <code>/dev/mmcblk0p1</code> or <code>/dev/sdd1</code>. The last part of the name (<code>p1</code> or <code>1</code>, respectively) is the partition number, but it is necessary to write on the whole Micro SD card, not only on one partition. Therefore, it is necessary to remove that part from the name (for example <code>/dev/mmcblk0</code> or <code>/dev/sdd</code>) in order to work with the whole Micro SD card.</p>
+<p><span class="label label-warning">Heads up!</span> Please be careful to select the correct device identifier; if you use the wrong identifier you may lose all data in your PC!</p>
+<p>Unmount all the partitions in the SD card (use the correct name found previously, followed by letters and numbers that identify the partitions). using umount:</p>
+<pre><code>sudo umount /dev/sdd1
+</code></pre>
+<p>Now write the image on the Micro SD card using the command:</p>
+<pre><code>sudo dd bs=1M if=&lt;img_file_path&gt; of=/dev/&lt;sd_name&gt;
+</code></pre>
+<p>Please make sure that you replaced the argument of input file (<code>if=&lt;img_file_path&gt;</code>) with the path to the .img file, and that the device name specified in output file’s argument (<code>of=/dev/&lt;sd_name&gt;</code>) is correct. For example:</p>
+<pre><code>sudo dd bs=1m if=/home/YourName/Download/udoobuntu-udoo-qdl_v2.0.img of=/dev/sdd
+</code></pre>
+<p>Once <code>dd</code> has been completed, run:</p>
+<pre><code>sudo sync
+</code></pre>
+<p>The Micro SD card is now ready to be used. Simply insert it in the board’s Micro SD Card slot and boot the system.</p>
+<p>If you have problems, have a look to the video tutorial <a href="https://www.udoo.org/tutorial/creating-a-bootable-micro-sd-card-with-linux-ubuntu-from-image/" class="Link--external">Creating a bootable MicroSD card with Linux Ubuntu from image</a>.</p>
+  </div>
+ </div>
+</div>
+<script>
+$('#adc-examples a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+</script>
+    </div>
+
+        <nav>
+        <ul class="Pager">
+            <li class=Pager--prev><a href="../Getting_Started/Very_First_Start.html">Previous</a></li>            <li class=Pager--next><a href="../Basic_Setup/Connecting_Via_Serial_Cable.html">Next</a></li>        </ul>
+    </nav>
+    
+<span style="float: left; font-size: 10px; color: gray;">
+This page was last updated on Monday, March 21, 2022 at 5:19 AM.
+</span>
+
+</article>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+    <!-- hightlight.js -->
+    <script src="../themes/daux/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!-- JS -->
+    
+    <script src="../themes/daux/js/daux.js"></script>
+
+            <!-- Tipue Search -->
+        <script type="text/javascript" src="../tipuesearch/tipuesearch.js"></script>
+
+        <script>
+            window.onunload = function(){}; // force $(document).ready to be called on back/forward navigation in firefox
+            $(function() {
+                tipuesearch({
+                    'base_url': '../'
+                });
+            });
+        </script>
+    
+</body>
+</html>

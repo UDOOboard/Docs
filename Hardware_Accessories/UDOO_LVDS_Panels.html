@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>       <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>          <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>          <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <title>UDOO LVDS Panels - UDOO Quad/Dual Docs</title>
+    <meta name="description" content="UDOO Quad/Dual Documentation" />
+    <meta name="author" content="UDOO Team">
+    <meta charset="UTF-8">
+    <link rel="icon" href="../themes/daux/img/favicon-udoo.ico" type="image/x-icon">
+    <!-- Mobile -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin' rel='stylesheet' type='text/css'>
+    <!-- CSS -->
+    <link href='../themes/daux/css/theme-navy.min.css' rel='stylesheet' type='text/css'><link href='../themes/daux/css/udoo.css' rel='stylesheet' type='text/css'>
+            <!-- Tipue Search -->
+        <link href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+    
+    <!-- jQuery -->
+    <script src="../themes/daux/js/jquery-1.11.3.min.js"></script>
+    <script src="../themes/daux/js/bootstrap.min.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body class="">
+    
+<header class="Navbar hidden-print">
+    <img class="pull-left udoologo" src="/docs/img/logos/docs.png"> 
+<a class="Navbar__brand" href="../index.html">
+UDOO Quad/Dual Documentation</a>
+
+    <div class="Search">
+        <svg class="Search__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 451 451"><path d="M447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1C384.65 86.2 298.35 0 192.35 0 86.25 0 .05 86.3.05 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2L428.05 447c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zM26.95 192.3c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z"/></svg>
+        <input type="search" id="tipue_search_input" class="Search__field" placeholder="Search..." autocomplete="on" results=25 autosave=text_search>
+    </div>
+</header>
+<div class="Columns content">
+    <aside class="Columns__left Collapsible">
+        <div class="Collapsible__container">
+            <button type="button" class="Button Collapsible__trigger">
+                <span class="Collapsible__trigger--bar"></span>
+                <span class="Collapsible__trigger--bar"></span>
+                <span class="Collapsible__trigger--bar"></span>
+            </button>
+        </div>
+
+        <div class="Collapsible__content">
+            <!-- Navigation -->
+            <ul class='Nav'><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Introduction</a><ul class='Nav'><li class='Nav__item '><a href="../Introduction/Introduction.html">Introduction</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Getting Started</a><ul class='Nav'><li class='Nav__item '><a href="../Getting_Started/Very_First_Start.html">Very First Start</a></li><li class='Nav__item '><a href="../Getting_Started/Create_A_Bootable_MicroSD_card_for_UDOO_QUAD_DUAL.html">Create A Bootable MicroSD card for UDOO QUAD-DUAL</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Basic Setup</a><ul class='Nav'><li class='Nav__item '><a href="../Basic_Setup/Connecting_Via_Serial_Cable.html">Connecting Via Serial Cable</a></li><li class='Nav__item '><a href="../Basic_Setup/Find_IP_Address.html">Find IP Address</a></li><li class='Nav__item '><a href="../Basic_Setup/Web_Control_Panel.html">Web Control Panel</a></li><li class='Nav__item '><a href="../Basic_Setup/Remote_Terminal_(SSH).html">Remote Terminal (SSH)</a></li><li class='Nav__item '><a href="../Basic_Setup/Remote_Desktop_(VNC).html">Remote Desktop (VNC)</a></li><li class='Nav__item '><a href="../Basic_Setup/UDOO_Configuration_Tool.html">UDOO Configuration Tool</a></li><li class='Nav__item '><a href="../Basic_Setup/Usb_Direct_Connection.html">Usb Direct Connection</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Software & OS Distro</a><ul class='Nav'><li class='Nav__item '><a href="../Software_OS_Distro/UDOObuntu.html">UDOObuntu</a></li><li class='Nav__item '><a href="../Software_OS_Distro/Android.html">Android</a></li><li class='Nav__item '><a href="../Software_OS_Distro/Yocto.html">Yocto</a></li><li class='Nav__item '><a href="../Software_OS_Distro/Other_Unofficial_Distributions.html">Other Unofficial Distributions</a></li></ul></li><li class='Nav__item Nav__item--open has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Hardware & Accessories</a><ul class='Nav'><li class='Nav__item '><a href="../Hardware_Accessories/GPIO_Pinout.html">GPIO Pinout</a></li><li class='Nav__item '><a href="../Hardware_Accessories/IMX6_And_Sam3X_Communication.html">IMX6 And Sam3X Communication</a></li><li class='Nav__item Nav__item--active'><a href="../Hardware_Accessories/UDOO_LVDS_Panels.html">UDOO LVDS Panels</a></li><li class='Nav__item '><a href="../Hardware_Accessories/UDOO_Camera_Module.html">UDOO Camera Module</a></li><li class='Nav__item '><a href="../Hardware_Accessories/Boot_from_SATA.html">Boot from SATA</a></li><li class='Nav__item '><a href="../Hardware_Accessories/SPI.html">SPI</a></li><li class='Nav__item '><a href="../Hardware_Accessories/PWM.html">PWM</a></li><li class='Nav__item '><a href="../Hardware_Accessories/Watchdog.html">Watchdog</a></li><li class='Nav__item '><a href="../Hardware_Accessories/Resources.html">Resources</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Wireless Communication</a><ul class='Nav'><li class='Nav__item '><a href="../Wireless_Communication/WiFi.html">WiFi</a></li><li class='Nav__item '><a href="../Wireless_Communication/WiFi_SoftAP.html">WiFi SoftAP</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Cookbook Linux</a><ul class='Nav'><li class='Nav__item '><a href="../Cookbook_Linux/Understanding_Linux_Software_Management_And_Installing.html">Understanding Linux Software Management And Installing</a></li><li class='Nav__item '><a href="../Cookbook_Linux/Linux_Command_Line_Interface.html">Linux Command Line Interface</a></li><li class='Nav__item '><a href="../Cookbook_Linux/Set_video_output.html">Set video output</a></li><li class='Nav__item '><a href="../Cookbook_Linux/Device_Tree_Editor.html">Device Tree Editor</a></li><li class='Nav__item '><a href="../Cookbook_Linux/Change_Web_Control_Panel_port.html">Change Web Control Panel port</a></li><li class='Nav__item '><a href="../Cookbook_Linux/Playing_video_with_GStreamer.html">Playing video with GStreamer</a></li><li class='Nav__item '><a href="../Cookbook_Linux/Compile_OpenCV_3.4.0.html">Compile OpenCV 3.4.0</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Arduino DUE (Sam3x)</a><ul class='Nav'><li class='Nav__item '><a href="../Arduino_DUE_(Sam3x)/Overview.html">Overview</a></li><li class='Nav__item '><a href="../Arduino_DUE_(Sam3x)/Programming_Arduino_Due_from_Internal_Processor(iMX6).html">Programming Arduino Due from Internal Processor(iMX6)</a></li><li class='Nav__item '><a href="../Arduino_DUE_(Sam3x)/Programming_Arduino_Due_from_External_PC.html">Programming Arduino Due from External PC</a></li><li class='Nav__item '><a href="../Arduino_DUE_(Sam3x)/Troubleshooting_Programming_Arduino_Due_from_External_PC.html">Troubleshooting Programming Arduino Due from External PC</a></li><li class='Nav__item '><a href="../Arduino_DUE_(Sam3x)/Arduino_Shields_With_UDOO.html">Arduino Shields With UDOO</a></li></ul></li><li class='Nav__item  has-children'><a href="../Serial_Libraries/index.html" class="folder"><i class="Nav__arrow">&nbsp;</i>Serial Libraries</a><ul class='Nav'><li class='Nav__item '><a href="../Serial_Libraries/Java_Serial_Libraries.html">Java Serial Libraries</a></li><li class='Nav__item '><a href="../Serial_Libraries/C_Serial_Libraries.html">C Serial Libraries</a></li><li class='Nav__item '><a href="../Serial_Libraries/PHP_Serial_Libraries.html">PHP Serial Libraries</a></li><li class='Nav__item '><a href="../Serial_Libraries/Python_Serial_Libraries.html">Python Serial Libraries</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Cookbook Android</a><ul class='Nav'><li class='Nav__item '><a href="../Cookbook_Android/UDOO_Android_Boot_Walkthrough.html">UDOO Android Boot Walkthrough</a></li><li class='Nav__item '><a href="../Cookbook_Android/UDOO_Android_Settings.html">UDOO Android Settings</a></li><li class='Nav__item '><a href="../Cookbook_Android/Switch_Between_Adb_Debug_And_ADK_Connection.html">Switch Between Adb Debug And ADK Connection</a></li><li class='Nav__item '><a href="../Cookbook_Android/How_To_Install_Gapps_On_UDOO_Running_Android.html">How To Install Gapps On UDOO Running Android</a></li><li class='Nav__item '><a href="../Cookbook_Android/Android_And_Arduino_Simple_Hello_World_Tutorial.html">Android And Arduino Simple Hello World Tutorial</a></li><li class='Nav__item '><a href="../Cookbook_Android/Android_And_Arduino_Bidirectional_Communication.html">Android And Arduino Bidirectional Communication</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Projects Examples</a><ul class='Nav'><li class='Nav__item '><a href="../Projects_Examples/Face_Recognition_And_Face_Tracking_Via_OpenCV_And_UDOO.html">Face Recognition And Face Tracking Via OpenCV And UDOO</a></li><li class='Nav__item '><a href="../Projects_Examples/Remote_Metereological_Station_With_UDOO.html">Remote Metereological Station With UDOO</a></li><li class='Nav__item '><a href="../Projects_Examples/DIY_NAS_With_Openmediavault_And_UDOO.html">DIY NAS With Openmediavault And UDOO</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Advanced Topics</a><ul class='Nav'><li class='Nav__item '><a href="../Advanced_Topics/Setup_development_environment.html">Setup development environment</a></li><li class='Nav__item '><a href="../Advanced_Topics/Compile_UDOObuntu_(complete_bootable_image).html">Compile UDOObuntu (complete bootable image)</a></li><li class='Nav__item '><a href="../Advanced_Topics/Compile_U_Boot_Bootloader.html">Compile U-Boot Bootloader</a></li><li class='Nav__item '><a href="../Advanced_Topics/Compile_Linux_Kernel.html">Compile Linux Kernel</a></li><li class='Nav__item '><a href="../Advanced_Topics/Compile_Android_From_Source.html">Compile Android From Source</a></li><li class='Nav__item '><a href="../Advanced_Topics/Install_A_Custom_Debian_Distro_With_Debootstrap.html">Install A Custom Debian Distro With Debootstrap</a></li><li class='Nav__item '><a href="../Advanced_Topics/Boot_process.html">Boot process</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Mods</a><ul class='Nav'><li class='Nav__item '><a href="../Mods/Mod_Your_UDOO_To_Improve_WiFi_Performances.html">Mod Your UDOO To Improve WiFi Performances</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>FAQ</a><ul class='Nav'><li class='Nav__item '><a href="../FAQ/Introductive.html">Introductive</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Troubleshooting</a><ul class='Nav'><li class='Nav__item '><a href="../Troubleshooting/Why_My_UDOO_Wont_Boot.html">Why My UDOO Wont Boot</a></li><li class='Nav__item '><a href="../Troubleshooting/How_Can_I_Solve_My_HDMI_Issues.html">How Can I Solve My HDMI Issues</a></li><li class='Nav__item '><a href="../Troubleshooting/How_Do_I_Set_Up_My_LVDS_Panel.html">How Do I Set Up My LVDS Panel</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Hackaton Survival Guide</a><ul class='Nav'><li class='Nav__item '><a href="../Hackaton_Survival_Guide/Mirroring_UDOOs_Desktop_on_your_PC_with_VNC_Remote_Desktop.html">Mirroring UDOOs Desktop on your PC with VNC Remote Desktop</a></li><li class='Nav__item '><a href="../Hackaton_Survival_Guide/Programming_UDOOs_Arduino_from_your_PC.html">Programming UDOOs Arduino from your PC</a></li><li class='Nav__item '><a href="../Hackaton_Survival_Guide/Useful_Resources.html">Useful Resources</a></li></ul></li></ul>
+
+            <div class="Links">
+                                    <hr/>
+                                            <a href="https://www.udoo.org" target="_blank">Home</a>
+                        <br />
+                                            <a href="https://www.udoo.org/downloads" target="_blank">Downloads</a>
+                        <br />
+                                            <a href="https://www.udoo.org/tutorial" target="_blank">Tutorials</a>
+                        <br />
+                                            <a href="https://www.udoo.org/forum" target="_blank">Forum</a>
+                        <br />
+                                    
+                
+                            </div>
+        </div>
+    </aside>
+    <div class="Columns__right ">
+        <div class="Columns__right__content">
+            <div class="doc_content">
+                <article class="Page">
+
+    <div class="Page__header">
+        <h1>UDOO LVDS Panels</h1>
+            </div>
+
+
+    <div class="s-content">
+        <p>By default, UDOO QUAD/DUAL displays the graphical user interface on the HDMI port.
+LVDS screens can be connected to the <code>CN13</code> port. Before the screen can be used, it must be enabled as it follows. You cannot use the HDMI and the LVDS7 or LVDS15 video outputs simultaneously.</p>
+<div class="alert alert-danger" role="alert">
+  <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+  <span class="sr-only">Warning!</span>
+  Make sure to plug the display cable when the board is turned off. <br />
+  Make sure you are powering your UDOO QUAD/DUAL with a <a href="http://shop.udoo.org/eu/accessories/power-adapter-eu.html">12V power supply</a> when using LVDS screens.
+</div>
+<h2 id="page_7-inches-LVDS-panel">7-inches LVDS panel</h2>
+<p>The <a href="http://shop.udoo.org/accessories/video-kit-7-touch-for-quaddual.html" class="Link--external">KIT LCD 7&quot; - Touch for QUAD/DUAL</a> is compatible with UDOO QUAD/DUAL. If you previously bought one for the UDOO NEO, you just need to buy a new cable and keep the same screen.</p>
+<p>If you are searching for technical details check the <a href="https://www.udoo.org/download/files/datasheets/datasheet7.pdf" target="_blank">UDOO 7&quot; Touch Panel Display Kit Datasheet</a></p>
+<h2 id="page_15-inches-LVDS-panel">15-inches LVDS panel</h2>
+<p>The <a href="http://shop.udoo.org/accessories/video-kit-15-6-for-quaddual.html" class="Link--external">KIT LCD 15,6&quot; for QUAD/DUAL</a> and the <a href="http://shop.udoo.org/accessories/video-kit-15-6-lvds-for-quaddual.html" class="Link--external">KIT LCD 15,6&quot; Touch for QUAD/DUAL</a>
+are compatible with UDOO QUAD/DUAL.</p>
+<p>If you are searching for technical details check the <a href="https://www.udoo.org/download/files/datasheets/datasheet15.pdf">UDOO 15&quot; Touch Panel Display Kit Datasheet</a></p>
+<div>
+ <ul id="adc-examples" class="nav nav-tabs" role="tablist">
+  <li role="presentation" class="active"><a href="#linux-example" aria-controls="linux" role="tab" data-toggle="tab">Linux (UDOObuntu 2)</a></li>
+  <li role="presentation"><a href="#android-example" aria-controls="android" role="tab" data-toggle="tab">Android 6.x</a></li>
+  <li role="presentation"><a href="#android4-example" aria-controls="android4" role="tab" data-toggle="tab">Android 4.x</a></li>
+ </ul>
+ <div class="tab-content">
+  <div role="tabpanel" class="tab-pane active" id="linux-example">
+<h2 id="page_Switch-video-output-from-HDMI-to-LVDS">Switch video output from HDMI to LVDS</h2>
+<p>After you connect your LVDS screen to the <code>CN13</code> connector, you must tell UDOO QUAD/DUAL to use the LVDS panel to draw the GUI. This can be done in several ways:</p>
+<h4 id="page_Option-1-you-have-an-HDMI-monitor-and-mouse-keyboard">Option 1: you have an HDMI monitor and mouse/keyboard</h4>
+<p>If you have an HDMI screen connected to UDOO QUAD/DUAL, open a terminal with the link on the desktop. Then you can switch the main video output from HDMI to LVDS7 or LVDS15 by typing:</p>
+<pre><code>sudo udooscreenctl set lvds7
+sudo udooscreenctl set lvds15
+</code></pre>
+<p>(default password, if you did not change it, is <em>udooer</em>)</p>
+<p>You can revert this change by typing:</p>
+<pre><code>sudo udooscreenctl set hdmi
+</code></pre>
+<p>If you want more info about the <em>udooscreenctl</em> command visit the <a href="../Cookbook_Linux/Set_video_output.html">Set Video Output</a>.
+If you prefer a graphical simple way to change the default video output, it is provided by the <a href="../Basic_Setup/Web_Control_Panel.html">UDOO Web Control Panel</a> in the &quot;Configuration&quot;-&gt;&quot;Advanced setting&quot; section.</p>
+<h4 id="page_Option-2-you-can-connect-via-VNC-or-SSH">Option 2: you can connect via VNC or SSH</h4>
+<p>If you can <a href="../Basic_Setup/Remote_Desktop_(VNC).html">connect to your board via VNC</a> or via <a href="../Basic_Setup/Remote_Terminal_(SSH).html">SSH (using the USB, WiFi or Ethernet connection)</a> , you can follow the steps explained in the previous section.</p>
+<h4 id="page_Option-3-you-have-neither-HDMI-nor-network">Option 3: you have neither HDMI nor network</h4>
+<p>If you cannot connect to your board via the network (VNC or SSH) and you have no HDMI screen, you can enable the LVDS display port editing a file in the UDOO QUAD/DUAL SD card. Put the flashed SD card in your computer.</p>
+<p>A small FAT partition labelled <em>boot</em> will appear:</p>
+<img style="width:200px; " src="../img/gionji/DOCS_lvds_via_usb_01.PNG">
+<img style="width:300px; " src="../img/gionji/DOCS_lvds_via_usb_02.PNG">
+<p>Open the file named <code>uEnv.txt</code> contained in the partition.</p>
+<p><span class="label label-warning">Heads up!</span> The file must be saved with Unix-like line endings:</p>
+<ul>
+<li>Windows users can use the free <a href="https://notepad-plus-plus.org/download/" class="Link--external">Notepad++</a> text editor to safely edit the file.</li>
+<li>Mac OS X users can use the free <a href="http://www.barebones.com/products/textwrangler/" class="Link--external">TextWrangler</a> text editor to safely edit the file.</li>
+<li>Linux users can use their favourite text editor (gedit, vim, nano) without concerns.</li>
+</ul>
+<p>Open the file and, you will need to add this line (if it isn't present):</p>
+<pre><code>video_output=
+</code></pre>
+<p>After the <code>=</code> character you need to put the word <code>hdmi</code> or <code>lvds7</code> or <code>lvds15</code> for the screen you need:</p>
+<pre><code>video_output=hdmi
+video_output=lvds7
+video_output=lvds15
+</code></pre>
+<p>e.g. :</p>
+<img style="width:800px; " src="../img/gionji/DOCS_lvds_via_usb_03.PNG">
+<p>Save the file, eject the boot partition and restart the board.</p>
+<h2 id="page_Touch-Calibration">Touch Calibration</h2>
+<p>if you have any problem with touch calibration try to modify the text files:</p>
+<pre><code class="language-bash">
+/etc/X11/xorg.conf.d/90-st1232touchscreen.conf   (for the 7&quot; Touch Display)
+/etc/X11/xorg.conf.d/91-3m_touchscreen.conf      (for the 15,6&quot; Touch Display)
+
+</code></pre>
+<p>These are the default values for the 7&quot; Touch Display:</p>
+<pre><code class="language-bash">
+Section &quot;InputClass&quot;
+        Identifier &quot;Touchscreen&quot;
+        MatchProduct    &quot;st1232-touchscreen&quot;
+        Driver          &quot;evdev&quot;
+        Option          &quot;Calibration&quot;   &quot;3 794 476 0&quot;
+EndSection
+
+
+</code></pre>
+<br />
+These for the 15,6" Touch Display:
+<pre><code class="language-bash">
+Section &quot;InputClass&quot;
+        Identifier      &quot;calibration&quot;
+        MatchProduct    &quot;3M 3M USB Touchscreen - EX II&quot;
+        Option  &quot;Calibration&quot;   &quot;1853 14628 2589 14106&quot;
+        Option  &quot;SwapAxes&quot;      &quot;1&quot;
+EndSection
+
+</code></pre>
+<p>If the calibration is not good enough you can connect a mouse to UDOO DUAL/QUAD and launch the &quot;Calibrate Touchscreen&quot; application from the bottom bar:</p>
+<pre><code class="language-bash">
+Application Menu -&gt; System Tools -&gt; Calibrate Touchscreen
+
+</code></pre>
+<p>or running in a terminal the command:</p>
+<pre><code class="language-bash">
+xinput_calibrator
+
+</code></pre>
+<p>and follow the video instruction to change your calibration.</p>
+  </div>
+  <div role="tabpanel" class="tab-pane" id="android-example">
+<p>The official UDOO's Android 6.x version allow you to configure the Video Output directly from the Settings App.
+Visit the <a href="../Cookbook_Android/UDOO_Android_Settings.html">UDOO Android Settings</a> section for more info.</p>
+  </div>
+  <div role="tabpanel" class="tab-pane" id="android4-example">
+<h2 id="page_Manual-Video-Output-Configuration">Manual Video Output Configuration</h2>
+<p>To use your LVDS with UDOO DUAL/QUAD you have to follow these simple instructions.</p>
+<p>First connect an external pc to the debug serial of UDOO DUAL/QUAD. Once done <a href="../Basic_Setup/Connecting_Via_Serial_Cable.html">connect the serial USB Cable</a> to UDOO DUAL/QUAD and turn it on by plugging the Power Supply.</p>
+<p>From your computer, hit a key before normal boot starts up and type the right parameters for your Operating system and LVDS panel.</p>
+<p>The default Variable, which outputs to HDMI is:</p>
+<pre><code class="language-bash">
+video=mxcfb0:dev=hdmi,1920x1080M@60,if=RGB24,bpp=32
+
+</code></pre>
+<h2 id="page_Exact-UBOOT-Parameters">Exact UBOOT Parameters</h2>
+<h3 id="page_15-Android">15&quot; Android</h3>
+<pre><code class="language-bash">
+setenv bootargs console=ttymxc1,115200 init=/init video=mxcfb0:dev=ldb,1366x768M@60,if=RGB24,bpp=32 video=mxcfb1:off video=mxcfb2:off fbmem=28M vmalloc=400M androidboot.console=ttymxc1 androidboot.hardware=freescale mem=1024M
+
+</code></pre>
+<h3 id="page_7-Android">7&quot; Android</h3>
+<pre><code class="language-bash">
+setenv bootargs console=ttymxc1,115200 init=/init video=mxcfb0:dev=ldb,LDB-WVGA,if=RGB666,bpp=32 video=mxcfb1:off video=mxcfb2:off fbmem=28M vmalloc=400M androidboot.console=ttymxc1 androidboot.hardware=freescale mem=1024M
+
+</code></pre>
+<h3 id="page_HDMI-Android">HDMI Android</h3>
+<pre><code class="language-bash">
+setenv bootargs console=ttymxc1,115200 init=/init video=mxcfb0:dev=hdmi,1920x1080M@60,if=RGB24,bpp=32 video=mxcfb1:off video=mxcfb2:off fbmem=28M vmalloc=400M androidboot.console=ttymxc1 androidboot.hardware=freescale mem=1024M
+
+</code></pre>
+<p>At the next boot the video source will again be the default one unless you save the configuration you just inserted with the command:</p>
+<pre><code class="language-bash">
+saveenv
+
+</code></pre>
+<p>In Android you can also boot UDOO DUAL/QUAD from both HDMI and LVDS panel at the same time inserting these variables in a different frame buffer:</p>
+<p>e.g. boot on lvds 15? and hdmi.</p>
+<pre><code class="language-bash">
+setenv bootargs console=ttymxc1,115200 init=/init video=mxcfb0:dev=ldb,LDB-WVGA,if=RGB666,bpp=32 video=mxcfb1:dev=hdmi,1920x1080M@60,if=RGB24,bpp=32 video=mxcfb2:off fbmem=28M vmalloc=400M androidboot.console=ttymxc1  androidboot.hardware=freescale mem=1024M
+
+</code></pre>
+<p>The general Purpose parameters for each video output are:</p>
+<p>15&quot;</p>
+<pre><code class="language-bash">
+video=mxcfb0:dev=ldb,1366x768M@60,if=RGB24,bpp=32
+
+</code></pre>
+<p>7&quot;</p>
+<pre><code class="language-bash">
+video=mxcfb0:dev=ldb,LDB-WVGA,if=RGB666,bpp=32
+
+</code></pre>
+<p>hdmi</p>
+<pre><code class="language-bash">
+video=mxcfb0:dev=hdmi,1920x1080M@60,if=RGB24,bpp=32 (default environment variable)
+
+</code></pre>
+<iframe width="460" height="315" src="https://www.youtube.com/embed/7CYsKJ1kqsk" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+</div>
+<script>
+$('#adc-examples a').click(function (e) {
+e.preventDefault()
+$(this).tab('show')
+})
+</script>
+    </div>
+
+        <nav>
+        <ul class="Pager">
+            <li class=Pager--prev><a href="../Hardware_Accessories/IMX6_And_Sam3X_Communication.html">Previous</a></li>            <li class=Pager--next><a href="../Hardware_Accessories/UDOO_Camera_Module.html">Next</a></li>        </ul>
+    </nav>
+    
+<span style="float: left; font-size: 10px; color: gray;">
+This page was last updated on Monday, March 21, 2022 at 5:19 AM.
+</span>
+
+</article>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+    <!-- hightlight.js -->
+    <script src="../themes/daux/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!-- JS -->
+    
+    <script src="../themes/daux/js/daux.js"></script>
+
+            <!-- Tipue Search -->
+        <script type="text/javascript" src="../tipuesearch/tipuesearch.js"></script>
+
+        <script>
+            window.onunload = function(){}; // force $(document).ready to be called on back/forward navigation in firefox
+            $(function() {
+                tipuesearch({
+                    'base_url': '../'
+                });
+            });
+        </script>
+    
+</body>
+</html>

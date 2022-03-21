@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>       <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>          <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>          <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <title>GPIO Pinout - UDOO Quad/Dual Docs</title>
+    <meta name="description" content="UDOO Quad/Dual Documentation" />
+    <meta name="author" content="UDOO Team">
+    <meta charset="UTF-8">
+    <link rel="icon" href="../themes/daux/img/favicon-udoo.ico" type="image/x-icon">
+    <!-- Mobile -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin' rel='stylesheet' type='text/css'>
+    <!-- CSS -->
+    <link href='../themes/daux/css/theme-navy.min.css' rel='stylesheet' type='text/css'><link href='../themes/daux/css/udoo.css' rel='stylesheet' type='text/css'>
+            <!-- Tipue Search -->
+        <link href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+    
+    <!-- jQuery -->
+    <script src="../themes/daux/js/jquery-1.11.3.min.js"></script>
+    <script src="../themes/daux/js/bootstrap.min.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body class="">
+    
+<header class="Navbar hidden-print">
+    <img class="pull-left udoologo" src="/docs/img/logos/docs.png"> 
+<a class="Navbar__brand" href="../index.html">
+UDOO Quad/Dual Documentation</a>
+
+    <div class="Search">
+        <svg class="Search__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 451 451"><path d="M447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1C384.65 86.2 298.35 0 192.35 0 86.25 0 .05 86.3.05 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2L428.05 447c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zM26.95 192.3c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z"/></svg>
+        <input type="search" id="tipue_search_input" class="Search__field" placeholder="Search..." autocomplete="on" results=25 autosave=text_search>
+    </div>
+</header>
+<div class="Columns content">
+    <aside class="Columns__left Collapsible">
+        <div class="Collapsible__container">
+            <button type="button" class="Button Collapsible__trigger">
+                <span class="Collapsible__trigger--bar"></span>
+                <span class="Collapsible__trigger--bar"></span>
+                <span class="Collapsible__trigger--bar"></span>
+            </button>
+        </div>
+
+        <div class="Collapsible__content">
+            <!-- Navigation -->
+            <ul class='Nav'><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Introduction</a><ul class='Nav'><li class='Nav__item '><a href="../Introduction/Introduction.html">Introduction</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Getting Started</a><ul class='Nav'><li class='Nav__item '><a href="../Getting_Started/Very_First_Start.html">Very First Start</a></li><li class='Nav__item '><a href="../Getting_Started/Create_A_Bootable_MicroSD_card_for_UDOO_QUAD_DUAL.html">Create A Bootable MicroSD card for UDOO QUAD-DUAL</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Basic Setup</a><ul class='Nav'><li class='Nav__item '><a href="../Basic_Setup/Connecting_Via_Serial_Cable.html">Connecting Via Serial Cable</a></li><li class='Nav__item '><a href="../Basic_Setup/Find_IP_Address.html">Find IP Address</a></li><li class='Nav__item '><a href="../Basic_Setup/Web_Control_Panel.html">Web Control Panel</a></li><li class='Nav__item '><a href="../Basic_Setup/Remote_Terminal_(SSH).html">Remote Terminal (SSH)</a></li><li class='Nav__item '><a href="../Basic_Setup/Remote_Desktop_(VNC).html">Remote Desktop (VNC)</a></li><li class='Nav__item '><a href="../Basic_Setup/UDOO_Configuration_Tool.html">UDOO Configuration Tool</a></li><li class='Nav__item '><a href="../Basic_Setup/Usb_Direct_Connection.html">Usb Direct Connection</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Software & OS Distro</a><ul class='Nav'><li class='Nav__item '><a href="../Software_OS_Distro/UDOObuntu.html">UDOObuntu</a></li><li class='Nav__item '><a href="../Software_OS_Distro/Android.html">Android</a></li><li class='Nav__item '><a href="../Software_OS_Distro/Yocto.html">Yocto</a></li><li class='Nav__item '><a href="../Software_OS_Distro/Other_Unofficial_Distributions.html">Other Unofficial Distributions</a></li></ul></li><li class='Nav__item Nav__item--open has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Hardware & Accessories</a><ul class='Nav'><li class='Nav__item Nav__item--active'><a href="../Hardware_Accessories/GPIO_Pinout.html">GPIO Pinout</a></li><li class='Nav__item '><a href="../Hardware_Accessories/IMX6_And_Sam3X_Communication.html">IMX6 And Sam3X Communication</a></li><li class='Nav__item '><a href="../Hardware_Accessories/UDOO_LVDS_Panels.html">UDOO LVDS Panels</a></li><li class='Nav__item '><a href="../Hardware_Accessories/UDOO_Camera_Module.html">UDOO Camera Module</a></li><li class='Nav__item '><a href="../Hardware_Accessories/Boot_from_SATA.html">Boot from SATA</a></li><li class='Nav__item '><a href="../Hardware_Accessories/SPI.html">SPI</a></li><li class='Nav__item '><a href="../Hardware_Accessories/PWM.html">PWM</a></li><li class='Nav__item '><a href="../Hardware_Accessories/Watchdog.html">Watchdog</a></li><li class='Nav__item '><a href="../Hardware_Accessories/Resources.html">Resources</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Wireless Communication</a><ul class='Nav'><li class='Nav__item '><a href="../Wireless_Communication/WiFi.html">WiFi</a></li><li class='Nav__item '><a href="../Wireless_Communication/WiFi_SoftAP.html">WiFi SoftAP</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Cookbook Linux</a><ul class='Nav'><li class='Nav__item '><a href="../Cookbook_Linux/Understanding_Linux_Software_Management_And_Installing.html">Understanding Linux Software Management And Installing</a></li><li class='Nav__item '><a href="../Cookbook_Linux/Linux_Command_Line_Interface.html">Linux Command Line Interface</a></li><li class='Nav__item '><a href="../Cookbook_Linux/Set_video_output.html">Set video output</a></li><li class='Nav__item '><a href="../Cookbook_Linux/Device_Tree_Editor.html">Device Tree Editor</a></li><li class='Nav__item '><a href="../Cookbook_Linux/Change_Web_Control_Panel_port.html">Change Web Control Panel port</a></li><li class='Nav__item '><a href="../Cookbook_Linux/Playing_video_with_GStreamer.html">Playing video with GStreamer</a></li><li class='Nav__item '><a href="../Cookbook_Linux/Compile_OpenCV_3.4.0.html">Compile OpenCV 3.4.0</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Arduino DUE (Sam3x)</a><ul class='Nav'><li class='Nav__item '><a href="../Arduino_DUE_(Sam3x)/Overview.html">Overview</a></li><li class='Nav__item '><a href="../Arduino_DUE_(Sam3x)/Programming_Arduino_Due_from_Internal_Processor(iMX6).html">Programming Arduino Due from Internal Processor(iMX6)</a></li><li class='Nav__item '><a href="../Arduino_DUE_(Sam3x)/Programming_Arduino_Due_from_External_PC.html">Programming Arduino Due from External PC</a></li><li class='Nav__item '><a href="../Arduino_DUE_(Sam3x)/Troubleshooting_Programming_Arduino_Due_from_External_PC.html">Troubleshooting Programming Arduino Due from External PC</a></li><li class='Nav__item '><a href="../Arduino_DUE_(Sam3x)/Arduino_Shields_With_UDOO.html">Arduino Shields With UDOO</a></li></ul></li><li class='Nav__item  has-children'><a href="../Serial_Libraries/index.html" class="folder"><i class="Nav__arrow">&nbsp;</i>Serial Libraries</a><ul class='Nav'><li class='Nav__item '><a href="../Serial_Libraries/Java_Serial_Libraries.html">Java Serial Libraries</a></li><li class='Nav__item '><a href="../Serial_Libraries/C_Serial_Libraries.html">C Serial Libraries</a></li><li class='Nav__item '><a href="../Serial_Libraries/PHP_Serial_Libraries.html">PHP Serial Libraries</a></li><li class='Nav__item '><a href="../Serial_Libraries/Python_Serial_Libraries.html">Python Serial Libraries</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Cookbook Android</a><ul class='Nav'><li class='Nav__item '><a href="../Cookbook_Android/UDOO_Android_Boot_Walkthrough.html">UDOO Android Boot Walkthrough</a></li><li class='Nav__item '><a href="../Cookbook_Android/UDOO_Android_Settings.html">UDOO Android Settings</a></li><li class='Nav__item '><a href="../Cookbook_Android/Switch_Between_Adb_Debug_And_ADK_Connection.html">Switch Between Adb Debug And ADK Connection</a></li><li class='Nav__item '><a href="../Cookbook_Android/How_To_Install_Gapps_On_UDOO_Running_Android.html">How To Install Gapps On UDOO Running Android</a></li><li class='Nav__item '><a href="../Cookbook_Android/Android_And_Arduino_Simple_Hello_World_Tutorial.html">Android And Arduino Simple Hello World Tutorial</a></li><li class='Nav__item '><a href="../Cookbook_Android/Android_And_Arduino_Bidirectional_Communication.html">Android And Arduino Bidirectional Communication</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Projects Examples</a><ul class='Nav'><li class='Nav__item '><a href="../Projects_Examples/Face_Recognition_And_Face_Tracking_Via_OpenCV_And_UDOO.html">Face Recognition And Face Tracking Via OpenCV And UDOO</a></li><li class='Nav__item '><a href="../Projects_Examples/Remote_Metereological_Station_With_UDOO.html">Remote Metereological Station With UDOO</a></li><li class='Nav__item '><a href="../Projects_Examples/DIY_NAS_With_Openmediavault_And_UDOO.html">DIY NAS With Openmediavault And UDOO</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Advanced Topics</a><ul class='Nav'><li class='Nav__item '><a href="../Advanced_Topics/Setup_development_environment.html">Setup development environment</a></li><li class='Nav__item '><a href="../Advanced_Topics/Compile_UDOObuntu_(complete_bootable_image).html">Compile UDOObuntu (complete bootable image)</a></li><li class='Nav__item '><a href="../Advanced_Topics/Compile_U_Boot_Bootloader.html">Compile U-Boot Bootloader</a></li><li class='Nav__item '><a href="../Advanced_Topics/Compile_Linux_Kernel.html">Compile Linux Kernel</a></li><li class='Nav__item '><a href="../Advanced_Topics/Compile_Android_From_Source.html">Compile Android From Source</a></li><li class='Nav__item '><a href="../Advanced_Topics/Install_A_Custom_Debian_Distro_With_Debootstrap.html">Install A Custom Debian Distro With Debootstrap</a></li><li class='Nav__item '><a href="../Advanced_Topics/Boot_process.html">Boot process</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Mods</a><ul class='Nav'><li class='Nav__item '><a href="../Mods/Mod_Your_UDOO_To_Improve_WiFi_Performances.html">Mod Your UDOO To Improve WiFi Performances</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>FAQ</a><ul class='Nav'><li class='Nav__item '><a href="../FAQ/Introductive.html">Introductive</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Troubleshooting</a><ul class='Nav'><li class='Nav__item '><a href="../Troubleshooting/Why_My_UDOO_Wont_Boot.html">Why My UDOO Wont Boot</a></li><li class='Nav__item '><a href="../Troubleshooting/How_Can_I_Solve_My_HDMI_Issues.html">How Can I Solve My HDMI Issues</a></li><li class='Nav__item '><a href="../Troubleshooting/How_Do_I_Set_Up_My_LVDS_Panel.html">How Do I Set Up My LVDS Panel</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Hackaton Survival Guide</a><ul class='Nav'><li class='Nav__item '><a href="../Hackaton_Survival_Guide/Mirroring_UDOOs_Desktop_on_your_PC_with_VNC_Remote_Desktop.html">Mirroring UDOOs Desktop on your PC with VNC Remote Desktop</a></li><li class='Nav__item '><a href="../Hackaton_Survival_Guide/Programming_UDOOs_Arduino_from_your_PC.html">Programming UDOOs Arduino from your PC</a></li><li class='Nav__item '><a href="../Hackaton_Survival_Guide/Useful_Resources.html">Useful Resources</a></li></ul></li></ul>
+
+            <div class="Links">
+                                    <hr/>
+                                            <a href="https://www.udoo.org" target="_blank">Home</a>
+                        <br />
+                                            <a href="https://www.udoo.org/downloads" target="_blank">Downloads</a>
+                        <br />
+                                            <a href="https://www.udoo.org/tutorial" target="_blank">Tutorials</a>
+                        <br />
+                                            <a href="https://www.udoo.org/forum" target="_blank">Forum</a>
+                        <br />
+                                    
+                
+                            </div>
+        </div>
+    </aside>
+    <div class="Columns__right ">
+        <div class="Columns__right__content">
+            <div class="doc_content">
+                <article class="Page">
+
+    <div class="Page__header">
+        <h1>GPIO Pinout</h1>
+            </div>
+
+
+    <div class="s-content">
+        <h2 id="page_Introduction">Introduction</h2>
+<p>In this chapter it will be described how UDOO DUAL/QUAD manages the signals available on external pin header, and the way to control all the GPIOs. On UDOO DUAL/QUAD, Freescale i.MX and Atmel SAM3X8E share most of the GPIOs available on external pin headers. Each pin of both processors can be set in INPUT or OUTPUT mode. In INPUT mode, each processor read the electrical level of the signal. In OUTPUT mode they can drive low or high the voltage level on each pin. So both processors can control all digital external pins. Usually, with Arduino Due, applications that manage external pins are developed to run on the SAM3x8E microcontroller. On UDOO DUAL/QUAD it is possible to control external pins also using i.MX6 processor.</p>
+<br />
+<img src="../img/Udoo_imx6_sam3x.jpg" class="img-responsive pull-right" alt="udoo"  height="189px" width="600px" style="margin-bottom:20px; margin-left:30px;">
+<h2 id="page_UDOO-DUAL-QUAD-GPIO-Pinout-Diagram">UDOO DUAL/QUAD GPIO Pinout Diagram</h2>
+<br />
+<p><a href="../img/Udoo_pinoutext.jpg" target="_blank"><img style="width:400px; " src="../img/Udoo_pinoutext.jpg"></a></p>
+<br />
+<h2 id="page_Arduino-DUE-SAM3x8E-GPI-Os-Management">Arduino DUE (SAM3x8E) GPI/Os Management</h2>
+<p>SAM3x8E microcontroller can manage GPIOs using classic Arduino programming language. To manage a GPIO in Arduino Environment it is necessary to set its direction (input or output) by calling the pinMode(pin, mode) function.</p>
+<pre><code class="language-bash">
+pinMode(2, INPUT );
+pinMode(2, OUTPUT );
+
+</code></pre>
+<p>If pin is set in input mode, its value can be read by using the function digitalRead(pin) providing pin number as parameter: e.g. int val = digitalRead(2); If pin is set in output mode, its value can be written by using the function digitalWrite(pin, value)providing the pin number and the value that must be written as parameters:</p>
+<pre><code class="language-bash">
+digitalWrite(2, HIGH);
+digitalWrite(2, LOW);
+
+</code></pre>
+<p>More information about Arduino programming Language can be found at <a href="http://arduino.cc/en/Reference/HomePage" class="Link--external">Arduino Language Reference Page</a></p>
+<p>Go to the Arduino section to learn how to program the Arduino DUE embedded</p>
+<h2 id="page_Linux-i-MX6-GPI-Os-Management">Linux (i.MX6) GPI/Os Management</h2>
+<p>i.MX6 can handle external pins in many different ways. In default configuration, they can be accessed from user level through the standard Kernel Linux interface. Some of them can be configured for specific functionalities provided by i.MX6 architecture, like SPI, I2C, I2S, audiomux, PWMs output, UARTs and so on. Go to the <a href="../Cookbook_Linux/Device_Tree_Editor.html">Device Tree Editor</a> section to know how export these functionalities.
+<br />
+By default (for safety reasons), all GPIOs are exported in <em>input</em> configuration from the Linux side, to let you use they from the Arduino DUE side. This means the board CPU can read the value of the voltage connected to the pins. The other possible configuration is <em>output</em>, which forces a pin to take a specific voltage.</p>
+<p><span class="label label-warning">Heads up!</span> When using the <em>output</em> configuration, be sure to avoid short-circuits!</p>
+<p>It is possible to switch a pin in <em>input</em> or <em>output</em> mode with the following commands:</p>
+<pre><code># set pin 25 to input
+echo in &gt; /gpio/pin25/direction
+
+# set pin 25 to output
+echo out &gt; /gpio/pin25/direction
+</code></pre>
+<p>To verify the voltage direction, just read the same file:</p>
+<pre><code>cat /gpio/pin25/direction
+</code></pre>
+<h4 id="page_Write-values">Write values</h4>
+<p>To write a low or high value on a GPIO, you need to write <code>0</code> or <code>1</code> in the <em>value</em> file:</p>
+<pre><code># set GPIO 25 to low value - 0 volts
+echo 0 &gt; /gpio/pin25/value
+
+# set GPIO 25 to high value - 3.3 volts
+echo 1 &gt; /gpio/pin25/value
+</code></pre>
+<p>In order to set the value, the GPIO must be in the <code>out</code> direction.</p>
+<h4 id="page_Read-values">Read values</h4>
+<p>If the direction is set to <code>in</code>, it is possible to read the GPIO value reading the same file:</p>
+<pre><code>cat /gpio/pin25/value
+</code></pre>
+<p>If the direction is set to <code>out</code> and you try to read the value, is not guaranteed that the value is coherent with the voltage found on the external pinout.</p>
+<p>To make your life even simplier, you can find <a href="https://www.udoo.org/labels-for-pinout-headers/">a super handy printable label</a> for your GPIOs (thanks <em>ralphie79</em>!).</p>
+<h3 id="page_Advanced-usage">Advanced usage</h3>
+<p>GPIO management is made simple by the <code>udoo-gpio-export</code> package, which comes pre-installed in UDOObuntu 2 Linux. This package takes care of exporting all GPIOs in input mode, and creates the symlinks from the <code>/sys/class/gpio</code> entries to the <code>/gpio</code> directory.</p>
+<p>If you want, you can directly use the <code>/sys/class/gpio</code> entries. For example, to export a GPIO use:</p>
+<pre><code>echo GPIO_NUMBER &gt; /sys/class/gpio/export
+</code></pre>
+<p>Please note that <code>GPIO_NUMBER</code> is not the number written on the PCB. Instead, it is the number written in the round label close to the PCB number in the previous two images. For example, if you want to control the pin 24 (PCB name) you should read <code>GPIO_25</code>.</p>
+<p><code>GPIO_NUMBER</code> can be calculated with the following relation:</p>
+<pre><code>GPIO_NUMBER = ((BANK - 1) * 32 ) + ID
+</code></pre>
+<p>For example, if you want to export the GPIO1_IO_25;</p>
+<pre><code># GPIO1_IO_25 means BANK=1 and ID=25
+# GPIO_NUMBER = ((1 - 1) * 32 ) + 25 = 25
+echo 25 &gt; /sys/class/gpio/export
+</code></pre>
+<br />
+There’s an handy table to help you sort out the correct GPIO numbers:
+<div class="table-1">
+<table width="100%">
+<thead>
+<tr>
+<th>PIN NUMBER</th>
+<th>GPIO NUMBER</th>
+<th>PATH</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>116</td>
+<td><em>/sys/class/gpio/gpio116/</em></td>
+</tr>
+<tr>
+<td>1</td>
+<td>112</td>
+<td><em>/sys/class/gpio/gpio112/</em></td>
+</tr>
+<tr>
+<td>2</td>
+<td>20</td>
+<td><em>/sys/class/gpio/gpio20/</em></td>
+</tr>
+<tr>
+<td>3</td>
+<td>16</td>
+<td><em>/sys/class/gpio/gpio16/</em></td>
+</tr>
+<tr>
+<td>4</td>
+<td>17</td>
+<td><em>/sys/class/gpio/gpio17/</em></td>
+</tr>
+<tr>
+<td>5</td>
+<td>18</td>
+<td><em>/sys/class/gpio/gpio18/</em></td>
+</tr>
+<tr>
+<td>6</td>
+<td>41</td>
+<td><em>/sys/class/gpio/gpio41/</em></td>
+</tr>
+<tr>
+<td>7</td>
+<td>42</td>
+<td><em>/sys/class/gpio/gpio42/</em></td>
+</tr>
+<tr>
+<td>8</td>
+<td>21</td>
+<td><em>/sys/class/gpio/gpio21/</em></td>
+</tr>
+<tr>
+<td>9</td>
+<td>19</td>
+<td><em>/sys/class/gpio/gpio19/</em></td>
+</tr>
+<tr>
+<td>10</td>
+<td>1</td>
+<td><em>/sys/class/gpio/gpio1/</em></td>
+</tr>
+<tr>
+<td>11</td>
+<td>9</td>
+<td><em>/sys/class/gpio/gpio9/</em></td>
+</tr>
+<tr>
+<td>12</td>
+<td>3</td>
+<td><em>/sys/class/gpio/gpio3/</em></td>
+</tr>
+<tr>
+<td>13</td>
+<td>40</td>
+<td><em>/sys/class/gpio/gpio40/</em></td>
+</tr>
+<tr>
+<td>14</td>
+<td>150</td>
+<td><em>/sys/class/gpio/gpio150/</em></td>
+</tr>
+<tr>
+<td>15</td>
+<td>162</td>
+<td><em>/sys/class/gpio/gpio162/</em></td>
+</tr>
+<tr>
+<td>16</td>
+<td>160</td>
+<td><em>/sys/class/gpio/gpio160/</em></td>
+</tr>
+<tr>
+<td>17</td>
+<td>161</td>
+<td><em>/sys/class/gpio/gpio161/</em></td>
+</tr>
+<tr>
+<td>18</td>
+<td>158</td>
+<td><em>/sys/class/gpio/gpio158/</em></td>
+</tr>
+<tr>
+<td>19</td>
+<td>159</td>
+<td><em>/sys/class/gpio/gpio159/</em></td>
+</tr>
+<tr>
+<td>20</td>
+<td>92</td>
+<td><em>/sys/class/gpio/gpio92/</em></td>
+</tr>
+<tr>
+<td>21</td>
+<td>85</td>
+<td><em>/sys/class/gpio/gpio85/</em></td>
+</tr>
+<tr>
+<td>22</td>
+<td>123</td>
+<td><em>/sys/class/gpio/gpio123/</em></td>
+</tr>
+<tr>
+<td>23</td>
+<td>124</td>
+<td><em>/sys/class/gpio/gpio124/</em></td>
+</tr>
+<tr>
+<td>24</td>
+<td>125</td>
+<td><em>/sys/class/gpio/gpio125/</em></td>
+</tr>
+<tr>
+<td>25</td>
+<td>126</td>
+<td><em>/sys/class/gpio/gpio126/</em></td>
+</tr>
+<tr>
+<td>26</td>
+<td>127</td>
+<td><em>/sys/class/gpio/gpio127/</em></td>
+</tr>
+<tr>
+<td>27</td>
+<td>133</td>
+<td><em>/sys/class/gpio/gpio133/</em></td>
+</tr>
+<tr>
+<td>28</td>
+<td>134</td>
+<td><em>/sys/class/gpio/gpio134/</em></td>
+</tr>
+<tr>
+<td>29</td>
+<td>135</td>
+<td><em>/sys/class/gpio/gpio135/</em></td>
+</tr>
+<tr>
+<td>30</td>
+<td>136</td>
+<td><em>/sys/class/gpio/gpio136/</em></td>
+</tr>
+<tr>
+<td>31</td>
+<td>137</td>
+<td><em>/sys/class/gpio/gpio137/</em></td>
+</tr>
+<tr>
+<td>32</td>
+<td>138</td>
+<td><em>/sys/class/gpio/gpio138/</em></td>
+</tr>
+<tr>
+<td>33</td>
+<td>139</td>
+<td><em>/sys/class/gpio/gpio139/</em></td>
+</tr>
+<tr>
+<td>34</td>
+<td>140</td>
+<td><em>/sys/class/gpio/gpio140/</em></td>
+</tr>
+<tr>
+<td>35</td>
+<td>141</td>
+<td><em>/sys/class/gpio/gpio141/</em></td>
+</tr>
+<tr>
+<td>36</td>
+<td>142</td>
+<td><em>/sys/class/gpio/gpio142/</em></td>
+</tr>
+<tr>
+<td>37</td>
+<td>143</td>
+<td><em>/sys/class/gpio/gpio143/</em></td>
+</tr>
+<tr>
+<td>38</td>
+<td>54</td>
+<td><em>/sys/class/gpio/gpio54/</em></td>
+</tr>
+<tr>
+<td>39</td>
+<td>205</td>
+<td><em>/sys/class/gpio/gpio205/</em></td>
+</tr>
+<tr>
+<td>40</td>
+<td>32</td>
+<td><em>/sys/class/gpio/gpio32/</em></td>
+</tr>
+<tr>
+<td>41</td>
+<td>35</td>
+<td><em>/sys/class/gpio/gpio35/</em></td>
+</tr>
+<tr>
+<td>42</td>
+<td>34</td>
+<td><em>/sys/class/gpio/gpio34/</em></td>
+</tr>
+<tr>
+<td>43</td>
+<td>33</td>
+<td><em>/sys/class/gpio/gpio33/</em></td>
+</tr>
+<tr>
+<td>44</td>
+<td>101</td>
+<td><em>/sys/class/gpio/gpio101/</em></td>
+</tr>
+<tr>
+<td>45</td>
+<td>144</td>
+<td><em>/sys/class/gpio/gpio144/</em></td>
+</tr>
+<tr>
+<td>46</td>
+<td>145</td>
+<td><em>/sys/class/gpio/gpio145/</em></td>
+</tr>
+<tr>
+<td>47</td>
+<td>89</td>
+<td><em>/sys/class/gpio/gpio89/</em></td>
+</tr>
+<tr>
+<td>48</td>
+<td>105</td>
+<td><em>/sys/class/gpio/gpio105/</em></td>
+</tr>
+<tr>
+<td>49</td>
+<td>104</td>
+<td><em>/sys/class/gpio/gpio104/</em></td>
+</tr>
+<tr>
+<td>50</td>
+<td>57</td>
+<td><em>/sys/class/gpio/gpio57/</em></td>
+</tr>
+<tr>
+<td>51</td>
+<td>56</td>
+<td><em>/sys/class/gpio/gpio56/</em></td>
+</tr>
+<tr>
+<td>52</td>
+<td>55</td>
+<td><em>/sys/class/gpio/gpio55/</em></td>
+</tr>
+<tr>
+<td>53</td>
+<td>88</td>
+<td><em>/sys/class/gpio/gpio88/</em></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="page_GPIOs-Warnings">GPIOs Warnings</h2>
+<p>When changing i.MX6 GPIOs directions, it is necessary to pay special attention. New direction must be compatible with SAM3x8E pinout configuration and/or with the load of the physical pin.</p>
+<ul>
+<li>A:GPIOs can be used to build a communication channel between the two processors. By setting one processor in INPUT mode, and the other in OUTPUT mode, a one-way channel will be created. Via software, it is possible to switch the direction on both processors, in order to create a half-duplex communication channel.</li>
+<li>B:Two processors simultaneously can read data from external devices. They can also write data to external devices or the other processor, but only one at a time can be set in output mode.</li>
+<li>C:The situations here illustrated must be avoided. In the first case, both processors set the shared pin in output mode. If they try to drive the shared line with different signal values, the resulting signal level will be unpredictable</li>
+</ul>
+<p>and it could result in damaging the processor driving the signal LOW. The same situation occurs when one external device tries to drive the shared line.</p>
+<p><a href="../img/UDOO_GPIO_Warnings.jpg" target="_blank"><img style="width:400px; " src="../img/UDOO_GPIO_Warnings.jpg"></a></p>
+<p><strong>WARNING!</strong> There isn’t any automatic tool that can avoid dangerous situations. The programmer must develop Hardware and Software able to avoid the occurrence of dangerous situations.</p>
+<p><strong>WARNING 2!</strong> UDOO DUAL/QUAD I/O pins are 3.3V only compliant. Providing shields with higher voltage, like 5V, could damage the board. Use only shields Arduino DUE compatible (3.3V).</p>
+<h2 id="page_Extra-functions-available-on-UDOO-DUAL-QUAD-pin-headers">Extra functions available on UDOO DUAL/QUAD pin headers</h2>
+<p>UDOO DUAL/QUAD can provide for extra features on external pin headers. To enable them it is necessary to declare the correct alternative pin function in the device tree of the kernel.
+<br />
+UDOObuntu 2 provides a simple graphic tool to allow you to manage most of these functionalities: the <a href="../Cookbook_Linux/Device_Tree_Editor.html">Device Tree Editor</a>.
+<br />
+These functions are:</p>
+<ul>
+<li>UARTs: uart1, uart3, uart4, uart5</li>
+<li>sd1</li>
+<li>SPIs: spi1, spi2, spi5</li>
+<li>i2c1</li>
+<li>SPDIF</li>
+<li>timer capture</li>
+<li>timer compare</li>
+<li>WATCHDOG FUNCTIONALITIES: watchdog reset, watchdog out</li>
+<li>clock out</li>
+<li>PWMs: pwm1, pwm2, pwm3, pwm4</li>
+<li>I2s Digital Audio</li>
+</ul>
+<p><a href="../img/UDOO_GPIO_Extra.jpg" target="_blank"><img style="width:400px; " src="../img/UDOO_GPIO_Extra.jpg"></a></p>
+<p>On the vertical axis there are iMX6s functionalities. On the horizontal axis are shown the pins used to implements each functionality. Be careful that some pins are used for different functionalities and only one at a time can be active for each of them.</p>
+    </div>
+
+        <nav>
+        <ul class="Pager">
+            <li class=Pager--prev><a href="../Software_OS_Distro/Other_Unofficial_Distributions.html">Previous</a></li>            <li class=Pager--next><a href="../Hardware_Accessories/IMX6_And_Sam3X_Communication.html">Next</a></li>        </ul>
+    </nav>
+    
+<span style="float: left; font-size: 10px; color: gray;">
+This page was last updated on Monday, March 21, 2022 at 5:19 AM.
+</span>
+
+</article>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+    <!-- hightlight.js -->
+    <script src="../themes/daux/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!-- JS -->
+    
+    <script src="../themes/daux/js/daux.js"></script>
+
+            <!-- Tipue Search -->
+        <script type="text/javascript" src="../tipuesearch/tipuesearch.js"></script>
+
+        <script>
+            window.onunload = function(){}; // force $(document).ready to be called on back/forward navigation in firefox
+            $(function() {
+                tipuesearch({
+                    'base_url': '../'
+                });
+            });
+        </script>
+    
+</body>
+</html>

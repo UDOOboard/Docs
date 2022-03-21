@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>       <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>          <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>          <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <title>Boot process - UDOO Quad/Dual Docs</title>
+    <meta name="description" content="UDOO Quad/Dual Documentation" />
+    <meta name="author" content="UDOO Team">
+    <meta charset="UTF-8">
+    <link rel="icon" href="../themes/daux/img/favicon-udoo.ico" type="image/x-icon">
+    <!-- Mobile -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin' rel='stylesheet' type='text/css'>
+    <!-- CSS -->
+    <link href='../themes/daux/css/theme-navy.min.css' rel='stylesheet' type='text/css'><link href='../themes/daux/css/udoo.css' rel='stylesheet' type='text/css'>
+            <!-- Tipue Search -->
+        <link href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+    
+    <!-- jQuery -->
+    <script src="../themes/daux/js/jquery-1.11.3.min.js"></script>
+    <script src="../themes/daux/js/bootstrap.min.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body class="">
+    
+<header class="Navbar hidden-print">
+    <img class="pull-left udoologo" src="/docs/img/logos/docs.png"> 
+<a class="Navbar__brand" href="../index.html">
+UDOO Quad/Dual Documentation</a>
+
+    <div class="Search">
+        <svg class="Search__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 451 451"><path d="M447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1C384.65 86.2 298.35 0 192.35 0 86.25 0 .05 86.3.05 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2L428.05 447c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zM26.95 192.3c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z"/></svg>
+        <input type="search" id="tipue_search_input" class="Search__field" placeholder="Search..." autocomplete="on" results=25 autosave=text_search>
+    </div>
+</header>
+<div class="Columns content">
+    <aside class="Columns__left Collapsible">
+        <div class="Collapsible__container">
+            <button type="button" class="Button Collapsible__trigger">
+                <span class="Collapsible__trigger--bar"></span>
+                <span class="Collapsible__trigger--bar"></span>
+                <span class="Collapsible__trigger--bar"></span>
+            </button>
+        </div>
+
+        <div class="Collapsible__content">
+            <!-- Navigation -->
+            <ul class='Nav'><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Introduction</a><ul class='Nav'><li class='Nav__item '><a href="../Introduction/Introduction.html">Introduction</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Getting Started</a><ul class='Nav'><li class='Nav__item '><a href="../Getting_Started/Very_First_Start.html">Very First Start</a></li><li class='Nav__item '><a href="../Getting_Started/Create_A_Bootable_MicroSD_card_for_UDOO_QUAD_DUAL.html">Create A Bootable MicroSD card for UDOO QUAD-DUAL</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Basic Setup</a><ul class='Nav'><li class='Nav__item '><a href="../Basic_Setup/Connecting_Via_Serial_Cable.html">Connecting Via Serial Cable</a></li><li class='Nav__item '><a href="../Basic_Setup/Find_IP_Address.html">Find IP Address</a></li><li class='Nav__item '><a href="../Basic_Setup/Web_Control_Panel.html">Web Control Panel</a></li><li class='Nav__item '><a href="../Basic_Setup/Remote_Terminal_(SSH).html">Remote Terminal (SSH)</a></li><li class='Nav__item '><a href="../Basic_Setup/Remote_Desktop_(VNC).html">Remote Desktop (VNC)</a></li><li class='Nav__item '><a href="../Basic_Setup/UDOO_Configuration_Tool.html">UDOO Configuration Tool</a></li><li class='Nav__item '><a href="../Basic_Setup/Usb_Direct_Connection.html">Usb Direct Connection</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Software & OS Distro</a><ul class='Nav'><li class='Nav__item '><a href="../Software_OS_Distro/UDOObuntu.html">UDOObuntu</a></li><li class='Nav__item '><a href="../Software_OS_Distro/Android.html">Android</a></li><li class='Nav__item '><a href="../Software_OS_Distro/Yocto.html">Yocto</a></li><li class='Nav__item '><a href="../Software_OS_Distro/Other_Unofficial_Distributions.html">Other Unofficial Distributions</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Hardware & Accessories</a><ul class='Nav'><li class='Nav__item '><a href="../Hardware_Accessories/GPIO_Pinout.html">GPIO Pinout</a></li><li class='Nav__item '><a href="../Hardware_Accessories/IMX6_And_Sam3X_Communication.html">IMX6 And Sam3X Communication</a></li><li class='Nav__item '><a href="../Hardware_Accessories/UDOO_LVDS_Panels.html">UDOO LVDS Panels</a></li><li class='Nav__item '><a href="../Hardware_Accessories/UDOO_Camera_Module.html">UDOO Camera Module</a></li><li class='Nav__item '><a href="../Hardware_Accessories/Boot_from_SATA.html">Boot from SATA</a></li><li class='Nav__item '><a href="../Hardware_Accessories/SPI.html">SPI</a></li><li class='Nav__item '><a href="../Hardware_Accessories/PWM.html">PWM</a></li><li class='Nav__item '><a href="../Hardware_Accessories/Watchdog.html">Watchdog</a></li><li class='Nav__item '><a href="../Hardware_Accessories/Resources.html">Resources</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Wireless Communication</a><ul class='Nav'><li class='Nav__item '><a href="../Wireless_Communication/WiFi.html">WiFi</a></li><li class='Nav__item '><a href="../Wireless_Communication/WiFi_SoftAP.html">WiFi SoftAP</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Cookbook Linux</a><ul class='Nav'><li class='Nav__item '><a href="../Cookbook_Linux/Understanding_Linux_Software_Management_And_Installing.html">Understanding Linux Software Management And Installing</a></li><li class='Nav__item '><a href="../Cookbook_Linux/Linux_Command_Line_Interface.html">Linux Command Line Interface</a></li><li class='Nav__item '><a href="../Cookbook_Linux/Set_video_output.html">Set video output</a></li><li class='Nav__item '><a href="../Cookbook_Linux/Device_Tree_Editor.html">Device Tree Editor</a></li><li class='Nav__item '><a href="../Cookbook_Linux/Change_Web_Control_Panel_port.html">Change Web Control Panel port</a></li><li class='Nav__item '><a href="../Cookbook_Linux/Playing_video_with_GStreamer.html">Playing video with GStreamer</a></li><li class='Nav__item '><a href="../Cookbook_Linux/Compile_OpenCV_3.4.0.html">Compile OpenCV 3.4.0</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Arduino DUE (Sam3x)</a><ul class='Nav'><li class='Nav__item '><a href="../Arduino_DUE_(Sam3x)/Overview.html">Overview</a></li><li class='Nav__item '><a href="../Arduino_DUE_(Sam3x)/Programming_Arduino_Due_from_Internal_Processor(iMX6).html">Programming Arduino Due from Internal Processor(iMX6)</a></li><li class='Nav__item '><a href="../Arduino_DUE_(Sam3x)/Programming_Arduino_Due_from_External_PC.html">Programming Arduino Due from External PC</a></li><li class='Nav__item '><a href="../Arduino_DUE_(Sam3x)/Troubleshooting_Programming_Arduino_Due_from_External_PC.html">Troubleshooting Programming Arduino Due from External PC</a></li><li class='Nav__item '><a href="../Arduino_DUE_(Sam3x)/Arduino_Shields_With_UDOO.html">Arduino Shields With UDOO</a></li></ul></li><li class='Nav__item  has-children'><a href="../Serial_Libraries/index.html" class="folder"><i class="Nav__arrow">&nbsp;</i>Serial Libraries</a><ul class='Nav'><li class='Nav__item '><a href="../Serial_Libraries/Java_Serial_Libraries.html">Java Serial Libraries</a></li><li class='Nav__item '><a href="../Serial_Libraries/C_Serial_Libraries.html">C Serial Libraries</a></li><li class='Nav__item '><a href="../Serial_Libraries/PHP_Serial_Libraries.html">PHP Serial Libraries</a></li><li class='Nav__item '><a href="../Serial_Libraries/Python_Serial_Libraries.html">Python Serial Libraries</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Cookbook Android</a><ul class='Nav'><li class='Nav__item '><a href="../Cookbook_Android/UDOO_Android_Boot_Walkthrough.html">UDOO Android Boot Walkthrough</a></li><li class='Nav__item '><a href="../Cookbook_Android/UDOO_Android_Settings.html">UDOO Android Settings</a></li><li class='Nav__item '><a href="../Cookbook_Android/Switch_Between_Adb_Debug_And_ADK_Connection.html">Switch Between Adb Debug And ADK Connection</a></li><li class='Nav__item '><a href="../Cookbook_Android/How_To_Install_Gapps_On_UDOO_Running_Android.html">How To Install Gapps On UDOO Running Android</a></li><li class='Nav__item '><a href="../Cookbook_Android/Android_And_Arduino_Simple_Hello_World_Tutorial.html">Android And Arduino Simple Hello World Tutorial</a></li><li class='Nav__item '><a href="../Cookbook_Android/Android_And_Arduino_Bidirectional_Communication.html">Android And Arduino Bidirectional Communication</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Projects Examples</a><ul class='Nav'><li class='Nav__item '><a href="../Projects_Examples/Face_Recognition_And_Face_Tracking_Via_OpenCV_And_UDOO.html">Face Recognition And Face Tracking Via OpenCV And UDOO</a></li><li class='Nav__item '><a href="../Projects_Examples/Remote_Metereological_Station_With_UDOO.html">Remote Metereological Station With UDOO</a></li><li class='Nav__item '><a href="../Projects_Examples/DIY_NAS_With_Openmediavault_And_UDOO.html">DIY NAS With Openmediavault And UDOO</a></li></ul></li><li class='Nav__item Nav__item--open has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Advanced Topics</a><ul class='Nav'><li class='Nav__item '><a href="../Advanced_Topics/Setup_development_environment.html">Setup development environment</a></li><li class='Nav__item '><a href="../Advanced_Topics/Compile_UDOObuntu_(complete_bootable_image).html">Compile UDOObuntu (complete bootable image)</a></li><li class='Nav__item '><a href="../Advanced_Topics/Compile_U_Boot_Bootloader.html">Compile U-Boot Bootloader</a></li><li class='Nav__item '><a href="../Advanced_Topics/Compile_Linux_Kernel.html">Compile Linux Kernel</a></li><li class='Nav__item '><a href="../Advanced_Topics/Compile_Android_From_Source.html">Compile Android From Source</a></li><li class='Nav__item '><a href="../Advanced_Topics/Install_A_Custom_Debian_Distro_With_Debootstrap.html">Install A Custom Debian Distro With Debootstrap</a></li><li class='Nav__item Nav__item--active'><a href="../Advanced_Topics/Boot_process.html">Boot process</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Mods</a><ul class='Nav'><li class='Nav__item '><a href="../Mods/Mod_Your_UDOO_To_Improve_WiFi_Performances.html">Mod Your UDOO To Improve WiFi Performances</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>FAQ</a><ul class='Nav'><li class='Nav__item '><a href="../FAQ/Introductive.html">Introductive</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Troubleshooting</a><ul class='Nav'><li class='Nav__item '><a href="../Troubleshooting/Why_My_UDOO_Wont_Boot.html">Why My UDOO Wont Boot</a></li><li class='Nav__item '><a href="../Troubleshooting/How_Can_I_Solve_My_HDMI_Issues.html">How Can I Solve My HDMI Issues</a></li><li class='Nav__item '><a href="../Troubleshooting/How_Do_I_Set_Up_My_LVDS_Panel.html">How Do I Set Up My LVDS Panel</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Hackaton Survival Guide</a><ul class='Nav'><li class='Nav__item '><a href="../Hackaton_Survival_Guide/Mirroring_UDOOs_Desktop_on_your_PC_with_VNC_Remote_Desktop.html">Mirroring UDOOs Desktop on your PC with VNC Remote Desktop</a></li><li class='Nav__item '><a href="../Hackaton_Survival_Guide/Programming_UDOOs_Arduino_from_your_PC.html">Programming UDOOs Arduino from your PC</a></li><li class='Nav__item '><a href="../Hackaton_Survival_Guide/Useful_Resources.html">Useful Resources</a></li></ul></li></ul>
+
+            <div class="Links">
+                                    <hr/>
+                                            <a href="https://www.udoo.org" target="_blank">Home</a>
+                        <br />
+                                            <a href="https://www.udoo.org/downloads" target="_blank">Downloads</a>
+                        <br />
+                                            <a href="https://www.udoo.org/tutorial" target="_blank">Tutorials</a>
+                        <br />
+                                            <a href="https://www.udoo.org/forum" target="_blank">Forum</a>
+                        <br />
+                                    
+                
+                            </div>
+        </div>
+    </aside>
+    <div class="Columns__right ">
+        <div class="Columns__right__content">
+            <div class="doc_content">
+                <article class="Page">
+
+    <div class="Page__header">
+        <h1>Boot process</h1>
+            </div>
+
+
+    <div class="s-content">
+        <p>When the board is powered on, the CPU executes code in its internal ROM, loading the first sectors of the SD card. In this way the <a href="https://github.com/UDOOboard/uboot-imx" class="Link--external">U-Boot boot-loader</a> is loaded and executed.</p>
+<h2 id="page_The-boot-loader">The boot-loader</h2>
+<p>This thin layer of software takes care of initialize some registers, devices (like the PMIC) and RAM time settings. It is composed of two stages, the first is called SPL (secondary program loader) which <a href="https://github.com/UDOOboard/uboot-imx/blob/2015.04.imx-neo/board/udoo/neo/spl.c#L147" class="Link--external">initializes several things</a>:</p>
+<ul>
+<li>
+<a href="https://github.com/UDOOboard/uboot-imx/blob/2015.04.imx-neo/arch/arm/cpu/armv7/mx6/soc.c#L421" class="Link--external"><code>arch_cpu_init()</code></a> initializes some registers, the watchdog, the DMA, etc;</li>
+<li>
+<a href="https://github.com/UDOOboard/uboot-imx/blob/2015.04.imx-neo/board/udoo/neo/spl.c#L100" class="Link--external"><code>ccgr_init</code></a> initializes CCGR registers in the CCM (Clock Controller Module);</li>
+<li>
+<a href="https://github.com/UDOOboard/uboot-imx/blob/2015.04.imx-neo/board/udoo/neo/neo.c#L721" class="Link--external"><code>board_early_init_f</code></a> initializes the M4 core and the pads of the UART1;</li>
+<li>
+<a href="https://github.com/UDOOboard/uboot-imx/blob/2015.04.imx-neo/arch/arm/imx-common/timer.c#L95" class="Link--external"><code>timer_init</code></a> initializes CPU timers and clock sources;</li>
+<li>
+<a href="https://github.com/UDOOboard/uboot-imx/blob/2015.04.imx-neo/common/spl/spl.c#L281" class="Link--external"><code>preloader_console_init</code></a> initializes serial port communications and prints the message &quot;<em>U-Boot SPL 2015.04-00267-gd781468 (Dec 16 2015 - 14:44:56)</em>&quot;;</li>
+<li>
+<a href="https://github.com/UDOOboard/uboot-imx/blob/2015.04.imx-neo/board/udoo/neo/spl.c#L114" class="Link--external"><code>spl_dram_init</code></a> sets board-specific DRAM configuration (UDOO Neo Basic has 512MB of RAM and different timings);</li>
+<li>
+<a href="https://github.com/UDOOboard/uboot-imx/blob/2015.04.imx-neo/board/udoo/neo/spl.c#L167" class="Link--external"><code>memset</code></a> zeros BSS memory;</li>
+<li>
+<a href="https://github.com/UDOOboard/uboot-imx/blob/2015.04.imx-neo/common/spl/spl.c#L151" class="Link--external"><code>board_init_r</code></a> continues the boot, loading the second stage of the boot-loader.</li>
+</ul>
+<p>In the <a href="https://github.com/UDOOboard/uboot-imx/blob/2015.04.imx-neo/board/udoo/neo/neo.c" class="Link--external">second stage</a>, more devices and registers are initialized. I2C buses, LVDS, Ethernet, Wireless and motions sensors pads are initialized. The PFUZE3000 power regulator is <a href="https://github.com/UDOOboard/uboot-imx/blob/2015.04.imx-neo/board/udoo/neo/neo.c#L489" class="Link--external">setup</a> and MMC is <a href="https://github.com/UDOOboard/uboot-imx/blob/2015.04.imx-neo/board/udoo/neo/neo.c#L787" class="Link--external">initialized</a> so files can be read from it.</p>
+<h2 id="page_The-uEnv-txt-file">The uEnv.txt file</h2>
+<p>Once the hardware is correctly initialized, the <code>uEnv.txt</code> file is read from the FAT <code>/boot</code> partition. This file contains a few options to override some default settings, like the main video output (which defaults to HDMI).</p>
+<table>
+<thead>
+<tr>
+<th>Variable name</th>
+<th>Default value</th>
+<th>Possible values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>video_output</code></td>
+<td><code>hdmi</code></td>
+<td><code>hdmi</code>, <code>lvds7</code>, <code>disabled</code></td>
+</tr>
+<tr>
+<td><code>m4_enabled</code></td>
+<td><code>true</code></td>
+<td><code>true</code>, <code>false</code></td>
+</tr>
+<tr>
+<td><code>use_custom_dtb</code></td>
+<td><code>false</code></td>
+<td><code>true</code>, <code>false</code></td>
+</tr>
+</tbody>
+</table>
+<p>Those variables (screen type, M4 core status and the use of <a href="../Cookbook_Linux/Device_Tree_Editor.html">custom device tree</a>) are used to <a href="https://github.com/UDOOboard/uboot-imx/blob/2015.04.imx-neo/board/udoo/neo/neo.c#L1129" class="Link--external">select</a> the correct device tree file to load.</p>
+<h2 id="page_Linux-kernel-boot">Linux kernel boot</h2>
+<p>The last step is to load the Linux kernel <code>zImage</code> and the device tree file, both from the <code>/boot</code> partition:</p>
+<pre><code>reading /zImage
+4376112 bytes read in 232 ms (18 MiB/s)
+Booting from mmc ...
+reading dts-overlay/imx6sx-udoo-neo-full-hdmi-m4.dtb
+45210 bytes read in 35 ms (1.2 MiB/s)
+Kernel image @ 0x80800000 [ 0x000000 - 0x42c630 ]
+## Flattened Device Tree blob at 83000000
+   Booting using the fdt blob at 0x83000000
+   Using Device Tree in place at 83000000, end 8300e099
+Switched to ldo_bypass mode!
+
+Starting kernel ...
+
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Linux version 3.14.56-udooneo-01989-.....
+</code></pre>
+    </div>
+
+        <nav>
+        <ul class="Pager">
+            <li class=Pager--prev><a href="../Advanced_Topics/Install_A_Custom_Debian_Distro_With_Debootstrap.html">Previous</a></li>            <li class=Pager--next><a href="../Mods/Mod_Your_UDOO_To_Improve_WiFi_Performances.html">Next</a></li>        </ul>
+    </nav>
+    
+<span style="float: left; font-size: 10px; color: gray;">
+This page was last updated on Monday, March 21, 2022 at 5:19 AM.
+</span>
+
+</article>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+    <!-- hightlight.js -->
+    <script src="../themes/daux/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!-- JS -->
+    
+    <script src="../themes/daux/js/daux.js"></script>
+
+            <!-- Tipue Search -->
+        <script type="text/javascript" src="../tipuesearch/tipuesearch.js"></script>
+
+        <script>
+            window.onunload = function(){}; // force $(document).ready to be called on back/forward navigation in firefox
+            $(function() {
+                tipuesearch({
+                    'base_url': '../'
+                });
+            });
+        </script>
+    
+</body>
+</html>

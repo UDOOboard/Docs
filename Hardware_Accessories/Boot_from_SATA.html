@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>       <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>          <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>          <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <title>Boot from SATA - UDOO Quad/Dual Docs</title>
+    <meta name="description" content="UDOO Quad/Dual Documentation" />
+    <meta name="author" content="UDOO Team">
+    <meta charset="UTF-8">
+    <link rel="icon" href="../themes/daux/img/favicon-udoo.ico" type="image/x-icon">
+    <!-- Mobile -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin' rel='stylesheet' type='text/css'>
+    <!-- CSS -->
+    <link href='../themes/daux/css/theme-navy.min.css' rel='stylesheet' type='text/css'><link href='../themes/daux/css/udoo.css' rel='stylesheet' type='text/css'>
+            <!-- Tipue Search -->
+        <link href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+    
+    <!-- jQuery -->
+    <script src="../themes/daux/js/jquery-1.11.3.min.js"></script>
+    <script src="../themes/daux/js/bootstrap.min.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body class="">
+    
+<header class="Navbar hidden-print">
+    <img class="pull-left udoologo" src="/docs/img/logos/docs.png"> 
+<a class="Navbar__brand" href="../index.html">
+UDOO Quad/Dual Documentation</a>
+
+    <div class="Search">
+        <svg class="Search__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 451 451"><path d="M447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1C384.65 86.2 298.35 0 192.35 0 86.25 0 .05 86.3.05 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2L428.05 447c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zM26.95 192.3c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z"/></svg>
+        <input type="search" id="tipue_search_input" class="Search__field" placeholder="Search..." autocomplete="on" results=25 autosave=text_search>
+    </div>
+</header>
+<div class="Columns content">
+    <aside class="Columns__left Collapsible">
+        <div class="Collapsible__container">
+            <button type="button" class="Button Collapsible__trigger">
+                <span class="Collapsible__trigger--bar"></span>
+                <span class="Collapsible__trigger--bar"></span>
+                <span class="Collapsible__trigger--bar"></span>
+            </button>
+        </div>
+
+        <div class="Collapsible__content">
+            <!-- Navigation -->
+            <ul class='Nav'><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Introduction</a><ul class='Nav'><li class='Nav__item '><a href="../Introduction/Introduction.html">Introduction</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Getting Started</a><ul class='Nav'><li class='Nav__item '><a href="../Getting_Started/Very_First_Start.html">Very First Start</a></li><li class='Nav__item '><a href="../Getting_Started/Create_A_Bootable_MicroSD_card_for_UDOO_QUAD_DUAL.html">Create A Bootable MicroSD card for UDOO QUAD-DUAL</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Basic Setup</a><ul class='Nav'><li class='Nav__item '><a href="../Basic_Setup/Connecting_Via_Serial_Cable.html">Connecting Via Serial Cable</a></li><li class='Nav__item '><a href="../Basic_Setup/Find_IP_Address.html">Find IP Address</a></li><li class='Nav__item '><a href="../Basic_Setup/Web_Control_Panel.html">Web Control Panel</a></li><li class='Nav__item '><a href="../Basic_Setup/Remote_Terminal_(SSH).html">Remote Terminal (SSH)</a></li><li class='Nav__item '><a href="../Basic_Setup/Remote_Desktop_(VNC).html">Remote Desktop (VNC)</a></li><li class='Nav__item '><a href="../Basic_Setup/UDOO_Configuration_Tool.html">UDOO Configuration Tool</a></li><li class='Nav__item '><a href="../Basic_Setup/Usb_Direct_Connection.html">Usb Direct Connection</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Software & OS Distro</a><ul class='Nav'><li class='Nav__item '><a href="../Software_OS_Distro/UDOObuntu.html">UDOObuntu</a></li><li class='Nav__item '><a href="../Software_OS_Distro/Android.html">Android</a></li><li class='Nav__item '><a href="../Software_OS_Distro/Yocto.html">Yocto</a></li><li class='Nav__item '><a href="../Software_OS_Distro/Other_Unofficial_Distributions.html">Other Unofficial Distributions</a></li></ul></li><li class='Nav__item Nav__item--open has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Hardware & Accessories</a><ul class='Nav'><li class='Nav__item '><a href="../Hardware_Accessories/GPIO_Pinout.html">GPIO Pinout</a></li><li class='Nav__item '><a href="../Hardware_Accessories/IMX6_And_Sam3X_Communication.html">IMX6 And Sam3X Communication</a></li><li class='Nav__item '><a href="../Hardware_Accessories/UDOO_LVDS_Panels.html">UDOO LVDS Panels</a></li><li class='Nav__item '><a href="../Hardware_Accessories/UDOO_Camera_Module.html">UDOO Camera Module</a></li><li class='Nav__item Nav__item--active'><a href="../Hardware_Accessories/Boot_from_SATA.html">Boot from SATA</a></li><li class='Nav__item '><a href="../Hardware_Accessories/SPI.html">SPI</a></li><li class='Nav__item '><a href="../Hardware_Accessories/PWM.html">PWM</a></li><li class='Nav__item '><a href="../Hardware_Accessories/Watchdog.html">Watchdog</a></li><li class='Nav__item '><a href="../Hardware_Accessories/Resources.html">Resources</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Wireless Communication</a><ul class='Nav'><li class='Nav__item '><a href="../Wireless_Communication/WiFi.html">WiFi</a></li><li class='Nav__item '><a href="../Wireless_Communication/WiFi_SoftAP.html">WiFi SoftAP</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Cookbook Linux</a><ul class='Nav'><li class='Nav__item '><a href="../Cookbook_Linux/Understanding_Linux_Software_Management_And_Installing.html">Understanding Linux Software Management And Installing</a></li><li class='Nav__item '><a href="../Cookbook_Linux/Linux_Command_Line_Interface.html">Linux Command Line Interface</a></li><li class='Nav__item '><a href="../Cookbook_Linux/Set_video_output.html">Set video output</a></li><li class='Nav__item '><a href="../Cookbook_Linux/Device_Tree_Editor.html">Device Tree Editor</a></li><li class='Nav__item '><a href="../Cookbook_Linux/Change_Web_Control_Panel_port.html">Change Web Control Panel port</a></li><li class='Nav__item '><a href="../Cookbook_Linux/Playing_video_with_GStreamer.html">Playing video with GStreamer</a></li><li class='Nav__item '><a href="../Cookbook_Linux/Compile_OpenCV_3.4.0.html">Compile OpenCV 3.4.0</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Arduino DUE (Sam3x)</a><ul class='Nav'><li class='Nav__item '><a href="../Arduino_DUE_(Sam3x)/Overview.html">Overview</a></li><li class='Nav__item '><a href="../Arduino_DUE_(Sam3x)/Programming_Arduino_Due_from_Internal_Processor(iMX6).html">Programming Arduino Due from Internal Processor(iMX6)</a></li><li class='Nav__item '><a href="../Arduino_DUE_(Sam3x)/Programming_Arduino_Due_from_External_PC.html">Programming Arduino Due from External PC</a></li><li class='Nav__item '><a href="../Arduino_DUE_(Sam3x)/Troubleshooting_Programming_Arduino_Due_from_External_PC.html">Troubleshooting Programming Arduino Due from External PC</a></li><li class='Nav__item '><a href="../Arduino_DUE_(Sam3x)/Arduino_Shields_With_UDOO.html">Arduino Shields With UDOO</a></li></ul></li><li class='Nav__item  has-children'><a href="../Serial_Libraries/index.html" class="folder"><i class="Nav__arrow">&nbsp;</i>Serial Libraries</a><ul class='Nav'><li class='Nav__item '><a href="../Serial_Libraries/Java_Serial_Libraries.html">Java Serial Libraries</a></li><li class='Nav__item '><a href="../Serial_Libraries/C_Serial_Libraries.html">C Serial Libraries</a></li><li class='Nav__item '><a href="../Serial_Libraries/PHP_Serial_Libraries.html">PHP Serial Libraries</a></li><li class='Nav__item '><a href="../Serial_Libraries/Python_Serial_Libraries.html">Python Serial Libraries</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Cookbook Android</a><ul class='Nav'><li class='Nav__item '><a href="../Cookbook_Android/UDOO_Android_Boot_Walkthrough.html">UDOO Android Boot Walkthrough</a></li><li class='Nav__item '><a href="../Cookbook_Android/UDOO_Android_Settings.html">UDOO Android Settings</a></li><li class='Nav__item '><a href="../Cookbook_Android/Switch_Between_Adb_Debug_And_ADK_Connection.html">Switch Between Adb Debug And ADK Connection</a></li><li class='Nav__item '><a href="../Cookbook_Android/How_To_Install_Gapps_On_UDOO_Running_Android.html">How To Install Gapps On UDOO Running Android</a></li><li class='Nav__item '><a href="../Cookbook_Android/Android_And_Arduino_Simple_Hello_World_Tutorial.html">Android And Arduino Simple Hello World Tutorial</a></li><li class='Nav__item '><a href="../Cookbook_Android/Android_And_Arduino_Bidirectional_Communication.html">Android And Arduino Bidirectional Communication</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Projects Examples</a><ul class='Nav'><li class='Nav__item '><a href="../Projects_Examples/Face_Recognition_And_Face_Tracking_Via_OpenCV_And_UDOO.html">Face Recognition And Face Tracking Via OpenCV And UDOO</a></li><li class='Nav__item '><a href="../Projects_Examples/Remote_Metereological_Station_With_UDOO.html">Remote Metereological Station With UDOO</a></li><li class='Nav__item '><a href="../Projects_Examples/DIY_NAS_With_Openmediavault_And_UDOO.html">DIY NAS With Openmediavault And UDOO</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Advanced Topics</a><ul class='Nav'><li class='Nav__item '><a href="../Advanced_Topics/Setup_development_environment.html">Setup development environment</a></li><li class='Nav__item '><a href="../Advanced_Topics/Compile_UDOObuntu_(complete_bootable_image).html">Compile UDOObuntu (complete bootable image)</a></li><li class='Nav__item '><a href="../Advanced_Topics/Compile_U_Boot_Bootloader.html">Compile U-Boot Bootloader</a></li><li class='Nav__item '><a href="../Advanced_Topics/Compile_Linux_Kernel.html">Compile Linux Kernel</a></li><li class='Nav__item '><a href="../Advanced_Topics/Compile_Android_From_Source.html">Compile Android From Source</a></li><li class='Nav__item '><a href="../Advanced_Topics/Install_A_Custom_Debian_Distro_With_Debootstrap.html">Install A Custom Debian Distro With Debootstrap</a></li><li class='Nav__item '><a href="../Advanced_Topics/Boot_process.html">Boot process</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Mods</a><ul class='Nav'><li class='Nav__item '><a href="../Mods/Mod_Your_UDOO_To_Improve_WiFi_Performances.html">Mod Your UDOO To Improve WiFi Performances</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>FAQ</a><ul class='Nav'><li class='Nav__item '><a href="../FAQ/Introductive.html">Introductive</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Troubleshooting</a><ul class='Nav'><li class='Nav__item '><a href="../Troubleshooting/Why_My_UDOO_Wont_Boot.html">Why My UDOO Wont Boot</a></li><li class='Nav__item '><a href="../Troubleshooting/How_Can_I_Solve_My_HDMI_Issues.html">How Can I Solve My HDMI Issues</a></li><li class='Nav__item '><a href="../Troubleshooting/How_Do_I_Set_Up_My_LVDS_Panel.html">How Do I Set Up My LVDS Panel</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Hackaton Survival Guide</a><ul class='Nav'><li class='Nav__item '><a href="../Hackaton_Survival_Guide/Mirroring_UDOOs_Desktop_on_your_PC_with_VNC_Remote_Desktop.html">Mirroring UDOOs Desktop on your PC with VNC Remote Desktop</a></li><li class='Nav__item '><a href="../Hackaton_Survival_Guide/Programming_UDOOs_Arduino_from_your_PC.html">Programming UDOOs Arduino from your PC</a></li><li class='Nav__item '><a href="../Hackaton_Survival_Guide/Useful_Resources.html">Useful Resources</a></li></ul></li></ul>
+
+            <div class="Links">
+                                    <hr/>
+                                            <a href="https://www.udoo.org" target="_blank">Home</a>
+                        <br />
+                                            <a href="https://www.udoo.org/downloads" target="_blank">Downloads</a>
+                        <br />
+                                            <a href="https://www.udoo.org/tutorial" target="_blank">Tutorials</a>
+                        <br />
+                                            <a href="https://www.udoo.org/forum" target="_blank">Forum</a>
+                        <br />
+                                    
+                
+                            </div>
+        </div>
+    </aside>
+    <div class="Columns__right ">
+        <div class="Columns__right__content">
+            <div class="doc_content">
+                <article class="Page">
+
+    <div class="Page__header">
+        <h1>Boot from SATA</h1>
+            </div>
+
+
+    <div class="s-content">
+        <p>This guide will show you how to boot your UDOO DUAL/QUAD from an attached SATA drive with the help of a small SD card.</p>
+<p><strong>NOTE</strong>: It is not possible to boot without an SD card, it is hoped that this feature will be added in the future.</p>
+<h2 id="page_Prerequisites">Prerequisites</h2>
+<ul>
+<li>A SATA drive</li>
+<li>A SD card</li>
+<li>A micro USB cable such as one for charging a smart phone</li>
+</ul>
+<div>
+ <ul id="adc-examples" class="nav nav-tabs" role="tablist">
+  <li role="presentation" class="active"><a href="#udoobuntu-due-example" aria-controls="udoobuntu-due" role="tab" data-toggle="tab">UDOObuntu 2.0</a></li>
+  <li role="presentation"><a href="#udoobuntu-uno-example" aria-controls="udoobuntu-uno" role="tab" data-toggle="tab">UDOObuntu 1.0/1.1</a></li>
+ </ul>
+ <div class="tab-content">
+  <div role="tabpanel" class="tab-pane active" id="udoobuntu-due-example">
+<h1 id="page_UDOObuntu-2-0">UDOObuntu 2.0</h1>
+<h2 id="page_Flash-the-boot-SD-card">Flash the boot SD card</h2>
+<p>You need an SD card with the bootloader in order to boot from SATA. Download this small (1MB) <a href="https://www.udoo.org/download/files/qdl-sata.img.zip" class="Link--external">boot image</a> and, after unzipping it, flash it to the SD:</p>
+<pre><code>dd if=qdl-sata.img of=/dev/mmcblk0 bs=1M
+</code></pre>
+<h2 id="page_Flash-the-SATA-drive">Flash the SATA drive</h2>
+<p>Download the <a href="https://www.udoo.org/downloads/" class="Link--external">latest UDOObuntu</a> from the official site. Decompress the image and flash it to the SATA drive:</p>
+<pre><code># in this example, the SATA drive device is /dev/SATA
+dd if=UDOObuntu_qdl_v2.0.img of=/dev/SATA bs=1M
+</code></pre>
+<p>Remember to patch the <code>/etc/fstab</code> inside the SATA disk:</p>
+<pre><code>mount /dev/SATA2 /mnt/sata
+
+echo &quot;/dev/sda2  /      ext4  defaults,noatime               0  0
+/dev/sda1  /boot  vfat  defaults,noatime               0  0&quot; &gt; /mnt/sata/etc/fstab
+</code></pre>
+<p>Please note:</p>
+<ul>
+<li>
+<code>/dev/SATA2</code> is the second partition, available after flashing UDOObuntu;</li>
+<li>
+<code>/dev/sda</code>1,2 inside <code>fstab</code> must not be changed, these are the devices for the SATA partitions as seen by UDOO, not by your computer.</li>
+</ul>
+ </div>
+ <div role="tabpanel" class="tab-pane" id="udoobuntu-uno-example">
+<h1 id="page_UDOObuntu-1-0-1-1">UDOObuntu 1.0/1.1</h1>
+<h2 id="page_Preparing-the-drive">Preparing the drive</h2>
+<p>You may partition and format the drive however you want, the current builds of uboot support up to ext3 I believe, newer builds may support ext4. I will be using a drive of a single ext3 partition as an example. There are several methods of preparing the SATA drive, some are listed below. NOTE: you only need to do ONE of the following methods.</p>
+<ul>
+<li>Using an existing Linux system</li>
+<li>Extracting a FS tarball</li>
+<li>Using dd to flash an image</li>
+<li>Using win32diskimager from windows</li>
+</ul>
+<h3 id="page_Using-an-existing-Linux-system">Using an existing Linux system</h3>
+<p>Connect your SD and SATA drive to a linux system. I'm using a USB SATA adapter and mounted it and the sd at /sd and /usb just for clarity, but this is upto you.</p>
+<p>Adjust commands appropriately.</p>
+<pre><code class="language-bash">
+# cp -rvp /sd/* /usb/
+
+</code></pre>
+<p>This will copy your SD filesystem to the SATA disk.</p>
+<p>Unmount both. Once that is complete, connect the SATA disk to the UDOO DUAL/QUAD and reinsert the SD card.</p>
+<h3 id="page_Extracting-a-FS-tarball">Extracting a FS tarball</h3>
+<p>You may use the filesystem tarball from the binaries tab on <a href="https://www.udoo.org/downloads/" class="Link--external">udoo.org</a> or use your own. Place this tarball on the SATA disk. You can transfer this over the network or wget the file straight onto it.</p>
+<p>Run the following commands (Assuming /dev/sda1 is mounted at /mnt)</p>
+<pre><code class="language-bash">
+# cd /mnt
+# tar xvzf tarball_you_just_grabbed.tar
+
+</code></pre>
+<h3 id="page_Using-dd-to-flash-an-image">Using dd to flash an image</h3>
+<p>You can also flash the filesystem using DD. You will need a filessytem img such as the ones provided by UDOO DUAL/QUAD. Make sure your SATA disk is NOT mounted.</p>
+<p>Flash by doing the following:</p>
+<pre><code class="language-bash">
+# dd if=path/to/fs.img of=/dev/sdb
+
+</code></pre>
+<h3 id="page_Using-win32diskimager-from-windows">Using win32diskimager from windows</h3>
+<p>You can flash any image from windows with win32diskimager. You can get it from its SourceForge page <a href="http://sourceforge.net/projects/win32diskimager/" class="Link--external">http://sourceforge.net/projects/win32diskimager/</a></p>
+<p><a name="prepareuboot"></a></p>
+<p>##<a href="#prepareuboot">Prepare U-Boot</a></p>
+<p>The easiest way to start the OS from SATA is using the Configuration Tool preinstalled on UDOObuntu.</p>
+<p>Run UDOObuntu from MicroSD. Make sure the SATA Hard Drive you prepared above is plugged to your UDOO DUAL/QUAD. Open the Configuration Tool,</p>
+<p>select &quot;Set Default Boot Device&quot; and choose SATA, then follow the simple instructions to select the right drive and partition.</p>
+<p>If you don't have the UDOO DUAL/QUAD Configuration Tool available you can set your custom U-Boot following the instructions below:</p>
+<p>This is a temporary guide, since a new version of u-boot with a reorganization of the environment variables is scheduled and will be released asap.</p>
+<p>You will need to connect the UDOO DUAL/QUAD to a PC with a micro USB cable. Make sure to use the micro USB port closest to the corner(CN6).</p>
+<p>Then open a serial terminal to the new COM port on your PC with a baud of 115200 Reset the UDOO DUAL/QUAD and press any key over serial when prompted to cancel the autoboot. If you miss the prompt, you can press reset on the UDOO DUAL/QUAD or run the reboot command to reboot.</p>
+<p>With the SATA hard drive connected run the command:</p>
+<pre><code class="language-bash">
+sata part
+
+</code></pre>
+<p>It will display some informations:</p>
+<pre><code class="language-bash">
+Partition Map for SATA device 0  --   Partition Type: DOS
+Part    Start Sector    Num Sectors     UUID            Type
+1        16065           14185395     000c356e-01       83
+
+</code></pre>
+<p>Take note of the device n° and Part n° information.</p>
+<p>Now run the following commands:</p>
+<pre><code class="language-bash">
+setenv bootcmd &quot;if run loadbootscript; then run bootscript; else run sataboot; run mmcboot; run netboot; fi;&quot;
+
+
+
+setenv mmcloaduimage ext2load mmc ${mmcdev}:${mmcpart} ${loadaddr} ${uimage}
+
+
+
+setenv mmcboot &quot;if mmc rescan; then echo Booting from mmc ...; run mmcloaduimage; run mmcargs; bootm; else mmc boot failed; fi;&quot;
+
+
+
+setenv satadev &lt;device n° previously noted e.g. setenv satadev 0&gt;
+
+
+
+setenv satapart &lt;part n° previously noted e.g. setenv satapart 1&gt;
+
+
+
+setenv sataroot /dev/sda${satapart} rootwait rw
+
+
+
+setenv sataargs setenv bootargs console=${console},${baudrate} root=${sataroot} ${hdmi_patch} fbmem=24M video=mxcfb0:dev=hdmi,1920x1080M@60,bpp=32
+
+
+
+setenv sataloaduimage ext2load sata ${satadev}:${satapart} ${loadaddr} ${uimage}
+
+
+
+setenv sataboot &quot;if sata init; then echo Booting from sata ...; run sataloaduimage; run sataargs; bootm; else sata boot failed; fi;&quot;
+
+
+
+saveenv
+
+</code></pre>
+<p>In this way, if you have a connected SATA hard drive, the boot will be from SATA otherwise it will occur from SD card.</p>
+<p>Now run the following to continue booting:</p>
+<pre><code class="language-bash">
+boot
+
+</code></pre>
+<h2 id="page_Done">Done!</h2>
+<p>You should now be booting into the system on the SATA drive. If all goes well you can safely remove almost everything on the SD card.</p>
+<h2 id="page_NOTE">NOTE!</h2>
+<p>If you used the udooupdate script to update the uboot version and kernel, you'll probably need to do this on both the SD card that triggers the boot as well as the SATA drive. Use the instructions here to change which filesystem is the root, download and run the update from each.</p>
+<p>DO the SATA drive FIRST!!!!</p>
+<p>If you only do the SATA drive, you probably will not be able to reboot into the SATA drive until you also update the SD card to match.</p>
+</div>
+</div>
+</div>
+<script>
+$('#adc-examples a').click(function (e) {
+e.preventDefault()
+$(this).tab('show')
+})
+</script>
+    </div>
+
+        <nav>
+        <ul class="Pager">
+            <li class=Pager--prev><a href="../Hardware_Accessories/UDOO_Camera_Module.html">Previous</a></li>            <li class=Pager--next><a href="../Hardware_Accessories/SPI.html">Next</a></li>        </ul>
+    </nav>
+    
+<span style="float: left; font-size: 10px; color: gray;">
+This page was last updated on Monday, March 21, 2022 at 5:19 AM.
+</span>
+
+</article>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+    <!-- hightlight.js -->
+    <script src="../themes/daux/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!-- JS -->
+    
+    <script src="../themes/daux/js/daux.js"></script>
+
+            <!-- Tipue Search -->
+        <script type="text/javascript" src="../tipuesearch/tipuesearch.js"></script>
+
+        <script>
+            window.onunload = function(){}; // force $(document).ready to be called on back/forward navigation in firefox
+            $(function() {
+                tipuesearch({
+                    'base_url': '../'
+                });
+            });
+        </script>
+    
+</body>
+</html>
